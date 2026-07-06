@@ -1,0 +1,28 @@
+{
+  "finalUrl": "https://carp-ybb.com/cart/",
+  "body": "跳至内容\nYBB\n2026 NEW PRODUCTS\nSINKERS\nBAIT CAGES\nRIGS\nSINKER RIGS\nBAIT CAGE RIGS\nCARP HOOKS\nEURO CARP KITS\nOTHER\nOEM / ODM\nCONTACT\nACCOUNT\nPRIVATE LABEL\nCUSTOM PACKAGING\nMOQ & LEAD TIME\nSHOP\n您的购物车目前是空的。\n\n返回商店\n\nCONTACT DETAILS\n+86 130 5299 7260\nxuquan2022@gmail.com\nWangjing Business Center, Xiaoshan District, Hangzhou City, Zhejiang Province, P.R.China\nQUICK LINKS\nShipping & Returns\nContact\nCustomer Service\nCopyright © 2026 YBB | Powered by YBB\nYoutube\n \nInstagram\n \nFacebook-f\n \nTwitter\n0\nAVAILABLE COUPONS\n\nLoading coupons...\n\nHave a question?",
+  "requests": [],
+  "responses": [],
+  "consoleTail": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 401 ()"
+    },
+    {
+      "type": "error",
+      "text": "Mixed Content: The page at 'https://carp-ybb.com/cart/' was loaded over HTTPS, but requested an insecure stylesheet 'http://carp-ybb.com/wp-content/uploads/elementor/css/base-desktop.css?ver=6a3d9bb4e58f0'. This request has been blocked; the content must be served over HTTPS."
+    },
+    {
+      "type": "warning",
+      "text": "Mixed Content: The page at 'https://carp-ybb.com/cart/' was loaded over HTTPS, but requested an insecure element 'http://carp-ybb.com/wp-content/uploads/2026/06/test.png'. This request was automatically upgraded to HTTPS, For more information see https://blog.chromium.org/2019/10/no-more-mixed-messages-about-https.html"
+    },
+    {
+      "type": "warning",
+      "text": "Mixed Content: The page at 'https://carp-ybb.com/cart/' was loaded over HTTPS, but requested an insecure element 'http://carp-ybb.com/wp-content/uploads/2026/06/test.png'. This request was automatically upgraded to HTTPS, For more information see https://blog.chromium.org/2019/10/no-more-mixed-messages-about-https.html"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 ()"
+    }
+  ]
+}

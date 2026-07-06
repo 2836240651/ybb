@@ -1,0 +1,404 @@
+/* YBB flat checkout — merged from ybb-checkout-theme-flat + wp-checkout-custom.css */
+
+.ybb-checkout-page {
+  --bg: #f6f5f2;
+  --card: #fff;
+  --text: #1c1f24;
+  --muted: #5f6772;
+  --line: #e6e2dc;
+  --brand: #0f3b63;
+  --brand2: #1d4e89;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
+.ybb-checkout-page * {
+  box-sizing: border-box;
+}
+
+body.ybb-checkout-page {
+  margin: 0;
+  background: var(--bg);
+}
+
+.ybb-checkout-topbar {
+  min-height: 78px;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  padding: 0 28px;
+}
+
+.ybb-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.ybb-brand .custom-logo-link img {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.ybb-logo-fallback {
+  width: 52px;
+  height: 52px;
+  background: #050505;
+  border-radius: 12px;
+  color: #e5e5e5;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.ybb-brand-name {
+  font-weight: 700;
+}
+
+.ybb-brand-tagline {
+  font-size: 12px;
+  color: #5f6772;
+}
+
+.ybb-nav {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.ybb-nav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.ybb-nav a:hover {
+  color: var(--brand);
+}
+
+.ybb-badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(15, 59, 99, 0.08);
+  color: var(--brand);
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.ybb-crumb {
+  max-width: 1200px;
+  margin: 18px auto 0;
+  padding: 0 24px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.ybb-back-to-cart-wrap {
+  max-width: 1200px;
+  margin: 12px auto 0;
+  padding: 0 24px;
+}
+
+.ybb-back-to-cart {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--brand);
+  text-decoration: none;
+  padding: 8px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.ybb-back-to-cart:hover {
+  background: rgba(15, 59, 99, 0.06);
+  border-color: var(--brand);
+  color: var(--brand2);
+}
+
+.ybb-checkout-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px 40px;
+}
+
+.ybb-wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(320px, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.ybb-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(24, 30, 37, 0.04);
+  padding: 28px;
+}
+
+.ybb-summary {
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+}
+
+.ybb-h1 {
+  font-size: 28px;
+  margin: 0 0 18px;
+}
+
+.ybb-h2,
+.ybb-checkout-page #order_review_heading {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 14px;
+}
+
+.ybb-small {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.ybb-safe-note {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.ybb-lang {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 12px;
+}
+
+.ybb-lang a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.ybb-lang a:hover {
+  color: var(--brand);
+}
+
+/* Woo form fields inside flat shell */
+.ybb-checkout-page .woocommerce-checkout .form-row label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #323844;
+  margin-bottom: 7px;
+}
+
+.ybb-checkout-page .woocommerce-checkout .form-row input.input-text,
+.ybb-checkout-page .woocommerce-checkout .form-row textarea,
+.ybb-checkout-page .woocommerce-checkout .form-row select {
+  width: 100%;
+  border: 1px solid #cfd6dd;
+  border-radius: 9px;
+  background: #fff;
+  padding: 12px;
+  font-size: 14px;
+}
+
+.ybb-checkout-page .col2-set {
+  display: block;
+}
+
+.ybb-checkout-page .col2-set .col-1,
+.ybb-checkout-page .col2-set .col-2 {
+  width: 100%;
+  float: none;
+  margin: 0;
+}
+
+.ybb-checkout-page #customer_details h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 24px 0 14px;
+  padding: 0;
+  border: 0;
+}
+
+.ybb-checkout-page .shop_table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.ybb-checkout-page .shop_table th,
+.ybb-checkout-page .shop_table td {
+  padding: 11px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.ybb-checkout-page .shop_table .order-total th,
+.ybb-checkout-page .shop_table .order-total td {
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom: 0;
+  padding-top: 16px;
+}
+
+.ybb-checkout-page #payment {
+  margin-top: 18px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fbfcfd;
+}
+
+.ybb-checkout-page #payment ul.payment_methods {
+  margin: 0;
+  padding: 16px;
+  list-style: none;
+}
+
+.ybb-checkout-page #payment .payment_box {
+  padding: 0 16px 16px;
+}
+
+/* Airwallex embedded card / drop-in needs visible mount area */
+.ybb-checkout-page #payment .payment_box fieldset,
+.ybb-checkout-page #payment .wc-airwallex-card-container,
+.ybb-checkout-page #payment .airwallex-card-field,
+.ybb-checkout-page #payment iframe {
+  min-height: 44px;
+}
+
+.ybb-checkout-page #payment .payment_method_airwallex_card .payment_box,
+.ybb-checkout-page #payment .payment_method_airwallex_main .payment_box {
+  background: #f8f6ff;
+}
+
+.ybb-checkout-page #place_order,
+.ybb-checkout-page .woocommerce-checkout #place_order {
+  width: 100%;
+  min-height: 52px;
+  margin-top: 18px;
+  border: 0;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--brand), var(--brand2)) !important;
+  color: #fff !important;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 14px 28px !important;
+}
+
+.ybb-checkout-page #place_order:hover {
+  filter: brightness(1.05);
+}
+
+.ybb-checkout-page .woocommerce-error,
+.ybb-checkout-page .woocommerce-info,
+.ybb-checkout-page .woocommerce-message {
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.ybb-checkout-page .coupon .button {
+  background: #d1ba98 !important;
+  color: #171717 !important;
+  border-radius: 9999px !important;
+}
+
+/* Hide Astra/site chrome when flat checkout is active */
+body.ybb-checkout-page #masthead,
+body.ybb-checkout-page .site-header,
+body.ybb-checkout-page .site-footer,
+body.ybb-checkout-page .ast-header-break-point .main-header-bar {
+  display: none !important;
+}
+
+@media (max-width: 980px) {
+  .ybb-checkout-topbar {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 18px 22px;
+  }
+
+  .ybb-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .ybb-summary {
+    position: static;
+  }
+
+  .ybb-nav {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  .ybb-checkout-content {
+    padding: 0 14px 32px;
+  }
+
+  .ybb-card {
+    padding: 20px;
+  }
+
+  .ybb-checkout-topbar {
+    padding: 16px;
+  }
+
+  .ybb-nav {
+    font-size: 13px;
+  }
+
+  .ybb-h1 {
+    font-size: 24px;
+  }
+}
+
+/* Order received page — reuse flat tokens when returning from Airwallex */
+body.woocommerce-order-received {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  color: #171717;
+  background: #f5f5f5;
+}
+
+body.woocommerce-order-received .woocommerce-order {
+  max-width: 960px;
+  margin: 32px auto;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  padding: 32px;
+}
+
+body.woocommerce-order-received .woocommerce-thankyou-order-received {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+body.woocommerce-order-received .button {
+  background: #171717 !important;
+  color: #fff !important;
+  border-radius: 9999px !important;
+  padding: 14px 28px !important;
+  font-weight: 600;
+  border: none !important;
+}

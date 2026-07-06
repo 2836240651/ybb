@@ -1,0 +1,129 @@
+[
+  {
+    "handle": "oem-odm",
+    "title": "OEM / ODM Services",
+    "description": "OEM & ODM custom service overview �?private label and custom mold manufacturing for carp fishing tackle.",
+    "sections": []
+  },
+  {
+    "handle": "private-label",
+    "title": "Private Label",
+    "description": "ODM private label service �?10,000+ ready molds, logo printing, custom colors & finishes, low MOQ for Europe, US and Canada.",
+    "sections": []
+  },
+  {
+    "handle": "custom-packaging",
+    "title": "Custom Packaging",
+    "description": "One-stop custom packaging with free graphic design �?color boxes, labels, poly bags and shipping cartons for ODM & OEM orders.",
+    "sections": []
+  },
+  {
+    "handle": "moq-lead-time",
+    "title": "MOQ & Lead Time",
+    "description": "ODM & OEM MOQ and lead time �?in-stock private label from 7�?5 days, custom mold 30�?0 days, peak season support.",
+    "sections": []
+  },
+  {
+    "handle": "wholesale",
+    "title": "Wholesale & Distribution",
+    "description": "Mixed-carton wholesale for tackle shops and distributors.",
+    "sections": [
+      {
+        "heading": "Built for B2B buyers",
+        "paragraphs": [
+          "Access 10,000+ SKUs across terminal tackle, bait care, and storage. Consolidate multiple lines in one shipment with factory-direct pricing.",
+          "Submit an RFQ via our contact form �?our sales team responds within 1�? business days with catalog excerpts and pricing tiers."
+        ]
+      }
+    ]
+  },
+  {
+    "handle": "catalog",
+    "title": "Catalog Download",
+    "description": "Request the latest YBB Tackle wholesale catalog.",
+    "sections": [
+      {
+        "heading": "2026 wholesale catalog",
+        "paragraphs": [
+          "Our full catalog is available to verified wholesale buyers. Contact us with your company details and target markets to receive a PDF catalog and price list.",
+          "Catalog includes new arrivals, best sellers, and OEM-capable product families."
+        ]
+      }
+    ]
+  },
+  {
+    "handle": "about",
+    "title": "About YBB Tackle",
+    "description": "Carp and coarse terminal tackle manufacturer in China's fishing tackle hub.",
+    "sections": [
+      {
+        "heading": "30+ years at the source",
+        "paragraphs": [
+          "YBB Tackle operates from a dedicated production campus serving global brands with terminal tackle, bait care accessories, and tackle storage solutions.",
+          "We combine scale manufacturing with responsive OEM support �?the partner overseas buyers trust for consistent quality and delivery."
+        ]
+      }
+    ]
+  },
+  {
+    "handle": "capacity",
+    "title": "Production Capacity",
+    "description": "Manufacturing scale and capabilities.",
+    "sections": [
+      {
+        "heading": "Scale you can verify",
+        "paragraphs": [
+          "Multiple assembly lines for rigs, feeders, and hardware. In-house heat-treatment and coating for hooks and leads. Daily output capacity shared on factory visits and audits.",
+          "10,000+ active SKUs with continuous new product development each season."
+        ]
+      }
+    ]
+  },
+  {
+    "handle": "quality",
+    "title": "Quality Control",
+    "description": "QC processes for export-grade terminal tackle.",
+    "sections": [
+      {
+        "heading": "QC at every stage",
+        "paragraphs": [
+          "Incoming material inspection, in-line checks, and pre-shipment AQL sampling. Test reports available for key components.",
+          "We welcome third-party inspection and buyer audits before first bulk order."
+        ]
+      }
+    ]
+  },
+  {
+    "handle": "samples",
+    "title": "Sample Policy",
+    "description": "Try before you scale Samples are charged at catalog sam [&hellip;]",
+    "sections": [
+      {
+        "heading": "Try before you scale",
+        "paragraphs": [
+          "Samples are charged at catalog sample price plus courier freight. Sample fees may be credited against the first bulk order above the agreed threshold."
+        ]
+      },
+      {
+        "heading": "OEM samples",
+        "paragraphs": [
+          "Custom OEM samples may require a tooling deposit; timelines are quoted per project."
+        ]
+      }
+    ]
+  },
+  {
+    "handle": "terms",
+    "title": "Terms & Conditions",
+    "description": "Wholesale terms for YBB Tackle buyers.",
+    "sections": [
+      {
+        "heading": "B2B wholesale terms",
+        "paragraphs": [
+          "All prices are ex-works unless otherwise stated. Payment terms: 30% deposit, 70% before shipment unless credit account approved.",
+          "Product specifications follow approved samples and PO confirmations. Claims must be reported within 14 days of receipt with supporting evidence."
+        ]
+      }
+    ]
+  }
+]

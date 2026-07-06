@@ -1,0 +1,19 @@
+{
+  "title": "TZ Demo Product 2026-06",
+  "description": "Demo long description for WooCommerce product created by Playwright automation.",
+  "shortDescription": "Demo short description.",
+  "productType": "simple",
+  "regularPrice": "9.90",
+  "salePrice": "",
+  "sku": "TZ-DEMO-202606",
+  "manageStock": true,
+  "stockQty": 120,
+  "categories": [
+    "Other"
+  ],
+  "featuredImage": "C:/Users/Administrator/Pictures/demo/main.jpg",
+  "galleryImages": [
+    "C:/Users/Administrator/Pictures/demo/1.jpg",
+    "C:/Users/Administrator/Pictures/demo/2.jpg"
+  ]
+}

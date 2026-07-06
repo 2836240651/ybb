@@ -1,0 +1,100 @@
+{
+  "startedAt": "2026-06-23T08:21:30.245Z",
+  "total": 19,
+  "ok": [
+    {
+      "id": "product-baiting-tool-kit-glow",
+      "output": "public/products/baiting-tool-kit-glow/master.webp",
+      "seconds": 47.9
+    },
+    {
+      "id": "product-spinner-blade-soft-bait-set",
+      "output": "public/products/spinner-blade-soft-bait-set/master.webp",
+      "seconds": 48.2
+    },
+    {
+      "id": "product-three-way-swivel-kit-box",
+      "output": "public/products/three-way-swivel-kit-box/master.webp",
+      "seconds": 54.5
+    },
+    {
+      "id": "product-aligner",
+      "output": "public/products/aligner/master.webp",
+      "seconds": 78
+    },
+    {
+      "id": "product-leadcore-snap-swivel",
+      "output": "public/products/leadcore-snap-swivel/master.webp",
+      "seconds": 12745.6
+    },
+    {
+      "id": "collection-ready-rigs",
+      "output": "public/images/collections/ready-rigs.webp",
+      "seconds": 48.4
+    },
+    {
+      "id": "collection-bait-cages",
+      "output": "public/images/collections/bait-cages.webp",
+      "seconds": 44.3
+    },
+    {
+      "id": "collection-hooklinks",
+      "output": "public/images/collections/hooklinks.webp",
+      "seconds": 41
+    },
+    {
+      "id": "collection-leadcore",
+      "output": "public/images/collections/leadcore.webp",
+      "seconds": 38.6
+    },
+    {
+      "id": "collection-tackle-bags",
+      "output": "public/images/collections/tackle-bags.webp",
+      "seconds": 44.1
+    }
+  ],
+  "failed": [
+    {
+      "id": "product-stripped-line-bait-cage-balance",
+      "error": "excessive system load"
+    },
+    {
+      "id": "product-baiting-tool-kit-silicone",
+      "error": "excessive system load"
+    },
+    {
+      "id": "product-coated-line-carp-hook-screw",
+      "error": "excessive system load"
+    },
+    {
+      "id": "product-combi-rig",
+      "error": "fetch failed"
+    },
+    {
+      "id": "product-b135-bait-cage-feeder",
+      "error": "excessive system load"
+    },
+    {
+      "id": "product-bait-cage-feeder",
+      "error": "excessive system load"
+    },
+    {
+      "id": "product-neo-nylon-line",
+      "error": "excessive system load"
+    },
+    {
+      "id": "product-rig-ronnie-whirlpool",
+      "error": "excessive system load"
+    },
+    {
+      "id": "collection-terminal-tackle",
+      "error": "grsai poll timeout id=6-81005e04-f944-4a3b-8c76-89066454827c"
+    }
+  ],
+  "finishedAt": "2026-06-23T12:14:57.195Z",
+  "summary": {
+    "ok": 10,
+    "failed": 9,
+    "skipped": 0
+  }
+}

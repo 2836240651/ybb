@@ -1,0 +1,712 @@
+{
+  "navigation": {
+    "primaryNav": [
+      {
+        "id": "nav-0-2026-new-products",
+        "label": "2026 New Products",
+        "labels": {
+          "en": "2026 New Products",
+          "zh": "2026新品",
+          "ja": "2026年新製品"
+        },
+        "href": "/collections/2026-new-products",
+        "enabled": true
+      },
+      {
+        "id": "nav-sinkers-group",
+        "label": "Sinkers",
+        "labels": {
+          "en": "Sinkers",
+          "zh": "铅坠",
+          "ja": "シンカー"
+        },
+        "href": "/collections/sinkers",
+        "enabled": true,
+        "megaMenu": {
+          "variant": "category",
+          "children": [
+            {
+              "label": "Sinkers",
+              "labels": {
+                "en": "Sinkers",
+                "zh": "铅坠",
+                "ja": "シンカー"
+              },
+              "href": "/collections/sinkers",
+              "featuredProducts": []
+            },
+            {
+              "label": "Sinker Rigs",
+              "labels": {
+                "en": "Sinker Rigs",
+                "zh": "铅坠钓组",
+                "ja": "シンカーリグ"
+              },
+              "href": "/collections/sinker-rigs",
+              "featuredProducts": []
+            }
+          ],
+          "shopAll": {
+            "label": "Shop All Sinkers",
+            "labels": {
+              "en": "Shop All Sinkers",
+              "zh": "查看全部铅坠",
+              "ja": "シンカー一覧を見る"
+            },
+            "href": "/collections/sinkers"
+          }
+        }
+      },
+      {
+        "id": "nav-bait-cages-group",
+        "label": "Bait Cages",
+        "labels": {
+          "en": "Bait Cages",
+          "zh": "饵笼",
+          "ja": "ベイトケージ"
+        },
+        "href": "/collections/bait-cages",
+        "enabled": true,
+        "megaMenu": {
+          "variant": "category",
+          "children": [
+            {
+              "label": "Bait Cage Rigs",
+              "labels": {
+                "en": "Bait Cage Rigs",
+                "zh": "饵笼钓组",
+                "ja": "ベイトケージリグ"
+              },
+              "href": "/collections/bait-cage-rigs",
+              "featuredProducts": []
+            },
+            {
+              "label": "Bait Cages",
+              "labels": {
+                "en": "Bait Cages",
+                "zh": "饵笼",
+                "ja": "ベイトケージ"
+              },
+              "href": "/collections/bait-cages",
+              "featuredProducts": []
+            }
+          ],
+          "shopAll": {
+            "label": "Shop All Bait Cages",
+            "labels": {
+              "en": "Shop All Bait Cages",
+              "zh": "查看全部饵笼",
+              "ja": "ベイトケージ一覧を見る"
+            },
+            "href": "/collections/bait-cages"
+          }
+        }
+      },
+      {
+        "id": "nav-3-rigs",
+        "label": "Rigs",
+        "labels": {
+          "en": "Rigs",
+          "zh": "线组",
+          "ja": "リグ"
+        },
+        "href": "/collections/rigs",
+        "enabled": true
+      },
+      {
+        "id": "nav-6-carp-hooks",
+        "label": "Carp Hooks",
+        "labels": {
+          "en": "Carp Hooks",
+          "zh": "欧鲤鱼钩",
+          "ja": "カープフック"
+        },
+        "href": "/collections/carp-hooks",
+        "enabled": true
+      },
+      {
+        "id": "nav-7-euro-carp-kits",
+        "label": "Euro Carp Kits",
+        "labels": {
+          "en": "Euro Carp Kits",
+          "zh": "套盒-欧鲤�?,
+          "ja": "ユーロカープキッ�?
+        },
+        "href": "/collections/euro-carp-kits",
+        "enabled": true
+      },
+      {
+        "id": "nav-accessories-group",
+        "label": "Accessories",
+        "labels": {
+          "en": "Accessories",
+          "zh": "配件",
+          "ja": "アクセサリー"
+        },
+        "href": "/collections/other",
+        "enabled": true,
+        "megaMenu": {
+          "variant": "category",
+          "children": [
+            {
+              "label": "Metal Accessories",
+              "labels": {
+                "en": "Metal Accessories",
+                "zh": "配件金属",
+                "ja": "金属アクセサリー"
+              },
+              "href": "/collections/accessories-metal",
+              "featuredProducts": []
+            },
+            {
+              "label": "Plastic Accessories",
+              "labels": {
+                "en": "Plastic Accessories",
+                "zh": "配件塑料",
+                "ja": "プラスチックアクセサリー"
+              },
+              "href": "/collections/accessories-plastic",
+              "featuredProducts": []
+            },
+            {
+              "label": "Rod Pods & Stands",
+              "labels": {
+                "en": "Rod Pods & Stands",
+                "zh": "支架",
+                "ja": "ロッドポッド"
+              },
+              "href": "/collections/rod-pod-accessories",
+              "featuredProducts": []
+            },
+            {
+              "label": "Peripheral Equipment",
+              "labels": {
+                "en": "Peripheral Equipment",
+                "zh": "周边设备",
+                "ja": "周辺機器"
+              },
+              "href": "/collections/peripheral-equipment",
+              "featuredProducts": []
+            }
+          ],
+          "shopAll": {
+            "label": "Shop All Accessories",
+            "labels": {
+              "en": "Shop All Accessories",
+              "zh": "查看全部配件",
+              "ja": "アクセサリー一覧を見る"
+            },
+            "href": "/collections/other"
+          }
+        }
+      },
+      {
+        "id": "nav-9-oem-odm",
+        "label": "OEM / ODM",
+        "labels": {
+          "en": "OEM / ODM",
+          "zh": "OEM / ODM",
+          "ja": "OEM / ODM"
+        },
+        "href": "/pages/oem-odm",
+        "enabled": true,
+        "megaMenu": {
+          "variant": "oem",
+          "children": [
+            {
+              "label": "Private Label",
+              "labels": {
+                "en": "Private Label",
+                "zh": "私标定制",
+                "ja": "プライベートブランド"
+              },
+              "href": "/pages/private-label",
+              "featuredProducts": []
+            },
+            {
+              "label": "Custom Packaging",
+              "labels": {
+                "en": "Custom Packaging",
+                "zh": "定制包装",
+                "ja": "カスタムパッケー�?
+              },
+              "href": "/pages/custom-packaging",
+              "featuredProducts": []
+            },
+            {
+              "label": "MOQ & Lead Time",
+              "labels": {
+                "en": "MOQ & Lead Time",
+                "zh": "起订量与交期",
+                "ja": "MOQ＆リードタイ�?
+              },
+              "href": "/moq-lead-time",
+              "featuredProducts": []
+            }
+          ],
+          "shopAll": {
+            "label": "View OEM / ODM Overview",
+            "labels": {
+              "en": "View OEM / ODM Overview",
+              "zh": "查看 OEM / ODM 概览",
+              "ja": "OEM / ODM 概要を見�?
+            },
+            "href": "/pages/oem-odm"
+          }
+        }
+      }
+    ],
+    "footer": {
+      "quickLinks": [
+        {
+          "id": "fq-0-2026-new-products",
+          "label": "2026 New Products",
+          "labels": {
+            "en": "2026 New Products",
+            "zh": "2026新品",
+            "ja": "2026年新製品"
+          },
+          "href": "/collections/2026-new-products",
+          "enabled": true
+        },
+        {
+          "id": "fq-1-sinkers",
+          "label": "Sinkers",
+          "labels": {
+            "en": "Sinkers",
+            "zh": "铅坠",
+            "ja": "シンカー"
+          },
+          "href": "/collections/sinkers",
+          "enabled": true
+        },
+        {
+          "id": "fq-2-bait-cages",
+          "label": "Bait Cages",
+          "labels": {
+            "en": "Bait Cages",
+            "zh": "饵笼",
+            "ja": "ベイトケージ"
+          },
+          "href": "/collections/bait-cages",
+          "enabled": true
+        },
+        {
+          "id": "fq-3-rigs",
+          "label": "Rigs",
+          "labels": {
+            "en": "Rigs",
+            "zh": "线组",
+            "ja": "リグ"
+          },
+          "href": "/collections/rigs",
+          "enabled": true
+        },
+        {
+          "id": "fq-4-accessories",
+          "label": "Accessories",
+          "labels": {
+            "en": "Accessories",
+            "zh": "配件",
+            "ja": "アクセサリー"
+          },
+          "href": "/collections/other",
+          "enabled": true
+        },
+        {
+          "id": "fq-5-oem-odm",
+          "label": "OEM / ODM",
+          "labels": {
+            "en": "OEM / ODM",
+            "zh": "OEM / ODM",
+            "ja": "OEM / ODM"
+          },
+          "href": "/pages/oem-odm",
+          "enabled": true
+        },
+        {
+          "id": "fq-6-wholesale-rfq",
+          "label": "Wholesale RFQ",
+          "labels": {
+            "en": "Wholesale RFQ",
+            "zh": "批发询价",
+            "ja": "卸売見積"
+          },
+          "href": "/pages/contact",
+          "enabled": true
+        },
+        {
+          "id": "fq-7-fishing-articles-videos",
+          "label": "Fishing Articles & Videos",
+          "labels": {
+            "en": "Fishing Articles & Videos",
+            "zh": "钓鱼文章与视�?,
+            "ja": "釣り記事と動�?
+          },
+          "href": "/blogs/news",
+          "enabled": true
+        }
+      ],
+      "information": [
+        {
+          "id": "fi-0-shipping-policy",
+          "label": "Shipping Policy",
+          "labels": {
+            "en": "Shipping Policy",
+            "zh": "物流政策",
+            "ja": "配送ポリシ�?
+          },
+          "href": "/shipping",
+          "enabled": true
+        },
+        {
+          "id": "fi-1-sample-policy",
+          "label": "Sample Policy",
+          "labels": {
+            "en": "Sample Policy",
+            "zh": "样品政策",
+            "ja": "サンプルポリシー"
+          },
+          "href": "/samples",
+          "enabled": true
+        },
+        {
+          "id": "fi-2-terms-conditions",
+          "label": "Terms & Conditions",
+          "labels": {
+            "en": "Terms & Conditions",
+            "zh": "条款与条�?,
+            "ja": "利用規約"
+          },
+          "href": "/terms",
+          "enabled": true
+        },
+        {
+          "id": "fi-3-privacy-policy",
+          "label": "Privacy Policy",
+          "labels": {
+            "en": "Privacy Policy",
+            "zh": "隐私政策",
+            "ja": "プライバシーポリシー"
+          },
+          "href": "/privacy",
+          "enabled": true
+        },
+        {
+          "id": "fi-4-contact",
+          "label": "Contact",
+          "labels": {
+            "en": "Contact",
+            "zh": "联系我们",
+            "ja": "お問い合わせ"
+          },
+          "href": "/contact",
+          "enabled": true
+        },
+        {
+          "id": "fi-5-catalog-download",
+          "label": "Catalog Download",
+          "labels": {
+            "en": "Catalog Download",
+            "zh": "目录下载",
+            "ja": "カタログダウンロー�?
+          },
+          "href": "/pages/catalog",
+          "enabled": true
+        },
+        {
+          "id": "fi-6-moq-lead-time",
+          "label": "MOQ & Lead Time",
+          "labels": {
+            "en": "MOQ & Lead Time",
+            "zh": "起订量与交期",
+            "ja": "MOQ＆リードタイ�?
+          },
+          "href": "/moq-lead-time",
+          "enabled": true
+        }
+      ],
+      "policies": [
+        {
+          "id": "fp-0-returns-refund-policy",
+          "label": "Returns & Refund Policy",
+          "labels": {
+            "en": "Returns & Refund Policy",
+            "zh": "退换货政策",
+            "ja": "返品・返金ポリシ�?
+          },
+          "href": "/refund_returns",
+          "enabled": true
+        },
+        {
+          "id": "fp-1-privacy-policy",
+          "label": "Privacy Policy",
+          "labels": {
+            "en": "Privacy Policy",
+            "zh": "隐私政策",
+            "ja": "プライバシーポリシー"
+          },
+          "href": "/privacy",
+          "enabled": true
+        },
+        {
+          "id": "fp-2-terms-of-service",
+          "label": "Terms of service",
+          "labels": {
+            "en": "Terms of service",
+            "zh": "服务条款",
+            "ja": "利用規約"
+          },
+          "href": "/terms",
+          "enabled": true
+        },
+        {
+          "id": "fp-3-shipping-policy",
+          "label": "Shipping Policy",
+          "labels": {
+            "en": "Shipping Policy",
+            "zh": "物流政策",
+            "ja": "配送ポリシ�?
+          },
+          "href": "/shipping",
+          "enabled": true
+        }
+      ],
+      "social": [
+        {
+          "id": "social-0",
+          "label": "Facebook",
+          "labels": {
+            "en": "Facebook",
+            "zh": "Facebook",
+            "ja": "Facebook"
+          },
+          "href": "https://www.facebook.com/share/1ZyUpncUzd/?mibextid=wwXIfr",
+          "enabled": true
+        },
+        {
+          "id": "social-1",
+          "label": "Snapchat",
+          "labels": {
+            "en": "Snapchat",
+            "zh": "Snapchat",
+            "ja": "Snapchat"
+          },
+          "href": "https://snapchat.com/t/X94QfY13",
+          "enabled": true
+        },
+        {
+          "id": "social-2",
+          "label": "Instagram",
+          "labels": {
+            "en": "Instagram",
+            "zh": "Instagram",
+            "ja": "Instagram"
+          },
+          "href": "https://www.instagram.com/carp_ybb?igsh=aWg5M20wNGQ2N3Jo&utm_source=qr",
+          "enabled": true
+        },
+        {
+          "id": "social-3",
+          "label": "TikTok",
+          "labels": {
+            "en": "TikTok",
+            "zh": "TikTok",
+            "ja": "TikTok"
+          },
+          "href": "https://www.tiktok.com/@carp_ybb?_r=1&_t=ZT-97J295lPDfa",
+          "enabled": true
+        },
+        {
+          "id": "social-4",
+          "label": "X",
+          "labels": {
+            "en": "X",
+            "zh": "X",
+            "ja": "X"
+          },
+          "href": "https://x.com/yotofisher?s=11",
+          "enabled": true
+        }
+      ]
+    }
+  },
+  "announcements": {
+    "enabled": true,
+    "items": [
+      {
+        "id": "2026-new",
+        "labels": {
+          "en": "2026 NEW PRODUCTS �?LEADS, RIGS, BAIT CAGES & TERMINAL TACKLE",
+          "zh": "2026 新品上市 �?铅坠、钓组、饵笼与终端钓具现货批发",
+          "ja": "2026年新製品 �?シンカー・リグ・エサカゴ・ターミナルタックル"
+        },
+        "href": "/collections/2026-new-products",
+        "enabled": true
+      },
+      {
+        "id": "terminal-tackle",
+        "labels": {
+          "en": "SINKERS · BAIT CAGES · CARP HOOKS · LINE RIGS �?EURO CARP CATALOG",
+          "zh": "铅坠 · 饵笼 · 欧鲤�?· 线组 �?欧鲤终端钓具全系�?,
+          "ja": "シンカー · エサカゴ · カープフック · リグ �?ユーロカープ全カタロ�?
+        },
+        "href": "/collections/sinkers",
+        "enabled": true
+      },
+      {
+        "id": "rig-kits",
+        "labels": {
+          "en": "SINKER RIGS · BAIT-CAGE RIGS · EURO CARP KITS �?BULK-READY WHOLESALE",
+          "zh": "铅坠钓组 · 饵笼钓组 · 欧鲤套盒 �?整箱混批可订",
+          "ja": "シンカーリグ · エサカゴリグ · ユーロカープキッ�?�?混載卸売対応"
+        },
+        "href": "/collections/sinker-rigs",
+        "enabled": true
+      },
+      {
+        "id": "accessories",
+        "labels": {
+          "en": "ROD PODS · METAL & PLASTIC ACCESSORIES · PERIPHERAL GEAR �?SHOP OTHER",
+          "zh": "支架 · 金属/塑料配件 · 周边设备 �?探索「其他」类�?,
+          "ja": "ロッドポッド · 金属/樹脂アクセサリー · 周辺機器 �?Otherカテゴリ"
+        },
+        "href": "/collections/other",
+        "enabled": true
+      },
+      {
+        "id": "oem-odm",
+        "labels": {
+          "en": "OEM / ODM �?PRIVATE-LABEL LEADS, RIGS & FULL CATEGORY CUSTOMIZATION",
+          "zh": "OEM / ODM �?全品类私标定制，铅坠钓组贴牌生产",
+          "ja": "OEM / ODM �?全カテゴリのプライベートブランド・カスタム製�?
+        },
+        "href": "/pages/oem-odm",
+        "enabled": true
+      },
+      {
+        "id": "b2b-wholesale",
+        "labels": {
+          "en": "B2B WHOLESALE �?FLEXIBLE MOQ · MIXED-CARTON ORDERS · FREE SAMPLE KITS",
+          "zh": "B2B 批发 �?灵活 MOQ · 混箱起订 · 合格买家免费样品",
+          "ja": "B2B卸売 �?柔軟MOQ · 混載カートン · 認定バイヤー向け無料サンプル"
+        },
+        "href": "/pages/wholesale",
+        "enabled": true
+      }
+    ]
+  },
+  "hero": {
+    "enabled": true,
+    "autoplayMs": 7000,
+    "slides": [
+      {
+        "id": "factory-catalog",
+        "href": "/pages/wholesale",
+        "imageUrl": "/images/hero/hero-01.webp",
+        "labels": {
+          "en": "Trusted by global fishing brands",
+          "zh": "服务全球知名钓具品牌",
+          "ja": "世界の釣具ブランドに信頼され�?
+        },
+        "enabled": true
+      },
+      {
+        "id": "ready-rigs",
+        "href": "/collections/all",
+        "imageUrl": "/images/hero/hero-02.webp",
+        "labels": {
+          "en": "Carp fishing tackle & equipment overview",
+          "zh": "欧洲鲤鱼钓具与装备概�?,
+          "ja": "欧州カープ釣具・タックル概要"
+        },
+        "enabled": true
+      },
+      {
+        "id": "bait-cages",
+        "href": "/pages/oem-odm",
+        "imageUrl": "/images/hero/hero-03.webp",
+        "labels": {
+          "en": "OEM & ODM private-label solutions",
+          "zh": "OEM / ODM 私标定制方案",
+          "ja": "OEM / ODM プライベートブランド"
+        },
+        "enabled": true
+      },
+      {
+        "id": "oem",
+        "href": "/pages/contact",
+        "imageUrl": "/images/hero/hero-04.webp",
+        "labels": {
+          "en": "30+ years mass production & customization",
+          "zh": "30+ 年工厂量产与定制服务",
+          "ja": "30年以上の量産・カスタム対�?
+        },
+        "enabled": true
+      }
+    ]
+  },
+  "video": {
+    "enabled": true,
+    "videoUrl": "/videos/factory-showcase.mp4",
+    "posterUrl": "",
+    "labels": {
+      "title": {
+        "en": "30+ Years of Terminal Tackle Manufacturing",
+        "zh": "30+ 年终端钓具制造经�?,
+        "ja": "30年以上のターミナルタックル製�?
+      },
+      "body": {
+        "en": "Tour our production floor �?sinkers, rigs, bait cages, and OEM programs built for global brands.",
+        "zh": "走进生产车间——铅坠、钓组、饵笼，以及面向全球品牌�?OEM 定制生产线�?,
+        "ja": "生産現場をご案内——シンカー、リグ、餌籠、そして世界のブランド向けOEMプログラム�?
+      },
+      "cta": {
+        "en": "Request a factory visit",
+        "zh": "预约工厂参观",
+        "ja": "工場見学を申し込む"
+      }
+    }
+  },
+  "featured": {
+    "enabled": true,
+    "handle": "three-way-swivel-kit-box"
+  },
+  "contact": {
+    "salesEmail": "carpybb@gmail.com",
+    "phoneNumber": "+86 13052997260",
+    "companyLegalName": "Hangzhou Tuodiao Fishing Tackle Co., Ltd.",
+    "companyLegalNameZh": "杭州拓钓渔具用品",
+    "intro": {
+      "en": "We'd love to hear from overseas brands, wholesalers, and tackle retailers. Tell us about your target SKUs, MOQ, and markets �?our factory sales team will respond promptly.",
+      "zh": "欢迎海外品牌、批发商与钓具零售商与我们联系。请告知目标 SKU、起订量及目标市�?�?工厂销售团队将及时回复�?,
+      "ja": "海外ブランド、卸売業者、タックル小売業者からのご連絡をお待ちしています。対象SKU、MOQ、市場をお知らせください �?工場営業チームが迅速に対応します�?
+    },
+    "hoursDetail": {
+      "en": "Mon–Fri, 9:00�?8:00 (GMT+8)\nResponse within 1�? business days",
+      "zh": "周一至周�?9:00�?8:00（GMT+8）\n1�? 个工作日内回�?,
+      "ja": "月〜金 9:00�?8:00（GMT+8）\n1�?営業日以内に返信"
+    }
+  },
+  "brand": {
+    "name": "YBB",
+    "tagline": {
+      "en": "Trusted Tackle Partner",
+      "zh": "值得信赖的渔具合作伙�?,
+      "ja": "信頼できるタックルパートナー"
+    },
+    "logoAlt": "YBB",
+    "logoPath": "/images/brand/ybb-logo.png"
+  },
+  "deploy": {
+    "secret": "",
+    "state": "idle",
+    "pending": false,
+    "pendingUntil": null,
+    "lastBuildId": "",
+    "lastError": "",
+    "startedAt": null,
+    "finishedAt": null,
+    "trigger": ""
+  }
+}

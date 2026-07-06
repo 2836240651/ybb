@@ -1,0 +1,251 @@
+[
+  {
+    "handle": "all",
+    "title": "Products",
+    "titleCn": "全部产品",
+    "description": "Full YBB Tackle wholesale catalog �?all factory SKUs.",
+    "productCount": 0,
+    "productHandles": []
+  },
+  {
+    "handle": "new-arrivals",
+    "title": "New Arrivals",
+    "titleCn": "新品上架",
+    "description": "Latest terminal tackle from YBB factory catalog.",
+    "productCount": 0,
+    "productHandles": []
+  },
+  {
+    "handle": "sample-kits",
+    "title": "Sample Kits",
+    "titleCn": "样品套装",
+    "description": "Curated sample packs for wholesale buyers.",
+    "productCount": 0,
+    "productHandles": []
+  },
+  {
+    "handle": "terminal-tackle",
+    "title": "Terminal Tackle",
+    "titleCn": "终端钓具",
+    "description": "Hooks, rigs, floats and core terminal components.",
+    "productCount": 0,
+    "productHandles": []
+  },
+  {
+    "handle": "ready-rigs",
+    "title": "Ready Rigs",
+    "titleCn": "成品钓组",
+    "description": "Pre-tied carp and coarse fishing rigs.",
+    "productCount": 0,
+    "productHandles": []
+  },
+  {
+    "handle": "hooklinks",
+    "title": "Hooklinks",
+    "titleCn": "钩子�?/ 子线",
+    "description": "Hooklink systems and hooklength sets.",
+    "productCount": 0,
+    "productHandles": []
+  },
+  {
+    "handle": "aligners",
+    "title": "Aligners & Tubes",
+    "titleCn": "偏转件与套管",
+    "description": "Aligners, anti-tangle sleeves and rig tubes.",
+    "productCount": 0,
+    "productHandles": []
+  },
+  {
+    "handle": "swivel-leads",
+    "title": "Swivel Leads",
+    "titleCn": "转环铅坠",
+    "description": "Swivel-attached leads and weight systems.",
+    "productCount": 0,
+    "productHandles": []
+  },
+  {
+    "handle": "leadcore",
+    "title": "Leadcore Systems",
+    "titleCn": "铅芯线系�?,
+    "description": "Leadcore rigs, sliders and weight components.",
+    "productCount": 0,
+    "productHandles": []
+  },
+  {
+    "handle": "bait-care",
+    "title": "Bait Care",
+    "titleCn": "饵料护理",
+    "description": "Feeders, bait cages and baiting accessories.",
+    "productCount": 0,
+    "productHandles": []
+  },
+  {
+    "handle": "method-feeders",
+    "title": "Method Feeders",
+    "titleCn": "方法饵笼",
+    "description": "Method and feeder fishing tackle.",
+    "productCount": 0,
+    "productHandles": []
+  },
+  {
+    "handle": "bait-cages",
+    "title": "Bait Cages",
+    "titleCn": "饵笼",
+    "description": "Bait cages, feeders and cage rig systems.",
+    "productCount": 0,
+    "productHandles": []
+  },
+  {
+    "handle": "tackle-storage",
+    "title": "Tackle Storage",
+    "titleCn": "渔具收纳",
+    "description": "Racks, stands and storage hardware.",
+    "productCount": 0,
+    "productHandles": []
+  },
+  {
+    "handle": "hooklength-boxes",
+    "title": "Hooklength Boxes",
+    "titleCn": "子线�?,
+    "description": "Hooklength storage boxes in multiple sizes.",
+    "productCount": 0,
+    "productHandles": []
+  },
+  {
+    "handle": "tackle-bags",
+    "title": "Tackle Bags",
+    "titleCn": "渔具�?,
+    "description": "Factory-direct tackle bags for retail and wholesale.",
+    "productCount": 0,
+    "productHandles": []
+  },
+  {
+    "handle": "sea-fishing",
+    "title": "Sea & Predator",
+    "titleCn": "海钓与掠�?,
+    "description": "Sea fishing rigs, lures and traces.",
+    "productCount": 0,
+    "productHandles": []
+  },
+  {
+    "handle": "catfish-rigs",
+    "title": "Catfish Float Rigs",
+    "titleCn": "鲶鱼浮漂钓组",
+    "description": "Catfish float and predator rig systems.",
+    "productCount": 0,
+    "productHandles": []
+  },
+  {
+    "handle": "wire-traces",
+    "title": "Wire Traces",
+    "titleCn": "钢丝前导�?,
+    "description": "Wire traces for sea and predator fishing.",
+    "productCount": 0,
+    "productHandles": []
+  },
+  {
+    "handle": "2026-new-products",
+    "title": "2026 New Products",
+    "titleCn": "2026新品",
+    "description": "2026 Taizhou euro-carp catalog new releases �?52 product types.",
+    "productCount": 0,
+    "productHandles": []
+  },
+  {
+    "handle": "sinkers",
+    "title": "Sinkers",
+    "titleCn": "铅坠",
+    "description": "Factory lead sinkers and weights for euro-carp fishing.",
+    "productCount": 0,
+    "productHandles": []
+  },
+  {
+    "handle": "rigs",
+    "title": "Rigs",
+    "titleCn": "线组",
+    "description": "Pre-tied hooklengths and rig systems.",
+    "productCount": 2,
+    "productHandles": [
+      "tz-xz-014",
+      "tz-xz-004"
+    ]
+  },
+  {
+    "handle": "sinker-rigs",
+    "title": "Sinker Rigs",
+    "titleCn": "铅坠钓组",
+    "description": "Lead-weight rig assemblies for carp fishing.",
+    "productCount": 0,
+    "productHandles": []
+  },
+  {
+    "handle": "bait-cage-rigs",
+    "title": "Bait Cage Rigs",
+    "titleCn": "饵笼钓组",
+    "description": "Bait cage feeder rig systems.",
+    "productCount": 1,
+    "productHandles": [
+      "tz-eldz-013"
+    ]
+  },
+  {
+    "handle": "carp-hooks",
+    "title": "Carp Hooks",
+    "titleCn": "欧鲤鱼钩",
+    "description": "European carp hook patterns and sizes.",
+    "productCount": 1,
+    "productHandles": [
+      "tz-hk-001"
+    ]
+  },
+  {
+    "handle": "euro-carp-kits",
+    "title": "Euro Carp Kits",
+    "titleCn": "套盒-欧鲤�?,
+    "description": "Euro carp fishing kit sets and combo packs.",
+    "productCount": 0,
+    "productHandles": []
+  },
+  {
+    "handle": "other",
+    "title": "Other",
+    "titleCn": "其他",
+    "description": "Metal accessories, plastic accessories, rod pods, and peripheral equipment.",
+    "productCount": 0,
+    "productHandles": []
+  },
+  {
+    "handle": "accessories-metal",
+    "title": "Metal Accessories",
+    "titleCn": "配件-金属",
+    "description": "Metal terminal tackle accessories �?37 product types.",
+    "productCount": 0,
+    "productHandles": []
+  },
+  {
+    "handle": "accessories-plastic",
+    "title": "Plastic Accessories",
+    "titleCn": "配件-塑料",
+    "description": "Plastic terminal tackle accessories �?60 product types.",
+    "productCount": 0,
+    "productHandles": []
+  },
+  {
+    "handle": "rod-pod-accessories",
+    "title": "Rod Pods & Stands",
+    "titleCn": "支架",
+    "description": "Rod pod heads, banksticks, and stand hardware �?30 product types.",
+    "productCount": 1,
+    "productHandles": [
+      "tz-zj-002"
+    ]
+  },
+  {
+    "handle": "peripheral-equipment",
+    "title": "Peripheral Equipment",
+    "titleCn": "周边设备",
+    "description": "Hooklength boxes, tool combos, and peripheral gear �?42 product types.",
+    "productCount": 0,
+    "productHandles": []
+  }
+]

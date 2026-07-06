@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-06-25T08:22:38.889Z",
+  "site": "https://carp-ybb.com",
+  "totals": {
+    "csvRows": 133,
+    "productsJson": 515,
+    "wpProducts": 0,
+    "missingLocal": 0,
+    "missingExport": 0,
+    "missingWpBinding": 0
+  },
+  "wpBindingCheck": {
+    "skipped": true,
+    "reason": "store API unavailable: https://carp-ybb.com/wp-json/wc/store/v1/products?per_page=100&page=1"
+  },
+  "missingLocal": [],
+  "missingExport": [],
+  "missingWpBinding": []
+}

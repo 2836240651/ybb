@@ -1,0 +1,596 @@
+{
+  "capturedAt": "2026-06-24T03:39:31.414Z",
+  "url": "https://www.omctackle.com",
+  "newsletter": {
+    "blockHtml": "<div id=\"shopify-section-sections--26620168995196__footer\" class=\"shopify-section shopify-section-group-footer-group\"><style>\n  #shopify-section-sections--26620168995196__footer {\n    --section-padding-top: 72px;\n    --section-padding-bottom: 72px;--color-background: 31 31 31;--color-foreground: 255 255 255;\n  --color-border: var(--color-foreground)/ 0.1;\n  --color-border-dark: var(--color-foreground)/ 0.4;\n  --color-border-light: var(--color-foreground)/ 0.06;--color-button-background: 255 255 255;\n  --color-button-border: 255 255 255;--color-button-text: 0 0 0;}\n</style><div class=\"section section--padding section--rounded section--next-rounded\" style=\"z-index: 2;\">\n  <div class=\"footer page-width relative grid\" role=\"region\" aria-label=\"Footer\"><div class=\"footer__left flex flex-col md:flex-row gap-10\"><div class=\"footer__logo flex flex-col gap-10\"><p class=\"leading-none\">\n        <a href=\"/\">\n          <span class=\"sr-only\">ONE MORE CAST</span><img src=\"//www.omctackle.com/cdn/shop/files/OMC_w_primary.svg?v=1776175926&amp;width=309\" alt=\"\" srcset=\"//www.omctackle.com/cdn/shop/files/OMC_w_primary.svg?v=1776175926&amp;width=255 255w, //www.omctackle.com/cdn/shop/files/OMC_w_primary.svg?v=1776175926&amp;width=309 309w, //www.omctackle.com/cdn/shop/files/OMC_w_primary.svg?v=1776175926&amp;width=309 309w\" width=\"309\" height=\"200\" loading=\"eager\" sizes=\"170px\" style=\"--image-width: 170px; --image-height: 110px;\" is=\"lazy-image\"></a>\n      </p></div><div class=\"footer__accordions flex flex-wrap flex-col md:flex-row md:grow md:gap-12\"><details class=\"footer__item--link_list-1 details active\" is=\"footer-details\" aria-expanded=\"true\" open=\"\" style=\"overflow: visible; height: auto;\">\n      <summary class=\"details__summary flex items-center justify-between gap-2 cursor-pointer\">\n        <span class=\"heading text-base-2xl font-medium lg:font-heading\">Quick links</span><svg class=\"icon icon-chevron-up icon-md\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" role=\"presentation\">\n      <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M6 15L12 9L18 15\"></path>\n    </svg></summary><div class=\"details__content\" style=\"opacity: 1; transform: translateY(0px);\">\n      <ul class=\"flex flex-col gap-3\"><li class=\"inline-flex\">\n            <a href=\"/collections/terminal-tackle\" class=\"block reversed-link text-sm-lg leading-tight\">TERMINAL TACKLE</a>\n          </li><li class=\"inline-flex\">\n            <a href=\"/collections/rods-reels\" class=\"block reversed-link text-sm-lg leading-tight\">RODS + REELS</a>\n          </li><li class=\"inline-flex\">\n            <a href=\"/collections/bait\" class=\"block reversed-link text-sm-lg leading-tight\">BAIT</a>\n          </li><li class=\"inline-flex\">\n            <a href=\"/collections/accessories\" class=\"block reversed-link text-sm-lg leading-tight\">ACCESSORIES</a>\n          </li><li class=\"inline-flex\">\n            <a href=\"/collections/clothing\" class=\"block reversed-link text-sm-lg leading-tight\">CLOTHING</a>\n          </li><li class=\"inline-flex\">\n            <a href=\"/collections/rig-bundles\" class=\"block reversed-link text-sm-lg leading-tight\">RIG BUNDLES</a>\n          </li><li class=\"inline-flex\">\n            <a href=\"https://www.omctackle.com/products/one-more-cast-e-gift-voucher\" class=\"block reversed-link text-sm-lg leading-tight\">E-VOUCHERS</a>\n          </li><li class=\"inline-flex\">\n            <a href=\"/blogs/fishing-articles-videos\" class=\"block reversed-link text-sm-lg leading-tight\">FISHING ARTICLES &amp; VIDEOS</a>\n          </li></ul>\n    </div>\n    <style>\n      @media (min-width: 1280px) {\n        .footer__item--link_list-1 { width: calc(50% - var(--sp-12)); }\n      }\n    </style></details><details class=\"footer__item--link_list-2 details active\" is=\"footer-details\" aria-expanded=\"true\" open=\"\" style=\"overflow: visible; height: auto;\">\n      <summary class=\"details__summary flex items-center justify-between gap-2 cursor-pointer\">\n        <span class=\"h",
+    "heading": "Quick links",
+    "description": "ONE MORE CAST",
+    "form": {
+      "action": "/contact#newsletter-sections--26620168995196__footer",
+      "method": "post",
+      "id": "newsletter-sections--26620168995196__footer",
+      "className": "newsletter-form grid gap-5",
+      "dataAttrs": []
+    },
+    "input": {
+      "type": "email",
+      "name": "contact[email]",
+      "placeholder": "Enter your email",
+      "ariaLabel": null,
+      "autocomplete": "email",
+      "required": true,
+      "wrapperClass": "field relative"
+    },
+    "button": {
+      "type": "submit",
+      "ariaLabel": "Subscribe",
+      "innerHTML": "\n        <span class=\"btn-text\">\n          <svg class=\"icon icon-arrow-right icon-xs transform\" viewBox=\"0 0 16 16\" stroke=\"currentColor\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" role=\"presentation\">\n            <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M2 8.00012H14M14 8.00012L9.33333 3.3335M14 8.00012L9.33333 12.6668\"></path>\n          </svg>\n        </span>\n      <span class=\"btn-loader\">\n        <span></span>\n        <span></span>\n        <span></span>\n      </span>"
+    },
+    "styles": {
+      "block": {
+        "tag": "div",
+        "className": "shopify-section shopify-section-group-footer-group",
+        "text": "#shopify-section-sections--26620168995196__footer {\n    --section-padding-top: 72px;\n    --section-padding-bottom: 72px;",
+        "width": 1440,
+        "height": 532,
+        "padding": "0px 0px 0px 0px",
+        "margin": "0px 0px 0px 0px",
+        "gap": "normal",
+        "display": "block",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(23, 23, 23)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(23, 23, 23)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "transition": "all"
+      },
+      "heading": {
+        "tag": "span",
+        "className": "heading text-base-2xl font-medium lg:font-heading",
+        "text": "Quick links",
+        "width": 104,
+        "height": 21,
+        "padding": "0px 0px 0px 0px",
+        "margin": "0px 0px 0px 0px",
+        "gap": "normal",
+        "display": "block",
+        "fontSize": "21.0786px",
+        "fontWeight": "700",
+        "lineHeight": "21.0786px",
+        "letterSpacing": "-0.632357px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "transition": "all"
+      },
+      "desc": {
+        "tag": "p",
+        "className": "leading-none",
+        "text": "ONE MORE CAST",
+        "width": 170,
+        "height": 110,
+        "padding": "0px 0px 0px 0px",
+        "margin": "0px 0px 0px 0px",
+        "gap": "normal",
+        "display": "block",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "16px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "transition": "all"
+      },
+      "form": {
+        "tag": "form",
+        "className": "newsletter-form grid gap-5",
+        "text": "Enter your email",
+        "width": 430,
+        "height": 62,
+        "padding": "0px 0px 0px 0px",
+        "margin": "0px 0px 0px 0px",
+        "gap": "20px",
+        "display": "grid",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "transition": "all"
+      },
+      "input": {
+        "tag": "input",
+        "className": "input is-floating input--fill",
+        "text": "",
+        "width": 430,
+        "height": 62,
+        "padding": "16px 26px 0px 26px",
+        "margin": "0px 0px 0px 0px",
+        "gap": "normal",
+        "display": "inline-block",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(255, 255, 255, 0.043)",
+        "border": "0px none rgba(255, 255, 255, 0.65)",
+        "borderRadius": "6px",
+        "boxShadow": "none",
+        "transition": "border-color 0.5s cubic-bezier(0.3, 1, 0.3, 1), background-color 0.5s cubic-bezier(0.3, 1, 0.3, 1)"
+      },
+      "inputWrapper": {
+        "tag": "div",
+        "className": "field relative",
+        "text": "Enter your email",
+        "width": 430,
+        "height": 62,
+        "padding": "0px 0px 0px 0px",
+        "margin": "0px 0px 0px 0px",
+        "gap": "normal",
+        "display": "block",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "transition": "all"
+      },
+      "button": {
+        "tag": "button",
+        "className": "button button--primary self-button flex justify-center items-center",
+        "text": "",
+        "width": 40,
+        "height": 40,
+        "padding": "0px 0px 0px 0px",
+        "margin": "0px 0px 0px 0px",
+        "gap": "normal",
+        "display": "inline-flex",
+        "fontSize": "15.2693px",
+        "fontWeight": "500",
+        "lineHeight": "15.2693px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "border": "0px none rgb(0, 0, 0)",
+        "borderRadius": "3.35544e+07px",
+        "boxShadow": "rgba(168, 232, 226, 0) 0px 0px 0px 0px",
+        "transition": "box-shadow 0.5s cubic-bezier(0.3, 1, 0.3, 1), opacity 0.3s cubic-bezier(0.7, 0, 0.3, 1)"
+      },
+      "socialRow": {
+        "tag": "div",
+        "className": "footer__socials flex align-self-end justify-start md:justify-end xl:justify-start",
+        "text": "Facebook\n        \n      \n      \n    Instagram\n        \n      \n      \n    YouTube\n        \n      \n      \n    TikTok",
+        "width": 430,
+        "height": 24,
+        "padding": "0px 0px 0px 0px",
+        "margin": "0px 0px 0px 0px",
+        "gap": "normal",
+        "display": "flex",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "transition": "all"
+      }
+    },
+    "social": [
+      {
+        "href": "https://www.facebook.com/omcfishingtackle",
+        "ariaLabel": "ONE MORE CAST on Facebook",
+        "className": "social_platform block relative",
+        "iconHtml": "<svg class=\"icon icon-facebook icon-lg\" viewBox=\"0 0 24 24\" stroke=\"none\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\" role=\"presentation\">\n      <path d=\"M9.03153 23L9 13H5V9H9V6.5C9 2.7886 11.2983 1 14.6091 1C16.1951 1 17.5581 1.11807 17.9553 1.17085V5.04948L15.6591 5.05052C13.8584 5.05052 13.5098 5.90614 13.5098 7.16171V9H18.75L16.75 13H13.5098V23H9.03153Z\"></path>\n    </svg>",
+        "size": {
+          "tag": "a",
+          "className": "social_platform block relative",
+          "text": "Facebook",
+          "width": 24,
+          "height": 24,
+          "padding": "0px 0px 0px 0px",
+          "margin": "0px 0px 0px 0px",
+          "gap": "normal",
+          "display": "block",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "normal",
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "color": "rgb(255, 255, 255)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "border": "0px none rgb(255, 255, 255)",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "transition": "all"
+        }
+      },
+      {
+        "href": "https://www.instagram.com/omcfishingtackle/",
+        "ariaLabel": "ONE MORE CAST on Instagram",
+        "className": "social_platform block relative",
+        "iconHtml": "<svg class=\"icon icon-instagram icon-lg\" viewBox=\"0 0 24 24\" stroke=\"none\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\" role=\"presentation\">\n      <path d=\"M12 2.98C14.94 2.98 15.28 2.99 16.44 3.04C17.14 3.04 17.83 3.18 18.48 3.42C18.96 3.6 19.39 3.88 19.75 4.24C20.12 4.59 20.4 5.03 20.57 5.51C20.81 6.16 20.94 6.85 20.95 7.55C21 8.71 21.01 9.06 21.01 12C21.01 14.94 21 15.28 20.95 16.44C2",
+        "size": {
+          "tag": "a",
+          "className": "social_platform block relative",
+          "text": "Instagram",
+          "width": 24,
+          "height": 24,
+          "padding": "0px 0px 0px 0px",
+          "margin": "0px 0px 0px 0px",
+          "gap": "normal",
+          "display": "block",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "normal",
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "color": "rgb(255, 255, 255)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "border": "0px none rgb(255, 255, 255)",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "transition": "all"
+        }
+      },
+      {
+        "href": "https://www.youtube.com/c/OMCYouTube",
+        "ariaLabel": "ONE MORE CAST on YouTube",
+        "className": "social_platform block relative",
+        "iconHtml": "<svg class=\"icon icon-youtube icon-lg\" viewBox=\"0 0 24 24\" stroke=\"none\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\" role=\"presentation\">\n      <path d=\"M23.8 7.6C23.8 7.6 23.6 5.9 22.8 5.2C21.9 4.2 20.9 4.2 20.4 4.2C17 4 12 4 12 4C12 4 7 4 3.6 4.2C3.1 4.3 2.1 4.3 1.2 5.2C0.5 5.9 0.2 7.6 0.2 7.6C0.2 7.6 0 9.5 0 11.5V13.3C0 15.2 0.2 17.2 0.2 17.2C0.2 17.2 0.4 18.9 1.2 19.6C2.1 20.6 3.3 2",
+        "size": {
+          "tag": "a",
+          "className": "social_platform block relative",
+          "text": "YouTube",
+          "width": 24,
+          "height": 24,
+          "padding": "0px 0px 0px 0px",
+          "margin": "0px 0px 0px 0px",
+          "gap": "normal",
+          "display": "block",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "normal",
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "color": "rgb(255, 255, 255)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "border": "0px none rgb(255, 255, 255)",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "transition": "all"
+        }
+      },
+      {
+        "href": "https://www.tiktok.com/tag/onemorecast",
+        "ariaLabel": "ONE MORE CAST on TikTok",
+        "className": "social_platform block relative",
+        "iconHtml": "<svg class=\"icon icon-tiktok icon-lg\" viewBox=\"0 0 24 24\" stroke=\"none\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\" role=\"presentation\">\n      <path d=\"M10.6315 8.937V13.059C10.1123 12.9221 9.56911 12.9034 9.0418 13.0044C8.5145 13.1054 8.01657 13.3234 7.58473 13.6424C7.15288 13.9613 6.79813 14.3732 6.54661 14.8475C6.2951 15.3218 6.15324 15.8466 6.13148 16.383C6.10175 16.8449 6.17125 17.",
+        "size": {
+          "tag": "a",
+          "className": "social_platform block relative",
+          "text": "TikTok",
+          "width": 24,
+          "height": 24,
+          "padding": "0px 0px 0px 0px",
+          "margin": "0px 0px 0px 0px",
+          "gap": "normal",
+          "display": "block",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "normal",
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "color": "rgb(255, 255, 255)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "border": "0px none rgb(255, 255, 255)",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "transition": "all"
+        }
+      }
+    ],
+    "inputFocused": {
+      "border": "0px none rgba(255, 255, 255, 0.96)",
+      "boxShadow": "none",
+      "outline": "rgb(255, 255, 255) none 3px",
+      "backgroundColor": "rgba(255, 255, 255, 0.106)",
+      "height": 62
+    }
+  },
+  "chat": {
+    "chatScripts": [
+      "https://cdn.chaty.app/pixel.js?id=gz1m166v&shop=one-more-cast-ali.myshopify.com"
+    ],
+    "launcher": null,
+    "panel": {
+      "panelFound": false,
+      "panelTag": null,
+      "panelId": null,
+      "panelClass": null,
+      "panelStyle": null,
+      "panelHtml": null,
+      "iframes": [
+        {
+          "src": "https://www.omctackle.com/web-pixels@4d7e1d50wbe167da1p09aba793mf5eef82e/custom/web-pixel-175014268@1/sandbox/modern/",
+          "title": null,
+          "id": "web-pixel-sandbox-CUSTOM-175014268-LAX-4d7e1d50wbe167da1p09aba793mf5eef82e",
+          "className": "",
+          "size": {
+            "width": 4,
+            "height": 4,
+            "bottom": "auto",
+            "right": "auto",
+            "position": "static",
+            "zIndex": "auto",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "boxShadow": "none"
+          }
+        },
+        {
+          "src": "https://www.omctackle.com/web-pixels@4d7e1d50wbe167da1p09aba793mf5eef82e/custom/web-pixel-shopify-custom-pixel@0460/sandbox/modern/",
+          "title": null,
+          "id": "web-pixel-sandbox-CUSTOM-shopify-custom-pixel-LAX-4d7e1d50wbe167da1p09aba793mf5eef82e",
+          "className": "",
+          "size": {
+            "width": 4,
+            "height": 4,
+            "bottom": "auto",
+            "right": "auto",
+            "position": "static",
+            "zIndex": "auto",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "boxShadow": "none"
+          }
+        }
+      ],
+      "shopifyChatRoot": null,
+      "shopifyWindowKeys": [],
+      "shopifyConfig": {
+        "Shopify": "{\"shop\":\"one-more-cast-ali.myshopify.com\",\"locale\":\"en\",\"currency\":{\"active\":\"GBP\",\"rate\":\"1.0\"},\"country\":\"GB\",\"theme\":{\"name\":\"OMC New Website 1st May - Concept\",\"id\":185927893372,\"schema_name\":\"Concept\",\"schema_version\":\"5.3.1\",\"theme_store_id\":2412,\"role\":\"main\",\"handle\":\"null\",\"style\":{\"id\":null,\"handle\":null}},\"cdnHost\":\"www.omctackle.com/cdn\",\"routes\":{\"root\":\"/\"},\"shopJsCdnBaseUrl\":\"https://cdn.shopify.com/shopifycloud/shop-js\",\"SignInWithShop\":{\"User\":{\"recognized\":false},\"assetMetrics\"",
+        "ShopifyPay": "{\"apiHost\":\"shop.app/pay\",\"redirectState\":null}",
+        "ShopifyAnalytics": "{\"meta\":{\"currency\":\"GBP\",\"page\":{\"pageType\":\"home\",\"requestId\":\"fc3a19be-e963-406d-a021-6bc5c3bfe4c7-1782269176\"},\"selectedVariantId\":\"55593629417852\"},\"lib\":{\"integrations\":[{\"state\":\"initialized\",\"deferedEvents\":{},\"options\":{},\"defaultAttributes\":{\"shopId\":55023042801,\"isMerchantRequest\":null,\"themeId\":185927893372,\"themeCityHash\":\"9628202623416227498\",\"contentLanguage\":\"en\",\"currency\":\"GBP\",\"eventMetadataId\":\"b72b14d9-f115-494e-950a-9882c7eff450\",\"appName\":\"storefront\",\"uniqToken\":\"8da52f99"
+      },
+      "messageBubbles": [
+        {
+          "text": "FREE NEW OMC FC REEL WITH ORDERS OVER £50 - UK ONLY",
+          "className": "announcement-text leading-tight",
+          "style": {
+            "width": 387,
+            "height": 16,
+            "bottom": "auto",
+            "right": "auto",
+            "position": "static",
+            "zIndex": "auto",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "boxShadow": "none"
+          }
+        },
+        {
+          "text": "NEW PB SPLASH CAMO SHORTS!",
+          "className": "announcement-text leading-tight",
+          "style": {
+            "width": 210,
+            "height": 16,
+            "bottom": "auto",
+            "right": "auto",
+            "position": "static",
+            "zIndex": "auto",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "boxShadow": "none"
+          }
+        },
+        {
+          "text": "FREE SHIPPING ON ALL ORDERS OVER £60 - UK ONLY",
+          "className": "announcement-text leading-tight",
+          "style": {
+            "width": 340,
+            "height": 16,
+            "bottom": "auto",
+            "right": "auto",
+            "position": "static",
+            "zIndex": "auto",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "boxShadow": "none"
+          }
+        },
+        {
+          "text": "FREE NEW OMC FC REEL WITH ORDERS OVER £50 - UK ONLY",
+          "className": "announcement-text leading-tight",
+          "style": {
+            "width": 387,
+            "height": 16,
+            "bottom": "auto",
+            "right": "auto",
+            "position": "static",
+            "zIndex": "auto",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "boxShadow": "none"
+          }
+        },
+        {
+          "text": "NEW PB SPLASH CAMO SHORTS!",
+          "className": "announcement-text leading-tight",
+          "style": {
+            "width": 210,
+            "height": 16,
+            "bottom": "auto",
+            "right": "auto",
+            "position": "static",
+            "zIndex": "auto",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "boxShadow": "none"
+          }
+        },
+        {
+          "text": "FREE SHIPPING ON ALL ORDERS OVER £60 - UK ONLY",
+          "className": "announcement-text leading-tight",
+          "style": {
+            "width": 340,
+            "height": 16,
+            "bottom": "auto",
+            "right": "auto",
+            "position": "static",
+            "zIndex": "auto",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "boxShadow": "none"
+          }
+        },
+        {
+          "text": "FREE NEW OMC FC REEL WITH ORDERS OVER £50 - UK ONLY",
+          "className": "announcement-text leading-tight",
+          "style": {
+            "width": 387,
+            "height": 16,
+            "bottom": "auto",
+            "right": "auto",
+            "position": "static",
+            "zIndex": "auto",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "boxShadow": "none"
+          }
+        },
+        {
+          "text": "NEW PB SPLASH CAMO SHORTS!",
+          "className": "announcement-text leading-tight",
+          "style": {
+            "width": 210,
+            "height": 16,
+            "bottom": "auto",
+            "right": "auto",
+            "position": "static",
+            "zIndex": "auto",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "boxShadow": "none"
+          }
+        },
+        {
+          "text": "FREE SHIPPING ON ALL ORDERS OVER £60 - UK ONLY",
+          "className": "announcement-text leading-tight",
+          "style": {
+            "width": 340,
+            "height": 16,
+            "bottom": "auto",
+            "right": "auto",
+            "position": "static",
+            "zIndex": "auto",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "boxShadow": "none"
+          }
+        },
+        {
+          "text": "FREE NEW OMC FC REEL WITH ORDERS OVER £50 - UK ONLY",
+          "className": "announcement-text leading-tight",
+          "style": {
+            "width": 387,
+            "height": 16,
+            "bottom": "auto",
+            "right": "auto",
+            "position": "static",
+            "zIndex": "auto",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "boxShadow": "none"
+          }
+        },
+        {
+          "text": "NEW PB SPLASH CAMO SHORTS!",
+          "className": "announcement-text leading-tight",
+          "style": {
+            "width": 210,
+            "height": 16,
+            "bottom": "auto",
+            "right": "auto",
+            "position": "static",
+            "zIndex": "auto",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "boxShadow": "none"
+          }
+        },
+        {
+          "text": "FREE SHIPPING ON ALL ORDERS OVER £60 - UK ONLY",
+          "className": "announcement-text leading-tight",
+          "style": {
+            "width": 340,
+            "height": 16,
+            "bottom": "auto",
+            "right": "auto",
+            "position": "static",
+            "zIndex": "auto",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "0px",
+            "boxShadow": "none"
+          }
+        }
+      ],
+      "localStorageKeys": [
+        "x-proof-factor-user-shopify:one-more-cast-ali.myshopify.com"
+      ]
+    },
+    "iframeContent": null,
+    "allScriptCount": 54
+  },
+  "networkLog": [
+    {
+      "method": "GET",
+      "url": "https://cdn.chaty.app/pixel.js?id=gz1m166v&shop=one-more-cast-ali.myshopify.com"
+    },
+    {
+      "method": "GET",
+      "url": "https://customer-first-focus.b-cdn.net/cffPCLoader_min.js?shop=one-more-cast-ali.myshopify.com"
+    },
+    {
+      "method": "POST",
+      "url": "https://prod-api.chaty.app/api/pixel/widgets"
+    },
+    {
+      "method": "GET",
+      "url": "https://customer-first-focus.b-cdn.net/cffPC.production.min.js"
+    }
+  ],
+  "pageMeta": {
+    "shopify": true,
+    "shopDomain": "one-more-cast-ali.myshopify.com",
+    "theme": null
+  }
+}

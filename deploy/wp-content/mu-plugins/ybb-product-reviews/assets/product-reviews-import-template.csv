@@ -1,0 +1,2 @@
+﻿product_handle,product_sku,wc_product_id,author,email,rating,content,date,image_url_1,image_url_2,image_url_3,status,source_note
+tz-hk-001,TZ-HK-001,50689,Example Buyer,buyer@review.import,5,Great hooks.,2026-06-21,https://carp-ybb.com/wp-content/uploads/example.jpg,,,approved,示例行，删除后导入

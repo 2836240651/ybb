@@ -1,0 +1,531 @@
+{
+  "auditDate": "2026-06-23T06:26:50.520Z",
+  "url": "https://www.omctackle.com/products/black-pearl-carp-rods",
+  "note": "OMC lg+ uses 2-col masonry grid (thumbs hidden). Mobile uses horizontal 62px thumbs below main.",
+  "viewports": {
+    "desktop-1440": {
+      "viewportLabel": "desktop-1440",
+      "mediaRoot": {
+        "tag": "div",
+        "class": "product__media card media media--adapt_first mobile:media--adapt_first flex w-full shrink-0 relative overflow-hidden",
+        "rect": {
+          "w": 373,
+          "h": 373,
+          "l": 48,
+          "t": 233
+        },
+        "layout": {
+          "display": "flex",
+          "flexDirection": "row",
+          "gridTemplateColumns": "none",
+          "gap": "normal",
+          "rowGap": "normal",
+          "columnGap": "normal",
+          "overflow": "hidden",
+          "overflowY": "hidden",
+          "maxHeight": "none"
+        },
+        "visual": {
+          "borderRadius": "15.1632px",
+          "border": "0px none rgb(23, 23, 23)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "outline": "rgb(23, 23, 23) none 3px"
+        },
+        "transition": "all"
+      },
+      "thumbStrip": {
+        "tag": "scroll-shadow",
+        "class": "product__thumbnails lg:hidden product__thumbnails--beside grid items-center relative w-full",
+        "rect": {
+          "w": 0,
+          "h": 0,
+          "l": 0,
+          "t": 0
+        },
+        "layout": {
+          "display": "none",
+          "flexDirection": "row",
+          "gridTemplateColumns": "none",
+          "gap": "normal",
+          "rowGap": "normal",
+          "columnGap": "normal",
+          "overflow": "visible",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        },
+        "visual": {
+          "borderRadius": "0px",
+          "border": "0px none rgb(23, 23, 23)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "outline": "rgb(23, 23, 23) none 3px"
+        },
+        "transition": "all"
+      },
+      "thumbList": {
+        "tag": "media-dots",
+        "class": "product__thumbnails-list scroll-area grid items-end justify-start gap-4 w-full",
+        "rect": {
+          "w": 0,
+          "h": 0,
+          "l": 0,
+          "t": 0
+        },
+        "layout": {
+          "display": "grid",
+          "flexDirection": "row",
+          "gridTemplateColumns": "none",
+          "gap": "16px",
+          "rowGap": "16px",
+          "columnGap": "16px",
+          "overflow": "scroll",
+          "overflowY": "scroll",
+          "maxHeight": "630px"
+        },
+        "visual": {
+          "borderRadius": "0px",
+          "border": "0px none rgb(23, 23, 23)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "outline": "rgb(23, 23, 23) none 3px"
+        },
+        "transition": "all"
+      },
+      "mainImage": {
+        "tag": "img",
+        "class": "w-full",
+        "rect": {
+          "w": 373,
+          "h": 373,
+          "l": 48,
+          "t": 233
+        },
+        "layout": {
+          "display": "block",
+          "flexDirection": "row",
+          "gridTemplateColumns": "none",
+          "gap": "normal",
+          "rowGap": "normal",
+          "columnGap": "normal",
+          "overflow": "clip",
+          "overflowY": "clip",
+          "maxHeight": "none"
+        },
+        "visual": {
+          "borderRadius": "0px",
+          "border": "0px none rgb(23, 23, 23)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "outline": "rgb(23, 23, 23) none 3px"
+        },
+        "transition": "opacity 0.5s cubic-bezier(0.3, 1, 0.3, 1), transform 0.5s cubic-bezier(0.3, 1, 0.3, 1)"
+      },
+      "thumbCount": 0,
+      "totalImageNodes": 31,
+      "firstThumb": null,
+      "activeThumb": null,
+      "thumbGap": "16px",
+      "layoutRelation": {
+        "thumbsVisible": false,
+        "thumbsLeftOfMain": true,
+        "thumbsBelowMain": false,
+        "gapPx": 606
+      },
+      "desktopGridMode": false,
+      "screenshot": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\audit-screenshots\\pdp-gallery\\omc-desktop-1440.png"
+    },
+    "mobile-390": {
+      "viewportLabel": "mobile-390",
+      "mediaRoot": {
+        "tag": "div",
+        "class": "product__media card media media--adapt_first mobile:media--adapt_first flex w-full shrink-0 relative overflow-hidden",
+        "rect": {
+          "w": 350,
+          "h": 349,
+          "l": 20,
+          "t": 200
+        },
+        "layout": {
+          "display": "flex",
+          "flexDirection": "row",
+          "gridTemplateColumns": "none",
+          "gap": "normal",
+          "rowGap": "normal",
+          "columnGap": "normal",
+          "overflow": "hidden",
+          "overflowY": "hidden",
+          "maxHeight": "none"
+        },
+        "visual": {
+          "borderRadius": "0px",
+          "border": "0px none rgb(23, 23, 23)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "outline": "rgb(23, 23, 23) none 3px"
+        },
+        "transition": "all"
+      },
+      "thumbStrip": {
+        "tag": "scroll-shadow",
+        "class": "product__thumbnails lg:hidden product__thumbnails--beside grid items-center relative w-full",
+        "rect": {
+          "w": 350,
+          "h": 62,
+          "l": 20,
+          "t": 565
+        },
+        "layout": {
+          "display": "grid",
+          "flexDirection": "row",
+          "gridTemplateColumns": "350px",
+          "gap": "normal",
+          "rowGap": "normal",
+          "columnGap": "normal",
+          "overflow": "visible",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        },
+        "visual": {
+          "borderRadius": "0px",
+          "border": "0px none rgb(23, 23, 23)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "outline": "rgb(23, 23, 23) none 3px"
+        },
+        "transition": "all"
+      },
+      "thumbList": {
+        "tag": "media-dots",
+        "class": "product__thumbnails-list scroll-area grid items-end justify-start gap-4 w-full",
+        "rect": {
+          "w": 350,
+          "h": 62,
+          "l": 20,
+          "t": 565
+        },
+        "layout": {
+          "display": "grid",
+          "flexDirection": "row",
+          "gridTemplateColumns": "62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px",
+          "gap": "16px",
+          "rowGap": "16px",
+          "columnGap": "16px",
+          "overflow": "scroll hidden",
+          "overflowY": "hidden",
+          "maxHeight": "none"
+        },
+        "visual": {
+          "borderRadius": "0px",
+          "border": "0px none rgb(23, 23, 23)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "outline": "rgb(23, 23, 23) none 3px"
+        },
+        "transition": "all"
+      },
+      "mainImage": {
+        "tag": "img",
+        "class": "w-full",
+        "rect": {
+          "w": 350,
+          "h": 349,
+          "l": 20,
+          "t": 200
+        },
+        "layout": {
+          "display": "block",
+          "flexDirection": "row",
+          "gridTemplateColumns": "none",
+          "gap": "normal",
+          "rowGap": "normal",
+          "columnGap": "normal",
+          "overflow": "clip",
+          "overflowY": "clip",
+          "maxHeight": "none"
+        },
+        "visual": {
+          "borderRadius": "0px",
+          "border": "0px none rgb(23, 23, 23)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "outline": "rgb(23, 23, 23) none 3px"
+        },
+        "transition": "opacity 0.5s cubic-bezier(0.3, 1, 0.3, 1), transform 0.5s cubic-bezier(0.3, 1, 0.3, 1)"
+      },
+      "thumbCount": 31,
+      "totalImageNodes": 31,
+      "firstThumb": {
+        "tag": "button",
+        "class": "product__thumbnail media media--adapt_first mobile:media--adapt_first relative overflow-hidden loading",
+        "rect": {
+          "w": 62,
+          "h": 62,
+          "l": 20,
+          "t": 565
+        },
+        "layout": {
+          "display": "block",
+          "flexDirection": "row",
+          "gridTemplateColumns": "none",
+          "gap": "normal",
+          "rowGap": "normal",
+          "columnGap": "normal",
+          "overflow": "hidden",
+          "overflowY": "hidden",
+          "maxHeight": "none"
+        },
+        "visual": {
+          "borderRadius": "10px",
+          "border": "0px none rgb(23, 23, 23)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "outline": "rgb(23, 23, 23) none 3px"
+        },
+        "transition": "all"
+      },
+      "activeThumb": {
+        "tag": "button",
+        "class": "product__thumbnail media media--adapt_first mobile:media--adapt_first relative overflow-hidden loading",
+        "rect": {
+          "w": 62,
+          "h": 62,
+          "l": 20,
+          "t": 565
+        },
+        "layout": {
+          "display": "block",
+          "flexDirection": "row",
+          "gridTemplateColumns": "none",
+          "gap": "normal",
+          "rowGap": "normal",
+          "columnGap": "normal",
+          "overflow": "hidden",
+          "overflowY": "hidden",
+          "maxHeight": "none"
+        },
+        "visual": {
+          "borderRadius": "10px",
+          "border": "0px none rgb(23, 23, 23)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "outline": "rgb(23, 23, 23) none 3px"
+        },
+        "transition": "all"
+      },
+      "thumbGap": "16px",
+      "layoutRelation": {
+        "thumbsVisible": true,
+        "thumbsLeftOfMain": false,
+        "thumbsBelowMain": true,
+        "gapPx": 16
+      },
+      "desktopGridMode": false,
+      "screenshot": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\audit-screenshots\\pdp-gallery\\omc-mobile-390.png",
+      "afterClick": {
+        "viewportLabel": "mobile-390",
+        "mediaRoot": {
+          "tag": "div",
+          "class": "product__media card media media--adapt_first mobile:media--adapt_first flex w-full shrink-0 relative overflow-hidden",
+          "rect": {
+            "w": 350,
+            "h": 349,
+            "l": -334,
+            "t": 200
+          },
+          "layout": {
+            "display": "flex",
+            "flexDirection": "row",
+            "gridTemplateColumns": "none",
+            "gap": "normal",
+            "rowGap": "normal",
+            "columnGap": "normal",
+            "overflow": "hidden",
+            "overflowY": "hidden",
+            "maxHeight": "none"
+          },
+          "visual": {
+            "borderRadius": "0px",
+            "border": "0px none rgb(23, 23, 23)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "outline": "rgb(23, 23, 23) none 3px"
+          },
+          "transition": "all"
+        },
+        "thumbStrip": {
+          "tag": "scroll-shadow",
+          "class": "product__thumbnails lg:hidden product__thumbnails--beside grid items-center relative w-full",
+          "rect": {
+            "w": 350,
+            "h": 62,
+            "l": 20,
+            "t": 565
+          },
+          "layout": {
+            "display": "grid",
+            "flexDirection": "row",
+            "gridTemplateColumns": "350px",
+            "gap": "normal",
+            "rowGap": "normal",
+            "columnGap": "normal",
+            "overflow": "visible",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          },
+          "visual": {
+            "borderRadius": "0px",
+            "border": "0px none rgb(23, 23, 23)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "outline": "rgb(23, 23, 23) none 3px"
+          },
+          "transition": "all"
+        },
+        "thumbList": {
+          "tag": "media-dots",
+          "class": "product__thumbnails-list scroll-area grid items-end justify-start gap-4 w-full",
+          "rect": {
+            "w": 350,
+            "h": 62,
+            "l": 20,
+            "t": 565
+          },
+          "layout": {
+            "display": "grid",
+            "flexDirection": "row",
+            "gridTemplateColumns": "62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px",
+            "gap": "16px",
+            "rowGap": "16px",
+            "columnGap": "16px",
+            "overflow": "scroll hidden",
+            "overflowY": "hidden",
+            "maxHeight": "none"
+          },
+          "visual": {
+            "borderRadius": "0px",
+            "border": "0px none rgb(23, 23, 23)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "outline": "rgb(23, 23, 23) none 3px"
+          },
+          "transition": "all"
+        },
+        "mainImage": {
+          "tag": "img",
+          "class": "w-full",
+          "rect": {
+            "w": 350,
+            "h": 349,
+            "l": -334,
+            "t": 200
+          },
+          "layout": {
+            "display": "block",
+            "flexDirection": "row",
+            "gridTemplateColumns": "none",
+            "gap": "normal",
+            "rowGap": "normal",
+            "columnGap": "normal",
+            "overflow": "clip",
+            "overflowY": "clip",
+            "maxHeight": "none"
+          },
+          "visual": {
+            "borderRadius": "0px",
+            "border": "0px none rgb(23, 23, 23)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "outline": "rgb(23, 23, 23) none 3px"
+          },
+          "transition": "opacity 0.5s cubic-bezier(0.3, 1, 0.3, 1), transform 0.5s cubic-bezier(0.3, 1, 0.3, 1)"
+        },
+        "thumbCount": 31,
+        "totalImageNodes": 31,
+        "firstThumb": {
+          "tag": "button",
+          "class": "product__thumbnail media media--adapt_first mobile:media--adapt_first relative overflow-hidden loading",
+          "rect": {
+            "w": 62,
+            "h": 62,
+            "l": 20,
+            "t": 565
+          },
+          "layout": {
+            "display": "block",
+            "flexDirection": "row",
+            "gridTemplateColumns": "none",
+            "gap": "normal",
+            "rowGap": "normal",
+            "columnGap": "normal",
+            "overflow": "hidden",
+            "overflowY": "hidden",
+            "maxHeight": "none"
+          },
+          "visual": {
+            "borderRadius": "10px",
+            "border": "0px none rgb(23, 23, 23)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "outline": "rgb(23, 23, 23) none 3px"
+          },
+          "transition": "all"
+        },
+        "activeThumb": {
+          "tag": "button",
+          "class": "product__thumbnail media media--adapt_first mobile:media--adapt_first relative overflow-hidden loading",
+          "rect": {
+            "w": 62,
+            "h": 62,
+            "l": 98,
+            "t": 565
+          },
+          "layout": {
+            "display": "block",
+            "flexDirection": "row",
+            "gridTemplateColumns": "none",
+            "gap": "normal",
+            "rowGap": "normal",
+            "columnGap": "normal",
+            "overflow": "hidden",
+            "overflowY": "hidden",
+            "maxHeight": "none"
+          },
+          "visual": {
+            "borderRadius": "10px",
+            "border": "0px none rgb(23, 23, 23)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "outline": "rgb(23, 23, 23) none 3px"
+          },
+          "transition": "all"
+        },
+        "thumbGap": "16px",
+        "layoutRelation": {
+          "thumbsVisible": true,
+          "thumbsLeftOfMain": false,
+          "thumbsBelowMain": true,
+          "gapPx": 16
+        },
+        "desktopGridMode": false
+      }
+    }
+  },
+  "clickBehavior": {
+    "clicked": {
+      "ok": true,
+      "index": 1
+    },
+    "before": "n/shop/files/DSC04210.webp?v=1756296256&width=3989",
+    "after": {
+      "mainSrcTail": "n/shop/files/DSC04210.webp?v=1756296256&width=3989",
+      "activeThumb": {
+        "ariaCurrent": "true",
+        "border": "0px none rgb(23, 23, 23)",
+        "opacity": "1",
+        "borderRadius": "10px"
+      }
+    },
+    "mainChanged": false
+  }
+}

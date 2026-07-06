@@ -1,0 +1,44 @@
+{
+  "capturedAt": "2026-06-23T04:05:50.100Z",
+  "url": "https://www.omctackle.com",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "navLabels": [
+    {
+      "text": "Fathers Day Gifts",
+      "hasMega": false
+    },
+    {
+      "text": "New",
+      "hasMega": false
+    },
+    {
+      "text": "Terminal Tackle",
+      "hasMega": false
+    },
+    {
+      "text": "Bait",
+      "hasMega": false
+    },
+    {
+      "text": "Rods & Reels",
+      "hasMega": false
+    },
+    {
+      "text": "Hardware",
+      "hasMega": false
+    },
+    {
+      "text": "Clothing",
+      "hasMega": false
+    },
+    {
+      "text": "OMC FC",
+      "hasMega": false
+    }
+  ],
+  "navProbes": [],
+  "sidebarSwitches": []
+}

@@ -1,0 +1,37 @@
+Mobile iPhone checkout page UI mockup for "YBB — Trusted Tackle Partner" B2B wholesale carp fishing terminal tackle cross-border ecommerce store.
+
+Device frame: iPhone 15 Pro vertical 390x844, notch at top, single-column stacked layout on white background with light gray page background #f5f5f5.
+
+TOP CHROME:
+- Compact sticky header: YBB logo left, back arrow, centered title "Checkout", cart icon badge "3" right
+- Thin black announcement strip: "B2B WHOLESALE — FLEXIBLE MOQ"
+- Progress stepper row: Cart checkmark — Checkout active dot — Confirmation empty
+
+ORDER SUMMARY accordion expanded at top:
+- "Your order (3 items)" with chevron
+- Mini line items: Carp Method Feeder TZ-EL-097 qty 50 $69.50, Carp Lead Rig TZ-QZDZ-038 qty 30 $59.70, Carp Accessory Orange Hook Needle Box qty 20 $39.80
+- Bold total $193.99 USD
+
+BILLING FORM stacked fields with labels:
+- First name James, Last name Mitchell
+- Company North Angling Supplies Ltd
+- Country United Kingdom dropdown
+- Street Unit 12 Manchester Trade Park, City Manchester, Postcode M1 2AB
+- Email buyer@northangling.co.uk, Phone +44 161 555 0198
+
+SHIPPING METHOD card selected:
+- Radio "International Standard (7–14 business days) — $24.99"
+
+PAYMENT section:
+- Radio selected "Credit / Debit Card (Airwallex)"
+- Card number field showing Visa •••• 4242, expiry 12/28, CVC, cardholder James Mitchell
+- Black pill Apple Pay button below card fields
+
+STICKY BOTTOM BAR:
+- Left: "Total $193.99 USD" bold
+- Right: full-width black pill button "Place order"
+- Small trust row: padlock Secure payment, truck Fast shipping icons
+
+Style: premium minimalist Inter typography, near-black #171717 text, sand-gold accent #D1BA98 for coupon button, large pill buttons border-radius 60px, soft card corners 12px, generous whitespace, photorealistic high-fidelity mobile UI screenshot, crisp readable English UI text, 4K detail, no watermark.
+
+Negative: WoodMart WordPress theme, blurry illegible text, neon colors, cartoon fishing gear, cluttered desktop layout on mobile, duplicate scrollbars, purple Elementor blocks, wrong brand logo, messy form alignment, low resolution

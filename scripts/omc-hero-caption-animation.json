@@ -1,0 +1,2233 @@
+{
+  "staticInfo": {
+    "wordsAttrs": {},
+    "splitWordsAttrs": {},
+    "animateElementAttrs": {},
+    "cssRules": [
+      ".text-left .split-words { justify-content: flex-start; }",
+      ".text-center .split-words { justify-content: center; }",
+      ".text-right .split-words { justify-content: flex-end; }",
+      "@media screen and (min-width: 768px) {\n  .md\\:text-left .split-words { justify-content: flex-start; }\n  .md\\:text-center .split-words { justify-content: center; }\n  .md\\:text-right .split-words { justify-content: flex-end; }\n}",
+      "@media screen and (min-width: 1024px) {\n  .lg\\:text-left .split-words { justify-content: flex-start; }\n  .lg\\:text-center .split-words { justify-content: center; }\n  .lg\\:text-right .split-words { justify-content: flex-end; }\n}",
+      ".split-words .word { display: inline-flex; line-height: 1; margin: -0.1em -0.05em; overflow: hidden; padding: 0.15em 0.05em; }",
+      ".split-words .word.animated { overflow: visible; }",
+      "[lang=\"en\"] .split-words .word { padding-block: 0.08em; }",
+      ".testimonials-title .split-words + .whitespace { width: 0.2em; }",
+      "@media screen and (min-width: 768px) {\n  .reveal-testimonials { padding-block-start: clamp(var(--sp-8),2.526vw,var(--sp-12)); width: calc(clamp(340px,30vw,480px) * 2 - var(--sp-20)); }\n  .reveal-testimonials .testimonial { width: clamp(340px, 30vw, 480px); }\n  .testimonials-title { position: sticky; inset-block-start: 50%; transform: translateY(-50%); }\n  .testimonials-title .split-words ~ .split-words { transform: translateY(100%); }\n}",
+      ".slideshow-words .banner__box { padding-block: 0px; }",
+      ".slideshow-word:not([aria-current=\"true\"]) { display: none; }",
+      "@media screen and (max-width: 639px) {\n  .slideshow-word .split-words .word { white-space: unset; }\n}",
+      ".slideshow-word { text-align: center; justify-content: center !important; align-items: center !important; }",
+      ".slideshow-words { justify-items: center; text-align: center; }",
+      ".slideshow-word .button--fixed, .slideshow-word .button--blur { background-color: rgb(0, 0, 0) !important; color: rgb(255, 255, 255) !important; border-color: rgb(0, 0, 0) !important; }",
+      ".slideshow-word .button--fixed .btn-text, .slideshow-word .button--blur .btn-text { color: rgb(255, 255, 255) !important; }"
+    ]
+  },
+  "timeline": [
+    {
+      "label": "idle-0",
+      "time": 1782194054286,
+      "selectedIndex": "1",
+      "items": [
+        {
+          "ariaCurrent": "false",
+          "text": "BULK LEAD DEAL!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "true",
+          "text": "OUT NOW!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "PB SHACKET SHIRT",
+          "animateCount": 3,
+          "splitWords": true,
+          "heading": {
+            "tag": "h1",
+            "class": "heading leading-none title-sm",
+            "text": "PB SHACKET SHIRT",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block",
+            "text": "PB",
+            "opacity": "0",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "FREE REEL WITH ORDERS OVER £50",
+          "animateCount": 6,
+          "splitWords": true,
+          "heading": {
+            "tag": "h2",
+            "class": "heading leading-none title-md",
+            "text": "FREE REEL WITH ORDERS OVER £50",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block",
+            "text": "FREE",
+            "opacity": "0",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        }
+      ],
+      "activeAnimateEls": [],
+      "heading": null
+    },
+    {
+      "label": "after-next+0ms",
+      "time": 1782194054497,
+      "selectedIndex": "2",
+      "items": [
+        {
+          "ariaCurrent": "false",
+          "text": "BULK LEAD DEAL!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "true",
+          "text": "OUT NOW!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "PB SHACKET SHIRT",
+          "animateCount": 3,
+          "splitWords": true,
+          "heading": {
+            "tag": "h1",
+            "class": "heading leading-none title-sm",
+            "text": "PB SHACKET SHIRT",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block",
+            "text": "PB",
+            "opacity": "0",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "FREE REEL WITH ORDERS OVER £50",
+          "animateCount": 6,
+          "splitWords": true,
+          "heading": {
+            "tag": "h2",
+            "class": "heading leading-none title-md",
+            "text": "FREE REEL WITH ORDERS OVER £50",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block",
+            "text": "FREE",
+            "opacity": "0",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        }
+      ],
+      "activeAnimateEls": [],
+      "heading": null
+    },
+    {
+      "label": "after-next+50ms",
+      "time": 1782194054567,
+      "selectedIndex": "2",
+      "items": [
+        {
+          "ariaCurrent": "false",
+          "text": "BULK LEAD DEAL!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "true",
+          "text": "OUT NOW!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "PB SHACKET SHIRT",
+          "animateCount": 3,
+          "splitWords": true,
+          "heading": {
+            "tag": "h1",
+            "class": "heading leading-none title-sm",
+            "text": "PB SHACKET SHIRT",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block",
+            "text": "PB",
+            "opacity": "0",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "FREE REEL WITH ORDERS OVER £50",
+          "animateCount": 6,
+          "splitWords": true,
+          "heading": {
+            "tag": "h2",
+            "class": "heading leading-none title-md",
+            "text": "FREE REEL WITH ORDERS OVER £50",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block",
+            "text": "FREE",
+            "opacity": "0",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        }
+      ],
+      "activeAnimateEls": [],
+      "heading": null
+    },
+    {
+      "label": "after-next+100ms",
+      "time": 1782194054631,
+      "selectedIndex": "2",
+      "items": [
+        {
+          "ariaCurrent": "false",
+          "text": "BULK LEAD DEAL!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "true",
+          "text": "OUT NOW!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "PB SHACKET SHIRT",
+          "animateCount": 3,
+          "splitWords": true,
+          "heading": {
+            "tag": "h1",
+            "class": "heading leading-none title-sm",
+            "text": "PB SHACKET SHIRT",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block",
+            "text": "PB",
+            "opacity": "0",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "FREE REEL WITH ORDERS OVER £50",
+          "animateCount": 6,
+          "splitWords": true,
+          "heading": {
+            "tag": "h2",
+            "class": "heading leading-none title-md",
+            "text": "FREE REEL WITH ORDERS OVER £50",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block",
+            "text": "FREE",
+            "opacity": "0",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        }
+      ],
+      "activeAnimateEls": [],
+      "heading": null
+    },
+    {
+      "label": "after-next+200ms",
+      "time": 1782194054747,
+      "selectedIndex": "2",
+      "items": [
+        {
+          "ariaCurrent": "false",
+          "text": "BULK LEAD DEAL!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "true",
+          "text": "OUT NOW!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "PB SHACKET SHIRT",
+          "animateCount": 3,
+          "splitWords": true,
+          "heading": {
+            "tag": "h1",
+            "class": "heading leading-none title-sm",
+            "text": "PB SHACKET SHIRT",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block",
+            "text": "PB",
+            "opacity": "0",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "FREE REEL WITH ORDERS OVER £50",
+          "animateCount": 6,
+          "splitWords": true,
+          "heading": {
+            "tag": "h2",
+            "class": "heading leading-none title-md",
+            "text": "FREE REEL WITH ORDERS OVER £50",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block",
+            "text": "FREE",
+            "opacity": "0",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        }
+      ],
+      "activeAnimateEls": [],
+      "heading": null
+    },
+    {
+      "label": "after-next+350ms",
+      "time": 1782194054915,
+      "selectedIndex": "2",
+      "items": [
+        {
+          "ariaCurrent": "false",
+          "text": "BULK LEAD DEAL!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "true",
+          "text": "OUT NOW!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "PB SHACKET SHIRT",
+          "animateCount": 3,
+          "splitWords": true,
+          "heading": {
+            "tag": "h1",
+            "class": "heading leading-none title-sm",
+            "text": "PB SHACKET SHIRT",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block",
+            "text": "PB",
+            "opacity": "0",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "FREE REEL WITH ORDERS OVER £50",
+          "animateCount": 6,
+          "splitWords": true,
+          "heading": {
+            "tag": "h2",
+            "class": "heading leading-none title-md",
+            "text": "FREE REEL WITH ORDERS OVER £50",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block",
+            "text": "FREE",
+            "opacity": "0",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        }
+      ],
+      "activeAnimateEls": [],
+      "heading": null
+    },
+    {
+      "label": "after-next+500ms",
+      "time": 1782194055080,
+      "selectedIndex": "2",
+      "items": [
+        {
+          "ariaCurrent": "false",
+          "text": "BULK LEAD DEAL!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "OUT NOW!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "true",
+          "text": "PB SHACKET SHIRT",
+          "animateCount": 3,
+          "splitWords": true,
+          "heading": {
+            "tag": "h1",
+            "class": "heading leading-none title-sm",
+            "text": "PB SHACKET SHIRT",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block",
+            "text": "PB",
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 32.7375)",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "FREE REEL WITH ORDERS OVER £50",
+          "animateCount": 6,
+          "splitWords": true,
+          "heading": {
+            "tag": "h2",
+            "class": "heading leading-none title-md",
+            "text": "FREE REEL WITH ORDERS OVER £50",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block",
+            "text": "FREE",
+            "opacity": "0",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        }
+      ],
+      "activeAnimateEls": [
+        {
+          "tag": "animate-element",
+          "class": "block",
+          "text": "PB",
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 32.7375)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "250"
+        },
+        {
+          "tag": "animate-element",
+          "class": "block",
+          "text": "SHACKET",
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 32.7375)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "280"
+        },
+        {
+          "tag": "animate-element",
+          "class": "block",
+          "text": "SHIRT",
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 32.7375)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "310"
+        }
+      ],
+      "heading": {
+        "tag": "h1",
+        "class": "heading leading-none title-sm",
+        "text": "PB SHACKET SHIRT",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none",
+        "ariaCurrent": null,
+        "dataAnimate": null,
+        "dataAnimateDelay": null
+      }
+    },
+    {
+      "label": "after-next+650ms",
+      "time": 1782194055240,
+      "selectedIndex": "2",
+      "items": [
+        {
+          "ariaCurrent": "false",
+          "text": "BULK LEAD DEAL!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "OUT NOW!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "true",
+          "text": "PB SHACKET SHIRT",
+          "animateCount": 3,
+          "splitWords": true,
+          "heading": {
+            "tag": "h1",
+            "class": "heading leading-none title-sm",
+            "text": "PB SHACKET SHIRT",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block",
+            "text": "PB",
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 32.7375)",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "FREE REEL WITH ORDERS OVER £50",
+          "animateCount": 6,
+          "splitWords": true,
+          "heading": {
+            "tag": "h2",
+            "class": "heading leading-none title-md",
+            "text": "FREE REEL WITH ORDERS OVER £50",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block",
+            "text": "FREE",
+            "opacity": "0",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        }
+      ],
+      "activeAnimateEls": [
+        {
+          "tag": "animate-element",
+          "class": "block",
+          "text": "PB",
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 32.7375)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "250"
+        },
+        {
+          "tag": "animate-element",
+          "class": "block",
+          "text": "SHACKET",
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 32.7375)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "280"
+        },
+        {
+          "tag": "animate-element",
+          "class": "block",
+          "text": "SHIRT",
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 32.7375)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "310"
+        }
+      ],
+      "heading": {
+        "tag": "h1",
+        "class": "heading leading-none title-sm",
+        "text": "PB SHACKET SHIRT",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none",
+        "ariaCurrent": null,
+        "dataAnimate": null,
+        "dataAnimateDelay": null
+      }
+    },
+    {
+      "label": "after-next+800ms",
+      "time": 1782194055455,
+      "selectedIndex": "2",
+      "items": [
+        {
+          "ariaCurrent": "false",
+          "text": "BULK LEAD DEAL!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "OUT NOW!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "true",
+          "text": "PB SHACKET SHIRT",
+          "animateCount": 3,
+          "splitWords": true,
+          "heading": {
+            "tag": "h1",
+            "class": "heading leading-none title-sm",
+            "text": "PB SHACKET SHIRT",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block",
+            "text": "PB",
+            "opacity": "0.867788",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.32828)",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "FREE REEL WITH ORDERS OVER £50",
+          "animateCount": 6,
+          "splitWords": true,
+          "heading": {
+            "tag": "h2",
+            "class": "heading leading-none title-md",
+            "text": "FREE REEL WITH ORDERS OVER £50",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block",
+            "text": "FREE",
+            "opacity": "0",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        }
+      ],
+      "activeAnimateEls": [
+        {
+          "tag": "animate-element",
+          "class": "block",
+          "text": "PB",
+          "opacity": "0.867788",
+          "transform": "matrix(1, 0, 0, 1, 0, 4.32828)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "250"
+        },
+        {
+          "tag": "animate-element",
+          "class": "block",
+          "text": "SHACKET",
+          "opacity": "0.796901",
+          "transform": "matrix(1, 0, 0, 1, 0, 6.64896)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "280"
+        },
+        {
+          "tag": "animate-element",
+          "class": "block",
+          "text": "SHIRT",
+          "opacity": "0.688363",
+          "transform": "matrix(1, 0, 0, 1, 0, 10.2022)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "310"
+        }
+      ],
+      "heading": {
+        "tag": "h1",
+        "class": "heading leading-none title-sm",
+        "text": "PB SHACKET SHIRT",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none",
+        "ariaCurrent": null,
+        "dataAnimate": null,
+        "dataAnimateDelay": null
+      }
+    },
+    {
+      "label": "after-next+1000ms",
+      "time": 1782194055676,
+      "selectedIndex": "2",
+      "items": [
+        {
+          "ariaCurrent": "false",
+          "text": "BULK LEAD DEAL!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "OUT NOW!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "true",
+          "text": "PB SHACKET SHIRT",
+          "animateCount": 3,
+          "splitWords": true,
+          "heading": {
+            "tag": "h1",
+            "class": "heading leading-none title-sm",
+            "text": "PB SHACKET SHIRT",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block",
+            "text": "PB",
+            "opacity": "0.998164",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.0601217)",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "FREE REEL WITH ORDERS OVER £50",
+          "animateCount": 6,
+          "splitWords": true,
+          "heading": {
+            "tag": "h2",
+            "class": "heading leading-none title-md",
+            "text": "FREE REEL WITH ORDERS OVER £50",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block",
+            "text": "FREE",
+            "opacity": "0",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        }
+      ],
+      "activeAnimateEls": [
+        {
+          "tag": "animate-element",
+          "class": "block",
+          "text": "PB",
+          "opacity": "0.998164",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.0601217)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "250"
+        },
+        {
+          "tag": "animate-element",
+          "class": "block",
+          "text": "SHACKET",
+          "opacity": "0.997129",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.0939967)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "280"
+        },
+        {
+          "tag": "animate-element",
+          "class": "block",
+          "text": "SHIRT",
+          "opacity": "0.995553",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.145597)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "310"
+        }
+      ],
+      "heading": {
+        "tag": "h1",
+        "class": "heading leading-none title-sm",
+        "text": "PB SHACKET SHIRT",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none",
+        "ariaCurrent": null,
+        "dataAnimate": null,
+        "dataAnimateDelay": null
+      }
+    },
+    {
+      "label": "after-next+1500ms",
+      "time": 1782194056197,
+      "selectedIndex": "2",
+      "items": [
+        {
+          "ariaCurrent": "false",
+          "text": "BULK LEAD DEAL!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "OUT NOW!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "true",
+          "text": "PB SHACKET SHIRT",
+          "animateCount": 3,
+          "splitWords": true,
+          "heading": {
+            "tag": "h1",
+            "class": "heading leading-none title-sm",
+            "text": "PB SHACKET SHIRT",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block",
+            "text": "PB",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 1.08419e-09)",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "FREE REEL WITH ORDERS OVER £50",
+          "animateCount": 6,
+          "splitWords": true,
+          "heading": {
+            "tag": "h2",
+            "class": "heading leading-none title-md",
+            "text": "FREE REEL WITH ORDERS OVER £50",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block",
+            "text": "FREE",
+            "opacity": "0",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        }
+      ],
+      "activeAnimateEls": [
+        {
+          "tag": "animate-element",
+          "class": "block",
+          "text": "PB",
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 1.08419e-09)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "250"
+        },
+        {
+          "tag": "animate-element",
+          "class": "block",
+          "text": "SHACKET",
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 4.11409e-08)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "280"
+        },
+        {
+          "tag": "animate-element",
+          "class": "block",
+          "text": "SHIRT",
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 4.06535e-07)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "310"
+        }
+      ],
+      "heading": {
+        "tag": "h1",
+        "class": "heading leading-none title-sm",
+        "text": "PB SHACKET SHIRT",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none",
+        "ariaCurrent": null,
+        "dataAnimate": null,
+        "dataAnimateDelay": null
+      }
+    },
+    {
+      "label": "after-next2+0ms",
+      "time": 1782194056586,
+      "selectedIndex": "3",
+      "items": [
+        {
+          "ariaCurrent": "false",
+          "text": "BULK LEAD DEAL!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "OUT NOW!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "true",
+          "text": "PB SHACKET SHIRT",
+          "animateCount": 3,
+          "splitWords": true,
+          "heading": {
+            "tag": "h1",
+            "class": "heading leading-none title-sm",
+            "text": "PB SHACKET SHIRT",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block animated",
+            "text": "PB",
+            "opacity": "0.718873",
+            "transform": "matrix(1, 0, 0, 1, 0, -9.20338)",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "FREE REEL WITH ORDERS OVER £50",
+          "animateCount": 6,
+          "splitWords": true,
+          "heading": {
+            "tag": "h2",
+            "class": "heading leading-none title-md",
+            "text": "FREE REEL WITH ORDERS OVER £50",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block",
+            "text": "FREE",
+            "opacity": "0",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        }
+      ],
+      "activeAnimateEls": [
+        {
+          "tag": "animate-element",
+          "class": "block animated",
+          "text": "PB",
+          "opacity": "0.718873",
+          "transform": "matrix(1, 0, 0, 1, 0, -9.20338)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "250"
+        },
+        {
+          "tag": "animate-element",
+          "class": "block animated",
+          "text": "SHACKET",
+          "opacity": "0.979202",
+          "transform": "matrix(1, 0, 0, 1, 0, -0.680873)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "280"
+        },
+        {
+          "tag": "animate-element",
+          "class": "block animated",
+          "text": "SHIRT",
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "310"
+        }
+      ],
+      "heading": {
+        "tag": "h1",
+        "class": "heading leading-none title-sm",
+        "text": "PB SHACKET SHIRT",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none",
+        "ariaCurrent": null,
+        "dataAnimate": null,
+        "dataAnimateDelay": null
+      }
+    },
+    {
+      "label": "after-next2+100ms",
+      "time": 1782194056700,
+      "selectedIndex": "3",
+      "items": [
+        {
+          "ariaCurrent": "false",
+          "text": "BULK LEAD DEAL!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "OUT NOW!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "true",
+          "text": "PB SHACKET SHIRT",
+          "animateCount": 3,
+          "splitWords": true,
+          "heading": {
+            "tag": "h1",
+            "class": "heading leading-none title-sm",
+            "text": "PB SHACKET SHIRT",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block animated",
+            "text": "PB",
+            "opacity": "0.31409",
+            "transform": "matrix(1, 0, 0, 1, 0, -22.455)",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "FREE REEL WITH ORDERS OVER £50",
+          "animateCount": 6,
+          "splitWords": true,
+          "heading": {
+            "tag": "h2",
+            "class": "heading leading-none title-md",
+            "text": "FREE REEL WITH ORDERS OVER £50",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block",
+            "text": "FREE",
+            "opacity": "0",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        }
+      ],
+      "activeAnimateEls": [
+        {
+          "tag": "animate-element",
+          "class": "block animated",
+          "text": "PB",
+          "opacity": "0.31409",
+          "transform": "matrix(1, 0, 0, 1, 0, -22.455)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "250"
+        },
+        {
+          "tag": "animate-element",
+          "class": "block animated",
+          "text": "SHACKET",
+          "opacity": "0.43839",
+          "transform": "matrix(1, 0, 0, 1, 0, -18.3857)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "280"
+        },
+        {
+          "tag": "animate-element",
+          "class": "block animated",
+          "text": "SHIRT",
+          "opacity": "0.482322",
+          "transform": "matrix(1, 0, 0, 1, 0, -16.9475)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "310"
+        }
+      ],
+      "heading": {
+        "tag": "h1",
+        "class": "heading leading-none title-sm",
+        "text": "PB SHACKET SHIRT",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none",
+        "ariaCurrent": null,
+        "dataAnimate": null,
+        "dataAnimateDelay": null
+      }
+    },
+    {
+      "label": "after-next2+300ms",
+      "time": 1782194057020,
+      "selectedIndex": "3",
+      "items": [
+        {
+          "ariaCurrent": "false",
+          "text": "BULK LEAD DEAL!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "OUT NOW!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "PB SHACKET SHIRT",
+          "animateCount": 3,
+          "splitWords": true,
+          "heading": {
+            "tag": "h1",
+            "class": "heading leading-none title-sm",
+            "text": "PB SHACKET SHIRT",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block animated",
+            "text": "PB",
+            "opacity": "0.0321882",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "true",
+          "text": "FREE REEL WITH ORDERS OVER £50",
+          "animateCount": 6,
+          "splitWords": true,
+          "heading": {
+            "tag": "h2",
+            "class": "heading leading-none title-md",
+            "text": "FREE REEL WITH ORDERS OVER £50",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block",
+            "text": "FREE",
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 43.65)",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        }
+      ],
+      "activeAnimateEls": [
+        {
+          "tag": "animate-element",
+          "class": "block",
+          "text": "FREE",
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 43.65)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "250"
+        },
+        {
+          "tag": "animate-element",
+          "class": "block",
+          "text": "REEL",
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 43.65)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "280"
+        },
+        {
+          "tag": "animate-element",
+          "class": "block",
+          "text": "WITH",
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 43.65)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "310"
+        },
+        {
+          "tag": "animate-element",
+          "class": "block",
+          "text": "ORDERS",
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 43.65)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "340"
+        },
+        {
+          "tag": "animate-element",
+          "class": "block",
+          "text": "OVER",
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 43.65)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "370"
+        }
+      ],
+      "heading": {
+        "tag": "h2",
+        "class": "heading leading-none title-md",
+        "text": "FREE REEL WITH ORDERS OVER £50",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none",
+        "ariaCurrent": null,
+        "dataAnimate": null,
+        "dataAnimateDelay": null
+      }
+    },
+    {
+      "label": "after-next2+500ms",
+      "time": 1782194057445,
+      "selectedIndex": "3",
+      "items": [
+        {
+          "ariaCurrent": "false",
+          "text": "BULK LEAD DEAL!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "OUT NOW!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "PB SHACKET SHIRT",
+          "animateCount": 3,
+          "splitWords": true,
+          "heading": {
+            "tag": "h1",
+            "class": "heading leading-none title-sm",
+            "text": "PB SHACKET SHIRT",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block animated",
+            "text": "PB",
+            "opacity": "6.90981e-05",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "true",
+          "text": "FREE REEL WITH ORDERS OVER £50",
+          "animateCount": 6,
+          "splitWords": true,
+          "heading": {
+            "tag": "h2",
+            "class": "heading leading-none title-md",
+            "text": "FREE REEL WITH ORDERS OVER £50",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block",
+            "text": "FREE",
+            "opacity": "0.984276",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.686342)",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        }
+      ],
+      "activeAnimateEls": [
+        {
+          "tag": "animate-element",
+          "class": "block",
+          "text": "FREE",
+          "opacity": "0.984276",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.686342)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "250"
+        },
+        {
+          "tag": "animate-element",
+          "class": "block",
+          "text": "REEL",
+          "opacity": "0.976056",
+          "transform": "matrix(1, 0, 0, 1, 0, 1.04517)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "280"
+        },
+        {
+          "tag": "animate-element",
+          "class": "block",
+          "text": "WITH",
+          "opacity": "0.963534",
+          "transform": "matrix(1, 0, 0, 1, 0, 1.59174)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "310"
+        },
+        {
+          "tag": "animate-element",
+          "class": "block",
+          "text": "ORDERS",
+          "opacity": "0.94438",
+          "transform": "matrix(1, 0, 0, 1, 0, 2.42781)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "340"
+        },
+        {
+          "tag": "animate-element",
+          "class": "block",
+          "text": "OVER",
+          "opacity": "0.914952",
+          "transform": "matrix(1, 0, 0, 1, 0, 3.71234)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "370"
+        }
+      ],
+      "heading": {
+        "tag": "h2",
+        "class": "heading leading-none title-md",
+        "text": "FREE REEL WITH ORDERS OVER £50",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none",
+        "ariaCurrent": null,
+        "dataAnimate": null,
+        "dataAnimateDelay": null
+      }
+    },
+    {
+      "label": "after-next2+800ms",
+      "time": 1782194057952,
+      "selectedIndex": "3",
+      "items": [
+        {
+          "ariaCurrent": "false",
+          "text": "BULK LEAD DEAL!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "OUT NOW!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "PB SHACKET SHIRT",
+          "animateCount": 3,
+          "splitWords": true,
+          "heading": {
+            "tag": "h1",
+            "class": "heading leading-none title-sm",
+            "text": "PB SHACKET SHIRT",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block",
+            "text": "PB",
+            "opacity": "0",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "true",
+          "text": "FREE REEL WITH ORDERS OVER £50",
+          "animateCount": 6,
+          "splitWords": true,
+          "heading": {
+            "tag": "h2",
+            "class": "heading leading-none title-md",
+            "text": "FREE REEL WITH ORDERS OVER £50",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block",
+            "text": "FREE",
+            "opacity": "0.999999",
+            "transform": "matrix(1, 0, 0, 1, 0, 3.38489e-05)",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        }
+      ],
+      "activeAnimateEls": [
+        {
+          "tag": "animate-element",
+          "class": "block",
+          "text": "FREE",
+          "opacity": "0.999999",
+          "transform": "matrix(1, 0, 0, 1, 0, 3.38489e-05)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "250"
+        },
+        {
+          "tag": "animate-element",
+          "class": "block",
+          "text": "REEL",
+          "opacity": "0.999998",
+          "transform": "matrix(1, 0, 0, 1, 0, 8.99951e-05)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "280"
+        },
+        {
+          "tag": "animate-element",
+          "class": "block",
+          "text": "WITH",
+          "opacity": "0.999995",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.000213495)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "310"
+        },
+        {
+          "tag": "animate-element",
+          "class": "block",
+          "text": "ORDERS",
+          "opacity": "0.999989",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.000464289)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "340"
+        },
+        {
+          "tag": "animate-element",
+          "class": "block",
+          "text": "OVER",
+          "opacity": "0.999978",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.000943078)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "370"
+        }
+      ],
+      "heading": {
+        "tag": "h2",
+        "class": "heading leading-none title-md",
+        "text": "FREE REEL WITH ORDERS OVER £50",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none",
+        "ariaCurrent": null,
+        "dataAnimate": null,
+        "dataAnimateDelay": null
+      }
+    },
+    {
+      "label": "after-next2+1200ms",
+      "time": 1782194058663,
+      "selectedIndex": "3",
+      "items": [
+        {
+          "ariaCurrent": "false",
+          "text": "BULK LEAD DEAL!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "OUT NOW!",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "PB SHACKET SHIRT",
+          "animateCount": 3,
+          "splitWords": true,
+          "heading": {
+            "tag": "h1",
+            "class": "heading leading-none title-sm",
+            "text": "PB SHACKET SHIRT",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block",
+            "text": "PB",
+            "opacity": "0",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "true",
+          "text": "FREE REEL WITH ORDERS OVER £50",
+          "animateCount": 6,
+          "splitWords": true,
+          "heading": {
+            "tag": "h2",
+            "class": "heading leading-none title-md",
+            "text": "FREE REEL WITH ORDERS OVER £50",
+            "opacity": "1",
+            "transform": "none",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": null,
+            "dataAnimateDelay": null
+          },
+          "firstAnimate": {
+            "tag": "animate-element",
+            "class": "block animated",
+            "text": "FREE",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition": "all",
+            "animation": "none",
+            "ariaCurrent": null,
+            "dataAnimate": "fade-up-large",
+            "dataAnimateDelay": "250"
+          }
+        },
+        {
+          "ariaCurrent": "false",
+          "text": "",
+          "animateCount": 0,
+          "splitWords": false,
+          "heading": null,
+          "firstAnimate": null
+        }
+      ],
+      "activeAnimateEls": [
+        {
+          "tag": "animate-element",
+          "class": "block animated",
+          "text": "FREE",
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "250"
+        },
+        {
+          "tag": "animate-element",
+          "class": "block animated",
+          "text": "REEL",
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "280"
+        },
+        {
+          "tag": "animate-element",
+          "class": "block animated",
+          "text": "WITH",
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "310"
+        },
+        {
+          "tag": "animate-element",
+          "class": "block animated",
+          "text": "ORDERS",
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "340"
+        },
+        {
+          "tag": "animate-element",
+          "class": "block animated",
+          "text": "OVER",
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "transition": "all",
+          "animation": "none",
+          "ariaCurrent": null,
+          "dataAnimate": "fade-up-large",
+          "dataAnimateDelay": "370"
+        }
+      ],
+      "heading": {
+        "tag": "h2",
+        "class": "heading leading-none title-md",
+        "text": "FREE REEL WITH ORDERS OVER £50",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none",
+        "ariaCurrent": null,
+        "dataAnimate": null,
+        "dataAnimateDelay": null
+      }
+    }
+  ]
+}

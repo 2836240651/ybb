@@ -1,0 +1,273 @@
+{
+  "version": 1,
+  "prefix": "TZ-HK",
+  "nextSequence": 10,
+  "parentByType": {
+    "三角鲤鱼�?: "TZ-HK-001",
+    "黑弯背钩": "TZ-HK-002",
+    "8340�?: "TZ-HK-003",
+    "宽欧鲤卡�?: "TZ-HK-004",
+    "8245�?: "TZ-HK-005",
+    "9235�?: "TZ-HK-006",
+    "Yn hook": "TZ-HK-007",
+    "扁头翻转�?: "TZ-HK-008",
+    "带孔翻转�?: "TZ-HK-009"
+  },
+  "entries": {
+    "欧鲤鱼钩|三角鲤鱼钩|2#|": {
+      "parentSku": "TZ-HK-001",
+      "variantSku": "TZ-HK-001-2#",
+      "spec": "2#"
+    },
+    "欧鲤鱼钩|三角鲤鱼钩|4#|": {
+      "parentSku": "TZ-HK-001",
+      "variantSku": "TZ-HK-001-4#",
+      "spec": "4#"
+    },
+    "欧鲤鱼钩|三角鲤鱼钩|6#|": {
+      "parentSku": "TZ-HK-001",
+      "variantSku": "TZ-HK-001-6#",
+      "spec": "6#"
+    },
+    "欧鲤鱼钩|三角鲤鱼钩|8#|": {
+      "parentSku": "TZ-HK-001",
+      "variantSku": "TZ-HK-001-8#",
+      "spec": "8#"
+    },
+    "欧鲤鱼钩|三角鲤鱼钩|10#|": {
+      "parentSku": "TZ-HK-001",
+      "variantSku": "TZ-HK-001-10#",
+      "spec": "10#"
+    },
+    "欧鲤鱼钩|黑弯背钩|2#|": {
+      "parentSku": "TZ-HK-002",
+      "variantSku": "TZ-HK-002-2#",
+      "spec": "2#"
+    },
+    "欧鲤鱼钩|黑弯背钩|4#|": {
+      "parentSku": "TZ-HK-002",
+      "variantSku": "TZ-HK-002-4#",
+      "spec": "4#"
+    },
+    "欧鲤鱼钩|黑弯背钩|6#|": {
+      "parentSku": "TZ-HK-002",
+      "variantSku": "TZ-HK-002-6#",
+      "spec": "6#"
+    },
+    "欧鲤鱼钩|黑弯背钩|8#|": {
+      "parentSku": "TZ-HK-002",
+      "variantSku": "TZ-HK-002-8#",
+      "spec": "8#"
+    },
+    "欧鲤鱼钩|黑弯背钩|10#|": {
+      "parentSku": "TZ-HK-002",
+      "variantSku": "TZ-HK-002-10#",
+      "spec": "10#"
+    },
+    "欧鲤鱼钩|8340钩|2#|": {
+      "parentSku": "TZ-HK-003",
+      "variantSku": "TZ-HK-003-2#",
+      "spec": "2#"
+    },
+    "欧鲤鱼钩|8340钩|4#|": {
+      "parentSku": "TZ-HK-003",
+      "variantSku": "TZ-HK-003-4#",
+      "spec": "4#"
+    },
+    "欧鲤鱼钩|8340钩|6#|": {
+      "parentSku": "TZ-HK-003",
+      "variantSku": "TZ-HK-003-6#",
+      "spec": "6#"
+    },
+    "欧鲤鱼钩|8340钩|8#|": {
+      "parentSku": "TZ-HK-003",
+      "variantSku": "TZ-HK-003-8#",
+      "spec": "8#"
+    },
+    "欧鲤鱼钩|宽欧鲤卡贝|2#|": {
+      "parentSku": "TZ-HK-004",
+      "variantSku": "TZ-HK-004-2#",
+      "spec": "2#"
+    },
+    "欧鲤鱼钩|宽欧鲤卡贝|4#|": {
+      "parentSku": "TZ-HK-004",
+      "variantSku": "TZ-HK-004-4#",
+      "spec": "4#"
+    },
+    "欧鲤鱼钩|宽欧鲤卡贝|6#|": {
+      "parentSku": "TZ-HK-004",
+      "variantSku": "TZ-HK-004-6#",
+      "spec": "6#"
+    },
+    "欧鲤鱼钩|宽欧鲤卡贝|8#|": {
+      "parentSku": "TZ-HK-004",
+      "variantSku": "TZ-HK-004-8#",
+      "spec": "8#"
+    },
+    "欧鲤鱼钩|8245钩|2#|": {
+      "parentSku": "TZ-HK-005",
+      "variantSku": "TZ-HK-005-2#",
+      "spec": "2#"
+    },
+    "欧鲤鱼钩|8245钩|4#|": {
+      "parentSku": "TZ-HK-005",
+      "variantSku": "TZ-HK-005-4#",
+      "spec": "4#"
+    },
+    "欧鲤鱼钩|8245钩|6#|": {
+      "parentSku": "TZ-HK-005",
+      "variantSku": "TZ-HK-005-6#",
+      "spec": "6#"
+    },
+    "欧鲤鱼钩|8245钩|8#|": {
+      "parentSku": "TZ-HK-005",
+      "variantSku": "TZ-HK-005-8#",
+      "spec": "8#"
+    },
+    "欧鲤鱼钩|9235钩|2#|": {
+      "parentSku": "TZ-HK-006",
+      "variantSku": "TZ-HK-006-2#",
+      "spec": "2#"
+    },
+    "欧鲤鱼钩|9235钩|4#|": {
+      "parentSku": "TZ-HK-006",
+      "variantSku": "TZ-HK-006-4#",
+      "spec": "4#"
+    },
+    "欧鲤鱼钩|9235钩|6#|": {
+      "parentSku": "TZ-HK-006",
+      "variantSku": "TZ-HK-006-6#",
+      "spec": "6#"
+    },
+    "欧鲤鱼钩|9235钩|8#|": {
+      "parentSku": "TZ-HK-006",
+      "variantSku": "TZ-HK-006-8#",
+      "spec": "8#"
+    },
+    "欧鲤鱼钩|9235钩|10#|": {
+      "parentSku": "TZ-HK-006",
+      "variantSku": "TZ-HK-006-10#",
+      "spec": "10#"
+    },
+    "欧鲤鱼钩|9235钩|12#|": {
+      "parentSku": "TZ-HK-006",
+      "variantSku": "TZ-HK-006-12#",
+      "spec": "12#"
+    },
+    "欧鲤鱼钩|Yn hook|2#|": {
+      "parentSku": "TZ-HK-007",
+      "variantSku": "TZ-HK-007-2#",
+      "spec": "2#"
+    },
+    "欧鲤鱼钩|Yn hook|4#|": {
+      "parentSku": "TZ-HK-007",
+      "variantSku": "TZ-HK-007-4#",
+      "spec": "4#"
+    },
+    "欧鲤鱼钩|Yn hook|6#|": {
+      "parentSku": "TZ-HK-007",
+      "variantSku": "TZ-HK-007-6#",
+      "spec": "6#"
+    },
+    "欧鲤鱼钩|Yn hook|8#|": {
+      "parentSku": "TZ-HK-007",
+      "variantSku": "TZ-HK-007-8#",
+      "spec": "8#"
+    },
+    "欧鲤鱼钩|Yn hook|10#|": {
+      "parentSku": "TZ-HK-007",
+      "variantSku": "TZ-HK-007-10#",
+      "spec": "10#"
+    },
+    "欧鲤鱼钩|扁头翻转钩|1#|": {
+      "parentSku": "TZ-HK-008",
+      "variantSku": "TZ-HK-008-1#",
+      "spec": "1#"
+    },
+    "欧鲤鱼钩|扁头翻转钩|2#|": {
+      "parentSku": "TZ-HK-008",
+      "variantSku": "TZ-HK-008-2#",
+      "spec": "2#"
+    },
+    "欧鲤鱼钩|扁头翻转钩|3#|": {
+      "parentSku": "TZ-HK-008",
+      "variantSku": "TZ-HK-008-3#",
+      "spec": "3#"
+    },
+    "欧鲤鱼钩|扁头翻转钩|4#|": {
+      "parentSku": "TZ-HK-008",
+      "variantSku": "TZ-HK-008-4#",
+      "spec": "4#"
+    },
+    "欧鲤鱼钩|扁头翻转钩|5#|": {
+      "parentSku": "TZ-HK-008",
+      "variantSku": "TZ-HK-008-5#",
+      "spec": "5#"
+    },
+    "欧鲤鱼钩|扁头翻转钩|6#|": {
+      "parentSku": "TZ-HK-008",
+      "variantSku": "TZ-HK-008-6#",
+      "spec": "6#"
+    },
+    "欧鲤鱼钩|扁头翻转钩|7#|": {
+      "parentSku": "TZ-HK-008",
+      "variantSku": "TZ-HK-008-7#",
+      "spec": "7#"
+    },
+    "欧鲤鱼钩|扁头翻转钩|8#|": {
+      "parentSku": "TZ-HK-008",
+      "variantSku": "TZ-HK-008-8#",
+      "spec": "8#"
+    },
+    "欧鲤鱼钩|扁头翻转钩|9#|": {
+      "parentSku": "TZ-HK-008",
+      "variantSku": "TZ-HK-008-9#",
+      "spec": "9#"
+    },
+    "欧鲤鱼钩|扁头翻转钩|10#|": {
+      "parentSku": "TZ-HK-008",
+      "variantSku": "TZ-HK-008-10#",
+      "spec": "10#"
+    },
+    "欧鲤鱼钩|带孔翻转钩|5#|": {
+      "parentSku": "TZ-HK-009",
+      "variantSku": "TZ-HK-009-5#",
+      "spec": "5#"
+    },
+    "欧鲤鱼钩|带孔翻转钩|6#|": {
+      "parentSku": "TZ-HK-009",
+      "variantSku": "TZ-HK-009-6#",
+      "spec": "6#"
+    },
+    "欧鲤鱼钩|带孔翻转钩|7#|": {
+      "parentSku": "TZ-HK-009",
+      "variantSku": "TZ-HK-009-7#",
+      "spec": "7#"
+    },
+    "欧鲤鱼钩|带孔翻转钩|8#|": {
+      "parentSku": "TZ-HK-009",
+      "variantSku": "TZ-HK-009-8#",
+      "spec": "8#"
+    },
+    "欧鲤鱼钩|带孔翻转钩|9#|": {
+      "parentSku": "TZ-HK-009",
+      "variantSku": "TZ-HK-009-9#",
+      "spec": "9#"
+    },
+    "欧鲤鱼钩|带孔翻转钩|10#|": {
+      "parentSku": "TZ-HK-009",
+      "variantSku": "TZ-HK-009-10#",
+      "spec": "10#"
+    },
+    "欧鲤鱼钩|带孔翻转钩|11#|": {
+      "parentSku": "TZ-HK-009",
+      "variantSku": "TZ-HK-009-11#",
+      "spec": "11#"
+    },
+    "欧鲤鱼钩|带孔翻转钩|12#|": {
+      "parentSku": "TZ-HK-009",
+      "variantSku": "TZ-HK-009-12#",
+      "spec": "12#"
+    }
+  }
+}

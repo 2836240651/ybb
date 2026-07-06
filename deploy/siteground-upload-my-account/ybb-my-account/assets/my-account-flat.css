@@ -1,0 +1,424 @@
+/* YBB My Account — homepage background + header nav + horizontal account tabs */
+
+:root {
+  --ybb-text: #1c1f24;
+  --ybb-muted: #5f6772;
+  --ybb-line: #e6e2dc;
+  --ybb-brand: #0f3b63;
+  --ybb-card: #fff;
+  --ybb-scrim: rgb(255 255 255 / 0.68);
+  --ybb-bg-image: url("/images/site/carpfishing-fullscreen-hero-bg-v2.png");
+  --ybb-radius: 14px;
+  --ybb-page-max: 1200px;
+}
+
+body.ybb-account-page {
+  margin: 0;
+  color: var(--ybb-text);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+  position: relative;
+  overflow-x: clip;
+}
+
+body.ybb-account-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background-image: var(--ybb-bg-image);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  pointer-events: none;
+}
+
+body.ybb-account-page::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: var(--ybb-scrim);
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.ybb-account-page::before {
+    background-attachment: scroll;
+  }
+}
+
+.ybb-account-shell {
+  min-height: 100vh;
+}
+
+.ybb-account-shell * {
+  box-sizing: border-box;
+}
+
+/* —— Site header (aligned with Next homepage) —— */
+.ybb-account-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  min-height: 78px;
+  background: rgb(255 255 255 / 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--ybb-line);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 16px;
+  padding: 0 clamp(16px, 3vw, 28px);
+}
+
+.ybb-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  color: var(--ybb-text);
+  flex-shrink: 0;
+}
+
+.ybb-brand .custom-logo-link img,
+.ybb-brand-logo {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.ybb-brand-name {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.ybb-brand-tagline {
+  font-size: 12px;
+  color: var(--ybb-muted);
+}
+
+.ybb-site-nav {
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.ybb-site-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.ybb-site-nav-list {
+  display: flex;
+  align-items: center;
+  gap: clamp(4px, 0.5vw, 8px);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-width: min-content;
+}
+
+.ybb-nav-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 42px;
+  padding: 0 clamp(10px, 1vw, 16px);
+  border-radius: 999px;
+  color: var(--ybb-text);
+  font-size: clamp(12px, 0.85vw, 14px);
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    color 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.ybb-nav-pill:hover,
+.ybb-nav-pill:focus-visible {
+  color: #fff;
+  background-color: var(--ybb-text);
+  outline: none;
+}
+
+.ybb-account-topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  font-size: 14px;
+}
+
+.ybb-utility-link {
+  color: var(--ybb-muted);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.ybb-utility-link:hover {
+  color: var(--ybb-brand);
+}
+
+.ybb-account-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(15, 59, 99, 0.08);
+  color: var(--ybb-brand);
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.ybb-lang {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--ybb-muted);
+  font-size: 13px;
+}
+
+.ybb-lang a {
+  color: var(--ybb-muted);
+  text-decoration: none;
+}
+
+.ybb-lang a:hover {
+  color: var(--ybb-brand);
+}
+
+.ybb-crumb {
+  max-width: var(--ybb-page-max);
+  margin: 18px auto 0;
+  padding: 0 24px;
+  color: var(--ybb-muted);
+  font-size: 13px;
+}
+
+/* —— Account card —— */
+.ybb-account-content {
+  max-width: var(--ybb-page-max);
+  margin: 16px auto 48px;
+  padding: 0 24px 24px;
+}
+
+.ybb-account-content > .woocommerce {
+  background: var(--ybb-card);
+  border: 1px solid var(--ybb-line);
+  border-radius: var(--ybb-radius);
+  box-shadow: 0 8px 32px rgb(28 31 36 / 0.06);
+  padding: clamp(20px, 3vw, 32px);
+}
+
+/* Hide duplicate page title from theme if injected */
+.ybb-account-content .entry-header,
+.ybb-account-content > h1:not(.woocommerce-MyAccount-content h1) {
+  display: none;
+}
+
+/* —— Horizontal account sub-nav —— */
+.ybb-account-content .woocommerce-MyAccount-navigation {
+  float: none;
+  width: 100%;
+  margin: 0 0 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--ybb-line);
+}
+
+.ybb-account-content .woocommerce-MyAccount-navigation ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ybb-account-content .woocommerce-MyAccount-navigation li {
+  margin: 0;
+}
+
+.ybb-account-content .woocommerce-MyAccount-navigation a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--ybb-line);
+  background: #faf9f7;
+  color: var(--ybb-text);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.ybb-account-content .woocommerce-MyAccount-navigation a:hover {
+  border-color: var(--ybb-text);
+  color: var(--ybb-text);
+}
+
+.ybb-account-content .woocommerce-MyAccount-navigation-link.is-active a {
+  background: var(--ybb-text);
+  border-color: var(--ybb-text);
+  color: #fff;
+}
+
+.ybb-account-content .woocommerce-MyAccount-content {
+  float: none;
+  width: 100%;
+}
+
+.ybb-account-content .woocommerce-MyAccount-content h2,
+.ybb-account-content .woocommerce-MyAccount-content h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 16px;
+  color: var(--ybb-text);
+}
+
+.ybb-account-content .woocommerce-MyAccount-content p {
+  color: var(--ybb-muted);
+  margin: 0 0 12px;
+}
+
+.ybb-account-content .woocommerce-MyAccount-content a {
+  color: var(--ybb-brand);
+  font-weight: 600;
+}
+
+/* Login / register forms */
+.ybb-account-content .woocommerce form.login,
+.ybb-account-content .woocommerce form.register {
+  border: 1px solid var(--ybb-line);
+  border-radius: 12px;
+  padding: 24px;
+  margin: 0 0 20px;
+  background: #faf9f7;
+}
+
+.ybb-account-content .woocommerce form .form-row input.input-text,
+.ybb-account-content .woocommerce form .form-row textarea,
+.ybb-account-content .woocommerce form .form-row select {
+  width: 100%;
+  border: 1px solid var(--ybb-line);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 15px;
+  background: #fff;
+}
+
+.ybb-account-content .woocommerce form .form-row label {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.ybb-account-content .woocommerce button.button,
+.ybb-account-content .woocommerce a.button,
+.ybb-account-content .woocommerce input.button {
+  background: var(--ybb-text);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.ybb-account-content .woocommerce button.button:hover,
+.ybb-account-content .woocommerce a.button:hover,
+.ybb-account-content .woocommerce input.button:hover {
+  opacity: 0.88;
+  color: #fff;
+}
+
+/* Orders table */
+.ybb-account-content .woocommerce table.shop_table {
+  border: 1px solid var(--ybb-line);
+  border-radius: 12px;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.ybb-account-content .woocommerce table.shop_table th,
+.ybb-account-content .woocommerce table.shop_table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--ybb-line);
+}
+
+.ybb-account-content .woocommerce table.shop_table thead th {
+  background: #faf9f7;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.ybb-account-content .woocommerce table.shop_table tr:last-child td {
+  border-bottom: none;
+}
+
+.ybb-account-content .woocommerce-message,
+.ybb-account-content .woocommerce-info,
+.ybb-account-content .woocommerce-error {
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+/* Mobile */
+@media (max-width: 1023px) {
+  .ybb-account-topbar {
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    padding-block: 12px;
+    gap: 12px;
+  }
+
+  .ybb-brand {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .ybb-account-topbar-actions {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .ybb-site-nav {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .ybb-account-badge {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .ybb-account-content .woocommerce-MyAccount-navigation ul {
+    flex-direction: column;
+  }
+
+  .ybb-account-content .woocommerce-MyAccount-navigation a {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .ybb-lang {
+    display: none;
+  }
+}

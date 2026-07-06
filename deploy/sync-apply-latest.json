@@ -1,0 +1,23 @@
+{
+    "dryRun": false,
+    "created": 0,
+    "updated": 1839,
+    "skipped": 14,
+    "errors": [],
+    "skuCollisions": [
+        "TZ-XZ-044-8pcs-6#",
+        "TZ-XZ-044-8pcs-8#",
+        "TZ-XZ-044-8pcs-10#",
+        "TZ-XZ-044-8pcs-12#",
+        "TZ-XZ-044-8pcs-14#",
+        "TZ-QZDZ-035-57g",
+        "TZ-QZDZ-036-71g",
+        "TZ-QZDZ-037-85g",
+        "TZ-ELDZ-024-4#",
+        "TZ-ELDZ-024-6#",
+        "TZ-ELDZ-024-8#",
+        "TZ-XP-035-小号",
+        "TZ-XP-035-大号",
+        "TZ-PJJS-011-black"
+    ]
+}

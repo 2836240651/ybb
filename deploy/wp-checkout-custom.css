@@ -1,0 +1,85 @@
+/* YBB checkout + order received — align with Next.js storefront (published via WP Customizer) */
+body.woocommerce-checkout,
+body.woocommerce-order-received {
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+  color: #171717;
+  background: #f5f5f5;
+}
+
+.woocommerce-checkout .col2-set,
+.woocommerce-checkout #order_review {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.woocommerce-checkout form.checkout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px 48px;
+}
+
+@media (max-width: 900px) {
+  .woocommerce-checkout form.checkout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.woocommerce-checkout h3,
+.woocommerce-checkout #order_review_heading {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.woocommerce-checkout .form-row input,
+.woocommerce-checkout .form-row textarea,
+.woocommerce-checkout .form-row select {
+  border: 1px solid #d4d4d4;
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+.woocommerce-checkout #place_order,
+.woocommerce-order-received .button {
+  background: #171717 !important;
+  color: #fff !important;
+  border-radius: 9999px !important;
+  padding: 14px 28px !important;
+  font-weight: 600;
+  border: none !important;
+}
+
+.woocommerce-checkout .coupon .button {
+  background: #d1ba98 !important;
+  color: #171717 !important;
+  border-radius: 9999px !important;
+}
+
+.woocommerce-order-received .woocommerce-order {
+  max-width: 960px;
+  margin: 32px auto;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.woocommerce-order-received .woocommerce-thankyou-order-received {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.woocommerce-order-received .woocommerce-order-overview {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin: 24px 0;
+  padding: 0;
+  list-style: none;
+}

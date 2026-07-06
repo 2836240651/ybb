@@ -1,0 +1,6 @@
+{
+  "subdomain": "dev.ybb.local",
+  "proxyPort": 8080,
+  "target": "http://127.0.0.1:3001",
+  "description": "Temporary local subdomain mount for ybb-site Next.js dev server"
+}

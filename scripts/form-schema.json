@@ -1,0 +1,30 @@
+{
+  "defaultXlsx": "��Ʒ����.xlsx",
+  "defaultPrice": "1.99",
+  "skipSheets": ["WpsReserved_CellImgList"],
+  "mainSheetCount": 8,
+  "sheetMap": {
+    "2026��Ʒ": { "handle": "2026-new-products", "titleEn": "2026 New Products", "titleJa": "2026�����uƷ", "layout": "mapped", "skuMappingFile": "2026-new-products.json", "skuPrefix": "TZ-XP" },
+    "Ǧ׹": { "handle": "sinkers", "titleEn": "Sinkers", "titleJa": "�����", "layout": "standard", "priceColumns": [{ "headers": ["��������Ԫ��", "����"], "col": 5 }] },
+    "����": { "handle": "bait-cages", "titleEn": "Bait Cages", "titleJa": "��������", "layout": "standard", "priceColumns": [{ "headers": ["���ۼ�", "���ۼۣ���Ԫ��"], "col": 9 }, { "headers": ["�ɱ���"], "col": 5 }] },
+    "����": { "handle": "rigs", "titleEn": "Rigs", "titleJa": "�ꥰ", "layout": "standard", "priceColumns": [{ "headers": ["���ۼۣ���Ԫ��", "���ۼ�"], "col": 5 }] },
+    "Ǧ׹����": { "handle": "sinker-rigs", "titleEn": "Sinker Rigs", "titleJa": "�����ꥰ", "layout": "standard", "priceColumns": [{ "headers": ["���ۼۣ���Ԫ��", "���ۼ�"], "col": 5 }] },
+    "��������": { "handle": "bait-cage-rigs", "titleEn": "Bait Cage Rigs", "titleJa": "���������ꥰ", "layout": "standard", "priceColumns": [{ "headers": ["�ɱ���", "���ۼۣ���Ԫ��"], "col": 5 }] },
+    "ŷ���㹳": { "handle": "carp-hooks", "titleEn": "Carp Hooks", "titleJa": "���`�ץեå�", "layout": "mapped", "skuMappingFile": "carp-hooks.json", "skuPrefix": "TZ-HK", "priceColumns": [{ "headers": ["����"], "col": 4 }] },
+    "�׺�-ŷ���": { "handle": "euro-carp-kits", "titleEn": "Euro Carp Kits", "titleJa": "ŷ�����å�", "layout": "standard", "priceColumns": [{ "headers": ["�ɱ���", "���ۼ�"], "col": 5 }] },
+    "���-����": { "handle": "accessories-metal", "titleEn": "Metal Accessories", "titleJa": "��������������`", "layout": "standard", "priceColumns": [{ "headers": ["�ɱ���", "���ۼ�"], "col": 5 }] },
+    "���-����": { "handle": "accessories-plastic", "titleEn": "Plastic Accessories", "titleJa": "�ץ饹���å�����������`", "layout": "standard", "priceColumns": [{ "headers": ["�ɱ���", "���ۼ�"], "col": 5 }] },
+    "֧��": { "handle": "rod-pod-accessories", "titleEn": "Rod Pods & Stands", "titleJa": "���åɥݥå�", "layout": "standard", "priceColumns": [{ "headers": ["�ɱ���", "���ۼ�"], "col": 5 }] },
+    "�ܱ��豸": { "handle": "peripheral-equipment", "titleEn": "Peripheral Equipment", "titleJa": "���x�C��", "layout": "standard", "priceColumns": [{ "headers": ["�ɱ���", "���ۼ�"], "col": 5 }] }
+  },
+  "headerAliases": {
+    "parentSku": ["����", "��Ʒ����", "Base SKU"],
+    "variantSku": ["��Ʒ����", "��Ʒ���", "��Ʒ����", "Variant SKU"],
+    "skipFirstCell": ["����", "Name", "name"]
+  },
+  "legacyProductCatSlugs": [
+    "carp-fishing-leads", "carp-fishing-rigs", "carp-fishing-feeder", "carp-fishing-accessories",
+    "carp-fishing-tools-add-ons", "carp-fishing-rod-supports", "carp-fishing-lines-hooks",
+    "feeder-fishing-rig", "lead-fishing-rig", "inline-tube-insert-lead", "swivel-lead-lead-with-swivel", "fishing-box"
+  ]
+}

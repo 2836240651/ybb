@@ -1,0 +1,2485 @@
+{
+  "site": "https://carp-ybb.com",
+  "auditedAt": "2026-06-28T03:20:19.157Z",
+  "total": 30,
+  "overflowCount": 1,
+  "results": [
+    {
+      "viewport": "320x568",
+      "page": "home",
+      "path": "/",
+      "url": "https://carp-ybb.com/?mobile-audit=1",
+      "viewportWidth": 320,
+      "scrollWidth": 320,
+      "hasHorizontalOverflow": false,
+      "offenders": [],
+      "screenshot": "D:\\寮�鍙慭\fishAgent\\鎬诲寘\\skill\\reverse-skill\\omc-replica\\ybb-site\\scripts\\.audit-output\\mobile-viewports\\home-320x568.png"
+    },
+    {
+      "viewport": "320x568",
+      "page": "collection",
+      "path": "/collections/sinkers/",
+      "url": "https://carp-ybb.com/collections/sinkers/?mobile-audit=1",
+      "viewportWidth": 320,
+      "scrollWidth": 320,
+      "hasHorizontalOverflow": false,
+      "offenders": [],
+      "screenshot": "D:\\寮�鍙慭\fishAgent\\鎬诲寘\\skill\\reverse-skill\\omc-replica\\ybb-site\\scripts\\.audit-output\\mobile-viewports\\collection-320x568.png"
+    },
+    {
+      "viewport": "320x568",
+      "page": "pdp",
+      "path": "/products/tz-eldz-012",
+      "url": "https://carp-ybb.com/products/tz-eldz-012?mobile-audit=1",
+      "viewportWidth": 320,
+      "scrollWidth": 320,
+      "hasHorizontalOverflow": false,
+      "offenders": [],
+      "screenshot": "D:\\寮�鍙慭\fishAgent\\鎬诲寘\\skill\\reverse-skill\\omc-replica\\ybb-site\\scripts\\.audit-output\\mobile-viewports\\pdp-320x568.png"
+    },
+    {
+      "viewport": "320x568",
+      "page": "reviews",
+      "path": "/products/reviews/tz-eldz-012",
+      "url": "https://carp-ybb.com/products/reviews/tz-eldz-012?mobile-audit=1",
+      "viewportWidth": 320,
+      "scrollWidth": 320,
+      "hasHorizontalOverflow": false,
+      "offenders": [
+        {
+          "tag": "div",
+          "selector": "div.announcement-marquee-track",
+          "right": 6437,
+          "left": 16,
+          "width": 6421,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 6437,
+          "left": 5922,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5874,
+          "left": 5367,
+          "width": 507,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "OEM / ODM 鈥?PRIVATE-LABEL LEADS, RIGS & FULL CATEGORY CUSTOM"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5319,
+          "left": 4807,
+          "width": 513,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "ROD PODS 路 METAL & PLASTIC ACCESSORIES 路 PERIPHERAL GEAR 鈥?S"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4759,
+          "left": 4266,
+          "width": 492,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKER RIGS 路 BAIT-CAGE RIGS 路 EURO CARP KITS 鈥?BULK-READY W"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4218,
+          "left": 3753,
+          "width": 465,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKERS 路 BAIT CAGES 路 CARP HOOKS 路 LINE RIGS 鈥?EURO CARP CA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3705,
+          "left": 3251,
+          "width": 454,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3203,
+          "left": 2688,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        }
+      ],
+      "screenshot": "D:\\寮�鍙慭\fishAgent\\鎬诲寘\\skill\\reverse-skill\\omc-replica\\ybb-site\\scripts\\.audit-output\\mobile-viewports\\reviews-320x568.png"
+    },
+    {
+      "viewport": "320x568",
+      "page": "shop-all",
+      "path": "/collections/all",
+      "url": "https://carp-ybb.com/collections/all?mobile-audit=1",
+      "viewportWidth": 320,
+      "scrollWidth": 320,
+      "hasHorizontalOverflow": false,
+      "offenders": [
+        {
+          "tag": "div",
+          "selector": "div.announcement-marquee-track",
+          "right": 6294,
+          "left": -127,
+          "width": 6421,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 6294,
+          "left": 5779,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5731,
+          "left": 5224,
+          "width": 507,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "OEM / ODM 鈥?PRIVATE-LABEL LEADS, RIGS & FULL CATEGORY CUSTOM"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5176,
+          "left": 4664,
+          "width": 513,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "ROD PODS 路 METAL & PLASTIC ACCESSORIES 路 PERIPHERAL GEAR 鈥?S"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4616,
+          "left": 4123,
+          "width": 492,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKER RIGS 路 BAIT-CAGE RIGS 路 EURO CARP KITS 鈥?BULK-READY W"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4075,
+          "left": 3610,
+          "width": 465,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKERS 路 BAIT CAGES 路 CARP HOOKS 路 LINE RIGS 鈥?EURO CARP CA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3562,
+          "left": 3108,
+          "width": 454,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3060,
+          "left": 2544,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        }
+      ],
+      "screenshot": "D:\\寮�鍙慭\fishAgent\\鎬诲寘\\skill\\reverse-skill\\omc-replica\\ybb-site\\scripts\\.audit-output\\mobile-viewports\\shop-all-320x568.png"
+    },
+    {
+      "viewport": "320x568",
+      "page": "contact",
+      "path": "/pages/contact",
+      "url": "https://carp-ybb.com/pages/contact?mobile-audit=1",
+      "viewportWidth": 320,
+      "scrollWidth": 320,
+      "hasHorizontalOverflow": false,
+      "offenders": [
+        {
+          "tag": "div",
+          "selector": "div.announcement-marquee-track",
+          "right": 6294,
+          "left": -127,
+          "width": 6421,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 6294,
+          "left": 5779,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5731,
+          "left": 5224,
+          "width": 507,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "OEM / ODM 鈥?PRIVATE-LABEL LEADS, RIGS & FULL CATEGORY CUSTOM"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5176,
+          "left": 4664,
+          "width": 513,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "ROD PODS 路 METAL & PLASTIC ACCESSORIES 路 PERIPHERAL GEAR 鈥?S"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4616,
+          "left": 4123,
+          "width": 492,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKER RIGS 路 BAIT-CAGE RIGS 路 EURO CARP KITS 鈥?BULK-READY W"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4075,
+          "left": 3610,
+          "width": 465,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKERS 路 BAIT CAGES 路 CARP HOOKS 路 LINE RIGS 鈥?EURO CARP CA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3562,
+          "left": 3108,
+          "width": 454,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3060,
+          "left": 2544,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        }
+      ],
+      "screenshot": "D:\\寮�鍙慭\fishAgent\\鎬诲寘\\skill\\reverse-skill\\omc-replica\\ybb-site\\scripts\\.audit-output\\mobile-viewports\\contact-320x568.png"
+    },
+    {
+      "viewport": "360x640",
+      "page": "home",
+      "path": "/",
+      "url": "https://carp-ybb.com/?mobile-audit=1",
+      "viewportWidth": 360,
+      "scrollWidth": 457,
+      "hasHorizontalOverflow": true,
+      "offenders": [
+        {
+          "tag": "span",
+          "selector": "span.hero-banner__caption-word",
+          "right": 457,
+          "left": 314,
+          "width": 143,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "customization"
+        },
+        {
+          "tag": "span",
+          "selector": "span.hero-banner__caption-word-inner",
+          "right": 457,
+          "left": 314,
+          "width": 143,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "customization"
+        },
+        {
+          "tag": "span",
+          "selector": "span.hero-banner__caption-word",
+          "right": 443,
+          "left": 351,
+          "width": 92,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "overview"
+        },
+        {
+          "tag": "span",
+          "selector": "span.hero-banner__caption-word-inner",
+          "right": 443,
+          "left": 351,
+          "width": 92,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "overview"
+        }
+      ],
+      "screenshot": "D:\\寮�鍙慭\fishAgent\\鎬诲寘\\skill\\reverse-skill\\omc-replica\\ybb-site\\scripts\\.audit-output\\mobile-viewports\\home-360x640.png"
+    },
+    {
+      "viewport": "360x640",
+      "page": "collection",
+      "path": "/collections/sinkers/",
+      "url": "https://carp-ybb.com/collections/sinkers/?mobile-audit=1",
+      "viewportWidth": 360,
+      "scrollWidth": 360,
+      "hasHorizontalOverflow": false,
+      "offenders": [
+        {
+          "tag": "div",
+          "selector": "div.announcement-marquee-track",
+          "right": 6294,
+          "left": -127,
+          "width": 6421,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 6294,
+          "left": 5779,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5731,
+          "left": 5224,
+          "width": 507,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "OEM / ODM 鈥?PRIVATE-LABEL LEADS, RIGS & FULL CATEGORY CUSTOM"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5176,
+          "left": 4663,
+          "width": 513,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "ROD PODS 路 METAL & PLASTIC ACCESSORIES 路 PERIPHERAL GEAR 鈥?S"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4615,
+          "left": 4123,
+          "width": 492,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKER RIGS 路 BAIT-CAGE RIGS 路 EURO CARP KITS 鈥?BULK-READY W"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4075,
+          "left": 3610,
+          "width": 465,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKERS 路 BAIT CAGES 路 CARP HOOKS 路 LINE RIGS 鈥?EURO CARP CA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3562,
+          "left": 3108,
+          "width": 454,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3060,
+          "left": 2544,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        }
+      ],
+      "screenshot": "D:\\寮�鍙慭\fishAgent\\鎬诲寘\\skill\\reverse-skill\\omc-replica\\ybb-site\\scripts\\.audit-output\\mobile-viewports\\collection-360x640.png"
+    },
+    {
+      "viewport": "360x640",
+      "page": "pdp",
+      "path": "/products/tz-eldz-012",
+      "url": "https://carp-ybb.com/products/tz-eldz-012?mobile-audit=1",
+      "viewportWidth": 360,
+      "scrollWidth": 360,
+      "hasHorizontalOverflow": false,
+      "offenders": [
+        {
+          "tag": "div",
+          "selector": "div.announcement-marquee-track",
+          "right": 6296,
+          "left": -126,
+          "width": 6421,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 6296,
+          "left": 5781,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5733,
+          "left": 5225,
+          "width": 507,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "OEM / ODM 鈥?PRIVATE-LABEL LEADS, RIGS & FULL CATEGORY CUSTOM"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5177,
+          "left": 4665,
+          "width": 513,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "ROD PODS 路 METAL & PLASTIC ACCESSORIES 路 PERIPHERAL GEAR 鈥?S"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4617,
+          "left": 4125,
+          "width": 492,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKER RIGS 路 BAIT-CAGE RIGS 路 EURO CARP KITS 鈥?BULK-READY W"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4077,
+          "left": 3611,
+          "width": 465,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKERS 路 BAIT CAGES 路 CARP HOOKS 路 LINE RIGS 鈥?EURO CARP CA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3563,
+          "left": 3109,
+          "width": 454,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3061,
+          "left": 2546,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        }
+      ],
+      "screenshot": "D:\\寮�鍙慭\fishAgent\\鎬诲寘\\skill\\reverse-skill\\omc-replica\\ybb-site\\scripts\\.audit-output\\mobile-viewports\\pdp-360x640.png"
+    },
+    {
+      "viewport": "360x640",
+      "page": "reviews",
+      "path": "/products/reviews/tz-eldz-012",
+      "url": "https://carp-ybb.com/products/reviews/tz-eldz-012?mobile-audit=1",
+      "viewportWidth": 360,
+      "scrollWidth": 360,
+      "hasHorizontalOverflow": false,
+      "offenders": [
+        {
+          "tag": "div",
+          "selector": "div.announcement-marquee-track",
+          "right": 6296,
+          "left": -126,
+          "width": 6421,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 6296,
+          "left": 5781,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5733,
+          "left": 5225,
+          "width": 507,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "OEM / ODM 鈥?PRIVATE-LABEL LEADS, RIGS & FULL CATEGORY CUSTOM"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5177,
+          "left": 4665,
+          "width": 513,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "ROD PODS 路 METAL & PLASTIC ACCESSORIES 路 PERIPHERAL GEAR 鈥?S"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4617,
+          "left": 4125,
+          "width": 492,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKER RIGS 路 BAIT-CAGE RIGS 路 EURO CARP KITS 鈥?BULK-READY W"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4077,
+          "left": 3611,
+          "width": 465,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKERS 路 BAIT CAGES 路 CARP HOOKS 路 LINE RIGS 鈥?EURO CARP CA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3563,
+          "left": 3109,
+          "width": 454,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3061,
+          "left": 2546,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        }
+      ],
+      "screenshot": "D:\\寮�鍙慭\fishAgent\\鎬诲寘\\skill\\reverse-skill\\omc-replica\\ybb-site\\scripts\\.audit-output\\mobile-viewports\\reviews-360x640.png"
+    },
+    {
+      "viewport": "360x640",
+      "page": "shop-all",
+      "path": "/collections/all",
+      "url": "https://carp-ybb.com/collections/all?mobile-audit=1",
+      "viewportWidth": 360,
+      "scrollWidth": 360,
+      "hasHorizontalOverflow": false,
+      "offenders": [
+        {
+          "tag": "div",
+          "selector": "div.announcement-marquee-track",
+          "right": 6294,
+          "left": -127,
+          "width": 6421,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 6294,
+          "left": 5779,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5731,
+          "left": 5224,
+          "width": 507,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "OEM / ODM 鈥?PRIVATE-LABEL LEADS, RIGS & FULL CATEGORY CUSTOM"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5176,
+          "left": 4663,
+          "width": 513,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "ROD PODS 路 METAL & PLASTIC ACCESSORIES 路 PERIPHERAL GEAR 鈥?S"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4615,
+          "left": 4123,
+          "width": 492,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKER RIGS 路 BAIT-CAGE RIGS 路 EURO CARP KITS 鈥?BULK-READY W"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4075,
+          "left": 3610,
+          "width": 465,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKERS 路 BAIT CAGES 路 CARP HOOKS 路 LINE RIGS 鈥?EURO CARP CA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3562,
+          "left": 3108,
+          "width": 454,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3060,
+          "left": 2544,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        }
+      ],
+      "screenshot": "D:\\寮�鍙慭\fishAgent\\鎬诲寘\\skill\\reverse-skill\\omc-replica\\ybb-site\\scripts\\.audit-output\\mobile-viewports\\shop-all-360x640.png"
+    },
+    {
+      "viewport": "360x640",
+      "page": "contact",
+      "path": "/pages/contact",
+      "url": "https://carp-ybb.com/pages/contact?mobile-audit=1",
+      "viewportWidth": 360,
+      "scrollWidth": 360,
+      "hasHorizontalOverflow": false,
+      "offenders": [
+        {
+          "tag": "div",
+          "selector": "div.announcement-marquee-track",
+          "right": 6294,
+          "left": -127,
+          "width": 6421,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 6294,
+          "left": 5779,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5731,
+          "left": 5224,
+          "width": 507,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "OEM / ODM 鈥?PRIVATE-LABEL LEADS, RIGS & FULL CATEGORY CUSTOM"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5176,
+          "left": 4664,
+          "width": 513,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "ROD PODS 路 METAL & PLASTIC ACCESSORIES 路 PERIPHERAL GEAR 鈥?S"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4616,
+          "left": 4123,
+          "width": 492,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKER RIGS 路 BAIT-CAGE RIGS 路 EURO CARP KITS 鈥?BULK-READY W"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4075,
+          "left": 3610,
+          "width": 465,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKERS 路 BAIT CAGES 路 CARP HOOKS 路 LINE RIGS 鈥?EURO CARP CA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3562,
+          "left": 3108,
+          "width": 454,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3060,
+          "left": 2544,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        }
+      ],
+      "screenshot": "D:\\寮�鍙慭\fishAgent\\鎬诲寘\\skill\\reverse-skill\\omc-replica\\ybb-site\\scripts\\.audit-output\\mobile-viewports\\contact-360x640.png"
+    },
+    {
+      "viewport": "390x844",
+      "page": "home",
+      "path": "/",
+      "url": "https://carp-ybb.com/?mobile-audit=1",
+      "viewportWidth": 390,
+      "scrollWidth": 390,
+      "hasHorizontalOverflow": false,
+      "offenders": [
+        {
+          "tag": "div",
+          "selector": "div.announcement-marquee-track",
+          "right": 6278,
+          "left": -143,
+          "width": 6421,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 6278,
+          "left": 5763,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5715,
+          "left": 5208,
+          "width": 507,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "OEM / ODM 鈥?PRIVATE-LABEL LEADS, RIGS & FULL CATEGORY CUSTOM"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5160,
+          "left": 4647,
+          "width": 513,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "ROD PODS 路 METAL & PLASTIC ACCESSORIES 路 PERIPHERAL GEAR 鈥?S"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4599,
+          "left": 4107,
+          "width": 492,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKER RIGS 路 BAIT-CAGE RIGS 路 EURO CARP KITS 鈥?BULK-READY W"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4059,
+          "left": 3594,
+          "width": 465,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKERS 路 BAIT CAGES 路 CARP HOOKS 路 LINE RIGS 鈥?EURO CARP CA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.group.block.relative",
+          "right": 3790,
+          "left": 3494,
+          "width": 296,
+          "overflowX": "hidden",
+          "position": "relative",
+          "text": "Peripheral Equipment"
+        },
+        {
+          "tag": "img",
+          "selector": "img.object-cover.transition-transform.duration-500",
+          "right": 3790,
+          "left": 3494,
+          "width": 296,
+          "overflowX": "clip",
+          "position": "absolute",
+          "text": ""
+        }
+      ],
+      "screenshot": "D:\\寮�鍙慭\fishAgent\\鎬诲寘\\skill\\reverse-skill\\omc-replica\\ybb-site\\scripts\\.audit-output\\mobile-viewports\\home-390x844.png"
+    },
+    {
+      "viewport": "390x844",
+      "page": "collection",
+      "path": "/collections/sinkers/",
+      "url": "https://carp-ybb.com/collections/sinkers/?mobile-audit=1",
+      "viewportWidth": 390,
+      "scrollWidth": 390,
+      "hasHorizontalOverflow": false,
+      "offenders": [
+        {
+          "tag": "div",
+          "selector": "div.announcement-marquee-track",
+          "right": 6298,
+          "left": -123,
+          "width": 6421,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 6298,
+          "left": 5783,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5735,
+          "left": 5228,
+          "width": 507,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "OEM / ODM 鈥?PRIVATE-LABEL LEADS, RIGS & FULL CATEGORY CUSTOM"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5180,
+          "left": 4667,
+          "width": 513,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "ROD PODS 路 METAL & PLASTIC ACCESSORIES 路 PERIPHERAL GEAR 鈥?S"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4619,
+          "left": 4127,
+          "width": 492,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKER RIGS 路 BAIT-CAGE RIGS 路 EURO CARP KITS 鈥?BULK-READY W"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4079,
+          "left": 3614,
+          "width": 465,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKERS 路 BAIT CAGES 路 CARP HOOKS 路 LINE RIGS 鈥?EURO CARP CA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3566,
+          "left": 3112,
+          "width": 454,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3064,
+          "left": 2548,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        }
+      ],
+      "screenshot": "D:\\寮�鍙慭\fishAgent\\鎬诲寘\\skill\\reverse-skill\\omc-replica\\ybb-site\\scripts\\.audit-output\\mobile-viewports\\collection-390x844.png"
+    },
+    {
+      "viewport": "390x844",
+      "page": "pdp",
+      "path": "/products/tz-eldz-012",
+      "url": "https://carp-ybb.com/products/tz-eldz-012?mobile-audit=1",
+      "viewportWidth": 390,
+      "scrollWidth": 390,
+      "hasHorizontalOverflow": false,
+      "offenders": [
+        {
+          "tag": "div",
+          "selector": "div.announcement-marquee-track",
+          "right": 6298,
+          "left": -123,
+          "width": 6421,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 6298,
+          "left": 5783,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5735,
+          "left": 5228,
+          "width": 507,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "OEM / ODM 鈥?PRIVATE-LABEL LEADS, RIGS & FULL CATEGORY CUSTOM"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5180,
+          "left": 4668,
+          "width": 513,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "ROD PODS 路 METAL & PLASTIC ACCESSORIES 路 PERIPHERAL GEAR 鈥?S"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4620,
+          "left": 4127,
+          "width": 492,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKER RIGS 路 BAIT-CAGE RIGS 路 EURO CARP KITS 鈥?BULK-READY W"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4079,
+          "left": 3614,
+          "width": 465,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKERS 路 BAIT CAGES 路 CARP HOOKS 路 LINE RIGS 鈥?EURO CARP CA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3566,
+          "left": 3112,
+          "width": 454,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3064,
+          "left": 2548,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        }
+      ],
+      "screenshot": "D:\\寮�鍙慭\fishAgent\\鎬诲寘\\skill\\reverse-skill\\omc-replica\\ybb-site\\scripts\\.audit-output\\mobile-viewports\\pdp-390x844.png"
+    },
+    {
+      "viewport": "390x844",
+      "page": "reviews",
+      "path": "/products/reviews/tz-eldz-012",
+      "url": "https://carp-ybb.com/products/reviews/tz-eldz-012?mobile-audit=1",
+      "viewportWidth": 390,
+      "scrollWidth": 390,
+      "hasHorizontalOverflow": false,
+      "offenders": [
+        {
+          "tag": "div",
+          "selector": "div.announcement-marquee-track",
+          "right": 6300,
+          "left": -122,
+          "width": 6421,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 6300,
+          "left": 5785,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5737,
+          "left": 5229,
+          "width": 507,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "OEM / ODM 鈥?PRIVATE-LABEL LEADS, RIGS & FULL CATEGORY CUSTOM"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5181,
+          "left": 4669,
+          "width": 513,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "ROD PODS 路 METAL & PLASTIC ACCESSORIES 路 PERIPHERAL GEAR 鈥?S"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4621,
+          "left": 4129,
+          "width": 492,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKER RIGS 路 BAIT-CAGE RIGS 路 EURO CARP KITS 鈥?BULK-READY W"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4081,
+          "left": 3615,
+          "width": 465,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKERS 路 BAIT CAGES 路 CARP HOOKS 路 LINE RIGS 鈥?EURO CARP CA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3567,
+          "left": 3113,
+          "width": 454,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3065,
+          "left": 2550,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        }
+      ],
+      "screenshot": "D:\\寮�鍙慭\fishAgent\\鎬诲寘\\skill\\reverse-skill\\omc-replica\\ybb-site\\scripts\\.audit-output\\mobile-viewports\\reviews-390x844.png"
+    },
+    {
+      "viewport": "390x844",
+      "page": "shop-all",
+      "path": "/collections/all",
+      "url": "https://carp-ybb.com/collections/all?mobile-audit=1",
+      "viewportWidth": 390,
+      "scrollWidth": 390,
+      "hasHorizontalOverflow": false,
+      "offenders": [
+        {
+          "tag": "div",
+          "selector": "div.announcement-marquee-track",
+          "right": 6298,
+          "left": -123,
+          "width": 6421,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 6298,
+          "left": 5783,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5735,
+          "left": 5228,
+          "width": 507,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "OEM / ODM 鈥?PRIVATE-LABEL LEADS, RIGS & FULL CATEGORY CUSTOM"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5180,
+          "left": 4668,
+          "width": 513,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "ROD PODS 路 METAL & PLASTIC ACCESSORIES 路 PERIPHERAL GEAR 鈥?S"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4620,
+          "left": 4127,
+          "width": 492,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKER RIGS 路 BAIT-CAGE RIGS 路 EURO CARP KITS 鈥?BULK-READY W"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4079,
+          "left": 3614,
+          "width": 465,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKERS 路 BAIT CAGES 路 CARP HOOKS 路 LINE RIGS 鈥?EURO CARP CA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3566,
+          "left": 3112,
+          "width": 454,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3064,
+          "left": 2548,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        }
+      ],
+      "screenshot": "D:\\寮�鍙慭\fishAgent\\鎬诲寘\\skill\\reverse-skill\\omc-replica\\ybb-site\\scripts\\.audit-output\\mobile-viewports\\shop-all-390x844.png"
+    },
+    {
+      "viewport": "390x844",
+      "page": "contact",
+      "path": "/pages/contact",
+      "url": "https://carp-ybb.com/pages/contact?mobile-audit=1",
+      "viewportWidth": 390,
+      "scrollWidth": 390,
+      "hasHorizontalOverflow": false,
+      "offenders": [
+        {
+          "tag": "div",
+          "selector": "div.announcement-marquee-track",
+          "right": 6298,
+          "left": -123,
+          "width": 6421,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 6298,
+          "left": 5783,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5735,
+          "left": 5228,
+          "width": 507,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "OEM / ODM 鈥?PRIVATE-LABEL LEADS, RIGS & FULL CATEGORY CUSTOM"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5180,
+          "left": 4668,
+          "width": 513,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "ROD PODS 路 METAL & PLASTIC ACCESSORIES 路 PERIPHERAL GEAR 鈥?S"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4620,
+          "left": 4127,
+          "width": 492,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKER RIGS 路 BAIT-CAGE RIGS 路 EURO CARP KITS 鈥?BULK-READY W"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4079,
+          "left": 3614,
+          "width": 465,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKERS 路 BAIT CAGES 路 CARP HOOKS 路 LINE RIGS 鈥?EURO CARP CA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3566,
+          "left": 3112,
+          "width": 454,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3064,
+          "left": 2548,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        }
+      ],
+      "screenshot": "D:\\寮�鍙慭\fishAgent\\鎬诲寘\\skill\\reverse-skill\\omc-replica\\ybb-site\\scripts\\.audit-output\\mobile-viewports\\contact-390x844.png"
+    },
+    {
+      "viewport": "414x896",
+      "page": "home",
+      "path": "/",
+      "url": "https://carp-ybb.com/?mobile-audit=1",
+      "viewportWidth": 414,
+      "scrollWidth": 414,
+      "hasHorizontalOverflow": false,
+      "offenders": [
+        {
+          "tag": "div",
+          "selector": "div.announcement-marquee-track",
+          "right": 6362,
+          "left": -59,
+          "width": 6421,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 6362,
+          "left": 5847,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5799,
+          "left": 5292,
+          "width": 507,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "OEM / ODM 鈥?PRIVATE-LABEL LEADS, RIGS & FULL CATEGORY CUSTOM"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5244,
+          "left": 4732,
+          "width": 513,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "ROD PODS 路 METAL & PLASTIC ACCESSORIES 路 PERIPHERAL GEAR 鈥?S"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4684,
+          "left": 4191,
+          "width": 492,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKER RIGS 路 BAIT-CAGE RIGS 路 EURO CARP KITS 鈥?BULK-READY W"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4143,
+          "left": 3678,
+          "width": 465,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKERS 路 BAIT CAGES 路 CARP HOOKS 路 LINE RIGS 鈥?EURO CARP CA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.group.block.relative",
+          "right": 3790,
+          "left": 3494,
+          "width": 296,
+          "overflowX": "hidden",
+          "position": "relative",
+          "text": "Peripheral Equipment"
+        },
+        {
+          "tag": "img",
+          "selector": "img.object-cover.transition-transform.duration-500",
+          "right": 3790,
+          "left": 3494,
+          "width": 296,
+          "overflowX": "clip",
+          "position": "absolute",
+          "text": ""
+        }
+      ],
+      "screenshot": "D:\\寮�鍙慭\fishAgent\\鎬诲寘\\skill\\reverse-skill\\omc-replica\\ybb-site\\scripts\\.audit-output\\mobile-viewports\\home-414x896.png"
+    },
+    {
+      "viewport": "414x896",
+      "page": "collection",
+      "path": "/collections/sinkers/",
+      "url": "https://carp-ybb.com/collections/sinkers/?mobile-audit=1",
+      "viewportWidth": 414,
+      "scrollWidth": 414,
+      "hasHorizontalOverflow": false,
+      "offenders": [
+        {
+          "tag": "div",
+          "selector": "div.announcement-marquee-track",
+          "right": 6298,
+          "left": -123,
+          "width": 6421,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 6298,
+          "left": 5783,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5735,
+          "left": 5228,
+          "width": 507,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "OEM / ODM 鈥?PRIVATE-LABEL LEADS, RIGS & FULL CATEGORY CUSTOM"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5180,
+          "left": 4667,
+          "width": 513,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "ROD PODS 路 METAL & PLASTIC ACCESSORIES 路 PERIPHERAL GEAR 鈥?S"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4619,
+          "left": 4127,
+          "width": 492,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKER RIGS 路 BAIT-CAGE RIGS 路 EURO CARP KITS 鈥?BULK-READY W"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4079,
+          "left": 3614,
+          "width": 465,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKERS 路 BAIT CAGES 路 CARP HOOKS 路 LINE RIGS 鈥?EURO CARP CA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3566,
+          "left": 3112,
+          "width": 454,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3064,
+          "left": 2548,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        }
+      ],
+      "screenshot": "D:\\寮�鍙慭\fishAgent\\鎬诲寘\\skill\\reverse-skill\\omc-replica\\ybb-site\\scripts\\.audit-output\\mobile-viewports\\collection-414x896.png"
+    },
+    {
+      "viewport": "414x896",
+      "page": "pdp",
+      "path": "/products/tz-eldz-012",
+      "url": "https://carp-ybb.com/products/tz-eldz-012?mobile-audit=1",
+      "viewportWidth": 414,
+      "scrollWidth": 414,
+      "hasHorizontalOverflow": false,
+      "offenders": [
+        {
+          "tag": "div",
+          "selector": "div.announcement-marquee-track",
+          "right": 6300,
+          "left": -122,
+          "width": 6421,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 6300,
+          "left": 5785,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5737,
+          "left": 5229,
+          "width": 507,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "OEM / ODM 鈥?PRIVATE-LABEL LEADS, RIGS & FULL CATEGORY CUSTOM"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5181,
+          "left": 4669,
+          "width": 513,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "ROD PODS 路 METAL & PLASTIC ACCESSORIES 路 PERIPHERAL GEAR 鈥?S"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4621,
+          "left": 4129,
+          "width": 492,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKER RIGS 路 BAIT-CAGE RIGS 路 EURO CARP KITS 鈥?BULK-READY W"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4081,
+          "left": 3615,
+          "width": 465,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKERS 路 BAIT CAGES 路 CARP HOOKS 路 LINE RIGS 鈥?EURO CARP CA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3567,
+          "left": 3113,
+          "width": 454,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3065,
+          "left": 2550,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        }
+      ],
+      "screenshot": "D:\\寮�鍙慭\fishAgent\\鎬诲寘\\skill\\reverse-skill\\omc-replica\\ybb-site\\scripts\\.audit-output\\mobile-viewports\\pdp-414x896.png"
+    },
+    {
+      "viewport": "414x896",
+      "page": "reviews",
+      "path": "/products/reviews/tz-eldz-012",
+      "url": "https://carp-ybb.com/products/reviews/tz-eldz-012?mobile-audit=1",
+      "viewportWidth": 414,
+      "scrollWidth": 414,
+      "hasHorizontalOverflow": false,
+      "offenders": [
+        {
+          "tag": "div",
+          "selector": "div.announcement-marquee-track",
+          "right": 6300,
+          "left": -122,
+          "width": 6421,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 6300,
+          "left": 5785,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5737,
+          "left": 5229,
+          "width": 507,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "OEM / ODM 鈥?PRIVATE-LABEL LEADS, RIGS & FULL CATEGORY CUSTOM"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5181,
+          "left": 4669,
+          "width": 513,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "ROD PODS 路 METAL & PLASTIC ACCESSORIES 路 PERIPHERAL GEAR 鈥?S"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4621,
+          "left": 4129,
+          "width": 492,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKER RIGS 路 BAIT-CAGE RIGS 路 EURO CARP KITS 鈥?BULK-READY W"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4081,
+          "left": 3615,
+          "width": 465,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKERS 路 BAIT CAGES 路 CARP HOOKS 路 LINE RIGS 鈥?EURO CARP CA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3567,
+          "left": 3113,
+          "width": 454,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3065,
+          "left": 2550,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        }
+      ],
+      "screenshot": "D:\\寮�鍙慭\fishAgent\\鎬诲寘\\skill\\reverse-skill\\omc-replica\\ybb-site\\scripts\\.audit-output\\mobile-viewports\\reviews-414x896.png"
+    },
+    {
+      "viewport": "414x896",
+      "page": "shop-all",
+      "path": "/collections/all",
+      "url": "https://carp-ybb.com/collections/all?mobile-audit=1",
+      "viewportWidth": 414,
+      "scrollWidth": 414,
+      "hasHorizontalOverflow": false,
+      "offenders": [
+        {
+          "tag": "div",
+          "selector": "div.announcement-marquee-track",
+          "right": 6298,
+          "left": -123,
+          "width": 6421,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 6298,
+          "left": 5783,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5735,
+          "left": 5228,
+          "width": 507,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "OEM / ODM 鈥?PRIVATE-LABEL LEADS, RIGS & FULL CATEGORY CUSTOM"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5180,
+          "left": 4668,
+          "width": 513,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "ROD PODS 路 METAL & PLASTIC ACCESSORIES 路 PERIPHERAL GEAR 鈥?S"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4620,
+          "left": 4127,
+          "width": 492,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKER RIGS 路 BAIT-CAGE RIGS 路 EURO CARP KITS 鈥?BULK-READY W"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4079,
+          "left": 3614,
+          "width": 465,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKERS 路 BAIT CAGES 路 CARP HOOKS 路 LINE RIGS 鈥?EURO CARP CA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3566,
+          "left": 3112,
+          "width": 454,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3064,
+          "left": 2548,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        }
+      ],
+      "screenshot": "D:\\寮�鍙慭\fishAgent\\鎬诲寘\\skill\\reverse-skill\\omc-replica\\ybb-site\\scripts\\.audit-output\\mobile-viewports\\shop-all-414x896.png"
+    },
+    {
+      "viewport": "414x896",
+      "page": "contact",
+      "path": "/pages/contact",
+      "url": "https://carp-ybb.com/pages/contact?mobile-audit=1",
+      "viewportWidth": 414,
+      "scrollWidth": 414,
+      "hasHorizontalOverflow": false,
+      "offenders": [
+        {
+          "tag": "div",
+          "selector": "div.announcement-marquee-track",
+          "right": 6298,
+          "left": -123,
+          "width": 6421,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 6298,
+          "left": 5783,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5735,
+          "left": 5228,
+          "width": 507,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "OEM / ODM 鈥?PRIVATE-LABEL LEADS, RIGS & FULL CATEGORY CUSTOM"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5180,
+          "left": 4668,
+          "width": 513,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "ROD PODS 路 METAL & PLASTIC ACCESSORIES 路 PERIPHERAL GEAR 鈥?S"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4620,
+          "left": 4127,
+          "width": 492,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKER RIGS 路 BAIT-CAGE RIGS 路 EURO CARP KITS 鈥?BULK-READY W"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4079,
+          "left": 3614,
+          "width": 465,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKERS 路 BAIT CAGES 路 CARP HOOKS 路 LINE RIGS 鈥?EURO CARP CA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3566,
+          "left": 3112,
+          "width": 454,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3064,
+          "left": 2548,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        }
+      ],
+      "screenshot": "D:\\寮�鍙慭\fishAgent\\鎬诲寘\\skill\\reverse-skill\\omc-replica\\ybb-site\\scripts\\.audit-output\\mobile-viewports\\contact-414x896.png"
+    },
+    {
+      "viewport": "430x932",
+      "page": "home",
+      "path": "/",
+      "url": "https://carp-ybb.com/?mobile-audit=1",
+      "viewportWidth": 430,
+      "scrollWidth": 430,
+      "hasHorizontalOverflow": false,
+      "offenders": [
+        {
+          "tag": "div",
+          "selector": "div.announcement-marquee-track",
+          "right": 6276,
+          "left": -146,
+          "width": 6421,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 6276,
+          "left": 5760,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5712,
+          "left": 5205,
+          "width": 507,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "OEM / ODM 鈥?PRIVATE-LABEL LEADS, RIGS & FULL CATEGORY CUSTOM"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5157,
+          "left": 4645,
+          "width": 513,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "ROD PODS 路 METAL & PLASTIC ACCESSORIES 路 PERIPHERAL GEAR 鈥?S"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4597,
+          "left": 4104,
+          "width": 492,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKER RIGS 路 BAIT-CAGE RIGS 路 EURO CARP KITS 鈥?BULK-READY W"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4056,
+          "left": 3591,
+          "width": 465,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKERS 路 BAIT CAGES 路 CARP HOOKS 路 LINE RIGS 鈥?EURO CARP CA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.group.block.relative",
+          "right": 3790,
+          "left": 3494,
+          "width": 296,
+          "overflowX": "hidden",
+          "position": "relative",
+          "text": "Peripheral Equipment"
+        },
+        {
+          "tag": "img",
+          "selector": "img.object-cover.transition-transform.duration-500",
+          "right": 3790,
+          "left": 3494,
+          "width": 296,
+          "overflowX": "clip",
+          "position": "absolute",
+          "text": ""
+        }
+      ],
+      "screenshot": "D:\\寮�鍙慭\fishAgent\\鎬诲寘\\skill\\reverse-skill\\omc-replica\\ybb-site\\scripts\\.audit-output\\mobile-viewports\\home-430x932.png"
+    },
+    {
+      "viewport": "430x932",
+      "page": "collection",
+      "path": "/collections/sinkers/",
+      "url": "https://carp-ybb.com/collections/sinkers/?mobile-audit=1",
+      "viewportWidth": 430,
+      "scrollWidth": 430,
+      "hasHorizontalOverflow": false,
+      "offenders": [
+        {
+          "tag": "div",
+          "selector": "div.announcement-marquee-track",
+          "right": 6297,
+          "left": -124,
+          "width": 6421,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 6297,
+          "left": 5782,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5734,
+          "left": 5227,
+          "width": 507,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "OEM / ODM 鈥?PRIVATE-LABEL LEADS, RIGS & FULL CATEGORY CUSTOM"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5179,
+          "left": 4666,
+          "width": 513,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "ROD PODS 路 METAL & PLASTIC ACCESSORIES 路 PERIPHERAL GEAR 鈥?S"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4618,
+          "left": 4126,
+          "width": 492,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKER RIGS 路 BAIT-CAGE RIGS 路 EURO CARP KITS 鈥?BULK-READY W"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4078,
+          "left": 3613,
+          "width": 465,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKERS 路 BAIT CAGES 路 CARP HOOKS 路 LINE RIGS 鈥?EURO CARP CA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3565,
+          "left": 3110,
+          "width": 454,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3062,
+          "left": 2547,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        }
+      ],
+      "screenshot": "D:\\寮�鍙慭\fishAgent\\鎬诲寘\\skill\\reverse-skill\\omc-replica\\ybb-site\\scripts\\.audit-output\\mobile-viewports\\collection-430x932.png"
+    },
+    {
+      "viewport": "430x932",
+      "page": "pdp",
+      "path": "/products/tz-eldz-012",
+      "url": "https://carp-ybb.com/products/tz-eldz-012?mobile-audit=1",
+      "viewportWidth": 430,
+      "scrollWidth": 430,
+      "hasHorizontalOverflow": false,
+      "offenders": [
+        {
+          "tag": "div",
+          "selector": "div.announcement-marquee-track",
+          "right": 6300,
+          "left": -122,
+          "width": 6421,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 6300,
+          "left": 5785,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5737,
+          "left": 5229,
+          "width": 507,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "OEM / ODM 鈥?PRIVATE-LABEL LEADS, RIGS & FULL CATEGORY CUSTOM"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5181,
+          "left": 4669,
+          "width": 513,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "ROD PODS 路 METAL & PLASTIC ACCESSORIES 路 PERIPHERAL GEAR 鈥?S"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4621,
+          "left": 4129,
+          "width": 492,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKER RIGS 路 BAIT-CAGE RIGS 路 EURO CARP KITS 鈥?BULK-READY W"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4081,
+          "left": 3615,
+          "width": 465,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKERS 路 BAIT CAGES 路 CARP HOOKS 路 LINE RIGS 鈥?EURO CARP CA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3567,
+          "left": 3113,
+          "width": 454,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3065,
+          "left": 2550,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        }
+      ],
+      "screenshot": "D:\\寮�鍙慭\fishAgent\\鎬诲寘\\skill\\reverse-skill\\omc-replica\\ybb-site\\scripts\\.audit-output\\mobile-viewports\\pdp-430x932.png"
+    },
+    {
+      "viewport": "430x932",
+      "page": "reviews",
+      "path": "/products/reviews/tz-eldz-012",
+      "url": "https://carp-ybb.com/products/reviews/tz-eldz-012?mobile-audit=1",
+      "viewportWidth": 430,
+      "scrollWidth": 430,
+      "hasHorizontalOverflow": false,
+      "offenders": [
+        {
+          "tag": "div",
+          "selector": "div.announcement-marquee-track",
+          "right": 6300,
+          "left": -122,
+          "width": 6421,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 6300,
+          "left": 5785,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5737,
+          "left": 5229,
+          "width": 507,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "OEM / ODM 鈥?PRIVATE-LABEL LEADS, RIGS & FULL CATEGORY CUSTOM"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5181,
+          "left": 4669,
+          "width": 513,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "ROD PODS 路 METAL & PLASTIC ACCESSORIES 路 PERIPHERAL GEAR 鈥?S"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4621,
+          "left": 4129,
+          "width": 492,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKER RIGS 路 BAIT-CAGE RIGS 路 EURO CARP KITS 鈥?BULK-READY W"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4081,
+          "left": 3615,
+          "width": 465,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKERS 路 BAIT CAGES 路 CARP HOOKS 路 LINE RIGS 鈥?EURO CARP CA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3567,
+          "left": 3113,
+          "width": 454,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3065,
+          "left": 2550,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        }
+      ],
+      "screenshot": "D:\\寮�鍙慭\fishAgent\\鎬诲寘\\skill\\reverse-skill\\omc-replica\\ybb-site\\scripts\\.audit-output\\mobile-viewports\\reviews-430x932.png"
+    },
+    {
+      "viewport": "430x932",
+      "page": "shop-all",
+      "path": "/collections/all",
+      "url": "https://carp-ybb.com/collections/all?mobile-audit=1",
+      "viewportWidth": 430,
+      "scrollWidth": 430,
+      "hasHorizontalOverflow": false,
+      "offenders": [
+        {
+          "tag": "div",
+          "selector": "div.announcement-marquee-track",
+          "right": 6297,
+          "left": -124,
+          "width": 6421,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 6297,
+          "left": 5782,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5734,
+          "left": 5227,
+          "width": 507,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "OEM / ODM 鈥?PRIVATE-LABEL LEADS, RIGS & FULL CATEGORY CUSTOM"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5179,
+          "left": 4666,
+          "width": 513,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "ROD PODS 路 METAL & PLASTIC ACCESSORIES 路 PERIPHERAL GEAR 鈥?S"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4618,
+          "left": 4126,
+          "width": 492,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKER RIGS 路 BAIT-CAGE RIGS 路 EURO CARP KITS 鈥?BULK-READY W"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4078,
+          "left": 3613,
+          "width": 465,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKERS 路 BAIT CAGES 路 CARP HOOKS 路 LINE RIGS 鈥?EURO CARP CA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3565,
+          "left": 3110,
+          "width": 454,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3062,
+          "left": 2547,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        }
+      ],
+      "screenshot": "D:\\寮�鍙慭\fishAgent\\鎬诲寘\\skill\\reverse-skill\\omc-replica\\ybb-site\\scripts\\.audit-output\\mobile-viewports\\shop-all-430x932.png"
+    },
+    {
+      "viewport": "430x932",
+      "page": "contact",
+      "path": "/pages/contact",
+      "url": "https://carp-ybb.com/pages/contact?mobile-audit=1",
+      "viewportWidth": 430,
+      "scrollWidth": 430,
+      "hasHorizontalOverflow": false,
+      "offenders": [
+        {
+          "tag": "div",
+          "selector": "div.announcement-marquee-track",
+          "right": 6298,
+          "left": -123,
+          "width": 6421,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 6298,
+          "left": 5783,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5735,
+          "left": 5228,
+          "width": 507,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "OEM / ODM 鈥?PRIVATE-LABEL LEADS, RIGS & FULL CATEGORY CUSTOM"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 5180,
+          "left": 4668,
+          "width": 513,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "ROD PODS 路 METAL & PLASTIC ACCESSORIES 路 PERIPHERAL GEAR 鈥?S"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4620,
+          "left": 4127,
+          "width": 492,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKER RIGS 路 BAIT-CAGE RIGS 路 EURO CARP KITS 鈥?BULK-READY W"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 4079,
+          "left": 3614,
+          "width": 465,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "SINKERS 路 BAIT CAGES 路 CARP HOOKS 路 LINE RIGS 鈥?EURO CARP CA"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3566,
+          "left": 3112,
+          "width": 454,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKL"
+        },
+        {
+          "tag": "a",
+          "selector": "a.announcement-marquee-item",
+          "right": 3064,
+          "left": 2548,
+          "width": 515,
+          "overflowX": "visible",
+          "position": "static",
+          "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SA"
+        }
+      ],
+      "screenshot": "D:\\寮�鍙慭\fishAgent\\鎬诲寘\\skill\\reverse-skill\\omc-replica\\ybb-site\\scripts\\.audit-output\\mobile-viewports\\contact-430x932.png"
+    }
+  ]
+}

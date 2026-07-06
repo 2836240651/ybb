@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "id": "2026-new",
+      "text": "2026 NEW PRODUCTS 鈥?LEADS, RIGS, BAIT CAGES & TERMINAL TACKLE",
+      "href": "/collections/2026-new-products"
+    },
+    {
+      "id": "terminal-tackle",
+      "text": "SINKERS 路 BAIT CAGES 路 CARP HOOKS 路 LINE RIGS 鈥?EURO CARP CATALOG",
+      "href": "/collections/sinkers"
+    },
+    {
+      "id": "rig-kits",
+      "text": "SINKER RIGS 路 BAIT-CAGE RIGS 路 EURO CARP KITS 鈥?BULK-READY WHOLESALE",
+      "href": "/collections/sinker-rigs"
+    },
+    {
+      "id": "accessories",
+      "text": "ROD PODS 路 METAL & PLASTIC ACCESSORIES 路 PERIPHERAL GEAR 鈥?SHOP OTHER",
+      "href": "/collections/other"
+    },
+    {
+      "id": "oem-odm",
+      "text": "OEM / ODM 鈥?PRIVATE-LABEL LEADS, RIGS & FULL CATEGORY CUSTOMIZATION",
+      "href": "/pages/oem-odm"
+    },
+    {
+      "id": "b2b-wholesale",
+      "text": "B2B WHOLESALE 鈥?FLEXIBLE MOQ 路 MIXED-CARTON ORDERS 路 FREE SAMPLE KITS",
+      "href": "/pages/wholesale"
+    }
+  ],
+  "locale": {
+    "language": "English",
+    "country": "Global",
+    "currency": "USD"
+  }
+}

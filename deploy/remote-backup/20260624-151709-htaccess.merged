@@ -1,0 +1,79 @@
+DirectoryIndex index.html index.php
+
+# SGS XMLRPC Disable Service
+<Files xmlrpc.php>
+	order deny,allow
+	deny from all
+</Files>
+# SGS XMLRPC Disable Service END
+
+# --- Next.js static (ybb-site) ---
+# Apache / SiteGround: merged BEFORE # BEGIN WordPress (WP catch-all stays last).
+# Upload to public_html/.htaccess AFTER backing up the current file.
+#
+# Priority:
+# 1. WordPress admin, API, uploads, WooCommerce checkout paths
+# 2. Next.js static assets (_next, images, products, etc.)
+# 3. Existing files
+# 4. Next.js HTML fallback for client routes
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# --- WordPress + WooCommerce (keep backend alive) ---
+RewriteRule ^wp-admin(/.*)?$ - [L]
+RewriteRule ^wp-login\.php$ - [L]
+RewriteRule ^wp-json(/.*)?$ - [L]
+RewriteRule ^wp-content(/.*)?$ - [L]
+RewriteRule ^wp-includes(/.*)?$ - [L]
+RewriteRule ^xmlrpc\.php$ - [L]
+
+# WooCommerce routes (phase 2 — checkout / account stay on WP)
+RewriteRule ^checkout(/.*)?$ - [L]
+RewriteRule ^my-account(/.*)?$ - [L]
+RewriteRule ^wc-api(/.*)?$ - [L]
+
+# Legacy product URLs → new catalog (adjust after SKU mapping)
+RewriteRule ^product/(.*)$ /products/$1 [R=301,L]
+
+# --- Next.js static assets ---
+RewriteRule ^_next/ - [L]
+RewriteRule ^images/ - [L]
+RewriteRule ^products/ - [L]
+RewriteRule ^favicon\.ico$ - [L]
+RewriteRule ^robots\.txt$ - [L]
+RewriteRule ^sitemap\.xml$ - [L]
+
+# Real files and directories
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Next.js App Router static export: serve matching .html if present
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
+
+# Fallback to homepage for unknown routes (optional; comment out if you prefer 404.html)
+RewriteRule ^ index.html [L]
+</IfModule>
+
+# BEGIN WordPress
+# 在「BEGIN WordPress」与「END WordPress」之间的指令（行）是
+# 动态生成的，只应被 WordPress 过滤器修改。
+# 任何对标记之间的指令的修改都会被覆盖。
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+# SGO Unset Vary
+  Header unset Vary
+# SGO Unset Vary END

@@ -1,0 +1,72 @@
+﻿=== 2026鏂板搧 ===
+0 ('鍚嶇О', '鍥剧墖', '瑙勬牸', None, None, '瀛愪綋-寰蒋闆呴粦锛屽瓧鍙?3')
+1 ('绾㈣櫕绯诲垪锛堢孩鑹诧級', '=DISPIMG("ID_E58B04952A0E45FAA4ADFBB922C5C78A",1)', '闀垮亸杞欢', None, None, None)
+2 (None, None, '鐭亸杞欢', None, None, None)
+3 (None, None, '闀垮集绠?, None, None, None)
+4 (None, None, '鐭集绠?, None, None, None)
+5 ('绾㈣櫕绯诲垪锛堥粍鑹诧級', '=DISPIMG("ID_672942D19897445192F161108DBBBDEF",1)', '闀垮亸杞欢', None, None, None)
+6 (None, None, '鐭亸杞欢', None, None, None)
+7 (None, None, '闀垮集绠?, None, None, None)
+8 (None, None, '鐭集绠?, None, None, None)
+9 ('绾㈣櫕绯诲垪锛堢櫧鑹诧級', '=DISPIMG("ID_FBA089C5A39342D0BD988918DC6741D7",1)', '闀垮亸杞欢', None, None, None)
+10 (None, None, '鐭亸杞欢', None, None, None)
+11 (None, None, '闀垮集绠?, None, None, None)
+12 (None, None, '鐭集绠?, None, None, None)
+
+=== 閾呭潬 ===
+0 ('鍚嶇О', '鍥剧墖', '瑙勬牸', '璐у彿', '浜у搧缂栫爜', '鎵瑰彂锛堢編鍏冿級')
+1 ('DG', '=DISPIMG("ID_31F34D23C6144BD18B2213783C5E7F1A",1)', '56g', 'TZ-QZ-001', 'TZ-QZ-001-56g', 0.49)
+2 (None, None, '71g', 'TZ-QZ-001', 'TZ-QZ-001-71g', 0.59)
+3 (None, None, '85g', 'TZ-QZ-001', 'TZ-QZ-001-85g', 0.69)
+4 (None, None, '99g', 'TZ-QZ-001', 'TZ-QZ-001-99g', 0.79)
+5 (None, None, '113g', 'TZ-QZ-001', 'TZ-QZ-001-113g', 0.89)
+6 (None, None, '128g', 'TZ-QZ-001', 'TZ-QZ-001-128g', 0.99)
+7 (None, None, '142g', 'TZ-QZ-001', 'TZ-QZ-001-142g', 1.09)
+8 ('楸肩汗鎻掔', '=DISPIMG("ID_3F034B463C454B9ABA43C65FC2E30B7F",1)', '56g', 'TZ-QZ-002', 'TZ-QZ-002-56g', 0.49)
+9 (None, None, '71g', 'TZ-QZ-002', 'TZ-QZ-002-71g', 0.59)
+10 (None, None, '85g', 'TZ-QZ-002', 'TZ-QZ-002-85g', 0.69)
+11 (None, None, '99g', 'TZ-QZ-002', 'TZ-QZ-002-99g', 0.79)
+12 (None, None, '113g', 'TZ-QZ-002', 'TZ-QZ-002-113g', 0.89)
+
+=== 楗电 ===
+0 ('鍚嶇О', '鍥剧墖', '瑙勬牸', '璐у彿', '浜у搧缂栫爜', '鎴愭湰浠?)
+1 ('灏忔蹇?, '=DISPIMG("ID_939EF412A9B149A9AF4364A124F99426",1)', '30g/40g/Mould', 'TZ-EL-001', 'TZ-EL-001-30g/40g/Mould', 1.99)
+2 (None, '=DISPIMG("ID_939EF412A9B149A9AF4364A124F99426",1)', '40g/50g/Mould', 'TZ-EL-001', 'TZ-EL-001-40g/50g/Mould', 1.99)
+3 (None, '=DISPIMG("ID_F6AB68389A3A41639A07C1777AAA7000",1)', '30g/40g/50g/Mould', 'TZ-EL-001', 'TZ-EL-001-30g/40g/50g/Mould', 2.59)
+4 (None, '=DISPIMG("ID_0CE44B01989240D681072A2D1C953927",1)', '30g/40g/50g/60g/Mould', 'TZ-EL-001', 'TZ-EL-001-30g/40g/50g/60g/Mould', 2.59)
+5 ('澶ф蹇?, '=DISPIMG("ID_A6D78CBE302A45519E1611E5456B338A",1)', '30g/40g/Mould', 'TZ-EL-002', 'TZ-EL-002-30g/40g/Mould', 1.99)
+6 (None, '=DISPIMG("ID_A6D78CBE302A45519E1611E5456B338A",1)', '40g/50g/Mould', 'TZ-EL-002', 'TZ-EL-002-40g/50g/Mould', 1.99)
+7 (None, '=DISPIMG("ID_53D4CA9FED93445299F908AB81708FDF",1)', '30g/40g/50g/Mould', 'TZ-EL-002', 'TZ-EL-002-30g/40g/50g/Mould', 2.59)
+8 (None, '=DISPIMG("ID_182CF42E5E2C4626A5003471AB485487",1)', '30g/40g/50g/60g/Mould', 'TZ-EL-002', 'TZ-EL-002-30g/40g/50g/60g/Mould', 2.59)
+9 ('A2453', '=DISPIMG("ID_ADE2F7C028ED43DC8A0E24480E7AA681",1)', '30g', 'TZ-EL-003', 'TZ-EL-003-30g', 0.99)
+10 (None, None, '40g', 'TZ-EL-003', 'TZ-EL-003-40g', 1.19)
+11 (None, None, '50g', 'TZ-EL-003', 'TZ-EL-003-50g', 1.29)
+12 (None, None, '60g', 'TZ-EL-003', 'TZ-EL-003-60g', 1.39)
+
+=== 閰嶄欢-閲戝睘 ===
+0 ('鍚嶇О', '鍥剧墖', '瑙勬牸', '璐у彿', '浜у搧缂栫爜', '鎴愭湰浠?)
+1 ('姊ㄥ舰钖勭墖', '=DISPIMG("ID_78EE6124CC184DB89952A1BADE09ACAD",1)', 'S', 'TZ-PJJS-001', 'TZ-PJJS-001-S', None)
+2 (None, None, 'M', 'TZ-PJJS-001', 'TZ-PJJS-001-M', None)
+3 (None, None, 'L', 'TZ-PJJS-001', 'TZ-PJJS-001-L', None)
+4 ('鍦嗗舰钖勭墖', '=DISPIMG("ID_70439761E1D942EF9430BC7392BAC50E",1)', '2mm', 'TZ-PJJS-002', 'TZ-PJJS-002-2mm', None)
+5 (None, None, '3.1mm', 'TZ-PJJS-002', 'TZ-PJJS-002-3.1mm', None)
+6 (None, None, '3.7mm', 'TZ-PJJS-002', 'TZ-PJJS-002-3.7mm', None)
+7 ('鐡滃瓙鍨嬭杽鐗?, '=DISPIMG("ID_F9CF343BCF34478799356FAD6C7E0435",1)', 'black', 'TZ-PJJS-003', 'TZ-PJJS-003-black', None)
+8 ('鍗曞湀妞渾钖勭墖', '=DISPIMG("ID_AC760F9EB6474E9D984F9AE5D548EB5C",1)', '6#+6#', 'TZ-PJJS-004', 'TZ-PJJS-004-6#+6#', None)
+9 ('妞渾鍨嬭杽鐗?, '=DISPIMG("ID_BD9B59C20C3D4ACDB8594805E9FB4625",1)', '4.5mm', 'TZ-PJJS-005', 'TZ-PJJS-005-4.5mm', None)
+10 (None, None, '6mm', 'TZ-PJJS-005', 'TZ-PJJS-005-6mm', None)
+11 ('钁姦鍒拡', '=DISPIMG("ID_7F77B412BBB749C1B2F6874BE5DFFD04",1)', 'black', 'TZ-PJJS-006', 'TZ-PJJS-006-black', None)
+12 ('澶忓▉澶峰埆閽?, '=DISPIMG("ID_CF789D9B67254BE8BEEC9CD7DAF43F7E",1)', '2#', 'TZ-PJJS-007', 'TZ-PJJS-007-2#', None)
+
+2026鏂板搧 colA澶х被鍨? 54 鏍蜂緥: ['绾㈣櫕绯诲垪锛堢孩鑹诧級', '绾㈣櫕绯诲垪锛堥粍鑹诧級', '绾㈣櫕绯诲垪锛堢櫧鑹诧級', '绾㈣櫕绯诲垪锛堥厭绾㈣壊锛?]
+閾呭潬 colA澶х被鍨? 26 鏍蜂緥: ['DG', '楸肩汗鎻掔', '缁胯壊鍘嬫按閾?, 'DPZ']
+楗电 colA澶х被鍨? 101 鏍蜂緥: ['灏忔蹇?, '澶ф蹇?, 'A2453', 'A2061L']
+绾跨粍 colA澶х被鍨? 74 鏍蜂緥: ['8340閽╁瓙绾?, '姗欐澘鏈夊€掑埡 6鏍硅', '姗欐澘鏃犲€掑埡 6鏍硅', '姗欐澘閽╁瓙绾?8鏍硅']
+閾呭潬閽撶粍 colA澶х被鍨? 38 鏍蜂緥: ['灏惧皷绠?鍙嶅惞 楦¤泲閾?, '灏惧皷绠?鍙嶅惞 娼滄按鑹?, '灏惧皷绠?鍙嶅惞 楸肩汗杞幆', '灏惧皷绠?鍙嶅惞 杞幆鍥涙柟閾?]
+楗电閽撶粍 colA澶х被鍨? 49 鏍蜂緥: ['B鍨嬩箤榫熷崟閽?, 'B鍨嬩箤榫熷弻閽?, 'B鍨嬩箤榫熺洿閽堝弻閽?, 'B鍨嬩箤榫熶笁閽?]
+娆ч菠楸奸挬 colA澶х被鍨? 9 鏍蜂緥: ['涓夎椴ら奔閽?, '榛戝集鑳岄挬', '8340閽?, '瀹芥椴ゅ崱璐?]
+濂楃洅-娆ч菠閽?colA澶х被鍨? 0 鏍蜂緥: []
+閰嶄欢-閲戝睘 colA澶х被鍨? 38 鏍蜂緥: ['姊ㄥ舰钖勭墖', '鍦嗗舰钖勭墖', '鐡滃瓙鍨嬭杽鐗?, '鍗曞湀妞渾钖勭墖']
+閰嶄欢-濉戞枡 colA澶х被鍨? 78 鏍蜂緥: ['閫忔槑缂撳啿绠?, '閫忔槑缂撳啿绠?, '閫忔槑缂撳啿绠?, '婊戝姩鑳跺湀']
+鏀灦 colA澶х被鍨? 30 鏍蜂緥: ['榛戣壊鍖呰兌鏀灦澶?, '褰╄壊鏀灦澶村', '鍦嗚鏀灦澶?, '澶ф敮鏋跺ご']
+鍛ㄨ竟璁惧 colA澶х被鍨? 45 鏍蜂緥: ['涓夊悎涓€', '浜屽悎涓€', '鍙屽瓙绾跨洅', '鍗曞瓙绾跨洅']

@@ -1,0 +1,57 @@
+{
+  "handle": "tz-eldz-013",
+  "parentId": 50506,
+  "checks": [
+    {
+      "variationId": 50521,
+      "sku": "TZ-ELDZ-013-10g",
+      "storeApiUsd": 1.99,
+      "productLiveUsd": 1.99,
+      "staticJsonUsd": 1.99,
+      "aligned": true
+    },
+    {
+      "variationId": 50522,
+      "sku": "TZ-ELDZ-013-20g",
+      "storeApiUsd": 2.09,
+      "productLiveUsd": 2.09,
+      "staticJsonUsd": 2.09,
+      "aligned": true
+    },
+    {
+      "variationId": 50523,
+      "sku": "TZ-ELDZ-013-30g",
+      "storeApiUsd": 2.19,
+      "productLiveUsd": 2.19,
+      "staticJsonUsd": 2.19,
+      "aligned": true
+    },
+    {
+      "variationId": 50524,
+      "sku": "TZ-ELDZ-013-40g",
+      "storeApiUsd": 2.29,
+      "productLiveUsd": 2.29,
+      "staticJsonUsd": 2.29,
+      "aligned": true
+    },
+    {
+      "variationId": 50525,
+      "sku": "TZ-ELDZ-013-50g",
+      "storeApiUsd": 2.39,
+      "productLiveUsd": 2.39,
+      "staticJsonUsd": 2.39,
+      "aligned": true
+    },
+    {
+      "variationId": 50526,
+      "sku": "TZ-ELDZ-013-60g",
+      "storeApiUsd": 2.49,
+      "productLiveUsd": 2.49,
+      "staticJsonUsd": 2.49,
+      "aligned": true
+    }
+  ],
+  "pdpHttp": 200,
+  "pdpShowsPricePattern": true,
+  "allAligned": true
+}

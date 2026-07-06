@@ -1,0 +1,219 @@
+{
+  "brand": {
+    "name": "YBB",
+    "tagline": "Trusted Tackle Partner",
+    "logoAlt": "YBB"
+  },
+  "primaryNav": [
+    {
+      "label": "2026 New Products",
+      "href": "/collections/2026-new-products"
+    },
+    {
+      "label": "Sinkers",
+      "href": "/collections/sinkers",
+      "megaMenu": {
+        "variant": "category",
+        "children": [
+          {
+            "label": "Sinkers",
+            "href": "/collections/sinkers"
+          },
+          {
+            "label": "Sinker Rigs",
+            "href": "/collections/sinker-rigs"
+          }
+        ],
+        "shopAll": {
+          "label": "Shop All Sinkers",
+          "href": "/collections/sinkers"
+        }
+      }
+    },
+    {
+      "label": "Bait Cages",
+      "href": "/collections/bait-cages",
+      "megaMenu": {
+        "variant": "category",
+        "children": [
+          {
+            "label": "Bait Cage Rigs",
+            "href": "/collections/bait-cage-rigs"
+          },
+          {
+            "label": "Bait Cages",
+            "href": "/collections/bait-cages"
+          }
+        ],
+        "shopAll": {
+          "label": "Shop All Bait Cages",
+          "href": "/collections/bait-cages"
+        }
+      }
+    },
+    {
+      "label": "Rigs",
+      "href": "/collections/rigs"
+    },
+    {
+      "label": "Carp Hooks",
+      "href": "/collections/carp-hooks"
+    },
+    {
+      "label": "Euro Carp Kits",
+      "href": "/collections/euro-carp-kits"
+    },
+    {
+      "label": "Accessories",
+      "href": "/collections/other",
+      "megaMenu": {
+        "variant": "category",
+        "children": [
+          {
+            "label": "Metal Accessories",
+            "href": "/collections/accessories-metal"
+          },
+          {
+            "label": "Plastic Accessories",
+            "href": "/collections/accessories-plastic"
+          },
+          {
+            "label": "Rod Pods & Stands",
+            "href": "/collections/rod-pod-accessories"
+          },
+          {
+            "label": "Peripheral Equipment",
+            "href": "/collections/peripheral-equipment"
+          }
+        ],
+        "shopAll": {
+          "label": "Shop All Accessories",
+          "href": "/collections/other"
+        }
+      }
+    },
+    {
+      "label": "OEM / ODM",
+      "href": "/pages/oem-odm",
+      "megaMenu": {
+        "variant": "oem",
+        "children": [
+          {
+            "label": "Private Label",
+            "href": "/pages/private-label"
+          },
+          {
+            "label": "Custom Packaging",
+            "href": "/pages/custom-packaging"
+          },
+          {
+            "label": "MOQ & Lead Time",
+            "href": "/moq-lead-time"
+          }
+        ],
+        "shopAll": {
+          "label": "View OEM / ODM Overview",
+          "href": "/pages/oem-odm"
+        }
+      }
+    }
+  ],
+  "footer": {
+    "quickLinks": [
+      {
+        "label": "2026 New Products",
+        "href": "/collections/2026-new-products"
+      },
+      {
+        "label": "Sinkers",
+        "href": "/collections/sinkers"
+      },
+      {
+        "label": "Accessories",
+        "href": "/collections/other"
+      },
+      {
+        "label": "OEM / ODM",
+        "href": "/pages/oem-odm"
+      },
+      {
+        "label": "Wholesale RFQ",
+        "href": "/pages/contact"
+      },
+      {
+        "label": "Fishing Articles & Videos",
+        "href": "/blogs/news"
+      }
+    ],
+    "information": [
+      {
+        "label": "Shipping Policy",
+        "href": "/shipping"
+      },
+      {
+        "label": "Sample Policy",
+        "href": "/samples"
+      },
+      {
+        "label": "Terms & Conditions",
+        "href": "/terms"
+      },
+      {
+        "label": "Privacy Policy",
+        "href": "/privacy"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact"
+      },
+      {
+        "label": "Catalog Download",
+        "href": "/pages/catalog"
+      },
+      {
+        "label": "MOQ & Lead Time",
+        "href": "/moq-lead-time"
+      }
+    ],
+    "policies": [
+      {
+        "label": "Returns & Refund Policy",
+        "href": "/refund_returns"
+      },
+      {
+        "label": "Privacy Policy",
+        "href": "/privacy"
+      },
+      {
+        "label": "Terms of service",
+        "href": "/terms"
+      },
+      {
+        "label": "Shipping Policy",
+        "href": "/shipping"
+      }
+    ],
+    "social": [
+      {
+        "label": "Facebook",
+        "href": "https://www.facebook.com/share/1ZyUpncUzd/?mibextid=wwXIfr"
+      },
+      {
+        "label": "Snapchat",
+        "href": "https://snapchat.com/t/X94QfY13"
+      },
+      {
+        "label": "Instagram",
+        "href": "https://www.instagram.com/carp_ybb?igsh=aWg5M20wNGQ2N3Jo&utm_source=qr"
+      },
+      {
+        "label": "TikTok",
+        "href": "https://www.tiktok.com/@carp_ybb?_r=1&_t=ZT-97J295lPDfa"
+      },
+      {
+        "label": "X",
+        "href": "https://x.com/yotofisher?s=11"
+      }
+    ]
+  }
+}

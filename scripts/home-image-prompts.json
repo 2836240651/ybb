@@ -1,0 +1,268 @@
+{
+  "meta": {
+    "audience": "B2B wholesale buyers �?EU/UK carp & coarse fishing distributors, OEM partners, tackle shops",
+    "photographyBaseline": "Photorealistic commercial product photography shot on Canon EOS R5 with 100mm macro lens; accurate material physics; real manufactured fishing tackle not CGI fantasy; natural color science; subtle film grain; no AI artifacts; no floating objects; no impossible geometry; no human hands; no fingers; no watermarks; no logos; no readable text; no price tags; no Chinese characters; no captions",
+    "config": "D:\\dev\\workspace\\commander-server-t260220-main\\commander-server-t260220-main\\etc\\config\\config-dev.yaml"
+  },
+  "items": [
+    {
+      "id": "hero-factory-catalog",
+      "title": "10,000+ SKUs for wholesale buyers",
+      "output": "public/images/hero/hero-01.webp",
+      "width": 1920,
+      "height": 640,
+      "prompt": "SUBJECT: Ultra-wide cinematic hero banner for a B2B wholesale carp terminal tackle factory catalog �?the visual story of industrial-scale coarse fishing hardware production. SCENE: A modern 30-year terminal tackle manufacturing facility in China exporting to EU and UK markets; stainless steel workbenches with partitioned trays holding thousands of sorted hooks (wide gape carp hooks size 4-8), rolling swivels size 8, rig rings, beads, anti-tangle sleeves, and hooklink components; background shows injection-moulding machines for feeder bodies and automated packaging lines with clear bulk bags. DETAIL LAYER: Closest foreground tray in sharp focus shows individual hook points catching light, brass swivel barrels with realistic machining marks, matte black nickel plating variations; mid-ground technician in neutral workwear (face out of frame) uses calipers on a golden sample hook; warm 4000K factory lighting mixed with cool daylight from high windows. MOOD: Trustworthy OEM supplier, massive SKU depth, export-ready QC discipline. CAMERA: 24mm wide angle, f/4, horizontal 3:1 banner crop, slight vignette. AUTHENTICITY: Realistic factory clutter �?not sterile CGI; believable Asian tackle OEM environment. NEGATIVE: no readable brand names, no text on boxes, no exaggerated sci-fi machinery."
+    },
+    {
+      "id": "hero-ready-rigs",
+      "title": "Pre-tied carp rigs at factory MOQ",
+      "output": "public/images/hero/hero-02.webp",
+      "width": 1920,
+      "height": 640,
+      "prompt": "SUBJECT: Wide lifestyle hero banner showcasing wholesale pre-tied carp ready rigs and hooklinks for B2B buyers. PRODUCTS IN FRAME: Multiple complete hair rigs with coated braid hooklinks, knotless-knot tied wide gape carp hooks (barbed), shrink tube, rig rings, bait screws, and aligned hook points; stiff boom sections with swivel links; rigs arranged in fan pattern on a damp green unhooking mat with rubber mesh texture. ENVIRONMENT: Authentic UK-style carp lake peg at golden hour �?mist over still water, reed bed bokeh, carbon rod tip and buzzer alarm blurred in far background suggesting active session. MATERIAL TRUTH: Stiff coated braid has semi-matte olive or brown coating with slight sheen at bends; hook wire shows realistic blue/black nickel; hair loops are straight and symmetrical as factory-tied wholesale quality. LIGHTING: Low warm sun from left, specular highlights on hook wire, soft shadow under rigs. STORY: Distributor can stock ready-made rigs at factory MOQ without in-house tying labour. CAMERA: 35mm, f/2.8, shallow DOF on nearest hook point. NEGATIVE: no hands, no blood, no fish, no text."
+    },
+    {
+      "id": "hero-bait-cages",
+      "title": "Method feeders & bait cages",
+      "output": "public/images/hero/hero-03.webp",
+      "width": 1920,
+      "height": 640,
+      "prompt": "SUBJECT: Wide hero banner for wholesale method feeders and inline bait cages category. PRODUCTS: A family of inline groundbait feeders �?small medium large cylindrical mesh cages (stainless or black PTFE-coated mesh), some with detachable caps, central anti-tangle stems, quick-release clips; one feeder filled with fine brown groundbait crumb mix with particles visible through mesh; sliding inline cage on coated hooklink; balance-style cage rig with symmetrical weight. ENVIRONMENT: Spring match-fishing riverbank �?wooden rod rests, bait bucket with spod crumbs, calm water with gentle ripple; morning dew on mesh. DETAIL: Every mesh square individually visible; plastic cap threads realistic; lead counterweight has dull lead patina; crumbs stick to mesh realistically. LIGHTING: Soft overcast northern European daylight �?even exposure showing product texture. B2B MESSAGE: Full size range for distributor assortment planning. CAMERA: 28mm wide, products spread across lower two-thirds of banner. NEGATIVE: no brand text, no hands baiting."
+    },
+    {
+      "id": "hero-oem",
+      "title": "Private label your terminal tackle line",
+      "output": "public/images/hero/hero-04.webp",
+      "width": 1920,
+      "height": 640,
+      "prompt": "SUBJECT: B2B OEM / private-label hero banner for terminal tackle packaging services. SCENE: Clean packaging department �?conveyor belt with hang-card blister packs of swivels, printed cardboard cartons for hooklink sets (label areas intentionally blank), shrink-wrapped multi-packs of feeder rigs; designer desk with dieline proofs turned face-down; stacks of euro-slot retail cards. PRODUCTS VISIBLE: Three-way swivel kits in foam inserts, ready-rig wallets, colour-coded hook packets �?all packaging surfaces plain or blurred where text would be. DETAIL: Realistic cardboard flute edge, heat-seal blister clarity, barcode area present but unreadable. MOOD: Professional OEM partner for EU/UK retailers wanting own-brand terminal tackle. LIGHTING: Bright even 5000K studio-factory hybrid. CAMERA: Wide 3:1 composition, depth from conveyor perspective. AUTHENTICITY: Looks like real Chinese tackle factory export packaging line. NEGATIVE: no legible logos, no company names, no Chinese printing visible."
+    },
+    {
+      "id": "hero-wholesale",
+      "title": "Flexible MOQ for distributors",
+      "output": "public/images/hero/hero-05.webp",
+      "width": 1920,
+      "height": 640,
+      "prompt": "SUBJECT: Wholesale distribution and mixed-carton fulfilment hero for global B2B tackle buyers. SCENE: Bright export warehouse �?wooden pallets stacked with brown cartons of assorted terminal tackle SKUs; one open carton in foreground shows mixed inner boxes of hooks, swivels, feeders, and rig tools; pallet wrap partially peeled; forklift silhouette soft in background; shipping labels turned away or blurred. DETAIL: Corrugated carton texture, packing tape sheen, diverse carton sizes suggesting 10,000+ SKU capability; nearest open box reveals foam-packed swivel kits and mesh feeder bags �?product detail sharp. MOOD: Flexible MOQ mixed-carton efficiency for EU/UK distributors consolidating orders. LIGHTING: Warehouse high-bay LEDs with warm accent on open carton. CAMERA: 24mm, slight low angle for scale. AUTHENTICITY: Real logistics environment not render. NEGATIVE: no readable shipping labels, no brand names."
+    },
+    {
+      "id": "product-stand-wrench",
+      "title": "Stand Wrench",
+      "titleCn": "扳手支架 / rod pod tightening wrench",
+      "output": "public/products/stand-wrench/master.webp",
+      "width": 1200,
+      "height": 1200,
+      "prompt": "PRODUCT IDENTITY: Stand Wrench �?a dedicated metal tightening wrench tool for carp fishing rod pods, banksticks, and rod rest fittings; sold wholesale to tackle shops as essential bank kit hardware; category: tackle storage / bankware accessory. PHYSICAL DESCRIPTION: One single tool centered in frame; elongated steel shaft approximately 25-30cm length; T-bar or L-shaped handle with knurled grip section for wet-hand torque; machined socket or open-jaw head sized for standard rod pod thread fittings; finish is matte black phosphate or dark zinc with subtle wear marks suggesting real metal; weight looks substantial not toy-like; no plastic except possible rubber grip insert. FUNCTIONAL CONTEXT: Used on lakeside to tighten loose bankstick threads during long carp sessions; rests on closed tackle box lid or unhooking mat near peg. ENVIRONMENT: Authentic carp swim margin �?blurred reeds, grey morning sky, damp ground texture on rubber mat. PHOTOGRAPHY: 100mm macro product shot, 45-degree angle, f/8 for full tool sharpness, soft fill from reflector, subtle shadow beneath. DETAIL PRIORITY: Thread profile on jaw, knurl pattern, metal grain, chamfered edges. B2B: Must look like a real factory OEM accessory a distributor would stock by the hundred. NEGATIVE: no hands gripping tool, no text, no mousepad or desk clutter, no oversized CGI proportions."
+    },
+    {
+      "id": "product-rod-rack-wall-mount",
+      "title": "Rod Rack Wall Mount",
+      "titleCn": "壁挂式鱼竿架",
+      "output": "public/products/rod-rack-wall-mount/master.webp",
+      "width": 1200,
+      "height": 1200,
+      "prompt": "PRODUCT IDENTITY: Rod Rack Wall Mount �?wall-mounted carp rod storage rack with two U-shaped rod rests (butt rests) for garage, shed, or fishing room; B2B storage category for retailers. PHYSICAL DESCRIPTION: Pair of rod rests mounted on a shared metal backplate or separate bases; U-cradles in high-visibility colours �?one red, one blue �?moulded from thick ABS polymer; black soft rubber lining inside each U to protect rod blanks; threaded brass or steel stem with locking nut for wall fixing; rests angled slightly upward to hold 12-13ft carp rods securely; rubber pads show realistic matte texture. OPTIONAL CONTEXT: Two carp rods (cork handles, black blanks) resting in cradles to demonstrate function but rods slightly defocused so product hardware remains hero. ENVIRONMENT: Clean fishing-room wall �?pale grey painted brick or timber cladding, soft natural window light from side. PHOTOGRAPHY: Straight-on lifestyle product shot, 50mm, f/5.6, both rests fully visible symmetrically. DETAIL PRIORITY: Rubber insert seam, moulding parting line, thread on stem, wall plug hardware. AUTHENTICITY: Real mass-produced rod rest components as sold on UK eBay tackle shops. NEGATIVE: no hands, no brand stickers on rods, no text."
+    },
+    {
+      "id": "product-braided-line-bait-cage-rig-balance",
+      "title": "Braided Line Bait Cage Rig Balance",
+      "titleCn": "编织线天平饵笼钓组图",
+      "output": "public/products/braided-line-bait-cage-rig-balance/master.webp",
+      "width": 1200,
+      "height": 1200,
+      "prompt": "PRODUCT IDENTITY: Braided Line Bait Cage Rig Balance �?a complete pre-assembled carp fishing terminal rig combining a small inline mesh bait cage feeder on a braided hooklink with balance weight geometry for stable presentation; wholesale bait cage / ready-rig crossover SKU. PHYSICAL DESCRIPTION: Central element is a short cylindrical stainless mesh bait cage (20-30mm diameter) with fine square mesh, central stem tube, and tail rubber; attached to 15-20lb dark green or black braided hooklink approximately 15-25cm; small rolling swivel at top connection; micro lead or tungsten balance weight integrated for horizontal balance in water; wide gape carp hook (size 6-8) tied with hair rig loop below feeder; hook point sharp and slightly upturned; all knots neat and factory-consistent. MATERIAL TRUTH: Braid shows individual strand weave; mesh has metallic grey sheen; hook is black nickel; tail rubber is dull black silicone. ENVIRONMENT: Resting on wet green reed stems at lake margin with soft water bokeh �?implies real fishing use without being underwater. PHOTOGRAPHY: Macro 1:1 product hero, rig laid in gentle curve showing full assembly, f/11 focus stack look. DETAIL PRIORITY: Mesh weave, swivel barrel, knot at hook eye, hair loop symmetry. B2B: Distributor-ready tied rig photographed like Rapala catalog precision. NEGATIVE: no hands, no water splash CGI, no generic fishing lure shapes."
+    },
+    {
+      "id": "product-stripped-line-bait-cage-rig-sliding",
+      "title": "Stripped Line Bait Cage Rig Sliding",
+      "titleCn": "剥皮线饵笼滑动钓组图",
+      "output": "public/products/stripped-line-bait-cage-rig-sliding/master.webp",
+      "width": 1200,
+      "height": 1200,
+      "prompt": "PRODUCT IDENTITY: Stripped Line Bait Cage Rig Sliding �?carp match-fishing rig where coated stripped hooklink slides through an inline bait cage feeder for adjustable presentation; core wholesale bait cage SKU. PHYSICAL DESCRIPTION: Coated braided hooklink stripped of outer coating at sliding section �?visible inner braid core at exposed section; black PTFE or plastic inline cage feeder slides freely on line with stop bead and tail rubber; feeder body is compact mesh cylinder with capped ends; quick-change clip or swivel link at top; carp hook tied below with short hair; components proportionally accurate for UK match carp fishing. MATERIAL CONTRAST: Matte coated line vs shiny exposed braid vs metallic mesh vs black hook wire. FUNCTION: Sliding mechanism visually obvious �?feeder positioned mid-link between two line sections. ENVIRONMENT: Dark wet slate rock at still lake edge, tiny water droplets on stone, overcast soft light. PHOTOGRAPHY: 85mm macro, rig stretched diagonally across frame, every component in focus. DETAIL PRIORITY: Sliding gap on hooklink, stop bead bore, mesh hole pattern, hook barb. AUTHENTICITY: Must match real Chinese OEM sliding cage rigs used in European coarse fishing. NEGATIVE: no hands, no floating rig."
+    },
+    {
+      "id": "product-aligner-bloodworm-inline",
+      "title": "Aligner Stripped Line Bloodworm Inline Groundbait Block Large",
+      "titleCn": "剥皮线麻饼中�?红虫大偏转件",
+      "output": "public/products/aligner-stripped-line-bloodworm-inline-groundbait-block-large/master.webp",
+      "width": 1200,
+      "height": 1200,
+      "prompt": "PRODUCT IDENTITY: Large inline groundbait block aligner rig with bloodworm presentation �?advanced carp terminal rig combining inline groundbait block feeder, stripped coated line, aligner bead, and fine hook for bloodworm / joker baits; specialist match and commercial carp SKU. PHYSICAL DESCRIPTION: Large cylindrical inline groundbait block (麻饼) �?dense brown crumb block or moulded groundbait cylinder with central bore; stripped coated hooklink passes through block bore; tapered aligner bead (偏转�? seats against block to control hook angle; small sharp carp hook (size 8-12) with short hair presenting red bloodworm cluster (realistic worm texture, burgundy colour); tail rubber and mini swivel at top; line stripping shows inner braid at aligner section. SCALE: Block approximately 30-40mm diameter �?visibly LARGER than standard small cage feeders. ENVIRONMENT: Green rubber unhooking mat with scattered groundbait crumbs and one or two loose bloodworms; natural daylight from peg side. PHOTOGRAPHY: Macro angled 30 degrees, shallow DOF on aligner-to-hook junction. DETAIL PRIORITY: Aligner taper bore, block crumb texture, worm segmentation on hook hair, stripped line transition. B2B: Specialist rig that wholesale buyers stock for match anglers. NEGATIVE: no hands, no gore, no exaggerated worm size."
+    },
+    {
+      "id": "product-stripped-line-bait-cage-balance",
+      "title": "Stripped Line Bait Cage Balance",
+      "titleCn": "剥皮线天平饵笼图",
+      "output": "public/products/stripped-line-bait-cage-balance/master.webp",
+      "width": 1200,
+      "height": 1200,
+      "prompt": "PRODUCT IDENTITY: Stripped Line Bait Cage Balance rig �?symmetrical balance-style inline bait cage on stripped coated hooklink for stable horizontal presentation on lake bottom; wholesale bait cage rig. PHYSICAL DESCRIPTION: Coated hooklink with stripped section near cage; inline mesh bait cage with dual weight balance design �?small lead or tungsten weights positioned for level sink; mesh cylinder 25mm with fine weave; rolling swivel; tail rubber; size 6 carp hook on hair rig below; overall assembly length 20-30cm; factory-tied knot consistency. VISUAL HERO: Balance geometry evident �?cage sits level when draped over clear acrylic display stand above reflective calm water surface creating mirror reflection doubling product. LIGHTING: Sunrise rim light from behind-left creating golden edge on mesh and hook. PHOTOGRAPHY: 100mm, symmetrical composition, product and reflection both visible. DETAIL PRIORITY: Balance weight placement, mesh solder points, hook point, coating strip boundary. AUTHENTICITY: Realistic Chinese OEM balance cage rig not invented fantasy feeder. NEGATIVE: no hands, no underwater shot, no text."
+    },
+    {
+      "id": "product-baiting-tool-kit-silicone",
+      "title": "Baiting Tool Kit Silicone",
+      "titleCn": "穿饵工具组硅�?,
+      "output": "public/products/baiting-tool-kit-silicone/master.webp",
+      "width": 1200,
+      "height": 1200,
+      "prompt": "PRODUCT IDENTITY: Silicone Carp Baiting Tool Kit �?complete multi-tool set for bait preparation and hair rig tying sold wholesale to tackle retailers; includes baiting needle, bait drill, cork borers, baiting awl, and bait stops. PHYSICAL DESCRIPTION: 5-7 tools arranged in fan flat-lay; each tool has soft silicone grip handle in distinct colours (red, yellow, green, blue) with non-slip matte texture; stainless steel shafts and tips �?baiting needle with barbed latch tip approximately 8cm exposed metal; bait drill with spiral flutes; cork borers in 2 sizes; bait stop tool with forked end; handles are thick ergonomic cylindrical silicone approximately 10cm long; metal shows real machined finish not mirror chrome. PROPS (subtle): 15mm shelf-life boilies in brown and yellow, few maize kernels, cork ball with pre-drilled hole �?props support function but tools dominate 70% of frame. ENVIRONMENT: White oak board on lakeside picnic table, soft morning side light. PHOTOGRAPHY: Top-down 45-degree flat lay, 50mm, all tools sharp. DETAIL PRIORITY: Silicone mould seam, needle barb, drill edge, colour separation between tools. B2B: Retail blister-pack ready assortment. NEGATIVE: no hands, no brand names on handles, no cheap toy appearance."
+    },
+    {
+      "id": "product-baiting-tool-kit-glow",
+      "title": "Baiting Tool Kit Glow",
+      "titleCn": "穿饵工具组夜�?,
+      "output": "public/products/baiting-tool-kit-glow/master.webp",
+      "width": 1200,
+      "height": 1200,
+      "prompt": "PRODUCT IDENTITY: Glow-in-the-Dark Baiting Tool Kit �?night-session carp fishing baiting tools with photoluminescent silicone handles for visibility at bivvy light-off; wholesale accessory SKU. PHYSICAL DESCRIPTION: Same tool types as standard kit �?baiting needle, drill, borers �?but handles moulded in glow phosphor silicone that emits soft green-yellow luminescence; tools laid on dark neoprene unhooking mat; faint glow visible on handle surfaces while ambient scene is civil twilight (blue hour) at lakeside; stainless tips still catch last daylight specular highlight. ENVIRONMENT: Carp peg at dusk �?boilies bucket silhouette, buzzer rods blurred, sky gradient navy to orange on horizon; one small LED bivvy light far background bokeh (warm, not blowing exposure). PHOTOGRAPHY: Tripod long exposure look but products frozen sharp; glow on handles realistic not neon oversaturated. DETAIL PRIORITY: Phosphor grain in silicone, needle tip sharpness against dark mat. B2B: Night angler niche SKU for distributor catalog. NEGATIVE: no sci-fi neon, no hands, no text."
+    },
+    {
+      "id": "product-baiting-needle",
+      "title": "Baiting Needle",
+      "titleCn": "穿饵钩针",
+      "output": "public/products/baiting-needle/master.webp",
+      "width": 1200,
+      "height": 1200,
+      "prompt": "PRODUCT IDENTITY: Carp Baiting Needle �?single essential hair rig tool for threading boilies onto hair loops; high-volume wholesale terminal tackle accessory. PHYSICAL DESCRIPTION: One needle only, hero scale; thin stainless steel shaft 12-15cm length, 1.5mm diameter; barbed notched tip for gripping boilie bore; opposite end has compact plastic or rubber handle in dark green or black with ridged grip; handle approximately 8cm; metal shows brushed steel texture with tip polished sharp. CONTEXT PROP: Cork ball with 15mm boilie partially threaded on hair loop, needle inserted through boilie bore demonstrating function �?prop secondary and soft focus. ENVIRONMENT: Clean neutral grey gradient studio background with soft drop shadow �?classic e-commerce packshot. PHOTOGRAPHY: Extreme macro focus stacking on tip barb and shaft, 100mm f/16, product diagonal. DETAIL PRIORITY: Barb notch geometry, shaft straightness, handle mould texture. AUTHENTICITY: Identical to mass-produced Chinese baiting needles sold in UK tackle shops. NEGATIVE: no hands, no multiple needles, no text."
+    },
+    {
+      "id": "product-coated-line-carp-hook-screw",
+      "title": "Coated Line Carp Hook Screw Green Large",
+      "titleCn": "大螺丝绿色包芯线+鲤鱼钩图",
+      "output": "public/products/coated-line-carp-hook-screw-green-large/master.webp",
+      "width": 1200,
+      "height": 1200,
+      "prompt": "PRODUCT IDENTITY: Large Green Coated Carp Hooklink with Screw Aligner �?stiff coated braid hooklink section with screw-in aligner bead and tied wide gape carp hook; wholesale hooklink / terminal tackle SKU for chod and stiff rig presentations. PHYSICAL DESCRIPTION: 15-20cm stiff hooklink of coated braided line in vivid matte green coating (European carp rig colour); large screw-thread aligner bead in matching green screwed onto coated section; aligner has tapered bore and external screw threads visible; wide gape carp hook size 4 tied with knotless knot, black nickel finish, aggressive hook point; stiff section holds gentle curve not flopping; opposite end has loop for swivel connection. MATERIAL: Coating looks rubberised matte not plastic shine; hook wire diameter believable for big carp. ENVIRONMENT: Mossy granite bank stone with dew drops, cool morning light emphasizing green coating hue accuracy. PHOTOGRAPHY: Macro 85mm, hook point nearest camera, screw thread in mid-sharp zone. DETAIL PRIORITY: Screw bead thread pitch, coating edge at strip point, hook barb and eye knot. B2B: Photographed like Gardner Tackle catalog stiffness. NEGATIVE: no hands, no fluorescent unreal green, no text."
+    },
+    {
+      "id": "product-spinner-blade-soft-bait-set",
+      "title": "Spinner Blade Soft Bait Set",
+      "titleCn": "带亮片软饵套�?,
+      "output": "public/products/spinner-blade-soft-bait-set/master.webp",
+      "width": 1200,
+      "height": 1200,
+      "prompt": "PRODUCT IDENTITY: Spinner Blade Soft Bait Rig Set �?predatory/coarse crossover mini rig set with metallic spinner blade, soft plastic trailer, swivels and beads for perch, zander, and sea bass style fishing; wholesale terminal tackle variety SKU. PHYSICAL DESCRIPTION: Complete micro rig components laid out �?teardrop or willow spinner blade in silver or gold thin stamped metal with realistic curvature; small soft plastic grub or worm trailer in chartreuse or white with ribbed body; size 6-8 single hook embedded in soft bait; 2 rolling swivels; 2 brass beads; 30cm trace of 10lb mono; components also shown assembled as one finished lure. SURFACE: Rippled water-blue acrylic sheet suggesting aquatic context without full underwater shot. LIGHTING: Hard side light to create blade flash glint on one edge. PHOTOGRAPHY: 60mm overhead 30-degree, all pieces separated for wholesale component clarity plus one assembled example. DETAIL PRIORITY: Blade stamp marks, soft plastic mould line, hook eye, swivel snap. AUTHENTICITY: Realistic Chinese OEM spinner kit not bass fishing fantasy lure. NEGATIVE: no hands, no packaging text."
+    },
+    {
+      "id": "product-three-way-swivel-kit-box",
+      "title": "Three Way Swivel Kit Box",
+      "titleCn": "带铁三叉节套�?,
+      "output": "public/products/three-way-swivel-kit-box/master.webp",
+      "width": 1200,
+      "height": 1200,
+      "prompt": "PRODUCT IDENTITY: Three-Way Swivel Kit Box �?retail-ready wholesale box set of iron/steel three-way swivels and related terminal links for carp rig construction and helicopter rig setups; flagship featured PDP product with 29 gallery angles. PHYSICAL DESCRIPTION: Open rigid cardboard box approximately 15x10x3cm with foam insert or vacuum tray; rows of 20-50 three-way swivels in black nickel and brass finishes; each swivel has three rings in T configuration with barrel centre; included accessories: snap links, rig sleeves, anti-tangle rubbers; swivels show micro scale �?15-20mm length each; foam cutouts precise; box exterior plain kraft or dark green with NO readable print. CONTEXT: Box lid open 120 degrees on weathered oak desk; through window behind, soft blur of lake and trees. PHOTOGRAPHY: 50mm product hero, box front corner angle showing depth of contents, f/8. DETAIL PRIORITY: Individual swivel ring welds, barrel engraving-free surface, foam precision, quantity suggesting value pack. B2B: OEM can apply private label to blank box exterior. NEGATIVE: no legible text on box, no brand logo, no hands."
+    },
+    {
+      "id": "product-aligner",
+      "title": "Aligner",
+      "titleCn": "带孔偏转�?,
+      "output": "public/products/aligner/master.webp",
+      "width": 1200,
+      "height": 1200,
+      "prompt": "PRODUCT IDENTITY: Carp Hair Rig Aligner Bead (带孔偏转�? �?small tapered bore component that threads on coated hooklink to align hook with bait and control hair rig angle; high-volume wholesale terminal tackle consumable. PHYSICAL DESCRIPTION: Single aligner bead enlarged to hero scale in frame; tapered conical body 12-18mm length; central bore visible through taper; material is soft rubber or semi-rigid plastic in dull black or dark brown; subtle moulding seam line; shown threaded on short section of coated olive hooklink with hook eye emerging from narrow end demonstrating correct orientation; second aligner loose beside it showing bore entry. ENVIRONMENT: Textured black rubber unhooking mat with fine pebble pattern. PHOTOGRAPHY: Extreme macro 1:1, aligner occupies 60% of frame, bore interior shadow visible. DETAIL PRIORITY: Taper angle, bore diameter transition, material matte texture, line passing through bore without distortion. AUTHENTICITY: Identical to Korda-style aligner beads from Chinese factory production. NEGATIVE: no hands, no text, no oversized bead."
+    },
+    {
+      "id": "product-leadcore-snap-swivel",
+      "title": "Leadcore Snap Swivel",
+      "titleCn": "带八字环铅芯�?,
+      "output": "public/products/leadcore-snap-swivel/master.webp",
+      "width": 1200,
+      "height": 1200,
+      "prompt": "PRODUCT IDENTITY: Leadcore Leader with Snap Swivel �?woven leadcore cord spliced to coated leader material with heavy-duty snap swivel for carp safety leader setups; wholesale leadcore category SKU. PHYSICAL DESCRIPTION: 60-80cm length of dark brown woven leadcore �?visible polyester weave pattern with lead filaments creating stiff drape; one end shows spliced loop neat and symmetrical; other end transitions via knotless splice or swivel to 30lb coated leader; large snap swivel in black nickel with safety clip gate; coil resting in loose spiral on hessian jute fabric; carabiner clip nearby as scale reference only. MATERIAL TRUTH: Leadcore weave must look stiff and dense not fluffy rope; swivel gate metal thickness believable for 40lb+ carp. ENVIRONMENT: Warm afternoon bank light, hessian on wooden bait table. PHOTOGRAPHY: 70mm, gentle spiral composition, full length visible in one frame. DETAIL PRIORITY: Weave crossover pattern, splice taper, snap gate spring, coated leader sheen. B2B: Leader material for EU carp anglers stocking leadcore systems. NEGATIVE: no hands, no text on swivel."
+    },
+    {
+      "id": "product-combi-rig",
+      "title": "Combi Rig",
+      "titleCn": "combi rig 组合钓组",
+      "output": "public/products/combi-rig/master.webp",
+      "width": 1200,
+      "height": 1200,
+      "prompt": "PRODUCT IDENTITY: Combi Carp Rig �?ready-tied combination rig joining stiff coated boom section to supple braided hooklink via combi knot or swivel link; standard wholesale ready-rig for modern carp fishing. PHYSICAL DESCRIPTION: Upper section 15cm stiff coated braid in dark brown or green holding rigidity in gentle arc; junction at combi swivel or knotless combi link; lower section 10cm supple 15lb dark braid hooklink; wide gape carp hook size 6 tied knotless knot with 10mm hair loop; bait screw or ring on hair optional; micro swivel at top with loop for mainline connection; all knots symmetric factory-tied. FUNCTION VISUAL: Stiff section angle vs soft drape of hooklink section clearly different. ENVIRONMENT: Damp grass blades at swim edge, morning dew, lake bokeh background. PHOTOGRAPHY: Macro rig stretched left to right, hook point right foreground. DETAIL PRIORITY: Combi junction hardware, coating on stiff section vs bare braid on soft section, hair loop bore. AUTHENTICITY: Matches UK combi rig diagrams in carp magazines. NEGATIVE: no hands, no bait on hair."
+    },
+    {
+      "id": "product-b135-bait-cage-feeder",
+      "title": "B135 Bait Cage Feeder",
+      "titleCn": "飞德饵笼B135.136.137",
+      "output": "public/products/b135-bait-cage-feeder/master.webp",
+      "width": 1200,
+      "height": 1200,
+      "prompt": "PRODUCT IDENTITY: B135 Inline Bait Cage Feeder �?medium-size commercial match-fishing inline groundbait cage from Feeder/flyde-style product family (B135/B136/B137 series); wholesale bait cage SKU. PHYSICAL DESCRIPTION: Cylindrical mesh cage feeder 35mm diameter x 40mm length; fine stainless mesh with soldered seams; white or green plastic end cap with central stem hole; stem tube for inline fishing; filled with fine brown groundbait mix pressing through mesh holes realistically; quick-release swivel clip at top; empty weight approximately 15-20g implied by size. DISPLAY: Mounted on clear acrylic pin stand at river margin with out-of-focus reeds and flowing water behind. PHOTOGRAPHY: 85mm product shot, slight 20-degree angle showing cap and mesh side simultaneously. DETAIL PRIORITY: Mesh square uniformity, crumb particle size through holes, cap moulding, stem bore. B2B: Model number association for distributor ordering systems. NEGATIVE: no B135 text printed on product, no hands."
+    },
+    {
+      "id": "product-bait-cage-feeder",
+      "title": "Bait Cage Feeder",
+      "titleCn": "飞德钓带盖饵�?,
+      "output": "public/products/bait-cage-feeder/master.webp",
+      "width": 1200,
+      "height": 1200,
+      "prompt": "PRODUCT IDENTITY: Bait Cage Feeder with Lid �?round mesh groundbait feeder with hinged vented lid for controlled bait release; classic Feeder-style (飞德�? wholesale bait cage for European match carp. PHYSICAL DESCRIPTION: Drum-shaped mesh cage 40mm diameter; hinged plastic lid open 90 degrees showing crumb-filled interior; lid has ventilation slots; central attachment stem with swivel; mesh is fine gauge silver stainless; groundbait inside is mixed crumb with pink particles; lid hinge pin visible and realistic. ENVIRONMENT: Weathered wooden jetty planks with lake water gap visible between boards; natural side light raking across mesh texture. PHOTOGRAPHY: 50mm, feeder standing upright on boards, lid open facing camera. DETAIL PRIORITY: Hinge mechanism, lid slot pattern, mesh-to-plastic joint, crumb overflow at rim. AUTHENTICITY: Realistic mass-produced feeder not 3D render. NEGATIVE: no hands, no brand emboss on lid."
+    },
+    {
+      "id": "product-neo-nylon-line",
+      "title": "Neo Nylon Line",
+      "titleCn": "NEO尼龙�?,
+      "output": "public/products/neo-nylon-line/master.webp",
+      "width": 1200,
+      "height": 1200,
+      "prompt": "PRODUCT IDENTITY: NEO Nylon Monofilament Fishing Line on Spool �?wholesale mainline product for carp and coarse fishing retailers; NEO brand series nylon in amber/translucent tone. PHYSICAL DESCRIPTION: Single plastic spool approximately 8cm diameter; black or dark grey spool hub with blank label area (no print); nylon line wound evenly in translucent amber-gold colour; line trace lifted off spool in graceful curve showing monofilament clarity and refractive index; spool edge shows moulding detail and line pack density; implied breaking strain 8-12lb mainstream carp fishing. ENVIRONMENT: Clean studio gradient background soft blue-grey suggesting water tone; subtle reflection on glossy surface below spool. PHOTOGRAPHY: 100mm, spool 3/4 angle, line trace toward camera with shallow DOF on trace tip. DETAIL PRIORITY: Line transparency, spool hub geometry, wound line layers, no label text. B2B: Bulk spool photography for distributor line category. NEGATIVE: no readable label, no hands, no tangled mess."
+    },
+    {
+      "id": "product-rig-ronnie-whirlpool",
+      "title": "Rig Ronnie Whirlpool",
+      "titleCn": "漩涡罗尼钓组",
+      "output": "public/products/rig-ronnie-whirlpool/master.webp",
+      "width": 1200,
+      "height": 1200,
+      "prompt": "PRODUCT IDENTITY: Ronnie Whirlpool Carp Rig �?ready-tied Ronnie rig variant with whirlpool-style curved stiff hooklink section and wide gape hook for bottom bait presentations; wholesale ready-rig SKU popular in UK carp scene. PHYSICAL DESCRIPTION: Short stiff curved boom in coated braid forming whirlpool bend shape; micro swivel at each end; supple braid hooklink 5cm to wide gape Ronnie bend hook (extra-wide gape, in-turned point); hook shank shows distinctive ronnie geometry; overall length 12-15cm; black nickel hook and dark green coated stiff section; factory-tied with consistent whirlpool curve radius. ENVIRONMENT: Dark wet slate with scattered water beads, dramatic side light creating hook point gleam. PHOTOGRAPHY: Macro hook-forward composition, whirlpool curve silhouette readable against dark stone. DETAIL PRIORITY: Ronnie hook gape width, whirlpool bend radius, swivel orientation, stiff coating texture. AUTHENTICITY: Matches real Ronnie rig product photos from UK tackle brands. NEGATIVE: no hands, no bait, no text."
+    },
+    {
+      "id": "collection-terminal-tackle",
+      "title": "Terminal Tackle Collection",
+      "output": "public/images/collections/terminal-tackle.webp",
+      "width": 1024,
+      "height": 1280,
+      "prompt": "CATEGORY COVER: Terminal Tackle wholesale collection atmosphere image for B2B e-commerce category tile (4:5 vertical). CONTENT: Artful spread of 30+ assorted micro terminal tackle items on dark slate tray at lakeside �?rolling swivels size 8 and 4, rig rings, quick-change clips, anti-tangle sleeves, beads in fluoros and blacks, hook eyes, bait screws, rig tools; items layered at varying depths; nearest swivels in razor focus showing barrel machining. ENVIRONMENT: Carp lake margin golden hour, tray on folded unhooking mat, rod pod leg blurred background. MOOD: Abundance and SKU depth for wholesale buyer browsing terminal hardware category. PHOTOGRAPHY: 50mm vertical, tray fills lower 70% of frame, sky water bokeh upper portion. DETAIL: Metallic variance nickel/brass/black; no single product dominates. NEGATIVE: no text, no hands, no brand packaging."
+    },
+    {
+      "id": "collection-ready-rigs",
+      "title": "Ready Rigs Collection",
+      "output": "public/images/collections/ready-rigs.webp",
+      "width": 1024,
+      "height": 1280,
+      "prompt": "CATEGORY COVER: Ready Rigs collection vertical banner for wholesale carp pre-tied rigs. CONTENT: Six to eight complete hair rigs in clear zip bags arranged on foam rig board clipped to rod rest; hooks points aligned same direction; coated hooklinks in olive and brown; shrink tube colours varied; rig foam white with parallel slots; buzzer rod and line clip soft background. ENVIRONMENT: Early morning lake fog, peg number post blurred, cool blue-grey atmosphere warming at horizon. MOOD: Factory-tied consistency ready for shop display. PHOTOGRAPHY: Vertical 4:5, rig board centered, bags catch condensation realism. DETAIL: Hook points, hair loops, bag zip teeth. NEGATIVE: no brand labels on bags, no hands."
+    },
+    {
+      "id": "collection-bait-cages",
+      "title": "Bait Cages Collection",
+      "output": "public/images/collections/bait-cages.webp",
+      "width": 1024,
+      "height": 1280,
+      "prompt": "CATEGORY COVER: Bait Cages & Method Feeders vertical collection image. CONTENT: Size progression S-M-L of inline mesh feeders and bait cages on wooden baiting table; groundbait bowl with crumb mix and scoop; one feeder filled and one empty showing construction; sliding cage rig and balance rig included; stem tubes and caps arranged. ENVIRONMENT: Match fishing river peg, flowing water bokeh, steam from thermos cup rising softly in background. MOOD: Complete feeder assortment for distributor category page. PHOTOGRAPHY: Vertical composition, table edge to water visible. DETAIL: Mesh gauge differences by size, crumb particle realism. NEGATIVE: no text, no hands baiting."
+    },
+    {
+      "id": "collection-hooklinks",
+      "title": "Hooklinks Collection",
+      "output": "public/images/collections/hooklinks.webp",
+      "width": 1024,
+      "height": 1280,
+      "prompt": "CATEGORY COVER: Hooklinks & Hair Rigs wholesale category vertical image. CONTENT: Bundled coated hooklinks in wholesale quantities �?10 coils in clear bags with blank colour tabs; hooks pre-tied inside bags visible through plastic; coils in olive brown and green coatings; laid on black rubber rig mat with grid texture; few loose hooks outside bags showing point quality. ENVIRONMENT: Indoor tackle shop backroom or warehouse packing bench with soft north light window. MOOD: Volume wholesale purchasing. PHOTOGRAPHY: Vertical 4:5, bags stacked in two rows depth. DETAIL: Coating matte texture, hook point flash, bag creases. NEGATIVE: no printed labels, no hands."
+    },
+    {
+      "id": "collection-leadcore",
+      "title": "Leadcore Collection",
+      "output": "public/images/collections/leadcore.webp",
+      "width": 1024,
+      "height": 1280,
+      "prompt": "CATEGORY COVER: Leadcore & Leaders vertical category atmosphere. CONTENT: Multiple coils of dark woven leadcore in various diameters on hessian cloth; leader links, splicing needles, melting tool, tail rubbers arranged; one partially spliced leader showing weave fan-out; coil labels blank. ENVIRONMENT: Lakeside wooden table, afternoon warm light, carp lake reeds behind. MOOD: Specialist leader category for serious carp wholesalers. PHOTOGRAPHY: Vertical, coils stacked with height variation. DETAIL: Weave pattern, splice fray fibres, tool metal. NEGATIVE: no text on coils, no hands."
+    },
+    {
+      "id": "collection-tackle-bags",
+      "title": "Tackle Bags Collection",
+      "output": "public/images/collections/tackle-bags.webp",
+      "width": 1024,
+      "height": 1280,
+      "prompt": "CATEGORY COVER: Tackle Bags & Storage vertical collection banner. CONTENT: Three carp carryalls and rod holdalls in olive green and black PVC-coated nylon �?one roll-top bag open showing rig wallets and plastic tackle boxes inside; medium carryall with shoulder strap; large session bag with external pockets; fabric shows realistic weave and PVC shine; zippers YKK-style metal pulls; bags staged at gravel swim with rod pod and brolly silhouette soft background. ENVIRONMENT: Active carp session setting implying gear transport need. MOOD: Durable export-quality luggage for wholesale storage category. PHOTOGRAPHY: Vertical 4:5, bags staggered in depth line. DETAIL: Zipper teeth, PVC seam welding, strap stitching. NEGATIVE: no logos, no text embroidery, no hands."
+    }
+  ]
+}

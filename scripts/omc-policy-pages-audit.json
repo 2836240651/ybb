@@ -1,0 +1,464 @@
+{
+  "capturedAt": "2026-06-24T03:58:15.951Z",
+  "results": [
+    {
+      "key": "refund",
+      "title": "Refund policy â€?ONE MORE CAST",
+      "h1": "Refund policy",
+      "main": {
+        "tag": "main",
+        "className": "main-content relative",
+        "width": 1440,
+        "padding": "0px 0px 0px 0px",
+        "maxWidth": "none",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "textAlign": "start"
+      },
+      "h1Style": {
+        "tag": "h1",
+        "className": "",
+        "width": 1024,
+        "padding": "0px 0px 0px 0px",
+        "maxWidth": "none",
+        "fontSize": "72px",
+        "fontWeight": "700",
+        "lineHeight": "72px",
+        "textAlign": "center"
+      },
+      "body": {
+        "tag": "div",
+        "className": "shopify-policy__body",
+        "width": 1024,
+        "padding": "0px 0px 0px 0px",
+        "maxWidth": "none",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "textAlign": "start"
+      },
+      "bodyHtmlSnippet": "\n    <div class=\"rte text-base\">\n        \n<p><strong>Returns</strong><br>Our policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately, we canâ€™t offer you a refund or exchange.<br><br>To be eligible for a return, your item must be unused and in the same condition that you received it. It must also be in the original packaging.<br><br>Several types of goods are exempt from being returned. Perishable goods such as bait, cannot be returned. We also do not accept products that are intimate or sanitary goods, hazardous materials, or flammable liquids or gases.<br><br>Additional non-returnable items:<br>Gift Vouchers<br><br>To complete your return, we require a receipt or proof of purchase.<br><br>Please do not send your purchase back to the manufacturer.<br><br>There are certain situations where only partial refunds are granted (if applicable)<br>Book with obvious signs of use<br>DVD that has been opened<br>Any item not in its original condition is damaged or missing parts for reasons not due to our error<br>Any item that is returned more than 30 days after delivery<br><br><strong>Refunds (if applicable)</strong><br>Once your return is received and inspected, we w",
+      "sectionHeadings": [
+        {
+          "tag": "STRONG",
+          "text": "Returns",
+          "style": {
+            "tag": "strong",
+            "className": "",
+            "width": 61,
+            "padding": "0px 0px 0px 0px",
+            "maxWidth": "none",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "25.6px",
+            "textAlign": "start"
+          }
+        },
+        {
+          "tag": "STRONG",
+          "text": "Refunds (if applicable)",
+          "style": {
+            "tag": "strong",
+            "className": "",
+            "width": 175,
+            "padding": "0px 0px 0px 0px",
+            "maxWidth": "none",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "25.6px",
+            "textAlign": "start"
+          }
+        },
+        {
+          "tag": "STRONG",
+          "text": "Late or missing refunds (if applicable)",
+          "style": {
+            "tag": "strong",
+            "className": "",
+            "width": 293,
+            "padding": "0px 0px 0px 0px",
+            "maxWidth": "none",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "25.6px",
+            "textAlign": "start"
+          }
+        },
+        {
+          "tag": "STRONG",
+          "text": "Sale items (if applicable)",
+          "style": {
+            "tag": "strong",
+            "className": "",
+            "width": 190,
+            "padding": "0px 0px 0px 0px",
+            "maxWidth": "none",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "25.6px",
+            "textAlign": "start"
+          }
+        },
+        {
+          "tag": "STRONG",
+          "text": "Exchanges (if applicable)",
+          "style": {
+            "tag": "strong",
+            "className": "",
+            "width": 196,
+            "padding": "0px 0px 0px 0px",
+            "maxWidth": "none",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "25.6px",
+            "textAlign": "start"
+          }
+        },
+        {
+          "tag": "STRONG",
+          "text": "Shipping",
+          "style": {
+            "tag": "strong",
+            "className": "",
+            "width": 69,
+            "padding": "0px 0px 0px 0px",
+            "maxWidth": "none",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "25.6px",
+            "textAlign": "start"
+          }
+        }
+      ],
+      "hasTrustSection": false,
+      "childCount": 1
+    },
+    {
+      "key": "privacy",
+      "title": "Privacy policy â€?ONE MORE CAST",
+      "h1": "Privacy policy",
+      "main": {
+        "tag": "main",
+        "className": "main-content relative",
+        "width": 1440,
+        "padding": "0px 0px 0px 0px",
+        "maxWidth": "none",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "textAlign": "start"
+      },
+      "h1Style": {
+        "tag": "h1",
+        "className": "",
+        "width": 1024,
+        "padding": "0px 0px 0px 0px",
+        "maxWidth": "none",
+        "fontSize": "72px",
+        "fontWeight": "700",
+        "lineHeight": "72px",
+        "textAlign": "center"
+      },
+      "body": {
+        "tag": "div",
+        "className": "shopify-policy__body",
+        "width": 1024,
+        "padding": "0px 0px 0px 0px",
+        "maxWidth": "none",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "textAlign": "start"
+      },
+      "bodyHtmlSnippet": "\n    <div class=\"rte text-base\">\n        <p><strong>Collecting Personal Information</strong><br></p>\n<p>When you visit the Site, we collect certain information about your device, your interaction with the Site, and information necessary to process your purchases. We may also collect additional information if you contact us for customer support. In this Privacy Policy, we refer to any information that can uniquely identify an individual (including the information below) as â€œPersonal Informationâ€? See the list below for more information about what Personal Information we collect and why.</p>\n<p><u>Device information</u></p>\n<ul>\n<li>\n<strong>Examples of Personal Information collected:</strong> version of web browser, IP address, time zone, cookie information, what sites or products you view, search terms, and how you interact with the Site.</li>\n<li>\n<strong>Purpose of collection:</strong> to load the Site accurately for you, and to perform analytics on Site usage to optimize our Site.</li>\n<li>\n<strong>Source of collection:</strong> Collected automatically when you access our Site using cookies, log files, web beacons, tags, or pixels.</li>\n<li>\n<strong>Disclosure for a business pur",
+      "sectionHeadings": [
+        {
+          "tag": "STRONG",
+          "text": "Collecting Personal Information",
+          "style": {
+            "tag": "strong",
+            "className": "",
+            "width": 245,
+            "padding": "0px 0px 0px 0px",
+            "maxWidth": "none",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "25.6px",
+            "textAlign": "start"
+          }
+        },
+        {
+          "tag": "STRONG",
+          "text": "Examples of Personal Information collected:",
+          "style": {
+            "tag": "strong",
+            "className": "",
+            "width": 342,
+            "padding": "0px 0px 0px 0px",
+            "maxWidth": "none",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "25.6px",
+            "textAlign": "start"
+          }
+        },
+        {
+          "tag": "STRONG",
+          "text": "Purpose of collection:",
+          "style": {
+            "tag": "strong",
+            "className": "",
+            "width": 170,
+            "padding": "0px 0px 0px 0px",
+            "maxWidth": "none",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "25.6px",
+            "textAlign": "start"
+          }
+        },
+        {
+          "tag": "STRONG",
+          "text": "Source of collection:",
+          "style": {
+            "tag": "strong",
+            "className": "",
+            "width": 160,
+            "padding": "0px 0px 0px 0px",
+            "maxWidth": "none",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "25.6px",
+            "textAlign": "start"
+          }
+        },
+        {
+          "tag": "STRONG",
+          "text": "Disclosure for a business purpose:",
+          "style": {
+            "tag": "strong",
+            "className": "",
+            "width": 269,
+            "padding": "0px 0px 0px 0px",
+            "maxWidth": "none",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "25.6px",
+            "textAlign": "start"
+          }
+        },
+        {
+          "tag": "STRONG",
+          "text": "Examples of Personal Information collected:",
+          "style": {
+            "tag": "strong",
+            "className": "",
+            "width": 342,
+            "padding": "0px 0px 0px 0px",
+            "maxWidth": "none",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "25.6px",
+            "textAlign": "start"
+          }
+        },
+        {
+          "tag": "STRONG",
+          "text": "Purpose of collection:",
+          "style": {
+            "tag": "strong",
+            "className": "",
+            "width": 170,
+            "padding": "0px 0px 0px 0px",
+            "maxWidth": "none",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "25.6px",
+            "textAlign": "start"
+          }
+        },
+        {
+          "tag": "STRONG",
+          "text": "Source of collection:",
+          "style": {
+            "tag": "strong",
+            "className": "",
+            "width": 160,
+            "padding": "0px 0px 0px 0px",
+            "maxWidth": "none",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "25.6px",
+            "textAlign": "start"
+          }
+        }
+      ],
+      "hasTrustSection": false,
+      "childCount": 1
+    },
+    {
+      "key": "shipping",
+      "title": "Shipping policy â€?ONE MORE CAST",
+      "h1": "Shipping policy",
+      "main": {
+        "tag": "main",
+        "className": "main-content relative",
+        "width": 1440,
+        "padding": "0px 0px 0px 0px",
+        "maxWidth": "none",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "textAlign": "start"
+      },
+      "h1Style": {
+        "tag": "h1",
+        "className": "",
+        "width": 1024,
+        "padding": "0px 0px 0px 0px",
+        "maxWidth": "none",
+        "fontSize": "72px",
+        "fontWeight": "700",
+        "lineHeight": "72px",
+        "textAlign": "center"
+      },
+      "body": {
+        "tag": "div",
+        "className": "shopify-policy__body",
+        "width": 1024,
+        "padding": "0px 0px 0px 0px",
+        "maxWidth": "none",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "textAlign": "start"
+      },
+      "bodyHtmlSnippet": "\n    <div class=\"rte text-base\">\n        <p>&nbsp;</p>\n<p><strong>Shipping&nbsp;</strong></p>\n<p><strong>United Kingdom</strong></p>\n<p>Order placed before 3pm</p>\n<p><span>Standard 2-4 Working Day Despatch - Next Day Courier Service (up to 5kg)</span><span>&nbsp;</span>Â£6.49</p>\n<p><span>Express 1-3 Working Day Despatch - Next Day Courier Service -&nbsp;Â£9.99</span></p>\n<p><strong>UK Only FREE Shipping on orders over Â£60.00</strong></p>\n<p>If you have selected a 24hr shipping service, please note this is not guaranteed as it is controlled by the courier company and dictated by their workload at any given time. Please bear this in mind at busy periods. We always aim to pack your order the same day if order is placed before 2pm, at that point the delivery time is then controlled by the courier service.</p>\n<p><strong>Europe</strong></p>\n<p><strong>NOTICE: EU Customers can now enjoy shopping INCLUSIVE of Duty &amp; Taxes!</strong></p>\n<p><strong>Belgium &amp; Netherlands (Bpost Next Day)</strong></p>\n<p>Up to 1kg 6.99 euros</p>\n<p>Over 1kg&nbsp; 7.99 euros</p>\n<p><strong>France, Germany &amp; Austria&nbsp;(Bpost 2-5 day)</strong></p>\n<p>Up to 1kg 9.99 euros</p>\n<p>Over 1kg 11.99 euro",
+      "sectionHeadings": [
+        {
+          "tag": "STRONG",
+          "text": "Shipping",
+          "style": {
+            "tag": "strong",
+            "className": "",
+            "width": 73,
+            "padding": "0px 0px 0px 0px",
+            "maxWidth": "none",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "25.6px",
+            "textAlign": "start"
+          }
+        },
+        {
+          "tag": "STRONG",
+          "text": "United Kingdom",
+          "style": {
+            "tag": "strong",
+            "className": "",
+            "width": 125,
+            "padding": "0px 0px 0px 0px",
+            "maxWidth": "none",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "25.6px",
+            "textAlign": "start"
+          }
+        },
+        {
+          "tag": "STRONG",
+          "text": "UK Only FREE Shipping on orders over Â£60.00",
+          "style": {
+            "tag": "strong",
+            "className": "",
+            "width": 356,
+            "padding": "0px 0px 0px 0px",
+            "maxWidth": "none",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "25.6px",
+            "textAlign": "start"
+          }
+        },
+        {
+          "tag": "STRONG",
+          "text": "Europe",
+          "style": {
+            "tag": "strong",
+            "className": "",
+            "width": 55,
+            "padding": "0px 0px 0px 0px",
+            "maxWidth": "none",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "25.6px",
+            "textAlign": "start"
+          }
+        },
+        {
+          "tag": "STRONG",
+          "text": "NOTICE: EU Customers can now enjoy shopping INCLUSIVE of Duty & Taxes!",
+          "style": {
+            "tag": "strong",
+            "className": "",
+            "width": 592,
+            "padding": "0px 0px 0px 0px",
+            "maxWidth": "none",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "25.6px",
+            "textAlign": "start"
+          }
+        },
+        {
+          "tag": "STRONG",
+          "text": "Belgium & Netherlands (Bpost Next Day)",
+          "style": {
+            "tag": "strong",
+            "className": "",
+            "width": 312,
+            "padding": "0px 0px 0px 0px",
+            "maxWidth": "none",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "25.6px",
+            "textAlign": "start"
+          }
+        },
+        {
+          "tag": "STRONG",
+          "text": "France, Germany & AustriaÂ (Bpost 2-5 day)",
+          "style": {
+            "tag": "strong",
+            "className": "",
+            "width": 332,
+            "padding": "0px 0px 0px 0px",
+            "maxWidth": "none",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "25.6px",
+            "textAlign": "start"
+          }
+        },
+        {
+          "tag": "STRONG",
+          "text": "Rest of Europe (Bpost 2-5 days)",
+          "style": {
+            "tag": "strong",
+            "className": "",
+            "width": 246,
+            "padding": "0px 0px 0px 0px",
+            "maxWidth": "none",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "25.6px",
+            "textAlign": "start"
+          }
+        }
+      ],
+      "hasTrustSection": false,
+      "childCount": 1
+    }
+  ]
+}

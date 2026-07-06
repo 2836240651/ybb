@@ -1,0 +1,28 @@
+{
+  "site": "http://localhost:3002",
+  "passed": 4,
+  "total": 4,
+  "ok": true,
+  "results": [
+    {
+      "name": "nav-ready",
+      "ok": true,
+      "detail": "links=9"
+    },
+    {
+      "name": "home-to-empty-collection",
+      "ok": true,
+      "detail": "http://localhost:3002/collections/2026-new-products"
+    },
+    {
+      "name": "empty-to-other-nav",
+      "ok": true,
+      "detail": "http://localhost:3002/collections/2026-new-products?v=1783015526257 -> http://localhost:3002/collections/rigs"
+    },
+    {
+      "name": "nonempty-collection-nav-control",
+      "ok": true,
+      "detail": "http://localhost:3002/collections/carp-hooks?v=1783015530129 -> http://localhost:3002/collections/rigs"
+    }
+  ]
+}

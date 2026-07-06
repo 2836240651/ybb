@@ -1,0 +1,1208 @@
+{
+  "desktop-1440": {
+    "viewport": {
+      "w": 1440,
+      "h": 900,
+      "label": "desktop-1440"
+    },
+    "cssVars": {
+      "--rounded-card": "clamp(0.625rem, 1.053vw, 1.25rem)",
+      "--rounded-block": "clamp(0.625rem, 1.053vw, 1.25rem)",
+      "--border-radius": "clamp(1rem, 1.578vw, 1.875rem)",
+      "--hero-section-radius": "",
+      "--hero-slide-gap": "",
+      "--gap-padding": "3rem",
+      "--title-sm": "clamp(1.5rem, 2.526vw, 3.0rem)",
+      "--title-md": "clamp(2rem, 3.368vw, 4rem)",
+      "--title-lg": "clamp(3rem, 4.73vw, 5.625rem)",
+      "--title-xl": "clamp(5rem, 6.737vw, 8rem)",
+      "--animation-smooth": ".7s cubic-bezier(.7, 0, .3, 1)"
+    },
+    "slideshowAttrs": {
+      "autoplay": "",
+      "autoplaySpeed": "7",
+      "class": "slideshow block flickity-enabled is-draggable"
+    },
+    "slideCount": 5,
+    "peek": {
+      "activeWidth": 1344,
+      "activeLeft": 48,
+      "activeRight": 1392,
+      "nextVisiblePx": 18,
+      "gapPx": 30,
+      "viewportWidth": 1440,
+      "activePctOfViewport": 93,
+      "hasPeek": false
+    },
+    "slideGap": 30,
+    "heroSection": {
+      "tag": "div",
+      "class": "shopify-section",
+      "text": "#shopify-section-template--26620168339836__slideshow {\n    --section-padding-top: 0px;\n    --section-padding-bottom: 0px",
+      "rect": {
+        "w": 1440,
+        "h": 638,
+        "l": 0,
+        "t": 201,
+        "r": 1440,
+        "b": 839
+      },
+      "typography": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "letterSpacing": "normal",
+        "lineHeight": "normal",
+        "textTransform": "none",
+        "textAlign": "start",
+        "color": "rgb(23, 23, 23)",
+        "fontFamily": "Inter, sans-serif"
+      },
+      "layout": {
+        "position": "relative",
+        "display": "flow-root",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "padding": "0px 0px 0px 0px",
+        "margin": "0px 0px 0px 0px",
+        "maxWidth": "none"
+      },
+      "visual": {
+        "borderRadius": "0px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundImage": "none",
+        "opacity": "1",
+        "transform": "none",
+        "boxShadow": "none"
+      },
+      "zIndex": "auto"
+    },
+    "slideshow": {
+      "tag": "slideshow-element",
+      "class": "slideshow block flickity-enabled is-draggable",
+      "text": "",
+      "rect": {
+        "w": 1440,
+        "h": 638,
+        "l": 0,
+        "t": 201,
+        "r": 1440,
+        "b": 839
+      },
+      "typography": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "letterSpacing": "normal",
+        "lineHeight": "normal",
+        "textTransform": "none",
+        "textAlign": "start",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "Inter, sans-serif"
+      },
+      "layout": {
+        "position": "relative",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "padding": "0px 0px 0px 0px",
+        "margin": "0px 0px 0px 0px",
+        "maxWidth": "none"
+      },
+      "visual": {
+        "borderRadius": "0px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundImage": "none",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "boxShadow": "none"
+      },
+      "zIndex": "auto"
+    },
+    "flickityViewport": {
+      "tag": "div",
+      "class": "flickity-viewport",
+      "text": "",
+      "rect": {
+        "w": 1440,
+        "h": 638,
+        "l": 0,
+        "t": 201,
+        "r": 1440,
+        "b": 839
+      },
+      "typography": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "letterSpacing": "normal",
+        "lineHeight": "normal",
+        "textTransform": "none",
+        "textAlign": "start",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "Inter, sans-serif"
+      },
+      "layout": {
+        "position": "relative",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "padding": "0px 0px 0px 0px",
+        "margin": "0px 0px 0px 0px",
+        "maxWidth": "none"
+      },
+      "visual": {
+        "borderRadius": "0px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundImage": "none",
+        "opacity": "1",
+        "transform": "none",
+        "boxShadow": "none"
+      },
+      "zIndex": "auto"
+    },
+    "activeSlide": {
+      "tag": "div",
+      "class": "banner media--750px mobile:media--500px w-full overflow-hidden flickity-cell is-selected",
+      "text": "",
+      "rect": {
+        "w": 1344,
+        "h": 638,
+        "l": 48,
+        "t": 201,
+        "r": 1392,
+        "b": 839
+      },
+      "typography": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "letterSpacing": "normal",
+        "lineHeight": "normal",
+        "textTransform": "none",
+        "textAlign": "start",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "Inter, sans-serif"
+      },
+      "layout": {
+        "position": "absolute",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "padding": "0px 0px 0px 0px",
+        "margin": "0px 30px 0px 0px",
+        "maxWidth": "1344px"
+      },
+      "visual": {
+        "borderRadius": "15.1632px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundImage": "none",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 2747.94, 0)",
+        "boxShadow": "none"
+      },
+      "zIndex": "auto"
+    },
+    "overlay": {
+      "tag": "span",
+      "class": "banner__overlay absolute top-0 left-0 w-full h-full pointer-events-none",
+      "text": "",
+      "rect": {
+        "w": 1344,
+        "h": 660,
+        "l": 48,
+        "t": 201,
+        "r": 1392,
+        "b": 861
+      },
+      "typography": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "letterSpacing": "normal",
+        "lineHeight": "normal",
+        "textTransform": "none",
+        "textAlign": "start",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "Inter, sans-serif"
+      },
+      "layout": {
+        "position": "absolute",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "padding": "0px 0px 0px 0px",
+        "margin": "0px 0px 0px 0px",
+        "maxWidth": "none"
+      },
+      "visual": {
+        "borderRadius": "15.1632px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundImage": "none",
+        "opacity": "1",
+        "transform": "none",
+        "boxShadow": "none"
+      },
+      "zIndex": "0"
+    },
+    "wordsContainer": {
+      "tag": "nav",
+      "class": "slideshow-words grid items-center",
+      "text": "BULK LEAD DEAL!\n  \n    \n    OUT NOW!\n      \n    \n  \n                  \n                    PB SHACKET SHIRT\n            ",
+      "rect": {
+        "w": 1224,
+        "h": 36,
+        "l": 108,
+        "t": 720,
+        "r": 1332,
+        "b": 756
+      },
+      "typography": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "letterSpacing": "normal",
+        "lineHeight": "normal",
+        "textTransform": "none",
+        "textAlign": "center",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "Inter, sans-serif"
+      },
+      "layout": {
+        "position": "static",
+        "display": "grid",
+        "justifyContent": "normal",
+        "alignItems": "center",
+        "padding": "0px 0px 0px 0px",
+        "margin": "0px 0px 0px 0px",
+        "maxWidth": "none"
+      },
+      "visual": {
+        "borderRadius": "0px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundImage": "none",
+        "opacity": "1",
+        "transform": "none",
+        "boxShadow": "none"
+      },
+      "zIndex": "auto"
+    },
+    "activeWord": {
+      "tag": "div",
+      "class": "slideshow-word flex flex-col md:flex-row md:items-end justify-between gap-6",
+      "text": "PB SHACKET SHIRT",
+      "rect": {
+        "w": 720,
+        "h": 36,
+        "l": 360,
+        "t": 720,
+        "r": 1080,
+        "b": 756
+      },
+      "typography": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "letterSpacing": "normal",
+        "lineHeight": "normal",
+        "textTransform": "none",
+        "textAlign": "center",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "Inter, sans-serif"
+      },
+      "layout": {
+        "position": "static",
+        "display": "flex",
+        "justifyContent": "center",
+        "alignItems": "center",
+        "padding": "0px 0px 0px 0px",
+        "margin": "0px 0px 0px 0px",
+        "maxWidth": "none"
+      },
+      "visual": {
+        "borderRadius": "0px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundImage": "none",
+        "opacity": "1",
+        "transform": "none",
+        "boxShadow": "none"
+      },
+      "zIndex": "auto"
+    },
+    "heading": {
+      "tag": "h1",
+      "class": "heading leading-none title-sm",
+      "text": "PB SHACKET SHIRT",
+      "rect": {
+        "w": 720,
+        "h": 36,
+        "l": 360,
+        "t": 720,
+        "r": 1080,
+        "b": 756
+      },
+      "typography": {
+        "fontSize": "36.3744px",
+        "fontWeight": "700",
+        "letterSpacing": "-1.09123px",
+        "lineHeight": "36.3744px",
+        "textTransform": "none",
+        "textAlign": "center",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "Inter, sans-serif"
+      },
+      "layout": {
+        "position": "static",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "padding": "0px 0px 0px 0px",
+        "margin": "0px 0px 0px 0px",
+        "maxWidth": "none"
+      },
+      "visual": {
+        "borderRadius": "0px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundImage": "none",
+        "opacity": "1",
+        "transform": "none",
+        "boxShadow": "none"
+      },
+      "zIndex": "auto"
+    },
+    "cta": null,
+    "controls": {
+      "tag": "div",
+      "class": "page-width absolute bottom-0 left-0 w-full pointer-events-none",
+      "text": "BULK LEAD DEAL!\n  \n    \n    OUT NOW!\n      \n    \n  \n                  \n                    PB SHACKET SHIRT\n            ",
+      "rect": {
+        "w": 1440,
+        "h": 179,
+        "l": 0,
+        "t": 660,
+        "r": 1440,
+        "b": 839
+      },
+      "typography": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "letterSpacing": "normal",
+        "lineHeight": "normal",
+        "textTransform": "none",
+        "textAlign": "start",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "Inter, sans-serif"
+      },
+      "layout": {
+        "position": "absolute",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "padding": "0px 48px 0px 48px",
+        "margin": "0px 0px 0px 0px",
+        "maxWidth": "none"
+      },
+      "visual": {
+        "borderRadius": "0px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundImage": "none",
+        "opacity": "1",
+        "transform": "none",
+        "boxShadow": "none"
+      },
+      "zIndex": "auto"
+    },
+    "dot": {
+      "tag": "button",
+      "class": "flickity-page-dot",
+      "text": "Page 1",
+      "rect": {
+        "w": 24,
+        "h": 24,
+        "l": 657,
+        "t": 820,
+        "r": 681,
+        "b": 844
+      },
+      "typography": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "letterSpacing": "normal",
+        "lineHeight": "normal",
+        "textTransform": "none",
+        "textAlign": "center",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "Inter, sans-serif"
+      },
+      "layout": {
+        "position": "static",
+        "display": "flex",
+        "justifyContent": "center",
+        "alignItems": "center",
+        "padding": "0px 0px 0px 0px",
+        "margin": "0px 0px 0px 0px",
+        "maxWidth": "none"
+      },
+      "visual": {
+        "borderRadius": "3.35544e+07px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundImage": "none",
+        "opacity": "1",
+        "transform": "none",
+        "boxShadow": "none"
+      },
+      "zIndex": "auto"
+    },
+    "dotInner": {
+      "tag": "span",
+      "class": "sr-only",
+      "text": "Page 1",
+      "rect": {
+        "w": 1,
+        "h": 1,
+        "l": 669,
+        "t": 831,
+        "r": 670,
+        "b": 832
+      },
+      "typography": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "letterSpacing": "normal",
+        "lineHeight": "normal",
+        "textTransform": "none",
+        "textAlign": "center",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "Inter, sans-serif"
+      },
+      "layout": {
+        "position": "absolute",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "padding": "0px 0px 0px 0px",
+        "margin": "-1px -1px -1px -1px",
+        "maxWidth": "none"
+      },
+      "visual": {
+        "borderRadius": "0px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundImage": "none",
+        "opacity": "1",
+        "transform": "none",
+        "boxShadow": "none"
+      },
+      "zIndex": "auto"
+    },
+    "prevBtn": {
+      "tag": "button",
+      "class": "hidden md:block pointer-events-auto",
+      "text": "",
+      "rect": {
+        "w": 32,
+        "h": 32,
+        "l": 108,
+        "t": 806,
+        "r": 140,
+        "b": 838
+      },
+      "typography": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "letterSpacing": "normal",
+        "lineHeight": "normal",
+        "textTransform": "none",
+        "textAlign": "center",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "Inter, sans-serif"
+      },
+      "layout": {
+        "position": "static",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "padding": "0px 0px 0px 0px",
+        "margin": "0px 0px 0px 0px",
+        "maxWidth": "none"
+      },
+      "visual": {
+        "borderRadius": "0px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundImage": "none",
+        "opacity": "1",
+        "transform": "none",
+        "boxShadow": "none"
+      },
+      "zIndex": "auto"
+    },
+    "nextBtn": {
+      "tag": "button",
+      "class": "hidden md:block pointer-events-auto",
+      "text": "",
+      "rect": {
+        "w": 32,
+        "h": 32,
+        "l": 1300,
+        "t": 806,
+        "r": 1332,
+        "b": 838
+      },
+      "typography": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "letterSpacing": "normal",
+        "lineHeight": "normal",
+        "textTransform": "none",
+        "textAlign": "center",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "Inter, sans-serif"
+      },
+      "layout": {
+        "position": "static",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "padding": "0px 0px 0px 0px",
+        "margin": "0px 0px 0px 0px",
+        "maxWidth": "none"
+      },
+      "visual": {
+        "borderRadius": "0px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundImage": "none",
+        "opacity": "1",
+        "transform": "none",
+        "boxShadow": "none"
+      },
+      "zIndex": "auto"
+    },
+    "slideTexts": [
+      {
+        "index": 0,
+        "isSelected": false,
+        "headingText": "",
+        "hasCta": true
+      },
+      {
+        "index": 1,
+        "isSelected": false,
+        "headingText": "",
+        "hasCta": true
+      },
+      {
+        "index": 2,
+        "isSelected": true,
+        "headingText": "PB SHACKET SHIRT",
+        "hasCta": false
+      },
+      {
+        "index": 3,
+        "isSelected": false,
+        "headingText": "FREE REEL WITH ORDERS OVER £50",
+        "hasCta": false
+      },
+      {
+        "index": 4,
+        "isSelected": false,
+        "headingText": "",
+        "hasCta": false
+      }
+    ]
+  },
+  "mobile-390": {
+    "viewport": {
+      "w": 390,
+      "h": 844,
+      "label": "mobile-390"
+    },
+    "cssVars": {
+      "--rounded-card": "clamp(0.625rem, 1.053vw, 1.25rem)",
+      "--rounded-block": "clamp(0.625rem, 1.053vw, 1.25rem)",
+      "--border-radius": "clamp(1rem, 1.578vw, 1.875rem)",
+      "--hero-section-radius": "",
+      "--hero-slide-gap": "",
+      "--gap-padding": "clamp(1.25rem, 2.526vw, 3rem)",
+      "--title-sm": "clamp(1.5rem, 2.526vw, 3.0rem)",
+      "--title-md": "clamp(2rem, 3.368vw, 4rem)",
+      "--title-lg": "clamp(2.5rem, 3.368vw, 4rem)",
+      "--title-xl": "clamp(3rem, 7.813vw, 5rem)",
+      "--animation-smooth": ".7s cubic-bezier(.7, 0, .3, 1)"
+    },
+    "slideshowAttrs": {
+      "autoplay": "",
+      "autoplaySpeed": "7",
+      "class": "slideshow block flickity-enabled is-draggable"
+    },
+    "slideCount": 5,
+    "peek": {
+      "activeWidth": 350,
+      "activeLeft": 20,
+      "activeRight": 370,
+      "nextVisiblePx": 0,
+      "gapPx": 30,
+      "viewportWidth": 390,
+      "activePctOfViewport": 90,
+      "hasPeek": false
+    },
+    "slideGap": 30,
+    "heroSection": {
+      "tag": "div",
+      "class": "shopify-section",
+      "text": "#shopify-section-template--26620168339836__slideshow {\n    --section-padding-top: 0px;\n    --section-padding-bottom: 0px",
+      "rect": {
+        "w": 390,
+        "h": 500,
+        "l": 0,
+        "t": 176,
+        "r": 390,
+        "b": 676
+      },
+      "typography": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "letterSpacing": "normal",
+        "lineHeight": "normal",
+        "textTransform": "none",
+        "textAlign": "start",
+        "color": "rgb(23, 23, 23)",
+        "fontFamily": "Inter, sans-serif"
+      },
+      "layout": {
+        "position": "relative",
+        "display": "flow-root",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "padding": "0px 0px 0px 0px",
+        "margin": "0px 0px 0px 0px",
+        "maxWidth": "none"
+      },
+      "visual": {
+        "borderRadius": "0px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundImage": "none",
+        "opacity": "1",
+        "transform": "none",
+        "boxShadow": "none"
+      },
+      "zIndex": "auto"
+    },
+    "slideshow": {
+      "tag": "slideshow-element",
+      "class": "slideshow block flickity-enabled is-draggable",
+      "text": "",
+      "rect": {
+        "w": 390,
+        "h": 500,
+        "l": 0,
+        "t": 176,
+        "r": 390,
+        "b": 676
+      },
+      "typography": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "letterSpacing": "normal",
+        "lineHeight": "normal",
+        "textTransform": "none",
+        "textAlign": "start",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "Inter, sans-serif"
+      },
+      "layout": {
+        "position": "relative",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "padding": "0px 0px 0px 0px",
+        "margin": "0px 0px 0px 0px",
+        "maxWidth": "none"
+      },
+      "visual": {
+        "borderRadius": "0px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundImage": "none",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "boxShadow": "none"
+      },
+      "zIndex": "auto"
+    },
+    "flickityViewport": {
+      "tag": "div",
+      "class": "flickity-viewport",
+      "text": "",
+      "rect": {
+        "w": 390,
+        "h": 500,
+        "l": 0,
+        "t": 176,
+        "r": 390,
+        "b": 676
+      },
+      "typography": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "letterSpacing": "normal",
+        "lineHeight": "normal",
+        "textTransform": "none",
+        "textAlign": "start",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "Inter, sans-serif"
+      },
+      "layout": {
+        "position": "relative",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "padding": "0px 0px 0px 0px",
+        "margin": "0px 0px 0px 0px",
+        "maxWidth": "none"
+      },
+      "visual": {
+        "borderRadius": "0px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundImage": "none",
+        "opacity": "1",
+        "transform": "none",
+        "boxShadow": "none"
+      },
+      "zIndex": "auto"
+    },
+    "activeSlide": {
+      "tag": "div",
+      "class": "banner media--750px mobile:media--500px w-full overflow-hidden flickity-cell is-selected",
+      "text": "",
+      "rect": {
+        "w": 350,
+        "h": 500,
+        "l": 20,
+        "t": 176,
+        "r": 370,
+        "b": 676
+      },
+      "typography": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "letterSpacing": "normal",
+        "lineHeight": "normal",
+        "textTransform": "none",
+        "textAlign": "start",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "Inter, sans-serif"
+      },
+      "layout": {
+        "position": "absolute",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "padding": "0px 0px 0px 0px",
+        "margin": "0px 30px 0px 0px",
+        "maxWidth": "350px"
+      },
+      "visual": {
+        "borderRadius": "10px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundImage": "none",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 379.995, 0)",
+        "boxShadow": "none"
+      },
+      "zIndex": "auto"
+    },
+    "overlay": {
+      "tag": "span",
+      "class": "banner__overlay absolute top-0 left-0 w-full h-full pointer-events-none",
+      "text": "",
+      "rect": {
+        "w": 350,
+        "h": 516,
+        "l": 20,
+        "t": 176,
+        "r": 370,
+        "b": 692
+      },
+      "typography": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "letterSpacing": "normal",
+        "lineHeight": "normal",
+        "textTransform": "none",
+        "textAlign": "start",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "Inter, sans-serif"
+      },
+      "layout": {
+        "position": "absolute",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "padding": "0px 0px 0px 0px",
+        "margin": "0px 0px 0px 0px",
+        "maxWidth": "none"
+      },
+      "visual": {
+        "borderRadius": "10px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundImage": "none",
+        "opacity": "1",
+        "transform": "none",
+        "boxShadow": "none"
+      },
+      "zIndex": "0"
+    },
+    "wordsContainer": {
+      "tag": "nav",
+      "class": "slideshow-words grid items-center",
+      "text": "BULK LEAD DEAL!\n  \n    \n    OUT NOW!\n      \n    \n  \n                  \n                    PB SHACKET SHIRT\n            ",
+      "rect": {
+        "w": 310,
+        "h": 0,
+        "l": 40,
+        "t": 627,
+        "r": 350,
+        "b": 627
+      },
+      "typography": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "letterSpacing": "normal",
+        "lineHeight": "normal",
+        "textTransform": "none",
+        "textAlign": "center",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "Inter, sans-serif"
+      },
+      "layout": {
+        "position": "static",
+        "display": "grid",
+        "justifyContent": "normal",
+        "alignItems": "center",
+        "padding": "0px 0px 0px 0px",
+        "margin": "0px 0px 0px 0px",
+        "maxWidth": "none"
+      },
+      "visual": {
+        "borderRadius": "0px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundImage": "none",
+        "opacity": "1",
+        "transform": "none",
+        "boxShadow": "none"
+      },
+      "zIndex": "auto"
+    },
+    "activeWord": {
+      "tag": "div",
+      "class": "slideshow-word flex flex-col md:flex-row md:items-end justify-between gap-6",
+      "text": "OUT NOW!",
+      "rect": {
+        "w": 0,
+        "h": 0,
+        "l": 195,
+        "t": 627,
+        "r": 195,
+        "b": 627
+      },
+      "typography": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "letterSpacing": "normal",
+        "lineHeight": "normal",
+        "textTransform": "none",
+        "textAlign": "center",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "Inter, sans-serif"
+      },
+      "layout": {
+        "position": "static",
+        "display": "flex",
+        "justifyContent": "center",
+        "alignItems": "center",
+        "padding": "0px 0px 0px 0px",
+        "margin": "0px 0px 0px 0px",
+        "maxWidth": "none"
+      },
+      "visual": {
+        "borderRadius": "0px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundImage": "none",
+        "opacity": "1",
+        "transform": "none",
+        "boxShadow": "none"
+      },
+      "zIndex": "auto"
+    },
+    "heading": null,
+    "cta": {
+      "tag": "a",
+      "class": "button button--secondary button--md button--blur button--fixed pointer-events-auto icon-with-text",
+      "text": "OUT NOW!",
+      "rect": {
+        "w": 192,
+        "h": 54,
+        "l": 99,
+        "t": 602,
+        "r": 291,
+        "b": 656
+      },
+      "typography": {
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "letterSpacing": "normal",
+        "lineHeight": "14px",
+        "textTransform": "none",
+        "textAlign": "center",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "Inter, sans-serif"
+      },
+      "layout": {
+        "position": "absolute",
+        "display": "flex",
+        "justifyContent": "center",
+        "alignItems": "center",
+        "padding": "18px 26px 18px 26px",
+        "margin": "0px 0px 0px 0px",
+        "maxWidth": "none"
+      },
+      "visual": {
+        "borderRadius": "60px",
+        "background": "rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundImage": "none",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, -96, 0)",
+        "boxShadow": "rgba(168, 232, 226, 0) 0px 0px 0px 0px"
+      },
+      "zIndex": "auto"
+    },
+    "controls": {
+      "tag": "div",
+      "class": "page-width absolute bottom-0 left-0 w-full pointer-events-none",
+      "text": "BULK LEAD DEAL!\n  \n    \n    OUT NOW!\n      \n    \n  \n                  \n                    PB SHACKET SHIRT\n            ",
+      "rect": {
+        "w": 390,
+        "h": 69,
+        "l": 0,
+        "t": 607,
+        "r": 390,
+        "b": 676
+      },
+      "typography": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "letterSpacing": "normal",
+        "lineHeight": "normal",
+        "textTransform": "none",
+        "textAlign": "start",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "Inter, sans-serif"
+      },
+      "layout": {
+        "position": "absolute",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "padding": "0px 20px 0px 20px",
+        "margin": "0px 0px 0px 0px",
+        "maxWidth": "none"
+      },
+      "visual": {
+        "borderRadius": "0px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundImage": "none",
+        "opacity": "1",
+        "transform": "none",
+        "boxShadow": "none"
+      },
+      "zIndex": "auto"
+    },
+    "dot": {
+      "tag": "button",
+      "class": "flickity-page-dot",
+      "text": "Page 1",
+      "rect": {
+        "w": 24,
+        "h": 24,
+        "l": 40,
+        "t": 651,
+        "r": 64,
+        "b": 675
+      },
+      "typography": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "letterSpacing": "normal",
+        "lineHeight": "normal",
+        "textTransform": "none",
+        "textAlign": "center",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "Inter, sans-serif"
+      },
+      "layout": {
+        "position": "static",
+        "display": "flex",
+        "justifyContent": "center",
+        "alignItems": "center",
+        "padding": "0px 0px 0px 0px",
+        "margin": "0px 0px 0px 0px",
+        "maxWidth": "none"
+      },
+      "visual": {
+        "borderRadius": "3.35544e+07px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundImage": "none",
+        "opacity": "1",
+        "transform": "none",
+        "boxShadow": "none"
+      },
+      "zIndex": "auto"
+    },
+    "dotInner": {
+      "tag": "span",
+      "class": "sr-only",
+      "text": "Page 1",
+      "rect": {
+        "w": 1,
+        "h": 1,
+        "l": 52,
+        "t": 663,
+        "r": 53,
+        "b": 664
+      },
+      "typography": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "letterSpacing": "normal",
+        "lineHeight": "normal",
+        "textTransform": "none",
+        "textAlign": "center",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "Inter, sans-serif"
+      },
+      "layout": {
+        "position": "absolute",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "padding": "0px 0px 0px 0px",
+        "margin": "-1px -1px -1px -1px",
+        "maxWidth": "none"
+      },
+      "visual": {
+        "borderRadius": "0px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundImage": "none",
+        "opacity": "1",
+        "transform": "none",
+        "boxShadow": "none"
+      },
+      "zIndex": "auto"
+    },
+    "prevBtn": {
+      "tag": "button",
+      "class": "hidden md:block pointer-events-auto",
+      "text": "",
+      "rect": {
+        "w": 0,
+        "h": 0,
+        "l": 0,
+        "t": 0,
+        "r": 0,
+        "b": 0
+      },
+      "typography": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "letterSpacing": "normal",
+        "lineHeight": "normal",
+        "textTransform": "none",
+        "textAlign": "center",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "Inter, sans-serif"
+      },
+      "layout": {
+        "position": "static",
+        "display": "none",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "padding": "0px 0px 0px 0px",
+        "margin": "0px 0px 0px 0px",
+        "maxWidth": "none"
+      },
+      "visual": {
+        "borderRadius": "0px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundImage": "none",
+        "opacity": "1",
+        "transform": "none",
+        "boxShadow": "none"
+      },
+      "zIndex": "auto"
+    },
+    "nextBtn": {
+      "tag": "button",
+      "class": "hidden md:block pointer-events-auto",
+      "text": "",
+      "rect": {
+        "w": 0,
+        "h": 0,
+        "l": 0,
+        "t": 0,
+        "r": 0,
+        "b": 0
+      },
+      "typography": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "letterSpacing": "normal",
+        "lineHeight": "normal",
+        "textTransform": "none",
+        "textAlign": "center",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "Inter, sans-serif"
+      },
+      "layout": {
+        "position": "static",
+        "display": "none",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "padding": "0px 0px 0px 0px",
+        "margin": "0px 0px 0px 0px",
+        "maxWidth": "none"
+      },
+      "visual": {
+        "borderRadius": "0px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundImage": "none",
+        "opacity": "1",
+        "transform": "none",
+        "boxShadow": "none"
+      },
+      "zIndex": "auto"
+    },
+    "slideTexts": [
+      {
+        "index": 0,
+        "isSelected": false,
+        "headingText": "",
+        "hasCta": true
+      },
+      {
+        "index": 1,
+        "isSelected": true,
+        "headingText": "",
+        "hasCta": true
+      },
+      {
+        "index": 2,
+        "isSelected": false,
+        "headingText": "PB SHACKET SHIRT",
+        "hasCta": false
+      },
+      {
+        "index": 3,
+        "isSelected": false,
+        "headingText": "FREE REEL WITH ORDERS OVER £50",
+        "hasCta": false
+      },
+      {
+        "index": 4,
+        "isSelected": false,
+        "headingText": "",
+        "hasCta": false
+      }
+    ]
+  }
+}

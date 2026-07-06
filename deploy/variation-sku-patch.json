@@ -1,0 +1,348 @@
+{
+  "generatedAt": "2026-07-01T03:16:45.160356+00:00",
+  "sourceAudit": "reports/product-variant-sku-full-audit.json",
+  "parentCount": 26,
+  "patchCount": 34,
+  "patches": [
+    {
+      "handle": "tz-zj-023",
+      "parentSku": "TZ-ZJ-023",
+      "parentWcId": 51348,
+      "variationWcId": 51353,
+      "spec": "30-50cm",
+      "currentCatalogSku": "TZ-ZJ-023-30-50cm",
+      "currentWooSku": "TZ-ZJ-023- 45-78cm",
+      "targetSku": "TZ-ZJ-023-30-50cm"
+    },
+    {
+      "handle": "tz-zj-023",
+      "parentSku": "TZ-ZJ-023",
+      "parentWcId": 51348,
+      "variationWcId": 51354,
+      "spec": "45-78cm",
+      "currentCatalogSku": "TZ-ZJ-023-45-78cm",
+      "currentWooSku": "TZ-ZJ-023-30-50cm",
+      "targetSku": "TZ-ZJ-023-45-78cm"
+    },
+    {
+      "handle": "tz-pjsl-072",
+      "parentSku": "TZ-PJSL-072",
+      "parentWcId": 51261,
+      "variationWcId": 51275,
+      "spec": "orange",
+      "currentCatalogSku": "TZ-PJSL-072-orange",
+      "currentWooSku": "TZ-PJSL-072-",
+      "targetSku": "TZ-PJSL-072-orange"
+    },
+    {
+      "handle": "tz-pjsl-072",
+      "parentSku": "TZ-PJSL-072",
+      "parentWcId": 51261,
+      "variationWcId": 51276,
+      "spec": "爬子",
+      "currentCatalogSku": "TZ-PJSL-072-爬子",
+      "currentWooSku": "TZ-PJSL-072-orange",
+      "targetSku": "TZ-PJSL-072-爬子"
+    },
+    {
+      "handle": "tz-xp-053",
+      "parentSku": "TZ-XP-053",
+      "parentWcId": 50944,
+      "variationWcId": 50955,
+      "spec": "橙色",
+      "currentCatalogSku": "TZ-XP-053-橙色",
+      "currentWooSku": "TZ-XP-053-",
+      "targetSku": "TZ-XP-053-橙色"
+    },
+    {
+      "handle": "tz-xp-052",
+      "parentSku": "TZ-XP-052",
+      "parentWcId": 50924,
+      "variationWcId": 50943,
+      "spec": "橙色",
+      "currentCatalogSku": "TZ-XP-052-橙色",
+      "currentWooSku": "TZ-XP-052-",
+      "targetSku": "TZ-XP-052-橙色"
+    },
+    {
+      "handle": "tz-xp-051",
+      "parentSku": "TZ-XP-051",
+      "parentWcId": 50923,
+      "variationWcId": 50942,
+      "spec": "绿色",
+      "currentCatalogSku": "TZ-XP-051-绿色",
+      "currentWooSku": "TZ-XP-051-",
+      "targetSku": "TZ-XP-051-绿色"
+    },
+    {
+      "handle": "tz-xp-050",
+      "parentSku": "TZ-XP-050",
+      "parentWcId": 50922,
+      "variationWcId": 50941,
+      "spec": "绿色",
+      "currentCatalogSku": "TZ-XP-050-绿色",
+      "currentWooSku": "TZ-XP-050-",
+      "targetSku": "TZ-XP-050-绿色"
+    },
+    {
+      "handle": "tz-xp-049",
+      "parentSku": "TZ-XP-049",
+      "parentWcId": 50921,
+      "variationWcId": 50940,
+      "spec": "小号",
+      "currentCatalogSku": "TZ-XP-049-小号",
+      "currentWooSku": "TZ-XP-049-",
+      "targetSku": "TZ-XP-049-小号"
+    },
+    {
+      "handle": "tz-xp-048",
+      "parentSku": "TZ-XP-048",
+      "parentWcId": 50920,
+      "variationWcId": 50939,
+      "spec": "小号",
+      "currentCatalogSku": "TZ-XP-048-小号",
+      "currentWooSku": "TZ-XP-048-",
+      "targetSku": "TZ-XP-048-小号"
+    },
+    {
+      "handle": "tz-xp-045",
+      "parentSku": "TZ-XP-045",
+      "parentWcId": 50917,
+      "variationWcId": 50931,
+      "spec": "�?,
+      "currentCatalogSku": "TZ-XP-045-�?,
+      "currentWooSku": "TZ-XP-045-",
+      "targetSku": "TZ-XP-045-�?
+    },
+    {
+      "handle": "tz-xp-044",
+      "parentSku": "TZ-XP-044",
+      "parentWcId": 50916,
+      "variationWcId": 50930,
+      "spec": "26cm*18cm&#10;*11.5cm",
+      "currentCatalogSku": "TZ-XP-044-26cm*18cm&#10;*11.5cm",
+      "currentWooSku": "TZ-XP-044-26cm18cm#1011.5cm",
+      "targetSku": "TZ-XP-044-26cm18cm11.5cm"
+    },
+    {
+      "handle": "tz-xp-043",
+      "parentSku": "TZ-XP-043",
+      "parentWcId": 50915,
+      "variationWcId": 50929,
+      "spec": "18cm*18cm&#10;*14.5cm",
+      "currentCatalogSku": "TZ-XP-043-18cm*18cm&#10;*14.5cm",
+      "currentWooSku": "TZ-XP-043-18cm18cm#1014.5cm",
+      "targetSku": "TZ-XP-043-18cm18cm14.5cm"
+    },
+    {
+      "handle": "tz-xp-021",
+      "parentSku": "TZ-XP-021",
+      "parentWcId": 50834,
+      "variationWcId": 50841,
+      "spec": "天蓝�?,
+      "currentCatalogSku": "TZ-XP-021-天蓝�?,
+      "currentWooSku": "TZ-XP-021-",
+      "targetSku": "TZ-XP-021-天蓝�?
+    },
+    {
+      "handle": "tz-xp-020",
+      "parentSku": "TZ-XP-020",
+      "parentWcId": 50810,
+      "variationWcId": 50833,
+      "spec": "带圈�?,
+      "currentCatalogSku": "TZ-XP-020-带圈�?,
+      "currentWooSku": "TZ-XP-020-",
+      "targetSku": "TZ-XP-020-带圈�?
+    },
+    {
+      "handle": "tz-xp-020",
+      "parentSku": "TZ-XP-020",
+      "parentWcId": 50810,
+      "variationWcId": 50840,
+      "spec": "QC�?,
+      "currentCatalogSku": "TZ-XP-020-QC�?,
+      "currentWooSku": "TZ-XP-020-QC",
+      "targetSku": "TZ-XP-020-QC�?
+    },
+    {
+      "handle": "tz-xp-014",
+      "parentSku": "TZ-XP-014",
+      "parentWcId": 50804,
+      "variationWcId": 50811,
+      "spec": "10g",
+      "currentCatalogSku": "TZ-XP-014-10g",
+      "currentWooSku": "TZ-XP-014-",
+      "targetSku": "TZ-XP-014-10g"
+    },
+    {
+      "handle": "tz-xp-014",
+      "parentSku": "TZ-XP-014",
+      "parentWcId": 50804,
+      "variationWcId": 50812,
+      "spec": "15g",
+      "currentCatalogSku": "TZ-XP-014-15g",
+      "currentWooSku": "TZ-XP-014-10g",
+      "targetSku": "TZ-XP-014-15g"
+    },
+    {
+      "handle": "tz-xp-014",
+      "parentSku": "TZ-XP-014",
+      "parentWcId": 50804,
+      "variationWcId": 50813,
+      "spec": "20g",
+      "currentCatalogSku": "TZ-XP-014-20g",
+      "currentWooSku": "TZ-XP-014-15g",
+      "targetSku": "TZ-XP-014-20g"
+    },
+    {
+      "handle": "tz-xp-014",
+      "parentSku": "TZ-XP-014",
+      "parentWcId": 50804,
+      "variationWcId": 50814,
+      "spec": "25g",
+      "currentCatalogSku": "TZ-XP-014-25g",
+      "currentWooSku": "TZ-XP-014-20g",
+      "targetSku": "TZ-XP-014-25g"
+    },
+    {
+      "handle": "tz-xp-014",
+      "parentSku": "TZ-XP-014",
+      "parentWcId": 50804,
+      "variationWcId": 50815,
+      "spec": "30g",
+      "currentCatalogSku": "TZ-XP-014-30g",
+      "currentWooSku": "TZ-XP-014-25g",
+      "targetSku": "TZ-XP-014-30g"
+    },
+    {
+      "handle": "tz-xp-014",
+      "parentSku": "TZ-XP-014",
+      "parentWcId": 50804,
+      "variationWcId": 50816,
+      "spec": "弹力锁扣",
+      "currentCatalogSku": "TZ-XP-014-弹力锁扣",
+      "currentWooSku": "TZ-XP-014-30g",
+      "targetSku": "TZ-XP-014-弹力锁扣"
+    },
+    {
+      "handle": "tz-xp-007",
+      "parentSku": "TZ-XP-007",
+      "parentWcId": 50777,
+      "variationWcId": 50793,
+      "spec": "30LB/1M",
+      "currentCatalogSku": "TZ-XP-007-30LB/1M",
+      "currentWooSku": "TZ-XP-007-30LB-1M",
+      "targetSku": "TZ-XP-007-30LB-1M"
+    },
+    {
+      "handle": "tz-xp-005",
+      "parentSku": "TZ-XP-005",
+      "parentWcId": 50775,
+      "variationWcId": 50785,
+      "spec": "白色",
+      "currentCatalogSku": "TZ-XP-005-白色",
+      "currentWooSku": "TZ-XP-005-",
+      "targetSku": "TZ-XP-005-白色"
+    },
+    {
+      "handle": "tz-xp-004",
+      "parentSku": "TZ-XP-004",
+      "parentWcId": 50774,
+      "variationWcId": 50784,
+      "spec": "长偏转件",
+      "currentCatalogSku": "TZ-XP-004-长偏转件",
+      "currentWooSku": "TZ-XP-004-",
+      "targetSku": "TZ-XP-004-长偏转件"
+    },
+    {
+      "handle": "tz-xp-003",
+      "parentSku": "TZ-XP-003",
+      "parentWcId": 50748,
+      "variationWcId": 50773,
+      "spec": "长偏转件",
+      "currentCatalogSku": "TZ-XP-003-长偏转件",
+      "currentWooSku": "TZ-XP-003-",
+      "targetSku": "TZ-XP-003-长偏转件"
+    },
+    {
+      "handle": "tz-xp-002",
+      "parentSku": "TZ-XP-002",
+      "parentWcId": 50747,
+      "variationWcId": 50772,
+      "spec": "长偏转件",
+      "currentCatalogSku": "TZ-XP-002-长偏转件",
+      "currentWooSku": "TZ-XP-002-",
+      "targetSku": "TZ-XP-002-长偏转件"
+    },
+    {
+      "handle": "tz-xp-001",
+      "parentSku": "TZ-XP-001",
+      "parentWcId": 50746,
+      "variationWcId": 50771,
+      "spec": "长偏转件",
+      "currentCatalogSku": "TZ-XP-001-长偏转件",
+      "currentWooSku": "TZ-XP-001-",
+      "targetSku": "TZ-XP-001-长偏转件"
+    },
+    {
+      "handle": "tz-el-099",
+      "parentSku": "TZ-EL-099",
+      "parentWcId": 49801,
+      "variationWcId": 49810,
+      "spec": "TZ-EL-099",
+      "currentCatalogSku": "TZ-EL-099-TZ-EL-099",
+      "currentWooSku": "TZ-EL-099-",
+      "targetSku": "TZ-EL-099-TZ-EL-099"
+    },
+    {
+      "handle": "tz-el-098",
+      "parentSku": "TZ-EL-098",
+      "parentWcId": 49800,
+      "variationWcId": 49809,
+      "spec": "TZ-EL-098",
+      "currentCatalogSku": "TZ-EL-098-TZ-EL-098",
+      "currentWooSku": "TZ-EL-098-",
+      "targetSku": "TZ-EL-098-TZ-EL-098"
+    },
+    {
+      "handle": "tz-el-097",
+      "parentSku": "TZ-EL-097",
+      "parentWcId": 49799,
+      "variationWcId": 49808,
+      "spec": "TZ-EL-097",
+      "currentCatalogSku": "TZ-EL-097-TZ-EL-097",
+      "currentWooSku": "TZ-EL-097-",
+      "targetSku": "TZ-EL-097-TZ-EL-097"
+    },
+    {
+      "handle": "tz-el-096",
+      "parentSku": "TZ-EL-096",
+      "parentWcId": 49798,
+      "variationWcId": 49807,
+      "spec": "TZ-EL-096",
+      "currentCatalogSku": "TZ-EL-096-TZ-EL-096",
+      "currentWooSku": "TZ-EL-096-",
+      "targetSku": "TZ-EL-096-TZ-EL-096"
+    },
+    {
+      "handle": "tz-el-095",
+      "parentSku": "TZ-EL-095",
+      "parentWcId": 49797,
+      "variationWcId": 49806,
+      "spec": "TZ-EL-095",
+      "currentCatalogSku": "TZ-EL-095-TZ-EL-095",
+      "currentWooSku": "TZ-EL-095-",
+      "targetSku": "TZ-EL-095-TZ-EL-095"
+    },
+    {
+      "handle": "tz-el-094",
+      "parentSku": "TZ-EL-094",
+      "parentWcId": 49790,
+      "variationWcId": 49795,
+      "spec": "TZ-EL-094",
+      "currentCatalogSku": "TZ-EL-094-TZ-EL-094",
+      "currentWooSku": "TZ-EL-094-",
+      "targetSku": "TZ-EL-094-TZ-EL-094"
+    }
+  ]
+}

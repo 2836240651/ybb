@@ -1,0 +1,128 @@
+{
+  "samples": {
+    "en": {
+      "title": "Sample Policy",
+      "description": "Try before you scale Samples are charged at catalog sample price plus courier freight. Sample fees may be credited against the first bulk order above the agreed threshold. OEM samples Custom OEM samples may require a tooling deposit; timelines are quoted per project.",
+      "sections": [
+        {
+          "heading": "Try before you scale",
+          "paragraphs": [
+            "Samples are charged at catalog sample price plus courier freight. Sample fees may be credited against the first bulk order above the agreed threshold."
+          ]
+        },
+        {
+          "heading": "OEM samples",
+          "paragraphs": [
+            "Custom OEM samples may require a tooling deposit; timelines are quoted per project."
+          ]
+        }
+      ]
+    },
+    "zh": {
+      "title": "样品政策",
+      "description": "",
+      "sections": [
+        {
+          "heading": "1. 先试后大批量",
+          "paragraphs": [
+            "样品按目录样品价收取，另加快递运费。样品费用可在首笔达到约定门槛的批量订单中抵扣�?
+          ]
+        },
+        {
+          "heading": "2. OEM 样品",
+          "paragraphs": [
+            "定制 OEM 样品可能需要模具押金；具体周期按项目单独报价�?
+          ]
+        }
+      ]
+    },
+    "ja": {
+      "title": "サンプルポリシー",
+      "description": "",
+      "sections": [
+        {
+          "heading": "1. 量産前のサンプル",
+          "paragraphs": [
+            "サンプルはカタログのサンプル価格に加え、宅配便送料がかかります。サンプル料金は、合意した基準を超える初回の大口注文で相殺できる場合があります�?
+          ]
+        },
+        {
+          "heading": "2. OEM サンプル",
+          "paragraphs": [
+            "カスタム OEM サンプルには金型デポジットが必要な場合があります。納期はプロジェクトごとに個別見積もりします�?
+          ]
+        }
+      ]
+    }
+  },
+  "moq-lead-time": {
+    "en": {
+      "title": "MOQ &#038; Lead Time",
+      "description": "MOQ & Lead Time ODM Private Label: Low MOQ for our in-stock items. Minimum 3,000pcs for sinkers/bait cages & 500 sets for fishing rigs. Goods will be delivered within 7�?5 days after logo & packaging confirmation. OEM Custom Mold: MOQ negotiable based on product craft. Total lead time including prototype & new mold development is [&hellip;]",
+      "sections": [
+        {
+          "heading": "Overview",
+          "paragraphs": [
+            "MOQ & Lead Time ODM Private Label: Low MOQ for our in-stock items. Minimum 3,000pcs for sinkers/bait cages & 500 sets for fishing rigs. Goods will be delivered within 7�?5 days after logo & packaging confirmation. OEM Custom Mold: MOQ negotiable based on product craft. Total lead time including prototype & new mold development is 30�?0 days. Split shipment is acceptable for bulk orders. Peak Season Support: Our standardized production line guarantees stable daily output, supporting seasonal stock orders for overseas brands with on-time delivery."
+          ]
+        }
+      ]
+    },
+    "zh": {
+      "title": "MOQ & Lead Time",
+      "description": "OEM & ODM Custom Service Overview ODM Private Label Service We specialize in carp fishing tackle manufacturing with a full library of self-developed molds, covering sinkers, bait cages, fishing platforms and ready rigs. No extra mold cost for ODM cooperation. We can print your brand logo, adjust product colors and weights on our existing stock [&hellip;]",
+      "sections": [
+        {
+          "heading": "ODM Private Label Service",
+          "paragraphs": [
+            "We specialize in carp fishing tackle manufacturing with a full library of self-developed molds, covering sinkers, bait cages, fishing platforms and ready rigs.",
+            "No extra mold cost for ODM cooperation. We can print your brand logo, adjust product colors and weights on our existing stock items, matched with fully customized packages for instant sales.",
+            "Key Benefits: Low MOQ, zero mold fee, short lead time. Ideal for new tackle brands, small cross-border vendors and local fishing retail shops."
+          ]
+        },
+        {
+          "heading": "OEM Custom Mold Manufacturing",
+          "paragraphs": [
+            "If you hold exclusive design drawings, 3D files or original product ideas, we offer full-cycle OEM development.",
+            "Our engineering team handles mold opening, prototype testing and mass production. Material, size, structure and appearance can be fully customized as requested. Dedicated production lines protect your design intellectual property exclusively.",
+            "Key Benefits: Unique differentiated tackle only for your brand. Perfect for mature fishing brands with independent R&D teams targeting Europe, US and Canada."
+          ]
+        },
+        {
+          "heading": "All-In-One Custom Advantages",
+          "paragraphs": [
+            "Full-range tackle customization, mixed orders of custom goods & stock items supported; Free packaging graphic design, integrated branding for products & packages; Strict full-process QC, compliant with offline retail & cross-border e-commerce standards in Western markets; Tiered stable pricing for long-term partners to maximize your profit margin; Rich experience cooperating with global tackle brands, familiar with compliance rules of EU, UK and Canada markets."
+          ]
+        }
+      ]
+    },
+    "ja": {
+      "title": "MOQ & Lead Time",
+      "description": "OEM & ODM Custom Service Overview ODM Private Label Service We specialize in carp fishing tackle manufacturing with a full library of self-developed molds, covering sinkers, bait cages, fishing platforms and ready rigs. No extra mold cost for ODM cooperation. We can print your brand logo, adjust product colors and weights on our existing stock [&hellip;]",
+      "sections": [
+        {
+          "heading": "ODM Private Label Service",
+          "paragraphs": [
+            "We specialize in carp fishing tackle manufacturing with a full library of self-developed molds, covering sinkers, bait cages, fishing platforms and ready rigs.",
+            "No extra mold cost for ODM cooperation. We can print your brand logo, adjust product colors and weights on our existing stock items, matched with fully customized packages for instant sales.",
+            "Key Benefits: Low MOQ, zero mold fee, short lead time. Ideal for new tackle brands, small cross-border vendors and local fishing retail shops."
+          ]
+        },
+        {
+          "heading": "OEM Custom Mold Manufacturing",
+          "paragraphs": [
+            "If you hold exclusive design drawings, 3D files or original product ideas, we offer full-cycle OEM development.",
+            "Our engineering team handles mold opening, prototype testing and mass production. Material, size, structure and appearance can be fully customized as requested. Dedicated production lines protect your design intellectual property exclusively.",
+            "Key Benefits: Unique differentiated tackle only for your brand. Perfect for mature fishing brands with independent R&D teams targeting Europe, US and Canada."
+          ]
+        },
+        {
+          "heading": "All-In-One Custom Advantages",
+          "paragraphs": [
+            "Full-range tackle customization, mixed orders of custom goods & stock items supported; Free packaging graphic design, integrated branding for products & packages; Strict full-process QC, compliant with offline retail & cross-border e-commerce standards in Western markets; Tiered stable pricing for long-term partners to maximize your profit margin; Rich experience cooperating with global tackle brands, familiar with compliance rules of EU, UK and Canada markets."
+          ]
+        }
+      ]
+    }
+  }
+}

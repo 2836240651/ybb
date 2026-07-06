@@ -1,0 +1,829 @@
+{
+    "productTaxonomies": {
+        "product_brand": {
+            "name": "product_brand",
+            "label": "品牌",
+            "hierarchical": true,
+            "public": true
+        },
+        "product_type": {
+            "name": "product_type",
+            "label": "产品类型",
+            "hierarchical": false,
+            "public": false
+        },
+        "product_visibility": {
+            "name": "product_visibility",
+            "label": "产品可见�?,
+            "hierarchical": false,
+            "public": false
+        },
+        "product_cat": {
+            "name": "product_cat",
+            "label": "产品类别",
+            "hierarchical": true,
+            "public": true
+        },
+        "product_tag": {
+            "name": "product_tag",
+            "label": "产品标签",
+            "hierarchical": false,
+            "public": true
+        },
+        "product_shipping_class": {
+            "name": "product_shipping_class",
+            "label": "产品配送类�?,
+            "hierarchical": false,
+            "public": true
+        },
+        "pos_product_visibility": {
+            "name": "pos_product_visibility",
+            "label": "POS 产品可见�?,
+            "hierarchical": false,
+            "public": false
+        },
+        "pa_color": {
+            "name": "pa_color",
+            "label": "产品 Color",
+            "hierarchical": false,
+            "public": false
+        },
+        "pa_hook-size": {
+            "name": "pa_hook-size",
+            "label": "产品 Hook Size",
+            "hierarchical": false,
+            "public": false
+        },
+        "pa_package": {
+            "name": "pa_package",
+            "label": "产品 Package",
+            "hierarchical": false,
+            "public": false
+        },
+        "pa_size": {
+            "name": "pa_size",
+            "label": "产品 Size",
+            "hierarchical": false,
+            "public": false
+        },
+        "pa_specification": {
+            "name": "pa_specification",
+            "label": "产品 Specification",
+            "hierarchical": false,
+            "public": false
+        },
+        "pa_weight": {
+            "name": "pa_weight",
+            "label": "产品 Weight",
+            "hierarchical": false,
+            "public": false
+        },
+        "pa_�?: {
+            "name": "pa_�?,
+            "label": "产品 �?,
+            "hierarchical": false,
+            "public": false
+        },
+        "pa_重量": {
+            "name": "pa_重量",
+            "label": "产品 重量",
+            "hierarchical": false,
+            "public": false
+        },
+        "pa_�?: {
+            "name": "pa_�?,
+            "label": "产品 �?,
+            "hierarchical": false,
+            "public": false
+        },
+        "pa_�?: {
+            "name": "pa_�?,
+            "label": "产品 �?,
+            "hierarchical": false,
+            "public": false
+        }
+    },
+    "categories": [
+        {
+            "id": 119,
+            "name": "Feeder Fishing Rig",
+            "slug": "feeder-fishing-rig",
+            "parent": 31,
+            "count": 48
+        },
+        {
+            "id": 120,
+            "name": "Fishing Box",
+            "slug": "fishing-box",
+            "parent": 87,
+            "count": 43
+        },
+        {
+            "id": 89,
+            "name": "Inline \/ Tube Insert Lead",
+            "slug": "inline-tube-insert-lead",
+            "parent": 23,
+            "count": 93
+        },
+        {
+            "id": 118,
+            "name": "Lead Fishing Rig",
+            "slug": "lead-fishing-rig",
+            "parent": 31,
+            "count": 38
+        },
+        {
+            "id": 88,
+            "name": "Swivel Lead \/ Lead with Swivel",
+            "slug": "swivel-lead-lead-with-swivel",
+            "parent": 23,
+            "count": 0
+        },
+        {
+            "id": 30,
+            "name": "CARP Fishing Feeder",
+            "slug": "carp-fishing-feeder",
+            "parent": 0,
+            "count": 0
+        },
+        {
+            "id": 23,
+            "name": "CARP Fishing Leads",
+            "slug": "carp-fishing-leads",
+            "parent": 0,
+            "count": 119
+        },
+        {
+            "id": 40,
+            "name": "CARP Fishing Accessories",
+            "slug": "carp-fishing-accessories",
+            "parent": 0,
+            "count": 0
+        },
+        {
+            "id": 87,
+            "name": "CARP Fishing Tools &amp; Add-ons",
+            "slug": "carp-fishing-tools-add-ons",
+            "parent": 0,
+            "count": 234
+        },
+        {
+            "id": 31,
+            "name": "CARP Fishing Rigs",
+            "slug": "carp-fishing-rigs",
+            "parent": 0,
+            "count": 168
+        },
+        {
+            "id": 33,
+            "name": "CARP Fishing Rod Supports",
+            "slug": "carp-fishing-rod-supports",
+            "parent": 0,
+            "count": 0
+        },
+        {
+            "id": 49,
+            "name": "CARP Fishing Lines &amp; Hooks",
+            "slug": "carp-fishing-lines-hooks",
+            "parent": 0,
+            "count": 0
+        }
+    ],
+    "brands": [
+        {
+            "id": 54,
+            "name": "Alessi",
+            "slug": "alessi",
+            "count": 0
+        },
+        {
+            "id": 53,
+            "name": "Eva Solo",
+            "slug": "eva-solo",
+            "count": 0
+        },
+        {
+            "id": 55,
+            "name": "Flos",
+            "slug": "flos",
+            "count": 0
+        },
+        {
+            "id": 56,
+            "name": "Hay",
+            "slug": "hay",
+            "count": 0
+        },
+        {
+            "id": 57,
+            "name": "Joseph Joseph",
+            "slug": "joseph-joseph",
+            "count": 0
+        },
+        {
+            "id": 58,
+            "name": "KLÖBER",
+            "slug": "klober",
+            "count": 0
+        },
+        {
+            "id": 59,
+            "name": "Louis Poulsen",
+            "slug": "louis-poulsen",
+            "count": 0
+        },
+        {
+            "id": 60,
+            "name": "Magisso",
+            "slug": "magisso",
+            "count": 0
+        },
+        {
+            "id": 61,
+            "name": "Vitra",
+            "slug": "vitra",
+            "count": 0
+        }
+    ],
+    "tags": [],
+    "attributes": [
+        {
+            "id": 9,
+            "name": "Color",
+            "slug": "color",
+            "taxonomy": "pa_color",
+            "type": "select",
+            "order_by": "menu_order",
+            "termCount": 50,
+            "termsSample": [
+                {
+                    "name": "10cm",
+                    "slug": "10cm",
+                    "count": 1
+                },
+                {
+                    "name": "10m-15lb",
+                    "slug": "10m-15lb",
+                    "count": 1
+                },
+                {
+                    "name": "10m-25lb",
+                    "slug": "10m-25lb",
+                    "count": 1
+                },
+                {
+                    "name": "10m-25lb绿色",
+                    "slug": "10m-25lb%e7%bb%bf%e8%89%b2",
+                    "count": 1
+                },
+                {
+                    "name": "10m-35lb",
+                    "slug": "10m-35lb",
+                    "count": 1
+                },
+                {
+                    "name": "10m-35lb绿色",
+                    "slug": "10m-35lb%e7%bb%bf%e8%89%b2",
+                    "count": 1
+                },
+                {
+                    "name": "10m-45lb棕色",
+                    "slug": "10m-45lb%e6%a3%95%e8%89%b2",
+                    "count": 1
+                },
+                {
+                    "name": "10m-45lb绿色",
+                    "slug": "10m-45lb%e7%bb%bf%e8%89%b2",
+                    "count": 1
+                },
+                {
+                    "name": "10m-60lb棕色",
+                    "slug": "10m-60lb%e6%a3%95%e8%89%b2",
+                    "count": 1
+                },
+                {
+                    "name": "10m-60lb绿色",
+                    "slug": "10m-60lb%e7%bb%bf%e8%89%b2",
+                    "count": 1
+                },
+                {
+                    "name": "10mm",
+                    "slug": "10mm",
+                    "count": 1
+                },
+                {
+                    "name": "10pcs",
+                    "slug": "10pcs",
+                    "count": 1
+                },
+                {
+                    "name": "15mm",
+                    "slug": "15mm",
+                    "count": 1
+                },
+                {
+                    "name": "16pcs",
+                    "slug": "16pcs",
+                    "count": 1
+                },
+                {
+                    "name": "185",
+                    "slug": "185",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Hook Size",
+            "slug": "hook-size",
+            "taxonomy": "pa_hook-size",
+            "type": "select",
+            "order_by": "menu_order",
+            "termCount": 17,
+            "termsSample": [
+                {
+                    "name": "1",
+                    "slug": "1",
+                    "count": 1
+                },
+                {
+                    "name": "10",
+                    "slug": "10",
+                    "count": 6
+                },
+                {
+                    "name": "11",
+                    "slug": "11",
+                    "count": 1
+                },
+                {
+                    "name": "12",
+                    "slug": "12",
+                    "count": 2
+                },
+                {
+                    "name": "2",
+                    "slug": "2",
+                    "count": 8
+                },
+                {
+                    "name": "3",
+                    "slug": "3",
+                    "count": 1
+                },
+                {
+                    "name": "4",
+                    "slug": "4",
+                    "count": 8
+                },
+                {
+                    "name": "5",
+                    "slug": "5",
+                    "count": 2
+                },
+                {
+                    "name": "6",
+                    "slug": "6",
+                    "count": 9
+                },
+                {
+                    "name": "7",
+                    "slug": "7",
+                    "count": 2
+                },
+                {
+                    "name": "8",
+                    "slug": "8",
+                    "count": 9
+                },
+                {
+                    "name": "9",
+                    "slug": "9",
+                    "count": 2
+                },
+                {
+                    "name": "1# | 2# | 3# | 4# | 5# | 6# | 7# | 8# | 9# | 10#",
+                    "slug": "1-2-3-4-5-6-7-8-9-10",
+                    "count": 0
+                },
+                {
+                    "name": "2# | 4# | 6# | 8#",
+                    "slug": "2-4-6-8",
+                    "count": 0
+                },
+                {
+                    "name": "2# | 4# | 6# | 8# | 10#",
+                    "slug": "2-4-6-8-10",
+                    "count": 0
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Package",
+            "slug": "package",
+            "taxonomy": "pa_package",
+            "type": "select",
+            "order_by": "menu_order",
+            "termCount": 3,
+            "termsSample": [
+                {
+                    "name": "1-Pack",
+                    "slug": "1-pack",
+                    "count": 0
+                },
+                {
+                    "name": "10-Pack",
+                    "slug": "10-pack",
+                    "count": 0
+                },
+                {
+                    "name": "3-Pack",
+                    "slug": "3-pack",
+                    "count": 0
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Size",
+            "slug": "size",
+            "taxonomy": "pa_size",
+            "type": "select",
+            "order_by": "menu_order",
+            "termCount": 50,
+            "termsSample": [
+                {
+                    "name": "0-5",
+                    "slug": "0-5",
+                    "count": 1
+                },
+                {
+                    "name": "0-7",
+                    "slug": "0-7",
+                    "count": 1
+                },
+                {
+                    "name": "0-9",
+                    "slug": "0-9",
+                    "count": 1
+                },
+                {
+                    "name": "1",
+                    "slug": "1",
+                    "count": 2
+                },
+                {
+                    "name": "1-0",
+                    "slug": "1-0",
+                    "count": 1
+                },
+                {
+                    "name": "10",
+                    "slug": "10",
+                    "count": 1
+                },
+                {
+                    "name": "10mm",
+                    "slug": "10mm",
+                    "count": 5
+                },
+                {
+                    "name": "12",
+                    "slug": "12",
+                    "count": 2
+                },
+                {
+                    "name": "13mm",
+                    "slug": "13mm",
+                    "count": 2
+                },
+                {
+                    "name": "14",
+                    "slug": "14",
+                    "count": 1
+                },
+                {
+                    "name": "15mm",
+                    "slug": "15mm",
+                    "count": 3
+                },
+                {
+                    "name": "2",
+                    "slug": "2",
+                    "count": 6
+                },
+                {
+                    "name": "2-0",
+                    "slug": "2-0",
+                    "count": 1
+                },
+                {
+                    "name": "20mm",
+                    "slug": "20mm",
+                    "count": 2
+                },
+                {
+                    "name": "28mm",
+                    "slug": "28mm",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Specification",
+            "slug": "specification",
+            "taxonomy": "pa_specification",
+            "type": "select",
+            "order_by": "menu_order",
+            "termCount": 50,
+            "termsSample": [
+                {
+                    "name": "100g",
+                    "slug": "100g",
+                    "count": 6
+                },
+                {
+                    "name": "10cm",
+                    "slug": "10cm",
+                    "count": 2
+                },
+                {
+                    "name": "10g",
+                    "slug": "10g",
+                    "count": 5
+                },
+                {
+                    "name": "10lb",
+                    "slug": "10lb",
+                    "count": 2
+                },
+                {
+                    "name": "10mm",
+                    "slug": "10mm",
+                    "count": 1
+                },
+                {
+                    "name": "10pcs-10",
+                    "slug": "10pcs-10",
+                    "count": 4
+                },
+                {
+                    "name": "10pcs-12",
+                    "slug": "10pcs-12",
+                    "count": 4
+                },
+                {
+                    "name": "10pcs-14",
+                    "slug": "10pcs-14",
+                    "count": 3
+                },
+                {
+                    "name": "10pcs-6",
+                    "slug": "10pcs-6",
+                    "count": 4
+                },
+                {
+                    "name": "10pcs-8",
+                    "slug": "10pcs-8",
+                    "count": 4
+                },
+                {
+                    "name": "113g",
+                    "slug": "113g",
+                    "count": 1
+                },
+                {
+                    "name": "120g",
+                    "slug": "120g",
+                    "count": 4
+                },
+                {
+                    "name": "128g",
+                    "slug": "128g",
+                    "count": 1
+                },
+                {
+                    "name": "12cm",
+                    "slug": "12cm",
+                    "count": 1
+                },
+                {
+                    "name": "12mm",
+                    "slug": "12mm",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Weight",
+            "slug": "weight",
+            "taxonomy": "pa_weight",
+            "type": "select",
+            "order_by": "menu_order",
+            "termCount": 50,
+            "termsSample": [
+                {
+                    "name": "100g",
+                    "slug": "100g",
+                    "count": 12
+                },
+                {
+                    "name": "10g",
+                    "slug": "10g",
+                    "count": 4
+                },
+                {
+                    "name": "110g",
+                    "slug": "110g",
+                    "count": 5
+                },
+                {
+                    "name": "113g",
+                    "slug": "113g",
+                    "count": 48
+                },
+                {
+                    "name": "120g",
+                    "slug": "120g",
+                    "count": 8
+                },
+                {
+                    "name": "128g",
+                    "slug": "128g",
+                    "count": 37
+                },
+                {
+                    "name": "140g",
+                    "slug": "140g",
+                    "count": 1
+                },
+                {
+                    "name": "142g",
+                    "slug": "142g",
+                    "count": 7
+                },
+                {
+                    "name": "14g",
+                    "slug": "14g",
+                    "count": 1
+                },
+                {
+                    "name": "15g",
+                    "slug": "15g",
+                    "count": 5
+                },
+                {
+                    "name": "170g",
+                    "slug": "170g",
+                    "count": 1
+                },
+                {
+                    "name": "20g",
+                    "slug": "20g",
+                    "count": 26
+                },
+                {
+                    "name": "25g",
+                    "slug": "25g",
+                    "count": 3
+                },
+                {
+                    "name": "28g",
+                    "slug": "28g",
+                    "count": 1
+                },
+                {
+                    "name": "30g",
+                    "slug": "30g",
+                    "count": 41
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "�?,
+            "slug": "�?,
+            "taxonomy": "pa_�?,
+            "type": "select",
+            "order_by": "menu_order",
+            "termCount": 0,
+            "termsSample": []
+        },
+        {
+            "id": 6,
+            "name": "重量",
+            "slug": "重量",
+            "taxonomy": "pa_重量",
+            "type": "select",
+            "order_by": "menu_order",
+            "termCount": 0,
+            "termsSample": []
+        },
+        {
+            "id": 3,
+            "name": "�?,
+            "slug": "�?,
+            "taxonomy": "pa_�?,
+            "type": "select",
+            "order_by": "menu_order",
+            "termCount": 0,
+            "termsSample": []
+        },
+        {
+            "id": 5,
+            "name": "�?,
+            "slug": "�?,
+            "taxonomy": "pa_�?,
+            "type": "select",
+            "order_by": "menu_order",
+            "termCount": 0,
+            "termsSample": []
+        }
+    ],
+    "sampleProducts": [
+        {
+            "id": 44416,
+            "name": "Carp New - Magnetic Hooklink Box A128B",
+            "sku": "TZ-XP-054",
+            "categories": [
+                "CARP Fishing Tools &amp; Add-ons"
+            ],
+            "brands": [],
+            "tags": [],
+            "attributes": {
+                "pa_specification": [
+                    519
+                ]
+            }
+        },
+        {
+            "id": 44395,
+            "name": "Carp New - Aircraft Lead",
+            "sku": "TZ-XP-047",
+            "categories": [
+                "CARP Fishing Tools &amp; Add-ons"
+            ],
+            "brands": [],
+            "tags": [],
+            "attributes": {
+                "pa_specification": [
+                    530,
+                    529
+                ]
+            }
+        },
+        {
+            "id": 44396,
+            "name": "Carp New - Christmas Tree Lead",
+            "sku": "TZ-XP-048",
+            "categories": [
+                "CARP Fishing Tools &amp; Add-ons"
+            ],
+            "brands": [],
+            "tags": [],
+            "attributes": {
+                "pa_specification": [
+                    525,
+                    524,
+                    528,
+                    527,
+                    526
+                ]
+            }
+        },
+        {
+            "id": 44397,
+            "name": "Carp New - Feeder Bowl",
+            "sku": "TZ-XP-049",
+            "categories": [
+                "CARP Fishing Tools &amp; Add-ons"
+            ],
+            "brands": [],
+            "tags": [],
+            "attributes": {
+                "pa_specification": [
+                    517
+                ]
+            }
+        },
+        {
+            "id": 44399,
+            "name": "Carp New - Magnetic Hooklink Box A228A",
+            "sku": "TZ-XP-051",
+            "categories": [
+                "CARP Fishing Tools &amp; Add-ons"
+            ],
+            "brands": [],
+            "tags": [],
+            "attributes": {
+                "pa_specification": [
+                    518
+                ]
+            }
+        }
+    ]
+}

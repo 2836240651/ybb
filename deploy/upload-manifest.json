@@ -1,0 +1,780 @@
+{
+  "deployedAt": "2026-07-03T05:26:49Z",
+  "fileCount": 258,
+  "files": {
+    "404.html": {
+      "size": 48759
+    },
+    "_next/static/0hDnlSrPgArd-mvdMF-Xa/_buildManifest.js": {
+      "size": 281
+    },
+    "_next/static/0hDnlSrPgArd-mvdMF-Xa/_clientMiddlewareManifest.json": {
+      "size": 2
+    },
+    "_next/static/0hDnlSrPgArd-mvdMF-Xa/_ssgManifest.js": {
+      "size": 283
+    },
+    "_next/static/chunks/0946b97db58b8fa8.js": {
+      "size": 12065
+    },
+    "_next/static/chunks/0b60ad43e54cdc84.js": {
+      "size": 23005
+    },
+    "_next/static/chunks/2350bce084ef1b84.js": {
+      "size": 23063
+    },
+    "_next/static/chunks/2642a9b84ff50a55.js": {
+      "size": 14633
+    },
+    "_next/static/chunks/2b4ed6fe5e29bbc9.js": {
+      "size": 3240
+    },
+    "_next/static/chunks/2ba5a312935eec2a.js": {
+      "size": 26273
+    },
+    "_next/static/chunks/41702c606f4d5d99.js": {
+      "size": 9061
+    },
+    "_next/static/chunks/4a5daa324fb697f1.js": {
+      "size": 1293
+    },
+    "_next/static/chunks/4d874ae2f2b0ca23.js": {
+      "size": 24518
+    },
+    "_next/static/chunks/538cc02e54714b23.js": {
+      "size": 6444
+    },
+    "_next/static/chunks/56cebf3b5a1c9056.js": {
+      "size": 2791
+    },
+    "_next/static/chunks/5f4145014450ed1a.js": {
+      "size": 8772
+    },
+    "_next/static/chunks/6df4bfbd038a9b9a.js": {
+      "size": 24049
+    },
+    "_next/static/chunks/74f76743f7d8f91a.js": {
+      "size": 501
+    },
+    "_next/static/chunks/76efe4d6637ea64e.js": {
+      "size": 55552
+    },
+    "_next/static/chunks/7d1cfcf784a1c6d2.js": {
+      "size": 173
+    },
+    "_next/static/chunks/7dd66bdf8a7e5707.js": {
+      "size": 32452
+    },
+    "_next/static/chunks/7fca0877b5c0c0d1.js": {
+      "size": 51061
+    },
+    "_next/static/chunks/8082ab48faca5ea1.js": {
+      "size": 64606
+    },
+    "_next/static/chunks/80cafef110fa8574.css": {
+      "size": 112897
+    },
+    "_next/static/chunks/8a299044b68b38a3.js": {
+      "size": 64227
+    },
+    "_next/static/chunks/91adb7bdb9870c6a.js": {
+      "size": 38028
+    },
+    "_next/static/chunks/a0c4079cf9494d36.js": {
+      "size": 31645
+    },
+    "_next/static/chunks/a6dad97d9634a72d.js": {
+      "size": 112594
+    },
+    "_next/static/chunks/ae0ac32fac225115.js": {
+      "size": 4565
+    },
+    "_next/static/chunks/bd2dcf98c9b362f6.js": {
+      "size": 801
+    },
+    "_next/static/chunks/d2e50c40bf64e948.js": {
+      "size": 1678
+    },
+    "_next/static/chunks/da1988cb7fa94a8b.js": {
+      "size": 14647
+    },
+    "_next/static/chunks/da3e8f27f8b62397.js": {
+      "size": 187528
+    },
+    "_next/static/chunks/da5c756543f2127b.js": {
+      "size": 293730
+    },
+    "_next/static/chunks/e02c6fbb43412519.css": {
+      "size": 5505
+    },
+    "_next/static/chunks/e4d125c24d901e39.js": {
+      "size": 25410
+    },
+    "_next/static/chunks/e504b766decad2a9.js": {
+      "size": 76047
+    },
+    "_next/static/chunks/e56c5d0c426952d0.js": {
+      "size": 171
+    },
+    "_next/static/chunks/f4b13e85d24cd2a7.js": {
+      "size": 14337
+    },
+    "_next/static/chunks/ff1a16fafef87110.js": {
+      "size": 282
+    },
+    "_next/static/chunks/turbopack-1367c5729027bd5b.js": {
+      "size": 9896
+    },
+    "_next/static/chunks/turbopack-b978e93d7cbbf092.js": {
+      "size": 9794
+    },
+    "_next/static/chunks/turbopack-c7e414c88d4befe5.js": {
+      "size": 9794
+    },
+    "_next/static/media/1bffadaabf893a1e-s.7cd81963.woff2": {
+      "size": 85272
+    },
+    "_next/static/media/2bbe8d2671613f1f-s.76dcb0b2.woff2": {
+      "size": 10280
+    },
+    "_next/static/media/2c55a0e60120577a-s.2a48534a.woff2": {
+      "size": 25844
+    },
+    "_next/static/media/5476f68d60460930-s.c995e352.woff2": {
+      "size": 19044
+    },
+    "_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2": {
+      "size": 48432
+    },
+    "_next/static/media/9c72aa0f40e4eef8-s.18a48cbc.woff2": {
+      "size": 18744
+    },
+    "_next/static/media/ad66f9afd8947f86-s.7a40eb73.woff2": {
+      "size": 11272
+    },
+    "_next/static/media/favicon.0b3bf435.ico": {
+      "size": 25931
+    },
+    "account.html": {
+      "size": 50043
+    },
+    "account.txt": {
+      "size": 11085
+    },
+    "blogs/news.html": {
+      "size": 68989
+    },
+    "blogs/news.txt": {
+      "size": 18276
+    },
+    "blogs/news/2026-catalog-launch.html": {
+      "size": 60721
+    },
+    "blogs/news/2026-catalog-launch.txt": {
+      "size": 19490
+    },
+    "blogs/news/feeder-rig-bundles.html": {
+      "size": 60792
+    },
+    "blogs/news/feeder-rig-bundles.txt": {
+      "size": 19557
+    },
+    "blogs/news/hook-coating-standards.html": {
+      "size": 60588
+    },
+    "blogs/news/hook-coating-standards.txt": {
+      "size": 19489
+    },
+    "blogs/news/lead-times-explained.html": {
+      "size": 60893
+    },
+    "blogs/news/lead-times-explained.txt": {
+      "size": 19619
+    },
+    "blogs/news/method-feeder-trends.html": {
+      "size": 60969
+    },
+    "blogs/news/method-feeder-trends.txt": {
+      "size": 19615
+    },
+    "blogs/news/mixed-carton-efficiency.html": {
+      "size": 60800
+    },
+    "blogs/news/mixed-carton-efficiency.txt": {
+      "size": 19560
+    },
+    "blogs/news/oem-packaging-guide.html": {
+      "size": 60937
+    },
+    "blogs/news/oem-packaging-guide.txt": {
+      "size": 19590
+    },
+    "blogs/news/quality-audit-checklist.html": {
+      "size": 60797
+    },
+    "blogs/news/quality-audit-checklist.txt": {
+      "size": 19541
+    },
+    "blogs/news/rig-assembly-tips.html": {
+      "size": 60629
+    },
+    "blogs/news/rig-assembly-tips.txt": {
+      "size": 19499
+    },
+    "blogs/news/sustainable-packaging.html": {
+      "size": 60667
+    },
+    "blogs/news/sustainable-packaging.txt": {
+      "size": 19545
+    },
+    "cart.html": {
+      "size": 49936
+    },
+    "cart.txt": {
+      "size": 11076
+    },
+    "collections.html": {
+      "size": 55985
+    },
+    "collections.txt": {
+      "size": 10847
+    },
+    "collections/2026-new-products.html": {
+      "size": 54478
+    },
+    "collections/2026-new-products.txt": {
+      "size": 12576
+    },
+    "collections/accessories-metal.html": {
+      "size": 55070
+    },
+    "collections/accessories-metal.txt": {
+      "size": 12529
+    },
+    "collections/accessories-plastic.html": {
+      "size": 55136
+    },
+    "collections/accessories-plastic.txt": {
+      "size": 12567
+    },
+    "collections/aligners.html": {
+      "size": 54223
+    },
+    "collections/aligners.txt": {
+      "size": 12401
+    },
+    "collections/all.html": {
+      "size": 58864
+    },
+    "collections/all.txt": {
+      "size": 18702
+    },
+    "collections/bait-cage-rigs.html": {
+      "size": 53256
+    },
+    "collections/bait-cage-rigs.txt": {
+      "size": 13816
+    },
+    "collections/bait-cages.html": {
+      "size": 54073
+    },
+    "collections/bait-cages.txt": {
+      "size": 12354
+    },
+    "collections/bait-care.html": {
+      "size": 54086
+    },
+    "collections/bait-care.txt": {
+      "size": 12361
+    },
+    "collections/carp-hooks.html": {
+      "size": 53047
+    },
+    "collections/carp-hooks.txt": {
+      "size": 13623
+    },
+    "collections/catfish-rigs.html": {
+      "size": 54189
+    },
+    "collections/catfish-rigs.txt": {
+      "size": 12420
+    },
+    "collections/euro-carp-kits.html": {
+      "size": 54195
+    },
+    "collections/euro-carp-kits.txt": {
+      "size": 12430
+    },
+    "collections/hooklength-boxes.html": {
+      "size": 54234
+    },
+    "collections/hooklength-boxes.txt": {
+      "size": 12451
+    },
+    "collections/hooklinks.html": {
+      "size": 54022
+    },
+    "collections/hooklinks.txt": {
+      "size": 12332
+    },
+    "collections/leadcore.html": {
+      "size": 54180
+    },
+    "collections/leadcore.txt": {
+      "size": 12403
+    },
+    "collections/method-feeders.html": {
+      "size": 54091
+    },
+    "collections/method-feeders.txt": {
+      "size": 12376
+    },
+    "collections/new-arrivals.html": {
+      "size": 54195
+    },
+    "collections/new-arrivals.txt": {
+      "size": 12423
+    },
+    "collections/other.html": {
+      "size": 53873
+    },
+    "collections/other.txt": {
+      "size": 13673
+    },
+    "collections/peripheral-equipment.html": {
+      "size": 55308
+    },
+    "collections/peripheral-equipment.txt": {
+      "size": 12655
+    },
+    "collections/ready-rigs.html": {
+      "size": 54049
+    },
+    "collections/ready-rigs.txt": {
+      "size": 12345
+    },
+    "collections/rigs.html": {
+      "size": 54195
+    },
+    "collections/rigs.txt": {
+      "size": 14677
+    },
+    "collections/rod-pod-accessories.html": {
+      "size": 54128
+    },
+    "collections/rod-pod-accessories.txt": {
+      "size": 13828
+    },
+    "collections/sample-kits.html": {
+      "size": 54112
+    },
+    "collections/sample-kits.txt": {
+      "size": 12379
+    },
+    "collections/sea-fishing.html": {
+      "size": 54134
+    },
+    "collections/sea-fishing.txt": {
+      "size": 12365
+    },
+    "collections/sinker-rigs.html": {
+      "size": 54132
+    },
+    "collections/sinker-rigs.txt": {
+      "size": 12389
+    },
+    "collections/sinkers.html": {
+      "size": 54144
+    },
+    "collections/sinkers.txt": {
+      "size": 12382
+    },
+    "collections/swivel-leads.html": {
+      "size": 54125
+    },
+    "collections/swivel-leads.txt": {
+      "size": 12388
+    },
+    "collections/tackle-bags.html": {
+      "size": 54209
+    },
+    "collections/tackle-bags.txt": {
+      "size": 12426
+    },
+    "collections/tackle-storage.html": {
+      "size": 54111
+    },
+    "collections/tackle-storage.txt": {
+      "size": 12386
+    },
+    "collections/terminal-tackle.html": {
+      "size": 54274
+    },
+    "collections/terminal-tackle.txt": {
+      "size": 12470
+    },
+    "collections/wire-traces.html": {
+      "size": 54105
+    },
+    "collections/wire-traces.txt": {
+      "size": 12377
+    },
+    "contact.html": {
+      "size": 53327
+    },
+    "contact.txt": {
+      "size": 10663
+    },
+    "favicon.ico": {
+      "size": 25931
+    },
+    "file.svg": {
+      "size": 391
+    },
+    "globe.svg": {
+      "size": 1035
+    },
+    "hard-nav-capture.js": {
+      "size": 1181
+    },
+    "images/brand/ybb-logo.png": {
+      "size": 68600
+    },
+    "images/collections/2026-new-products.webp": {
+      "size": 153366
+    },
+    "images/collections/accessories-metal.webp": {
+      "size": 155248
+    },
+    "images/collections/accessories-plastic.webp": {
+      "size": 211212
+    },
+    "images/collections/bait-cage-rigs.webp": {
+      "size": 319676
+    },
+    "images/collections/bait-cages.webp": {
+      "size": 211212
+    },
+    "images/collections/carp-hooks.webp": {
+      "size": 205890
+    },
+    "images/collections/euro-carp-kits.webp": {
+      "size": 319676
+    },
+    "images/collections/hooklinks.webp": {
+      "size": 166002
+    },
+    "images/collections/leadcore.webp": {
+      "size": 272970
+    },
+    "images/collections/peripheral-equipment.webp": {
+      "size": 153366
+    },
+    "images/collections/ready-rigs.webp": {
+      "size": 75382
+    },
+    "images/collections/rigs.webp": {
+      "size": 205890
+    },
+    "images/collections/rod-pod-accessories.webp": {
+      "size": 205422
+    },
+    "images/collections/sinker-rigs.webp": {
+      "size": 205422
+    },
+    "images/collections/sinkers.webp": {
+      "size": 155248
+    },
+    "images/collections/tackle-bags.webp": {
+      "size": 164348
+    },
+    "images/collections/terminal-tackle.webp": {
+      "size": 167802
+    },
+    "images/hero/hero-01.webp": {
+      "size": 169112
+    },
+    "images/hero/hero-02.webp": {
+      "size": 143866
+    },
+    "images/hero/hero-03.webp": {
+      "size": 130422
+    },
+    "images/hero/hero-04.webp": {
+      "size": 176956
+    },
+    "images/payment-icons/american-express.svg": {
+      "size": 1581
+    },
+    "images/payment-icons/apple-pay.svg": {
+      "size": 3928
+    },
+    "images/payment-icons/bancontact.svg": {
+      "size": 3812
+    },
+    "images/payment-icons/diners-club.svg": {
+      "size": 657
+    },
+    "images/payment-icons/discover.svg": {
+      "size": 2885
+    },
+    "images/payment-icons/google-pay.svg": {
+      "size": 1908
+    },
+    "images/payment-icons/ideal.svg": {
+      "size": 5780
+    },
+    "images/payment-icons/jcb.svg": {
+      "size": 930
+    },
+    "images/payment-icons/klarna.svg": {
+      "size": 1607
+    },
+    "images/payment-icons/maestro.svg": {
+      "size": 572
+    },
+    "images/payment-icons/master.svg": {
+      "size": 1552
+    },
+    "images/payment-icons/paypal.svg": {
+      "size": 933
+    },
+    "images/payment-icons/sepa.svg": {
+      "size": 604
+    },
+    "images/payment-icons/shopify-pay.svg": {
+      "size": 2080
+    },
+    "images/payment-icons/spidealwero.svg": {
+      "size": 5780
+    },
+    "images/payment-icons/unionpay.svg": {
+      "size": 3962
+    },
+    "images/payment-icons/usdc.svg": {
+      "size": 1567
+    },
+    "images/payment-icons/visa.svg": {
+      "size": 3188
+    },
+    "images/placeholder-product.jpg": {
+      "size": 287
+    },
+    "images/site/carpfishing-fullscreen-hero-bg-v2.png": {
+      "size": 2350219
+    },
+    "index.html": {
+      "size": 80778
+    },
+    "index.txt": {
+      "size": 13357
+    },
+    "moq-lead-time.html": {
+      "size": 51756
+    },
+    "moq-lead-time.txt": {
+      "size": 11998
+    },
+    "next.svg": {
+      "size": 1375
+    },
+    "pages/about.html": {
+      "size": 54824
+    },
+    "pages/about.txt": {
+      "size": 12684
+    },
+    "pages/capacity.html": {
+      "size": 54456
+    },
+    "pages/capacity.txt": {
+      "size": 12513
+    },
+    "pages/catalog.html": {
+      "size": 54495
+    },
+    "pages/catalog.txt": {
+      "size": 12532
+    },
+    "pages/contact.html": {
+      "size": 53786
+    },
+    "pages/contact.txt": {
+      "size": 11058
+    },
+    "pages/custom-packaging.html": {
+      "size": 51940
+    },
+    "pages/custom-packaging.txt": {
+      "size": 12300
+    },
+    "pages/moq-lead-time.html": {
+      "size": 52410
+    },
+    "pages/moq-lead-time.txt": {
+      "size": 12497
+    },
+    "pages/oem-odm.html": {
+      "size": 56409
+    },
+    "pages/oem-odm.txt": {
+      "size": 14632
+    },
+    "pages/privacy.html": {
+      "size": 54479
+    },
+    "pages/privacy.txt": {
+      "size": 12369
+    },
+    "pages/private-label.html": {
+      "size": 52059
+    },
+    "pages/private-label.txt": {
+      "size": 12346
+    },
+    "pages/quality.html": {
+      "size": 54374
+    },
+    "pages/quality.txt": {
+      "size": 12469
+    },
+    "pages/refund.html": {
+      "size": 54617
+    },
+    "pages/refund.txt": {
+      "size": 12385
+    },
+    "pages/samples.html": {
+      "size": 51401
+    },
+    "pages/samples.txt": {
+      "size": 11465
+    },
+    "pages/shipping.html": {
+      "size": 54594
+    },
+    "pages/shipping.txt": {
+      "size": 12411
+    },
+    "pages/terms.html": {
+      "size": 54182
+    },
+    "pages/terms.txt": {
+      "size": 11338
+    },
+    "pages/wholesale.html": {
+      "size": 54764
+    },
+    "pages/wholesale.txt": {
+      "size": 12649
+    },
+    "privacy.html": {
+      "size": 53914
+    },
+    "privacy.txt": {
+      "size": 11928
+    },
+    "products/reviews/tz-eldz-013.html": {
+      "size": 57549
+    },
+    "products/reviews/tz-eldz-013.txt": {
+      "size": 13056
+    },
+    "products/reviews/tz-hk-001.html": {
+      "size": 57237
+    },
+    "products/reviews/tz-hk-001.txt": {
+      "size": 12830
+    },
+    "products/reviews/tz-xz-004.html": {
+      "size": 57273
+    },
+    "products/reviews/tz-xz-004.txt": {
+      "size": 12846
+    },
+    "products/reviews/tz-xz-014.html": {
+      "size": 56859
+    },
+    "products/reviews/tz-xz-014.txt": {
+      "size": 12617
+    },
+    "products/reviews/tz-zj-002.html": {
+      "size": 57379
+    },
+    "products/reviews/tz-zj-002.txt": {
+      "size": 12867
+    },
+    "products/tz-eldz-013.html": {
+      "size": 66884
+    },
+    "products/tz-eldz-013.txt": {
+      "size": 13720
+    },
+    "products/tz-hk-001.html": {
+      "size": 66234
+    },
+    "products/tz-hk-001.txt": {
+      "size": 13475
+    },
+    "products/tz-xz-004.html": {
+      "size": 68464
+    },
+    "products/tz-xz-004.txt": {
+      "size": 13517
+    },
+    "products/tz-xz-014.html": {
+      "size": 67861
+    },
+    "products/tz-xz-014.txt": {
+      "size": 13244
+    },
+    "products/tz-zj-002.html": {
+      "size": 66342
+    },
+    "products/tz-zj-002.txt": {
+      "size": 13563
+    },
+    "refund_returns.html": {
+      "size": 54092
+    },
+    "refund_returns.txt": {
+      "size": 11976
+    },
+    "robots.txt": {
+      "size": 66
+    },
+    "samples.html": {
+      "size": 52015
+    },
+    "samples.txt": {
+      "size": 11627
+    },
+    "shipping.html": {
+      "size": 54029
+    },
+    "shipping.txt": {
+      "size": 11970
+    },
+    "sitemap.xml": {
+      "size": 10264
+    },
+    "terms.html": {
+      "size": 53617
+    },
+    "terms.txt": {
+      "size": 10897
+    },
+    "vercel.svg": {
+      "size": 128
+    },
+    "videos/factory-showcase.mp4": {
+      "size": 3079564
+    },
+    "videos/hero/green-line-box.mp4": {
+      "size": 3159793
+    },
+    "window.svg": {
+      "size": 385
+    }
+  }
+}

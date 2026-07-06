@@ -1,0 +1,22 @@
+{
+    "dryRun": false,
+    "termsCreated": 506,
+    "termsUpdated": 0,
+    "termsSkipped": 0,
+    "legacyRemoved": 12,
+    "productsReassigned": 512,
+    "productsUnmatched": 9,
+    "errors": [],
+    "unmatchedSkus": [
+        "TZ-HK-006",
+        "TZ-HK-007",
+        "TZ-HK-008",
+        "TZ-HK-009",
+        "TZ-HK-002",
+        "TZ-HK-003",
+        "TZ-HK-004",
+        "TZ-HK-005",
+        "TZ-HK-001"
+    ],
+    "termSlugsActive": 518
+}
