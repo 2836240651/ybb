@@ -353,6 +353,7 @@ function ybb_sm_sanitize_blog_content_blocks($input): array
             'id' => sanitize_key($row['id'] ?? ('block-' . ($i + 1))),
             'type' => $type,
             'enabled' => ybb_sm_parse_checkbox_enabled($row, 'enabled', true),
+            'sortOrder' => isset($row['sortOrder']) ? (int) $row['sortOrder'] : ($i + 1),
         ];
 
         if ($type === 'paragraph') {
@@ -409,8 +410,22 @@ function ybb_sm_sanitize_blog_content_blocks($input): array
             }
         }
 
+        $block['_inputIndex'] = $i;
         $blocks[] = $block;
     }
+
+    usort($blocks, static function (array $a, array $b): int {
+        $order = ((int) ($a['sortOrder'] ?? 0)) <=> ((int) ($b['sortOrder'] ?? 0));
+        if ($order !== 0) {
+            return $order;
+        }
+
+        return ((int) ($a['_inputIndex'] ?? 0)) <=> ((int) ($b['_inputIndex'] ?? 0));
+    });
+    foreach ($blocks as &$block) {
+        unset($block['_inputIndex']);
+    }
+    unset($block);
 
     return $blocks;
 }

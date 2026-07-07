@@ -275,6 +275,7 @@ function ybb_sm_admin_blog_block(string $opt, int $articleIndex, int $blockIndex
                     <?php endforeach; ?>
                 </select>
             </label>
+            <label style="margin-left:12px;">Sort order <input type="number" name="<?php echo esc_attr($base); ?>[sortOrder]" value="<?php echo esc_attr((string) ($block['sortOrder'] ?? ($blockIndex + 1))); ?>" style="width:80px;" /></label>
         </p>
         <p><label>Main text<br /><textarea class="large-text" rows="3" name="<?php echo esc_attr($base); ?>[text]"><?php echo esc_textarea($block['text'] ?? ''); ?></textarea></label></p>
         <p><label>Title / heading<br /><input type="text" class="large-text" name="<?php echo esc_attr($base); ?>[title]" value="<?php echo esc_attr($block['title'] ?? ''); ?>" /></label></p>

@@ -25,6 +25,8 @@ def test_blog_sanitizer_has_content_block_helper() -> None:
     assert_contains(source, "mediaText", "supported media-text block")
     assert_contains(source, "checklist", "supported checklist block")
     assert_contains(source, "cta", "supported CTA block")
+    assert_contains(source, "sortOrder", "sortable content blocks")
+    assert_contains(source, "usort($blocks", "content block sorting")
     assert_contains(source, "'contentBlocks' => ybb_sm_sanitize_blog_content_blocks", "article sanitizer stores blocks")
 
 
@@ -49,6 +51,7 @@ def test_blog_admin_renders_article_panels_and_block_controls() -> None:
     assert_contains(source, "function ybb_sm_admin_blog_block", "admin blog block renderer")
     assert_contains(source, "contentBlocks", "admin content block field names")
     assert_contains(source, "data-ybb-blog-block", "admin block wrapper")
+    assert_contains(source, "Sort order", "admin sort order control")
     assert_contains(source, "Add paragraph block", "admin append paragraph block")
     assert_contains(source, "Add media/text block", "admin append media text block")
 
