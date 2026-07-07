@@ -44,11 +44,21 @@ def test_latest_stories_cards_stay_body_free() -> None:
     assert_not_contains(function_block, "'content' =>", "Latest Stories cards")
 
 
+def test_blog_admin_renders_article_panels_and_block_controls() -> None:
+    source = read("deploy/wp-content/mu-plugins/ybb-site-manager/includes/admin/page.php")
+    assert_contains(source, "function ybb_sm_admin_blog_block", "admin blog block renderer")
+    assert_contains(source, "contentBlocks", "admin content block field names")
+    assert_contains(source, "data-ybb-blog-block", "admin block wrapper")
+    assert_contains(source, "Add paragraph block", "admin append paragraph block")
+    assert_contains(source, "Add media/text block", "admin append media text block")
+
+
 if __name__ == "__main__":
     tests = [
         test_blog_sanitizer_has_content_block_helper,
         test_blog_rest_includes_content_blocks_on_full_articles,
         test_latest_stories_cards_stay_body_free,
+        test_blog_admin_renders_article_panels_and_block_controls,
     ]
     failures = 0
     for test in tests:

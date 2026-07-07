@@ -259,73 +259,152 @@ function ybb_sm_admin_tab_hero(string $opt, array $data): void
     <?php
 }
 
+function ybb_sm_admin_blog_block(string $opt, int $articleIndex, int $blockIndex, array $block): void
+{
+    $base = $opt . '[blog][articles][' . $articleIndex . '][contentBlocks][' . $blockIndex . ']';
+    $type = $block['type'] ?? 'paragraph';
+    ?>
+    <div class="postbox" data-ybb-blog-block style="padding:12px;margin:12px 0;border:1px solid #ccd0d4;">
+        <input type="hidden" name="<?php echo esc_attr($base); ?>[id]" value="<?php echo esc_attr($block['id'] ?? ('block-' . ($blockIndex + 1))); ?>" />
+        <p>
+            <label>Enabled <?php ybb_sm_admin_enabled_checkbox($base . '[enabled]', !isset($block['enabled']) || !empty($block['enabled'])); ?></label>
+            <label style="margin-left:12px;">Type
+                <select name="<?php echo esc_attr($base); ?>[type]">
+                    <?php foreach (['paragraph', 'heading', 'quote', 'image', 'mediaText', 'checklist', 'cta'] as $candidate) : ?>
+                        <option value="<?php echo esc_attr($candidate); ?>" <?php selected($type, $candidate); ?>><?php echo esc_html($candidate); ?></option>
+                    <?php endforeach; ?>
+                </select>
+            </label>
+        </p>
+        <p><label>Main text<br /><textarea class="large-text" rows="3" name="<?php echo esc_attr($base); ?>[text]"><?php echo esc_textarea($block['text'] ?? ''); ?></textarea></label></p>
+        <p><label>Title / heading<br /><input type="text" class="large-text" name="<?php echo esc_attr($base); ?>[title]" value="<?php echo esc_attr($block['title'] ?? ''); ?>" /></label></p>
+        <p>
+            <label>Image URL<br />
+                <input type="text" class="large-text ybb-sm-image" id="blog-block-img-<?php echo $articleIndex; ?>-<?php echo $blockIndex; ?>" name="<?php echo esc_attr($base); ?>[imageUrl]" value="<?php echo esc_attr($block['imageUrl'] ?? ''); ?>" />
+            </label>
+            <button type="button" class="button ybb-sm-pick-image" data-target="#blog-block-img-<?php echo $articleIndex; ?>-<?php echo $blockIndex; ?>">Pick image</button>
+        </p>
+        <p>
+            <label>Alt <input type="text" name="<?php echo esc_attr($base); ?>[alt]" value="<?php echo esc_attr($block['alt'] ?? ''); ?>" /></label>
+            <label style="margin-left:12px;">Caption <input type="text" name="<?php echo esc_attr($base); ?>[caption]" value="<?php echo esc_attr($block['caption'] ?? ''); ?>" /></label>
+            <label style="margin-left:12px;">Eyebrow <input type="text" name="<?php echo esc_attr($base); ?>[eyebrow]" value="<?php echo esc_attr($block['eyebrow'] ?? ''); ?>" /></label>
+        </p>
+        <p>
+            <label>Heading level
+                <select name="<?php echo esc_attr($base); ?>[level]">
+                    <option value="h2" <?php selected($block['level'] ?? 'h2', 'h2'); ?>>h2</option>
+                    <option value="h3" <?php selected($block['level'] ?? 'h2', 'h3'); ?>>h3</option>
+                </select>
+            </label>
+            <label style="margin-left:12px;">Image width
+                <select name="<?php echo esc_attr($base); ?>[width]">
+                    <option value="wide" <?php selected($block['width'] ?? 'wide', 'wide'); ?>>wide</option>
+                    <option value="prose" <?php selected($block['width'] ?? 'wide', 'prose'); ?>>prose</option>
+                </select>
+            </label>
+            <label style="margin-left:12px;">Image side
+                <select name="<?php echo esc_attr($base); ?>[imageSide]">
+                    <option value="left" <?php selected($block['imageSide'] ?? 'left', 'left'); ?>>left</option>
+                    <option value="right" <?php selected($block['imageSide'] ?? 'left', 'right'); ?>>right</option>
+                </select>
+            </label>
+        </p>
+        <p><label>Checklist items<br /><textarea class="large-text" rows="3" name="<?php echo esc_attr($base); ?>[items]"><?php echo esc_textarea(implode("\n", (array) ($block['items'] ?? []))); ?></textarea></label></p>
+        <p>
+            <label>Button label <input type="text" name="<?php echo esc_attr($base); ?>[buttonLabel]" value="<?php echo esc_attr($block['buttonLabel'] ?? ''); ?>" /></label>
+            <label style="margin-left:12px;">Href <input type="text" class="regular-text" name="<?php echo esc_attr($base); ?>[href]" value="<?php echo esc_attr($block['href'] ?? ''); ?>" /></label>
+        </p>
+    </div>
+    <?php
+}
+
 function ybb_sm_admin_tab_blog(string $opt, array $data): void
 {
     $articles = $data['articles'] ?? [];
     ?>
-    <p>保存后前台通过 <code>GET /ybb/v1/site-manager/blog</code> 读取；文章页�?Latest Stories 无需重新部署静态包�?/p>
+    <p>Blog articles are read from <code>GET /ybb/v1/site-manager/blog</code>. Article edits and Latest Stories cards update through REST without rebuilding the static package.</p>
     <p>
-        <label><?php ybb_sm_admin_enabled_checkbox($opt . '[blog][enabled]', !empty($data['enabled'])); ?> 启用博客</label>
+        <label><?php ybb_sm_admin_enabled_checkbox($opt . '[blog][enabled]', !empty($data['enabled'])); ?> Enable blog</label>
         &nbsp;
-        <label><?php ybb_sm_admin_enabled_checkbox($opt . '[blog][latestStoriesEnabled]', !empty($data['latestStoriesEnabled'])); ?> Latest Stories 首页轮播</label>
+        <label><?php ybb_sm_admin_enabled_checkbox($opt . '[blog][latestStoriesEnabled]', !empty($data['latestStoriesEnabled'])); ?> Latest Stories carousel</label>
     </p>
     <table class="form-table">
         <tr>
             <th>URL handle</th>
             <td><input type="text" class="regular-text" name="<?php echo esc_attr($opt); ?>[blog][handle]" value="<?php echo esc_attr($data['handle'] ?? 'news'); ?>" />
-                <span class="description">路径 /blogs/{handle}/</span></td>
+                <span class="description">Path /blogs/{handle}/</span></td>
         </tr>
         <tr>
-            <th>列表标题</th>
+            <th>List title</th>
             <td><input type="text" class="large-text" name="<?php echo esc_attr($opt); ?>[blog][title]" value="<?php echo esc_attr($data['title'] ?? ''); ?>" /></td>
         </tr>
         <tr>
-            <th>列表描述</th>
+            <th>List description</th>
             <td><textarea name="<?php echo esc_attr($opt); ?>[blog][description]" rows="2" class="large-text"><?php echo esc_textarea($data['description'] ?? ''); ?></textarea></td>
         </tr>
     </table>
-    <h3>文章</h3>
-    <table class="widefat striped">
-        <thead>
-        <tr>
-            <th>显示</th>
-            <th>首页</th>
-            <th>handle</th>
-            <th>标题</th>
-            <th>摘要</th>
-            <th>发布日期</th>
-            <th>作�?/th>
-            <th>头图 URL</th>
-            <th>正文（段落以空行分隔�?/th>
-        </tr>
-        </thead>
-        <tbody>
-        <?php foreach ($articles as $i => $row) :
-            $contentText = implode("\n\n", $row['content'] ?? []);
+    <h3>Articles</h3>
+    <?php foreach ($articles as $i => $row) :
+        $contentText = implode("\n\n", $row['content'] ?? []);
+        $blocks = $row['contentBlocks'] ?? [];
+        if ($blocks === [] && !empty($row['content'])) {
+            $blocks[] = [
+                'id' => 'block-legacy-' . $i,
+                'type' => 'paragraph',
+                'enabled' => true,
+                'text' => implode("\n\n", (array) $row['content']),
+            ];
+        }
+        ?>
+        <div class="postbox" style="padding:16px;margin:16px 0;border:1px solid #c3c4c7;background:#fff;">
+            <h4 style="margin-top:0;">Article <?php echo (int) ($i + 1); ?>: <?php echo esc_html($row['title'] ?? 'Untitled'); ?></h4>
+            <p>
+                <label>Show <?php ybb_sm_admin_enabled_checkbox($opt . '[blog][articles][' . $i . '][enabled]', !isset($row['enabled']) || !empty($row['enabled'])); ?></label>
+                <label style="margin-left:12px;">Homepage <?php ybb_sm_admin_enabled_checkbox($opt . '[blog][articles][' . $i . '][featuredOnHome]', !empty($row['featuredOnHome'])); ?></label>
+                <input type="hidden" name="<?php echo esc_attr($opt); ?>[blog][articles][<?php echo $i; ?>][id]" value="<?php echo esc_attr($row['id'] ?? ''); ?>" />
+            </p>
+            <table class="form-table">
+                <tr>
+                    <th>Handle</th>
+                    <td><input type="text" class="regular-text" name="<?php echo esc_attr($opt); ?>[blog][articles][<?php echo $i; ?>][handle]" value="<?php echo esc_attr($row['handle'] ?? ''); ?>" /></td>
+                </tr>
+                <tr>
+                    <th>Title</th>
+                    <td><input type="text" class="large-text" name="<?php echo esc_attr($opt); ?>[blog][articles][<?php echo $i; ?>][title]" value="<?php echo esc_attr($row['title'] ?? ''); ?>" /></td>
+                </tr>
+                <tr>
+                    <th>Excerpt</th>
+                    <td><textarea name="<?php echo esc_attr($opt); ?>[blog][articles][<?php echo $i; ?>][excerpt]" rows="3" class="large-text"><?php echo esc_textarea($row['excerpt'] ?? ''); ?></textarea></td>
+                </tr>
+                <tr>
+                    <th>Date / author</th>
+                    <td>
+                        <input type="text" name="<?php echo esc_attr($opt); ?>[blog][articles][<?php echo $i; ?>][publishedAt]" value="<?php echo esc_attr($row['publishedAt'] ?? ''); ?>" placeholder="2026-01-10" style="width:140px;" />
+                        <input type="text" name="<?php echo esc_attr($opt); ?>[blog][articles][<?php echo $i; ?>][author]" value="<?php echo esc_attr($row['author'] ?? ''); ?>" placeholder="Author" style="width:180px;margin-left:8px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Cover image</th>
+                    <td>
+                        <input type="text" class="large-text ybb-sm-image" id="blog-img-<?php echo $i; ?>" name="<?php echo esc_attr($opt); ?>[blog][articles][<?php echo $i; ?>][imageUrl]" value="<?php echo esc_attr($row['imageUrl'] ?? ''); ?>" />
+                        <button type="button" class="button ybb-sm-pick-image" data-target="#blog-img-<?php echo $i; ?>">Pick image</button>
+                    </td>
+                </tr>
+            </table>
+            <h4>Content blocks</h4>
+            <?php foreach ($blocks as $bi => $block) {
+                ybb_sm_admin_blog_block($opt, $i, $bi, is_array($block) ? $block : []);
+            }
+            $next = count($blocks);
+            ybb_sm_admin_blog_block($opt, $i, $next, ['id' => 'block-new-paragraph-' . $i, 'type' => 'paragraph', 'enabled' => false]);
+            ybb_sm_admin_blog_block($opt, $i, $next + 1, ['id' => 'block-new-media-' . $i, 'type' => 'mediaText', 'enabled' => false]);
             ?>
-            <tr>
-                <td><?php ybb_sm_admin_enabled_checkbox($opt . '[blog][articles][' . $i . '][enabled]', !isset($row['enabled']) || !empty($row['enabled'])); ?></td>
-                <td><?php ybb_sm_admin_enabled_checkbox($opt . '[blog][articles][' . $i . '][featuredOnHome]', !empty($row['featuredOnHome'])); ?></td>
-                <td>
-                    <input type="hidden" name="<?php echo esc_attr($opt); ?>[blog][articles][<?php echo $i; ?>][id]" value="<?php echo esc_attr($row['id'] ?? ''); ?>" />
-                    <input type="text" name="<?php echo esc_attr($opt); ?>[blog][articles][<?php echo $i; ?>][handle]" value="<?php echo esc_attr($row['handle'] ?? ''); ?>" style="width:120px;" />
-                </td>
-                <td><input type="text" class="large-text" name="<?php echo esc_attr($opt); ?>[blog][articles][<?php echo $i; ?>][title]" value="<?php echo esc_attr($row['title'] ?? ''); ?>" /></td>
-                <td><textarea name="<?php echo esc_attr($opt); ?>[blog][articles][<?php echo $i; ?>][excerpt]" rows="3" class="large-text"><?php echo esc_textarea($row['excerpt'] ?? ''); ?></textarea></td>
-                <td><input type="text" name="<?php echo esc_attr($opt); ?>[blog][articles][<?php echo $i; ?>][publishedAt]" value="<?php echo esc_attr($row['publishedAt'] ?? ''); ?>" placeholder="2026-01-10" style="width:110px;" /></td>
-                <td><input type="text" name="<?php echo esc_attr($opt); ?>[blog][articles][<?php echo $i; ?>][author]" value="<?php echo esc_attr($row['author'] ?? ''); ?>" style="width:120px;" /></td>
-                <td>
-                    <input type="text" class="large-text ybb-sm-image" id="blog-img-<?php echo $i; ?>" name="<?php echo esc_attr($opt); ?>[blog][articles][<?php echo $i; ?>][imageUrl]" value="<?php echo esc_attr($row['imageUrl'] ?? ''); ?>" />
-                    <button type="button" class="button ybb-sm-pick-image" data-target="#blog-img-<?php echo $i; ?>">选图</button>
-                </td>
-                <td><textarea name="<?php echo esc_attr($opt); ?>[blog][articles][<?php echo $i; ?>][contentText]" rows="6" class="large-text"><?php echo esc_textarea($contentText); ?></textarea></td>
-            </tr>
-        <?php endforeach; ?>
-        </tbody>
-    </table>
+            <p class="description">Add paragraph block or Add media/text block by enabling the prepared block above, then save.</p>
+            <p><label>Legacy paragraph fallback<br /><textarea name="<?php echo esc_attr($opt); ?>[blog][articles][<?php echo $i; ?>][contentText]" rows="4" class="large-text"><?php echo esc_textarea($contentText); ?></textarea></label></p>
+        </div>
+    <?php endforeach; ?>
     <?php
 }
-
 function ybb_sm_admin_tab_home(string $opt, array $settings): void
 {
     $stories = $settings['latestStories'] ?? [];
