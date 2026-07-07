@@ -53,12 +53,25 @@ def test_blog_admin_renders_article_panels_and_block_controls() -> None:
     assert_contains(source, "Add media/text block", "admin append media text block")
 
 
+def test_frontend_types_and_renderer_are_wired() -> None:
+    api = read("lib/site-manager/blog-api.ts")
+    view = read("components/blog/BlogArticleView.tsx")
+    renderer = read("components/blog/BlogContentBlocks.tsx")
+    assert_contains(api, "export type BlogContentBlock", "blog API block type")
+    assert_contains(api, "contentBlocks?: BlogContentBlock[]", "article block field")
+    assert_contains(view, "BlogContentBlocks", "article view renderer import/use")
+    assert_contains(view, "imageSrc ? (", "article hero only renders with image")
+    assert_contains(renderer, 'case "mediaText"', "media text renderer")
+    assert_contains(renderer, "legacyParagraphs", "legacy fallback renderer")
+
+
 if __name__ == "__main__":
     tests = [
         test_blog_sanitizer_has_content_block_helper,
         test_blog_rest_includes_content_blocks_on_full_articles,
         test_latest_stories_cards_stay_body_free,
         test_blog_admin_renders_article_panels_and_block_controls,
+        test_frontend_types_and_renderer_are_wired,
     ]
     failures = 0
     for test in tests:

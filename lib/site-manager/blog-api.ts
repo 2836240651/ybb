@@ -3,6 +3,59 @@
 import { useEffect, useState } from "react";
 import { fetchYbbJson } from "@/lib/ybb-rest";
 
+export type BlogContentBlock =
+  | { id: string; type: "paragraph"; enabled?: boolean; text: string }
+  | {
+      id: string;
+      type: "heading";
+      enabled?: boolean;
+      text: string;
+      level?: "h2" | "h3";
+    }
+  | {
+      id: string;
+      type: "quote";
+      enabled?: boolean;
+      text: string;
+      caption?: string;
+    }
+  | {
+      id: string;
+      type: "image";
+      enabled?: boolean;
+      imageUrl: string;
+      alt?: string;
+      caption?: string;
+      width?: "prose" | "wide";
+    }
+  | {
+      id: string;
+      type: "mediaText";
+      enabled?: boolean;
+      imageUrl?: string;
+      alt?: string;
+      eyebrow?: string;
+      title?: string;
+      text?: string;
+      imageSide?: "left" | "right";
+    }
+  | {
+      id: string;
+      type: "checklist";
+      enabled?: boolean;
+      title?: string;
+      items?: string[];
+    }
+  | {
+      id: string;
+      type: "cta";
+      enabled?: boolean;
+      title?: string;
+      text?: string;
+      buttonLabel?: string;
+      href?: string;
+    };
+
 export type BlogArticleApi = {
   id: string;
   handle: string;
@@ -12,6 +65,7 @@ export type BlogArticleApi = {
   imageUrl: string;
   author: string;
   content: string[];
+  contentBlocks?: BlogContentBlock[];
   featuredOnHome?: boolean;
   href: string;
 };
