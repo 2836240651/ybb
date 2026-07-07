@@ -27,6 +27,7 @@ def test_blog_sanitizer_has_content_block_helper() -> None:
     assert_contains(source, "cta", "supported CTA block")
     assert_contains(source, "sortOrder", "sortable content blocks")
     assert_contains(source, "usort($blocks", "content block sorting")
+    assert_contains(source, "$row['text'] ?? ($row['title'] ?? '')", "heading title fallback")
     assert_contains(source, "'contentBlocks' => ybb_sm_sanitize_blog_content_blocks", "article sanitizer stores blocks")
 
 

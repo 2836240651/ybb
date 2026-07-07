@@ -362,7 +362,7 @@ function ybb_sm_sanitize_blog_content_blocks($input): array
                 continue;
             }
         } elseif ($type === 'heading') {
-            $block['text'] = sanitize_text_field((string) ($row['text'] ?? ''));
+            $block['text'] = sanitize_text_field((string) ($row['text'] ?? ($row['title'] ?? '')));
             $level = sanitize_key((string) ($row['level'] ?? 'h2'));
             $block['level'] = in_array($level, ['h2', 'h3'], true) ? $level : 'h2';
             if ($block['text'] === '') {
