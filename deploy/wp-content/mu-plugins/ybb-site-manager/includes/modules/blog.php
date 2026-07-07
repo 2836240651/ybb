@@ -57,6 +57,22 @@ function ybb_sm_blog_article_href(string $blogHandle, string $articleHandle): st
     return home_url('/blogs/' . $blogHandle . '/' . $articleHandle);
 }
 
+function ybb_sm_blog_public_blocks(array $row): array
+{
+    $blocks = [];
+    foreach ($row['contentBlocks'] ?? [] as $block) {
+        if (!is_array($block) || (isset($block['enabled']) && empty($block['enabled']))) {
+            continue;
+        }
+        if (isset($block['imageUrl'])) {
+            $block['imageUrl'] = ybb_sm_blog_resolve_image_url((string) $block['imageUrl']);
+        }
+        $blocks[] = $block;
+    }
+
+    return $blocks;
+}
+
 /** @return array<int, array<string, mixed>> */
 function ybb_sm_blog_enabled_articles(?array $data = null): array
 {
@@ -95,6 +111,7 @@ function ybb_sm_blog_enabled_articles(?array $data = null): array
             'imageUrl' => $imageUrl,
             'author' => (string) ($row['author'] ?? ''),
             'content' => $content,
+            'contentBlocks' => ybb_sm_blog_public_blocks($row),
             'featuredOnHome' => !empty($row['featuredOnHome']),
             'href' => ybb_sm_blog_article_href($blogHandle, $handle),
         ];

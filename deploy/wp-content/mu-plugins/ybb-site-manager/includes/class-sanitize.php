@@ -296,6 +296,125 @@ function ybb_sm_sanitize_hero($input, array $existing): array
     ];
 }
 
+function ybb_sm_sanitize_blog_block_type(string $type): string
+{
+    $type = sanitize_key($type);
+    $map = [
+        'paragraph' => 'paragraph',
+        'heading' => 'heading',
+        'quote' => 'quote',
+        'image' => 'image',
+        'mediatext' => 'mediaText',
+        'mediaText' => 'mediaText',
+        'checklist' => 'checklist',
+        'cta' => 'cta',
+    ];
+
+    return $map[$type] ?? '';
+}
+
+function ybb_sm_sanitize_blog_block_items($items): array
+{
+    if (is_string($items)) {
+        $items = preg_split('/[\r\n]+/', $items) ?: [];
+    }
+    if (!is_array($items)) {
+        return [];
+    }
+
+    $out = [];
+    foreach ($items as $item) {
+        $item = trim(sanitize_text_field((string) $item));
+        if ($item !== '') {
+            $out[] = $item;
+        }
+    }
+
+    return $out;
+}
+
+function ybb_sm_sanitize_blog_content_blocks($input): array
+{
+    if (!is_array($input)) {
+        return [];
+    }
+
+    $blocks = [];
+    foreach (array_values($input) as $i => $row) {
+        if (!is_array($row)) {
+            continue;
+        }
+        $type = ybb_sm_sanitize_blog_block_type((string) ($row['type'] ?? ''));
+        if ($type === '') {
+            continue;
+        }
+
+        $block = [
+            'id' => sanitize_key($row['id'] ?? ('block-' . ($i + 1))),
+            'type' => $type,
+            'enabled' => ybb_sm_parse_checkbox_enabled($row, 'enabled', true),
+        ];
+
+        if ($type === 'paragraph') {
+            $block['text'] = sanitize_textarea_field((string) ($row['text'] ?? ''));
+            if (trim($block['text']) === '') {
+                continue;
+            }
+        } elseif ($type === 'heading') {
+            $block['text'] = sanitize_text_field((string) ($row['text'] ?? ''));
+            $level = sanitize_key((string) ($row['level'] ?? 'h2'));
+            $block['level'] = in_array($level, ['h2', 'h3'], true) ? $level : 'h2';
+            if ($block['text'] === '') {
+                continue;
+            }
+        } elseif ($type === 'quote') {
+            $block['text'] = sanitize_textarea_field((string) ($row['text'] ?? ''));
+            $block['caption'] = sanitize_text_field((string) ($row['caption'] ?? ''));
+            if (trim($block['text']) === '') {
+                continue;
+            }
+        } elseif ($type === 'image') {
+            $block['imageUrl'] = ybb_sm_sanitize_image_url((string) ($row['imageUrl'] ?? ''));
+            $block['alt'] = sanitize_text_field((string) ($row['alt'] ?? ''));
+            $block['caption'] = sanitize_text_field((string) ($row['caption'] ?? ''));
+            $width = sanitize_key((string) ($row['width'] ?? 'wide'));
+            $block['width'] = in_array($width, ['prose', 'wide'], true) ? $width : 'wide';
+            if ($block['imageUrl'] === '') {
+                continue;
+            }
+        } elseif ($type === 'mediaText') {
+            $block['imageUrl'] = ybb_sm_sanitize_image_url((string) ($row['imageUrl'] ?? ''));
+            $block['alt'] = sanitize_text_field((string) ($row['alt'] ?? ''));
+            $block['eyebrow'] = sanitize_text_field((string) ($row['eyebrow'] ?? ''));
+            $block['title'] = sanitize_text_field((string) ($row['title'] ?? ''));
+            $block['text'] = sanitize_textarea_field((string) ($row['text'] ?? ''));
+            $side = sanitize_key((string) ($row['imageSide'] ?? 'left'));
+            $block['imageSide'] = in_array($side, ['left', 'right'], true) ? $side : 'left';
+            if ($block['imageUrl'] === '' && $block['title'] === '' && trim($block['text']) === '') {
+                continue;
+            }
+        } elseif ($type === 'checklist') {
+            $block['title'] = sanitize_text_field((string) ($row['title'] ?? ''));
+            $block['items'] = ybb_sm_sanitize_blog_block_items($row['items'] ?? []);
+            if ($block['title'] === '' && $block['items'] === []) {
+                continue;
+            }
+        } elseif ($type === 'cta') {
+            $block['title'] = sanitize_text_field((string) ($row['title'] ?? ''));
+            $block['text'] = sanitize_textarea_field((string) ($row['text'] ?? ''));
+            $block['buttonLabel'] = sanitize_text_field((string) ($row['buttonLabel'] ?? ''));
+            $block['href'] = ybb_sm_sanitize_href((string) ($row['href'] ?? ''));
+            if ($block['title'] === '' && trim($block['text']) === '' && $block['buttonLabel'] === '') {
+                continue;
+            }
+        }
+
+        $blocks[] = $block;
+    }
+
+    return $blocks;
+}
+
 function ybb_sm_sanitize_blog($input, array $existing): array
 {
     if (!is_array($input)) {
@@ -347,6 +466,7 @@ function ybb_sm_sanitize_blog($input, array $existing): array
                 'imageUrl' => ybb_sm_sanitize_image_url((string) ($row['imageUrl'] ?? '')),
                 'author' => sanitize_text_field((string) ($row['author'] ?? '')),
                 'content' => $content,
+                'contentBlocks' => ybb_sm_sanitize_blog_content_blocks($row['contentBlocks'] ?? []),
             ];
         }
     } else {
