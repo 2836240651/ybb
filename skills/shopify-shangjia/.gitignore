@@ -1,0 +1,5 @@
+output/
+playwright/node_modules/
+playwright/shopify-auth.json
+playwright/*.png
+config/store.json

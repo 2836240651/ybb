@@ -1,0 +1,70 @@
+{
+  "store": "YOUR_SHOPIFY_STORE_HANDLE",
+  "domain": "your-store.myshopify.com",
+  "location": "YOUR_LOCATION_NAME",
+  "locationId": "YOUR_LOCATION_NUMERIC_ID",
+  "vendor": "Carp Fishing",
+  "defaultPrice": "1.99",
+  "inventoryQty": "99999",
+  "handlePrefix": "ybbr",
+  "titlePrefix": "",
+  "productType": "Feeder Fishing Rig",
+  "tags": "carp fishing, fishing tackle, european carp",
+  "option1Name": "WEIGHT",
+  "skuPrefix": "FEEDER-RIG",
+  "collections": {
+    "Feeder Fishing Rig": {
+      "collectionId": "REPLACE_ME",
+      "collectionHandle": "feeder-fishing-rig",
+      "matchProductTypes": ["Feeder Fishing Rig"]
+    },
+    "Method Feeder": {
+      "collectionId": "REPLACE_ME",
+      "collectionHandle": "method-feeders",
+      "matchProductTypes": ["Method Feeder", "CARP Method Feeder"]
+    },
+    "Carp Fishing Rig": {
+      "collectionId": "REPLACE_ME",
+      "collectionHandle": "carp-fishing-rigs",
+      "matchProductTypes": ["Carp Fishing Rig", "Lead Fishing Rig", "CARP Fishing Lines & Hooks"]
+    },
+    "Carp Tackle": {
+      "collectionId": "REPLACE_ME",
+      "collectionHandle": "carp-tackle",
+      "matchProductTypes": ["Carp Tackle", "CARP Fishing Tools & Add-ons"]
+    },
+    "Carp Accessory": {
+      "collectionId": "REPLACE_ME",
+      "collectionHandle": "carp-accessories",
+      "matchProductTypes": ["Carp Accessory", "CARP Fishing Accessories"]
+    },
+    "Carp Fishing Lead": {
+      "collectionId": "REPLACE_ME",
+      "collectionHandle": "carp-fishing-leads",
+      "matchProductTypes": ["Carp Fishing Lead"]
+    },
+    "Carp Hook": {
+      "collectionId": "REPLACE_ME",
+      "collectionHandle": "carp-hooks",
+      "matchProductTypes": ["Carp Hook"]
+    },
+    "Carp New Product": {
+      "collectionId": "REPLACE_ME",
+      "collectionHandle": "carp-new-products",
+      "matchProductTypes": ["Carp New Product"]
+    }
+  },
+  "categoryRules": {
+    "fishingHooks": {
+      "taxonomyId": "sg-4-6-13-3",
+      "labelZh": "钓鱼钩",
+      "patterns": ["feeder", "rig", "hook", "hair rig"]
+    },
+    "fishingTackle": {
+      "taxonomyId": "sg-4-6-13",
+      "labelZh": "钓鱼用具",
+      "patterns": ["tackle", "accessory", "feeder", "lead"]
+    }
+  },
+  "defaultCategory": "fishingTackle"
+}

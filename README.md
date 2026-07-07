@@ -8,6 +8,7 @@
 | 基准站 | https://www.omctackle.com |
 | 业务定位 | 欧鲤钓源头工厂 B2B（批发 / OEM / 样品询盘） |
 | Agent 规则 | [`AGENTS.md`](./AGENTS.md)（复刻协议、部署硬性规则） |
+| **Agent Skills** | [`skills/`](./skills/)（如 Shopify 独立站上货 [`shopify-shangjia`](./skills/shopify-shangjia/)） |
 | 父级规格 | [`../REPLICA_PROMPT.md`](../REPLICA_PROMPT.md)、[`../BENCHMARK_GAP_MATRIX.md`](../BENCHMARK_GAP_MATRIX.md) |
 
 ---

@@ -1,0 +1,28 @@
+{
+  "name": "shopify-listing-playwright",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "open-chrome": "node 0-open-chrome.mjs",
+    "capture": "node 1-capture-session.mjs",
+    "import:products": "node 2-import-products.mjs",
+    "import:inventory": "node 3-import-inventory.mjs",
+    "import:all": "node 2-import-products.mjs && node 3-import-inventory.mjs",
+    "import:batches": "node 4-import-batches.mjs",
+    "upload:files": "node 6-upload-files.mjs",
+    "scrape:files": "node 7-scrape-files-map.mjs",
+    "assign:collection": "node 5-assign-collection.mjs",
+    "assign:collections": "node 11-assign-collections-gql.mjs",
+    "post:images": "node ../scripts/run-post-images.mjs",
+    "post:gql": "node ../scripts/run-post-import-gql.mjs",
+    "reimport:images": "node 4-import-batches.mjs --from 1 --to 20 --products-only --force --continue-on-error",
+    "attach:images": "node 8-attach-product-images.mjs",
+    "import:missing": "node 9-import-missing.mjs",
+    "import:missing:full": "node 9-import-missing.mjs --attach",
+    "create:missing": "node 10-create-missing-gql.mjs",
+    "split:products": "node ../scripts/split-shopify-csv.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.52.0"
+  }
+}

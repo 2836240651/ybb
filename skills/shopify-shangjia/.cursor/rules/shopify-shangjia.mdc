@@ -1,0 +1,26 @@
+---
+description: >-
+  Shopify上架：独立站上货表单（父体/子体 Excel，表单10+）→ CSV → 导入 → GraphQL 挂图。
+  触发：Shopify上架、独立站上货表单、父体子体、类型、产品系列、类别。
+globs:
+alwaysApply: false
+---
+
+# Shopify上架
+
+**Skill 入口**: `<SKILL_ROOT>/SKILL.md`（仓库路径 `skills/shopify-shangjia/SKILL.md`）  
+**GitHub**: https://github.com/2836240651/ybb/tree/skill/skills/shopify-shangjia
+
+## 必做
+
+1. Read `SKILL.md`（任务开始前）
+2. **D 类型→Type**、**E 产品系列→Collection**、**F 类别→Tags**
+3. 表单 10+ 两列「产品系列」按列位置解析
+4. `run-listing-form-pipeline.mjs` → `attach-listing-images-gql.mjs`
+
+## 一键
+
+```powershell
+Set-Location "<SKILL_ROOT>"
+node scripts/run-listing-form-pipeline.mjs --xlsx "<独立站上货表单.xlsx>"
+```
