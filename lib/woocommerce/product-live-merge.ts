@@ -5,7 +5,13 @@ import type {
   ProductOverrideRow,
 } from "@/lib/site-manager/product-overrides-api";
 import type { LiveProductSummary } from "@/lib/woocommerce/product-live-api";
+import { PLACEHOLDER_PRODUCT_IMAGE } from "@/lib/data/asset-paths";
 import type { Product, ProductVariant } from "@/lib/types/product";
+
+function hasCatalogImage(images: string[] | undefined): boolean {
+  const first = images?.[0];
+  return Boolean(first && first !== PLACEHOLDER_PRODUCT_IMAGE);
+}
 
 function mergeVariantPreservingI18n(
   staticVariant: ProductVariant | undefined,
@@ -138,12 +144,21 @@ export function applyLiveSummaryToProduct(
   summary?: LiveProductSummary
 ): Product {
   if (!summary) return product;
+
+  // List cards: keep static/Woo images; only adopt live image when catalog has none.
+  const images = hasCatalogImage(product.images)
+    ? product.images
+    : summary.image
+      ? [summary.image]
+      : product.images;
+
   return {
     ...product,
     price: summary.price > 0 ? summary.price : product.price,
     compareAtPrice: summary.compareAtPrice ?? product.compareAtPrice,
     available: summary.available,
     wcId: summary.wcId || product.wcId,
+    images: images?.length ? images : product.images,
   };
 }
 

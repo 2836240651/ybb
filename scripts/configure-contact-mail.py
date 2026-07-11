@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SECRETS = json.loads((ROOT / "secrets.local.json").read_text(encoding="utf-8"))
 REPORT = ROOT / "reports" / "contact-mail-configure.json"
 
-SALES_EMAIL = "carpybb@gmail.com"
+SALES_EMAIL = "ybb.sales@yoto.work"
 FROM_EMAIL = "noreply@carp-ybb.com"
 FROM_NAME = "YBB"
 OPT = "ybb_site_manager_settings"

@@ -57,6 +57,20 @@ function ybb_sm_home_sync_legacy_option(array $home): void
     update_option(YBB_SM_OPTION, $all);
 }
 
+/** Keep blog.latestStoriesEnabled aligned with the homepage master toggle. */
+function ybb_sm_home_sync_blog_latest_stories_flag(bool $enabled): void
+{
+    $all = ybb_sm_get_raw();
+    if (empty($all)) {
+        $all = ybb_sm_defaults();
+    }
+    if (empty($all['blog']) || !is_array($all['blog'])) {
+        $all['blog'] = function_exists('ybb_sm_blog_defaults') ? ybb_sm_blog_defaults() : [];
+    }
+    $all['blog']['latestStoriesEnabled'] = $enabled;
+    update_option(YBB_SM_OPTION, $all);
+}
+
 function ybb_sm_home_settings_public(): array
 {
     $settings = ybb_sm_home_get_settings();
@@ -69,16 +83,22 @@ function ybb_sm_home_settings_public(): array
 
 function ybb_sm_hot_products_public(): array
 {
-    if (function_exists('ybb_home_hot_products_public')) {
-        $settings = ybb_sm_home_get_settings();
-        $products = ybb_home_hot_products_public();
-    } else {
-        $settings = ybb_sm_home_get_settings();
-        $products = [];
+    $settings = ybb_sm_home_get_settings();
+    if (empty($settings['hotProductsEnabled'])) {
+        return [
+            'enabled' => false,
+            'autoplayMs' => (int) ($settings['hotProductsAutoplayMs'] ?? 4000),
+            'products' => [],
+            'syncedAt' => ybb_sm_synced_at(),
+        ];
     }
 
+    $products = function_exists('ybb_home_hot_products_public')
+        ? ybb_home_hot_products_public()
+        : [];
+
     return [
-        'enabled' => !empty($settings['hotProductsEnabled']),
+        'enabled' => !empty($products),
         'autoplayMs' => (int) ($settings['hotProductsAutoplayMs'] ?? 4000),
         'products' => $products,
         'syncedAt' => ybb_sm_synced_at(),
@@ -87,28 +107,26 @@ function ybb_sm_hot_products_public(): array
 
 function ybb_sm_latest_stories_public(): array
 {
-    if (function_exists('ybb_sm_blog_home_cards')) {
-        $cards = ybb_sm_blog_home_cards();
-        if (!empty($cards)) {
-            return [
-                'enabled' => true,
-                'articles' => $cards,
-                'syncedAt' => ybb_sm_synced_at(),
-            ];
-        }
+    $settings = ybb_sm_home_get_settings();
+    if (empty($settings['latestStoriesEnabled'])) {
+        return [
+            'enabled' => false,
+            'articles' => [],
+            'syncedAt' => ybb_sm_synced_at(),
+        ];
     }
 
-    if (function_exists('ybb_home_latest_stories_public')) {
-        $settings = ybb_sm_home_get_settings();
-        $stories = ybb_home_latest_stories_public();
-    } else {
-        $settings = ybb_sm_home_get_settings();
-        $stories = [];
+    $articles = [];
+    if (function_exists('ybb_sm_blog_home_cards')) {
+        $articles = ybb_sm_blog_home_cards();
+    }
+    if ($articles === [] && function_exists('ybb_home_latest_stories_public')) {
+        $articles = ybb_home_latest_stories_public();
     }
 
     return [
-        'enabled' => !empty($settings['latestStoriesEnabled']),
-        'articles' => $stories,
+        'enabled' => !empty($articles),
+        'articles' => $articles,
         'syncedAt' => ybb_sm_synced_at(),
     ];
 }

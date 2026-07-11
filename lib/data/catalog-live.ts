@@ -1,3 +1,8 @@
+import {
+  catalogMainCategories,
+  catalogOther,
+  OTHER_CHILD_HANDLES,
+} from "@/lib/data/catalog";
 import { collections, getProductsByCollection, products } from "@/lib/data/products";
 
 export type LiveCollectionLink = {
@@ -5,24 +10,32 @@ export type LiveCollectionLink = {
   productCount: number;
 };
 
+/** Nav-level handles only — exclude mega-menu children already rolled into a parent. */
+const NAV_LEVEL_COLLECTION_HANDLES = [
+  ...catalogMainCategories.map((category) => category.handle),
+  catalogOther.handle,
+];
+
+const ROLLED_UP_CHILD_HANDLES = new Set<string>([
+  "sinker-rigs",
+  "bait-cage-rigs",
+  ...OTHER_CHILD_HANDLES,
+]);
+
 /** Collections that still have at least one product in static catalog (post-sync). */
 export function getLiveCollectionLinks(): LiveCollectionLink[] {
-  const counts = new Map<string, number>();
-  for (const product of products) {
-    counts.set(product.collection, (counts.get(product.collection) ?? 0) + 1);
-  }
-
+  const allowed = new Set(NAV_LEVEL_COLLECTION_HANDLES);
   return collections
     .filter(
       (collection) =>
-        collection.handle !== "all" &&
-        collection.handle !== "new-arrivals" &&
-        (counts.get(collection.handle) ?? 0) > 0
+        allowed.has(collection.handle) &&
+        !ROLLED_UP_CHILD_HANDLES.has(collection.handle)
     )
     .map((collection) => ({
       handle: collection.handle,
-      productCount: counts.get(collection.handle) ?? 0,
+      productCount: getProductsByCollection(collection.handle).length,
     }))
+    .filter((entry) => entry.productCount > 0)
     .sort((a, b) => b.productCount - a.productCount);
 }
 

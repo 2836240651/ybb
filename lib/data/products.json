@@ -1,14 +1,293 @@
 [
   {
-    "handle": "tz-zj-002",
-    "title": "Carp Bankstick - Color Bankstick Head Cover",
-    "titleEn": "Carp Bankstick - Color Bankstick Head Cover",
-    "titleZh": "彩色支架头套",
-    "titleJa": "カープバンクスティッ�?- Color Bankstick Head Cover",
-    "titleCn": "彩色支架头套",
+    "handle": "tz-zbsb-006",
+    "title": "Carp Fishing Tackle Storage Pouch Utility Tool Bag",
+    "titleEn": "Carp Fishing Tackle Storage Pouch Utility Tool Bag",
+    "titleZh": "鲤鱼钓渔具收纳工具包",
+    "titleJa": "カープフィッシング タックル収納ツールポーチ",
+    "titleCn": "鲤鱼钓渔具收纳工具包",
+    "price": 4.99,
+    "images": [
+      "https://carp-ybb.com/wp-content/uploads/2026/06/新建项目-2.png",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/d469043f-02c8-47bc-b17f-6c4f532c7cfc.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/0d63bcae-48ce-420c-a655-dac5df91732b.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/1daa4ec2-8bdd-415d-8143-54442b239e7a.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/1ba41cdc-ba12-4f80-9d17-c3bb4ecbf1f2.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/f7447b05-5db7-4165-b521-a1b42bf1d1a0.avif"
+    ],
+    "collection": "peripheral-equipment",
+    "available": true,
+    "tags": [
+      "wholesale"
+    ],
+    "imageCount": 6,
+    "sku": "TZ-ZBSB-006",
+    "wcId": 51369,
+    "productType": "variable",
+    "variants": [
+      {
+        "sku": "TZ-ZBSB-006-L",
+        "spec": "L",
+        "price": 4.99,
+        "available": true,
+        "wcId": 51384,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/新建项目-2.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Size",
+            "value": "L"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-ZBSB-006-S",
+        "spec": "S",
+        "price": 4.99,
+        "available": true,
+        "wcId": 51383,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/新建项目-2.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Size",
+            "value": "S"
+          }
+        ]
+      }
+    ],
+    "defaultVariantSku": "TZ-ZBSB-006-L",
+    "permalink": "https://carp-ybb.com/products/carp-accessory/",
+    "reviewCount": 0,
+    "averageRating": 0
+  },
+  {
+    "handle": "tz-zbsb-005",
+    "title": "Carp Fishing Blue Tackle Box | Terminal Accessory Storage",
+    "titleEn": "Carp Fishing Blue Tackle Box | Terminal Accessory Storage",
+    "titleZh": "Carp Fishing Blue Tackle Box | Terminal Accessory Storage",
+    "titleJa": "Carp Fishing Blue Tackle Box | Terminal Accessory Storage",
+    "titleCn": "Carp Fishing Blue Tackle Box | Terminal Accessory Storage",
+    "price": 4.99,
+    "images": [
+      "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-ZBSB-005-1.jpeg"
+    ],
+    "collection": "peripheral-equipment",
+    "available": true,
+    "tags": [
+      "wholesale"
+    ],
+    "imageCount": 1,
+    "sku": "TZ-ZBSB-005",
+    "wcId": 51368,
+    "productType": "variable",
+    "variants": [
+      {
+        "sku": "TZ-ZBSB-005-blue",
+        "spec": "blue",
+        "price": 4.99,
+        "available": true,
+        "wcId": 51382,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-ZBSB-005-1.jpeg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Spec",
+            "value": "blue"
+          }
+        ]
+      }
+    ],
+    "defaultVariantSku": "TZ-ZBSB-005-blue",
+    "permalink": "https://carp-ybb.com/products/carp-accessory-blue-box/",
+    "reviewCount": 0,
+    "averageRating": 0
+  },
+  {
+    "handle": "tz-zbsb-004",
+    "title": "Carp Fishing Single Hooklink Box | Rig Storage Accessory",
+    "titleEn": "Carp Fishing Single Hooklink Box | Rig Storage Accessory",
+    "titleZh": "Carp Fishing Single Hooklink Box | Rig Storage Accessory",
+    "titleJa": "Carp Fishing Single Hooklink Box | Rig Storage Accessory",
+    "titleCn": "Carp Fishing Single Hooklink Box | Rig Storage Accessory",
+    "price": 4.99,
+    "images": [
+      "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-ZBSB-004-1.jpeg"
+    ],
+    "collection": "peripheral-equipment",
+    "available": true,
+    "tags": [
+      "wholesale"
+    ],
+    "imageCount": 1,
+    "sku": "TZ-ZBSB-004",
+    "wcId": 51367,
+    "productType": "variable",
+    "variants": [
+      {
+        "sku": "TZ-ZBSB-004-green",
+        "spec": "green",
+        "price": 4.99,
+        "available": true,
+        "wcId": 51381,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-ZBSB-004-1.jpeg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Spec",
+            "value": "green"
+          }
+        ]
+      }
+    ],
+    "defaultVariantSku": "TZ-ZBSB-004-green",
+    "permalink": "https://carp-ybb.com/products/carp-accessory-single-hooklink-box/",
+    "reviewCount": 0,
+    "averageRating": 0
+  },
+  {
+    "handle": "tz-zbsb-003",
+    "title": "Carp Fishing Twin Hooklink Box | Rig Storage Accessory",
+    "titleEn": "Carp Fishing Twin Hooklink Box | Rig Storage Accessory",
+    "titleZh": "Carp Fishing Twin Hooklink Box | Rig Storage Accessory",
+    "titleJa": "Carp Fishing Twin Hooklink Box | Rig Storage Accessory",
+    "titleCn": "Carp Fishing Twin Hooklink Box | Rig Storage Accessory",
+    "price": 4.99,
+    "images": [
+      "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-ZBSB-003-1.jpeg"
+    ],
+    "collection": "peripheral-equipment",
+    "available": true,
+    "tags": [
+      "wholesale"
+    ],
+    "imageCount": 1,
+    "sku": "TZ-ZBSB-003",
+    "wcId": 51366,
+    "productType": "variable",
+    "variants": [
+      {
+        "sku": "TZ-ZBSB-003-green",
+        "spec": "green",
+        "price": 4.99,
+        "available": true,
+        "wcId": 51380,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-ZBSB-003-1.jpeg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Spec",
+            "value": "green"
+          }
+        ]
+      }
+    ],
+    "defaultVariantSku": "TZ-ZBSB-003-green",
+    "permalink": "https://carp-ybb.com/products/carp-accessory-twin-hooklink-box/",
+    "reviewCount": 0,
+    "averageRating": 0
+  },
+  {
+    "handle": "tz-zbsb-002",
+    "title": "Carp Fishing 2-in-1 Hooklink Storage Box | Terminal Tackle Organizer",
+    "titleEn": "Carp Fishing 2-in-1 Hooklink Storage Box | Terminal Tackle Organizer",
+    "titleZh": "Carp Fishing 2-in-1 Hooklink Storage Box | Terminal Tackle Organizer",
+    "titleJa": "Carp Fishing 2-in-1 Hooklink Storage Box | Terminal Tackle Organizer",
+    "titleCn": "Carp Fishing 2-in-1 Hooklink Storage Box | Terminal Tackle Organizer",
+    "price": 4.99,
+    "images": [
+      "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-ZBSB-002-1.jpeg"
+    ],
+    "collection": "peripheral-equipment",
+    "available": true,
+    "tags": [
+      "wholesale"
+    ],
+    "imageCount": 1,
+    "sku": "TZ-ZBSB-002",
+    "wcId": 51365,
+    "productType": "variable",
+    "variants": [
+      {
+        "sku": "TZ-ZBSB-002-green",
+        "spec": "green",
+        "price": 4.99,
+        "available": true,
+        "wcId": 51379,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-ZBSB-002-1.jpeg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Spec",
+            "value": "green"
+          }
+        ]
+      }
+    ],
+    "defaultVariantSku": "TZ-ZBSB-002-green",
+    "permalink": "https://carp-ybb.com/products/carp-accessory-2-in-1-box/",
+    "reviewCount": 0,
+    "averageRating": 0
+  },
+  {
+    "handle": "tz-zbsb-001",
+    "title": "Carp Fishing 3-in-1 Hooklink Storage Box | Terminal Tackle Organizer",
+    "titleEn": "Carp Fishing 3-in-1 Hooklink Storage Box | Terminal Tackle Organizer",
+    "titleZh": "Carp Fishing 3-in-1 Hooklink Storage Box | Terminal Tackle Organizer",
+    "titleJa": "Carp Fishing 3-in-1 Hooklink Storage Box | Terminal Tackle Organizer",
+    "titleCn": "Carp Fishing 3-in-1 Hooklink Storage Box | Terminal Tackle Organizer",
+    "price": 4.99,
+    "images": [
+      "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-ZBSB-001-1.jpeg"
+    ],
+    "collection": "peripheral-equipment",
+    "available": true,
+    "tags": [
+      "wholesale"
+    ],
+    "imageCount": 1,
+    "sku": "TZ-ZBSB-001",
+    "wcId": 51364,
+    "productType": "variable",
+    "variants": [
+      {
+        "sku": "TZ-ZBSB-001-green",
+        "spec": "green",
+        "price": 4.99,
+        "available": true,
+        "wcId": 51378,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-ZBSB-001-1.jpeg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Spec",
+            "value": "green"
+          }
+        ]
+      }
+    ],
+    "defaultVariantSku": "TZ-ZBSB-001-green",
+    "permalink": "https://carp-ybb.com/products/carp-accessory-3-in-1-box/",
+    "reviewCount": 0,
+    "averageRating": 0
+  },
+  {
+    "handle": "tz-zj-003",
+    "title": "Colorful Carp Rod Rest Head Soft Rubber Bankstick Rod Support",
+    "titleEn": "Colorful Carp Rod Rest Head Soft Rubber Bankstick Rod Support",
+    "titleZh": "彩色防滑橡胶鲤鱼竿架头 支架头",
+    "titleJa": "カラフル ラバー ロッドレストヘッド カープロッドサポート",
+    "titleCn": "彩色防滑橡胶鲤鱼竿架头 支架头",
     "price": 1.99,
     "images": [
-      "https://carp-ybb.com/wp-content/uploads/2026/06/TZ-ZJ-002.jpeg"
+      "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-ZJ-003-1.jpg"
     ],
     "collection": "rod-pod-accessories",
     "available": true,
@@ -16,6 +295,94 @@
       "wholesale"
     ],
     "imageCount": 1,
+    "sku": "TZ-ZJ-003",
+    "wcId": 51264,
+    "productType": "variable",
+    "variants": [
+      {
+        "sku": "TZ-ZJ-003-blue",
+        "spec": "blue",
+        "price": 1.99,
+        "available": true,
+        "wcId": 51283,
+        "wcAttributes": [
+          {
+            "attribute": "Size",
+            "value": "blue"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-ZJ-003-red",
+        "spec": "red",
+        "price": 1.99,
+        "available": true,
+        "wcId": 51284,
+        "wcAttributes": [
+          {
+            "attribute": "Size",
+            "value": "red"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-ZJ-003-green",
+        "spec": "green",
+        "price": 1.99,
+        "available": true,
+        "wcId": 51285,
+        "wcAttributes": [
+          {
+            "attribute": "Size",
+            "value": "green"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-ZJ-003-orange",
+        "spec": "orange",
+        "price": 1.99,
+        "available": true,
+        "wcId": 51286,
+        "wcAttributes": [
+          {
+            "attribute": "Size",
+            "value": "orange"
+          }
+        ]
+      }
+    ],
+    "defaultVariantSku": "TZ-ZJ-003-blue",
+    "permalink": "https://carp-ybb.com/products/carp-bankstick-rounded-bankstick-head/",
+    "reviewCount": 0,
+    "averageRating": 0
+  },
+  {
+    "handle": "tz-zj-002",
+    "title": "Carp Bankstick Head Cover – Color Rod Pod Bankstick Marker Cap for Carp Fishing",
+    "titleEn": "Carp Bankstick Head Cover – Color Rod Pod Bankstick Marker Cap for Carp Fishing",
+    "titleZh": "彩色支架头套",
+    "titleJa": "カープバンクスティック - Color Bankstick Head Cover",
+    "titleCn": "彩色支架头套",
+    "price": 1.99,
+    "images": [
+      "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-ZJ-002.jpeg",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/1490cf14-4d9d-4cc6-ae0c-83833d7996c2.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/e18e0901-e2b6-410b-811f-4ba422b53776.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/7a2a5d72-b304-4275-8881-a06af4aeeabd.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/444f10ee-f27c-4331-a1d0-1f4cb957a39a.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/1e8bb623-a851-4ce9-98e2-dbdf3bf99c24.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/e475f8c8-712f-4c22-a0d4-04ce3f9d9197.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/1afb9a84-8173-40ac-8252-d7e21a200921.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/19ee7c39-f4c7-4b33-8b60-59907247e451.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/e5c00beb-e0b0-4549-98dc-53159fe244fa.avif"
+    ],
+    "collection": "rod-pod-accessories",
+    "available": true,
+    "tags": [
+      "wholesale"
+    ],
+    "imageCount": 10,
     "sku": "TZ-ZJ-002",
     "wcId": 51263,
     "productType": "variable",
@@ -25,7 +392,10 @@
         "spec": "blue",
         "price": 1.99,
         "available": true,
-        "wcId": 48971,
+        "wcId": 51279,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-ZJ-002.jpeg"
+        ],
         "wcAttributes": [
           {
             "attribute": "Size",
@@ -38,7 +408,10 @@
         "spec": "red",
         "price": 1.99,
         "available": true,
-        "wcId": 48972,
+        "wcId": 51280,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-ZJ-002.jpeg"
+        ],
         "wcAttributes": [
           {
             "attribute": "Size",
@@ -51,7 +424,10 @@
         "spec": "green",
         "price": 1.99,
         "available": true,
-        "wcId": 48973,
+        "wcId": 51281,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-ZJ-002.jpeg"
+        ],
         "wcAttributes": [
           {
             "attribute": "Size",
@@ -64,7 +440,10 @@
         "spec": "orange",
         "price": 1.99,
         "available": true,
-        "wcId": 48974,
+        "wcId": 51282,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-ZJ-002.jpeg"
+        ],
         "wcAttributes": [
           {
             "attribute": "Size",
@@ -75,26 +454,31 @@
     ],
     "defaultVariantSku": "TZ-ZJ-002-blue",
     "permalink": "https://carp-ybb.com/products/carp-bankstick-color-bankstick-head-cover/",
-    "reviewCount": 0,
-    "averageRating": 0
+    "reviewCount": 3,
+    "averageRating": 5
   },
   {
     "handle": "tz-hk-001",
-    "title": "Carp Hook - Triangle Carp Hook",
-    "titleEn": "Carp Hook - Triangle Carp Hook",
-    "titleZh": "三角鲤鱼�?,
+    "title": "Carp Fishing Triangle Barbed Hooks High Carbon Steel Carp Hooks for Rig Making",
+    "titleEn": "Carp Fishing Triangle Barbed Hooks High Carbon Steel Carp Hooks for Rig Making",
+    "titleZh": "三角鲤鱼钩",
     "titleJa": "カープフック - Triangle Carp Hook",
-    "titleCn": "三角鲤鱼�?,
+    "titleCn": "三角鲤鱼钩",
     "price": 2.99,
     "images": [
-      "https://carp-ybb.com/wp-content/uploads/2026/07/三角�?.png"
+      "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-HK-001.jpeg",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/三角钩1.png",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/959642ef-91b5-4f3c-b5d9-48f43fd053be.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/83f02a8b-09b2-4381-ba49-02be5d5d7dd6.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/14251e71-c353-4f53-9db8-ffc88cec9746.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/45bc3d8a-8d7e-41bd-ac41-53415ed97b18.avif"
     ],
     "collection": "carp-hooks",
     "available": true,
     "tags": [
       "wholesale"
     ],
-    "imageCount": 1,
+    "imageCount": 6,
     "sku": "TZ-HK-001",
     "wcId": 50689,
     "productType": "variable",
@@ -104,7 +488,10 @@
         "spec": "2#",
         "price": 2.99,
         "available": true,
-        "wcId": 47571,
+        "wcId": 50709,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-HK-001.jpeg"
+        ],
         "wcAttributes": [
           {
             "attribute": "Hook Size",
@@ -117,7 +504,10 @@
         "spec": "4#",
         "price": 2.99,
         "available": true,
-        "wcId": 47572,
+        "wcId": 50710,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-HK-001.jpeg"
+        ],
         "wcAttributes": [
           {
             "attribute": "Hook Size",
@@ -130,7 +520,10 @@
         "spec": "6#",
         "price": 2.99,
         "available": true,
-        "wcId": 47573,
+        "wcId": 50711,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-HK-001.jpeg"
+        ],
         "wcAttributes": [
           {
             "attribute": "Hook Size",
@@ -143,7 +536,10 @@
         "spec": "8#",
         "price": 2.99,
         "available": true,
-        "wcId": 47574,
+        "wcId": 50712,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-HK-001.jpeg"
+        ],
         "wcAttributes": [
           {
             "attribute": "Hook Size",
@@ -156,7 +552,10 @@
         "spec": "10#",
         "price": 2.99,
         "available": true,
-        "wcId": 47575,
+        "wcId": 50713,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-HK-001.jpeg"
+        ],
         "wcAttributes": [
           {
             "attribute": "Hook Size",
@@ -167,26 +566,32 @@
     ],
     "defaultVariantSku": "TZ-HK-001-2#",
     "permalink": "https://carp-ybb.com/products/carp-hook-triangle-carp-hook/",
-    "reviewCount": 0,
-    "averageRating": 0
+    "reviewCount": 1,
+    "averageRating": 5
   },
   {
     "handle": "tz-eldz-013",
-    "title": "Carp Feeder Rig - Square Double Hook",
-    "titleEn": "Carp Feeder Rig - Square Double Hook",
+    "title": "Square Double Hook Carp Feeder Rig | Ready-Made Carp Fishing Rig System for Feeder Fishing",
+    "titleEn": "Square Double Hook Carp Feeder Rig | Ready-Made Carp Fishing Rig System for Feeder Fishing",
     "titleZh": "黑方双钩",
-    "titleJa": "カープフィーダーリ�?- Square Double Hook",
+    "titleJa": "カープフィーダーリグ - Square Double Hook",
     "titleCn": "黑方双钩",
     "price": 1.99,
     "images": [
-      "https://carp-ybb.com/wp-content/uploads/2026/06/TZ-ELDZ-013.jpeg"
+      "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-ELDZ-013.jpeg",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/3452d68e-72e9-45ad-92aa-6408e9c02dc1.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/d98e97a5-d65f-40de-b584-4018b79e5ef6.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/29d7f4e0-42bb-4a64-a1c6-f88794c222ac.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/2ddf9fd7889d42a7bfd255306220c7d8-goods.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/b49326c58dd54e828a8804fc950177c9-goods.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/0f8f42c7b27d485bbd5a7d80dba653c4-goods.avif"
     ],
     "collection": "bait-cage-rigs",
     "available": true,
     "tags": [
       "wholesale"
     ],
-    "imageCount": 1,
+    "imageCount": 7,
     "sku": "TZ-ELDZ-013",
     "wcId": 50506,
     "productType": "variable",
@@ -196,7 +601,10 @@
         "spec": "10g",
         "price": 1.99,
         "available": true,
-        "wcId": 47383,
+        "wcId": 50521,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-ELDZ-013.jpeg"
+        ],
         "wcAttributes": [
           {
             "attribute": "Weight",
@@ -209,7 +617,10 @@
         "spec": "20g",
         "price": 2.09,
         "available": true,
-        "wcId": 47384,
+        "wcId": 50522,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-ELDZ-013.jpeg"
+        ],
         "wcAttributes": [
           {
             "attribute": "Weight",
@@ -222,7 +633,10 @@
         "spec": "30g",
         "price": 2.19,
         "available": true,
-        "wcId": 47385,
+        "wcId": 50523,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-ELDZ-013.jpeg"
+        ],
         "wcAttributes": [
           {
             "attribute": "Weight",
@@ -235,7 +649,10 @@
         "spec": "40g",
         "price": 2.29,
         "available": true,
-        "wcId": 47386,
+        "wcId": 50524,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-ELDZ-013.jpeg"
+        ],
         "wcAttributes": [
           {
             "attribute": "Weight",
@@ -248,7 +665,10 @@
         "spec": "50g",
         "price": 2.39,
         "available": true,
-        "wcId": 47387,
+        "wcId": 50525,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-ELDZ-013.jpeg"
+        ],
         "wcAttributes": [
           {
             "attribute": "Weight",
@@ -261,7 +681,10 @@
         "spec": "60g",
         "price": 2.49,
         "available": true,
-        "wcId": 47388,
+        "wcId": 50526,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-ELDZ-013.jpeg"
+        ],
         "wcAttributes": [
           {
             "attribute": "Weight",
@@ -276,22 +699,893 @@
     "averageRating": 0
   },
   {
+    "handle": "tz-eldz-002",
+    "title": "Double Hook Method Feeder Rig | Ready Tied Carp Hair Rig with Bait Mould",
+    "titleEn": "Double Hook Method Feeder Rig | Ready Tied Carp Hair Rig with Bait Mould",
+    "titleZh": "Double Hook Method Feeder Rig | Ready Tied Carp Hair Rig with Bait Mould",
+    "titleJa": "Double Hook Method Feeder Rig | Ready Tied Carp Hair Rig with Bait Mould",
+    "titleCn": "Double Hook Method Feeder Rig | Ready Tied Carp Hair Rig with Bait Mould",
+    "price": 1.99,
+    "images": [
+      "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-ELDZ-002-2.jpeg",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/238e9c1a-ccbd-4b0c-8e46-615cc4ea9ec1.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/0dc71220-45e7-45a6-a29d-237949ad4ec3.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/39ac579c-a217-4702-9a82-5635a9a94315.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/5ecc7235-b049-4c43-8abe-0781a57e6785.avif"
+    ],
+    "collection": "bait-cage-rigs",
+    "available": true,
+    "tags": [
+      "wholesale"
+    ],
+    "imageCount": 5,
+    "sku": "TZ-ELDZ-002",
+    "wcId": 50440,
+    "productType": "variable",
+    "variants": [
+      {
+        "sku": "TZ-ELDZ-002-20g",
+        "spec": "20g",
+        "price": 1.99,
+        "available": true,
+        "wcId": 50461,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-ELDZ-002-2.jpeg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "20g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-ELDZ-002-30g",
+        "spec": "30g",
+        "price": 2.09,
+        "available": true,
+        "wcId": 50462,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-ELDZ-002-2.jpeg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "30g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-ELDZ-002-40g",
+        "spec": "40g",
+        "price": 2.19,
+        "available": true,
+        "wcId": 50463,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-ELDZ-002-2.jpeg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "40g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-ELDZ-002-50g",
+        "spec": "50g",
+        "price": 2.29,
+        "available": true,
+        "wcId": 50464,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-ELDZ-002-2.jpeg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "50g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-ELDZ-002-60g",
+        "spec": "60g",
+        "price": 2.39,
+        "available": true,
+        "wcId": 50465,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-ELDZ-002-2.jpeg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "60g"
+          }
+        ]
+      }
+    ],
+    "defaultVariantSku": "TZ-ELDZ-002-20g",
+    "permalink": "https://carp-ybb.com/products/carp-feeder-rig-b-type-turtle-double-hook-rig/",
+    "reviewCount": 0,
+    "averageRating": 0
+  },
+  {
+    "handle": "tz-eldz-001",
+    "title": "Camo Window Method Feeder Rig | Ready Tied Carp Hair Rig for Method Feeder Fishing",
+    "titleEn": "Camo Window Method Feeder Rig | Ready Tied Carp Hair Rig for Method Feeder Fishing",
+    "titleZh": "Camo Window Method Feeder Rig | Ready Tied Carp Hair Rig for Method Feeder Fishing",
+    "titleJa": "Camo Window Method Feeder Rig | Ready Tied Carp Hair Rig for Method Feeder Fishing",
+    "titleCn": "Camo Window Method Feeder Rig | Ready Tied Carp Hair Rig for Method Feeder Fishing",
+    "price": 1.99,
+    "images": [
+      "https://carp-ybb.com/wp-content/uploads/2026/06/真主图.png",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/主图.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/238e9c1a-ccbd-4b0c-8e46-615cc4ea9ec1.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/0dc71220-45e7-45a6-a29d-237949ad4ec3.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/efe2dc5d-7824-4ad5-b432-b641db72121a.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/39ac579c-a217-4702-9a82-5635a9a94315.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/5ecc7235-b049-4c43-8abe-0781a57e6785.avif"
+    ],
+    "collection": "bait-cage-rigs",
+    "available": true,
+    "tags": [
+      "wholesale"
+    ],
+    "imageCount": 7,
+    "sku": "TZ-ELDZ-001",
+    "wcId": 50439,
+    "productType": "variable",
+    "variants": [
+      {
+        "sku": "TZ-ELDZ-001-20g",
+        "spec": "20g",
+        "price": 1.99,
+        "available": true,
+        "wcId": 50456,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/真主图.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "20g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-ELDZ-001-30g",
+        "spec": "30g",
+        "price": 2.09,
+        "available": true,
+        "wcId": 50457,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/真主图.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "30g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-ELDZ-001-40g",
+        "spec": "40g",
+        "price": 2.19,
+        "available": true,
+        "wcId": 50458,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/真主图.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "40g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-ELDZ-001-50g",
+        "spec": "50g",
+        "price": 2.29,
+        "available": true,
+        "wcId": 50459,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/真主图.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "50g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-ELDZ-001-60g",
+        "spec": "60g",
+        "price": 2.39,
+        "available": true,
+        "wcId": 50460,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/真主图.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "60g"
+          }
+        ]
+      }
+    ],
+    "defaultVariantSku": "TZ-ELDZ-001-20g",
+    "permalink": "https://carp-ybb.com/products/carp-feeder-rig-b-type-turtle-single-hook-rig/",
+    "reviewCount": 0,
+    "averageRating": 0
+  },
+  {
+    "handle": "tz-qzdz-006",
+    "title": "Distance Casting Long Tail Lead Helicopter Carp Rig Ready Tied Fishing Rig",
+    "titleEn": "Distance Casting Long Tail Lead Helicopter Carp Rig Ready Tied Fishing Rig",
+    "titleZh": "Distance Casting Long Tail Lead Helicopter Carp Rig Ready Tied Fishing Rig",
+    "titleJa": "Distance Casting Long Tail Lead Helicopter Carp Rig Ready Tied Fishing Rig",
+    "titleCn": "Distance Casting Long Tail Lead Helicopter Carp Rig Ready Tied Fishing Rig",
+    "price": 1.99,
+    "images": [
+      "https://carp-ybb.com/wp-content/uploads/2026/06/主图-3.png",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/936ca42f-ad93-48c6-85c7-6b730033dc5f.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/3fa9d710-2f2a-474e-b150-f6aa18b73fa8.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/58ec6dab-3256-44b7-a396-9809afe37834.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/b4ba2025-08b9-4eea-8283-b3c5f7d7eefc.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/fc8165ae-952d-421b-9aa2-d90ab0eaffd3.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/ee15053e-618d-420c-b679-a445a0f91932.avif"
+    ],
+    "collection": "sinker-rigs",
+    "available": true,
+    "tags": [
+      "wholesale"
+    ],
+    "imageCount": 7,
+    "sku": "TZ-QZDZ-006",
+    "wcId": 50199,
+    "productType": "variable",
+    "variants": [
+      {
+        "sku": "TZ-QZDZ-006-42g",
+        "spec": "42g",
+        "price": 1.99,
+        "available": true,
+        "wcId": 50218,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/主图-3.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "42g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZDZ-006-56g",
+        "spec": "56g",
+        "price": 2.09,
+        "available": true,
+        "wcId": 50219,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/主图-3.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "56g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZDZ-006-71g",
+        "spec": "71g",
+        "price": 2.19,
+        "available": true,
+        "wcId": 50220,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/主图-3.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "71g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZDZ-006-85g",
+        "spec": "85g",
+        "price": 2.29,
+        "available": true,
+        "wcId": 50221,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/主图-3.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "85g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZDZ-006-99g",
+        "spec": "99g",
+        "price": 2.39,
+        "available": true,
+        "wcId": 50222,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/主图-3.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "99g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZDZ-006-113g",
+        "spec": "113g",
+        "price": 2.49,
+        "available": true,
+        "wcId": 50223,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/主图-3.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "113g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZDZ-006-128g",
+        "spec": "128g",
+        "price": 2.59,
+        "available": true,
+        "wcId": 50224,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/主图-3.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "128g"
+          }
+        ]
+      }
+    ],
+    "defaultVariantSku": "TZ-QZDZ-006-42g",
+    "permalink": "https://carp-ybb.com/products/carp-lead-rig-tail-tube-blowback-llz/",
+    "reviewCount": 0,
+    "averageRating": 0
+  },
+  {
+    "handle": "tz-qzdz-004",
+    "title": "Square Flat Lead Helicopter Carp Rig Ready Tied Fishing Rig",
+    "titleEn": "Square Flat Lead Helicopter Carp Rig Ready Tied Fishing Rig",
+    "titleZh": "Square Flat Lead Helicopter Carp Rig Ready Tied Fishing Rig",
+    "titleJa": "Square Flat Lead Helicopter Carp Rig Ready Tied Fishing Rig",
+    "titleCn": "Square Flat Lead Helicopter Carp Rig Ready Tied Fishing Rig",
+    "price": 1.99,
+    "images": [
+      "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZDZ-004-1.jpeg"
+    ],
+    "collection": "sinker-rigs",
+    "available": true,
+    "tags": [
+      "wholesale"
+    ],
+    "imageCount": 1,
+    "sku": "TZ-QZDZ-004",
+    "wcId": 50197,
+    "productType": "variable",
+    "variants": [
+      {
+        "sku": "TZ-QZDZ-004-56g",
+        "spec": "56g",
+        "price": 1.99,
+        "available": true,
+        "wcId": 50206,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZDZ-004-1.jpeg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "56g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZDZ-004-71g",
+        "spec": "71g",
+        "price": 2.09,
+        "available": true,
+        "wcId": 50207,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZDZ-004-1.jpeg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "71g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZDZ-004-85g",
+        "spec": "85g",
+        "price": 2.19,
+        "available": true,
+        "wcId": 50208,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZDZ-004-1.jpeg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "85g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZDZ-004-99g",
+        "spec": "99g",
+        "price": 2.29,
+        "available": true,
+        "wcId": 50209,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZDZ-004-1.jpeg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "99g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZDZ-004-113g",
+        "spec": "113g",
+        "price": 2.39,
+        "available": true,
+        "wcId": 50210,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZDZ-004-1.jpeg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "113g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZDZ-004-128g",
+        "spec": "128g",
+        "price": 2.49,
+        "available": true,
+        "wcId": 50211,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZDZ-004-1.jpeg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "128g"
+          }
+        ]
+      }
+    ],
+    "defaultVariantSku": "TZ-QZDZ-004-56g",
+    "permalink": "https://carp-ybb.com/products/carp-lead-rig-tail-tube-blowback-swivel-square-lead-rig/",
+    "reviewCount": 0,
+    "averageRating": 0
+  },
+  {
+    "handle": "tz-qzdz-003",
+    "title": "Fish Pattern Lead Rig | Ready Tied Carp Lead Clip Hair Rig with Quick Change Swivel",
+    "titleEn": "Fish Pattern Lead Rig | Ready Tied Carp Lead Clip Hair Rig with Quick Change Swivel",
+    "titleZh": "Fish Pattern Lead Rig | Ready Tied Carp Lead Clip Hair Rig with Quick Change Swivel",
+    "titleJa": "Fish Pattern Lead Rig | Ready Tied Carp Lead Clip Hair Rig with Quick Change Swivel",
+    "titleCn": "Fish Pattern Lead Rig | Ready Tied Carp Lead Clip Hair Rig with Quick Change Swivel",
+    "price": 1.99,
+    "images": [
+      "https://carp-ybb.com/wp-content/uploads/2026/06/image-3.png",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/image-2.png",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/a2a4fa7a-7082-4bd5-b6e9-550ceb57131f.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/4eed2357-3ad0-4dfd-ba1a-6a7b03e35eca.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/d248cd4d-f86a-45a6-bf4e-c5105891fbb5.avif"
+    ],
+    "collection": "sinker-rigs",
+    "available": true,
+    "tags": [
+      "wholesale"
+    ],
+    "imageCount": 5,
+    "sku": "TZ-QZDZ-003",
+    "wcId": 50196,
+    "productType": "variable",
+    "variants": [
+      {
+        "sku": "TZ-QZDZ-003-56g",
+        "spec": "56g",
+        "price": 1.99,
+        "available": true,
+        "wcId": 50200,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/image-3.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "56g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZDZ-003-71g",
+        "spec": "71g",
+        "price": 2.09,
+        "available": true,
+        "wcId": 50201,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/image-3.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "71g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZDZ-003-85g",
+        "spec": "85g",
+        "price": 2.19,
+        "available": true,
+        "wcId": 50202,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/image-3.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "85g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZDZ-003-99g",
+        "spec": "99g",
+        "price": 2.29,
+        "available": true,
+        "wcId": 50203,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/image-3.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "99g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZDZ-003-113g",
+        "spec": "113g",
+        "price": 2.39,
+        "available": true,
+        "wcId": 50204,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/image-3.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "113g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZDZ-003-128g",
+        "spec": "128g",
+        "price": 2.49,
+        "available": true,
+        "wcId": 50205,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/image-3.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "128g"
+          }
+        ]
+      }
+    ],
+    "defaultVariantSku": "TZ-QZDZ-003-56g",
+    "permalink": "https://carp-ybb.com/products/carp-lead-rig-tail-tube-blowback-fish-swivel-rig/",
+    "reviewCount": 0,
+    "averageRating": 0
+  },
+  {
+    "handle": "tz-qzdz-002",
+    "title": "Winged Distance Lead Clip Rig | Ready Tied Carp Hair Rig with Quick Change Swivel",
+    "titleEn": "Winged Distance Lead Clip Rig | Ready Tied Carp Hair Rig with Quick Change Swivel",
+    "titleZh": "Winged Distance Lead Clip Rig | Ready Tied Carp Hair Rig with Quick Change Swivel",
+    "titleJa": "Winged Distance Lead Clip Rig | Ready Tied Carp Hair Rig with Quick Change Swivel",
+    "titleCn": "Winged Distance Lead Clip Rig | Ready Tied Carp Hair Rig with Quick Change Swivel",
+    "price": 1.99,
+    "images": [
+      "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZDZ-002-2.jpeg"
+    ],
+    "collection": "sinker-rigs",
+    "available": true,
+    "tags": [
+      "wholesale"
+    ],
+    "imageCount": 1,
+    "sku": "TZ-QZDZ-002",
+    "wcId": 50175,
+    "productType": "variable",
+    "variants": [
+      {
+        "sku": "TZ-QZDZ-002-56g",
+        "spec": "56g",
+        "price": 1.99,
+        "available": true,
+        "wcId": 50189,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZDZ-002-2.jpeg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "56g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZDZ-002-71g",
+        "spec": "71g",
+        "price": 2.09,
+        "available": true,
+        "wcId": 50190,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZDZ-002-2.jpeg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "71g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZDZ-002-85g",
+        "spec": "85g",
+        "price": 2.19,
+        "available": true,
+        "wcId": 50191,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZDZ-002-2.jpeg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "85g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZDZ-002-99g",
+        "spec": "99g",
+        "price": 2.29,
+        "available": true,
+        "wcId": 50192,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZDZ-002-2.jpeg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "99g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZDZ-002-113g",
+        "spec": "113g",
+        "price": 2.39,
+        "available": true,
+        "wcId": 50193,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZDZ-002-2.jpeg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "113g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZDZ-002-128g",
+        "spec": "128g",
+        "price": 2.49,
+        "available": true,
+        "wcId": 50194,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZDZ-002-2.jpeg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "128g"
+          }
+        ]
+      }
+    ],
+    "defaultVariantSku": "TZ-QZDZ-002-56g",
+    "permalink": "https://carp-ybb.com/products/carp-lead-rig-tail-tube-blowback-submarine-rig/",
+    "reviewCount": 0,
+    "averageRating": 0
+  },
+  {
+    "handle": "tz-qzdz-001",
+    "title": "Egg Lead Clip Rig | Ready Tied Carp Hair Rig with Quick Change Swivel",
+    "titleEn": "Egg Lead Clip Rig | Ready Tied Carp Hair Rig with Quick Change Swivel",
+    "titleZh": "Egg Lead Clip Rig | Ready Tied Carp Hair Rig with Quick Change Swivel",
+    "titleJa": "Egg Lead Clip Rig | Ready Tied Carp Hair Rig with Quick Change Swivel",
+    "titleCn": "Egg Lead Clip Rig | Ready Tied Carp Hair Rig with Quick Change Swivel",
+    "price": 1.99,
+    "images": [
+      "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZDZ-001-2.jpeg"
+    ],
+    "collection": "sinker-rigs",
+    "available": true,
+    "tags": [
+      "wholesale"
+    ],
+    "imageCount": 1,
+    "sku": "TZ-QZDZ-001",
+    "wcId": 50174,
+    "productType": "variable",
+    "variants": [
+      {
+        "sku": "TZ-QZDZ-001-56g",
+        "spec": "56g",
+        "price": 1.99,
+        "available": true,
+        "wcId": 50183,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZDZ-001-2.jpeg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "56g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZDZ-001-71g",
+        "spec": "71g",
+        "price": 2.09,
+        "available": true,
+        "wcId": 50184,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZDZ-001-2.jpeg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "71g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZDZ-001-85g",
+        "spec": "85g",
+        "price": 2.19,
+        "available": true,
+        "wcId": 50185,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZDZ-001-2.jpeg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "85g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZDZ-001-99g",
+        "spec": "99g",
+        "price": 2.29,
+        "available": true,
+        "wcId": 50186,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZDZ-001-2.jpeg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "99g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZDZ-001-113g",
+        "spec": "113g",
+        "price": 2.39,
+        "available": true,
+        "wcId": 50187,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZDZ-001-2.jpeg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "113g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZDZ-001-128g",
+        "spec": "128g",
+        "price": 2.49,
+        "available": true,
+        "wcId": 50188,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZDZ-001-2.jpeg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "128g"
+          }
+        ]
+      }
+    ],
+    "defaultVariantSku": "TZ-QZDZ-001-56g",
+    "permalink": "https://carp-ybb.com/products/carp-lead-rig-tail-tube-blowback-egg-lead-rig/",
+    "reviewCount": 0,
+    "averageRating": 0
+  },
+  {
     "handle": "tz-xz-014",
-    "title": "Carp Rig - Rig",
-    "titleEn": "Carp Rig - Rig",
+    "title": "Carp Fishing Ronnie Rig System Ready Tied Hook Rig Advanced Carp Setup OEM Supply",
+    "titleEn": "Carp Fishing Ronnie Rig System Ready Tied Hook Rig Advanced Carp Setup OEM Supply",
     "titleZh": "剥皮旋涡罗尼钓组",
-    "titleJa": "カープリ�?- Rig",
+    "titleJa": "カープリグ - Rig",
     "titleCn": "剥皮旋涡罗尼钓组",
     "price": 1.99,
     "images": [
-      "https://carp-ybb.com/wp-content/uploads/2026/06/TZ-XZ-014.png"
+      "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-XZ-014.png",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/3d616369-01aa-4e9c-b59a-f480a84a6aba.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/0305c7f0-e9c8-4aa6-a22e-a5b3e185eaea.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/8c9970e4-01bb-4c44-a7d0-f37e6a67e016.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/9a5de7be-bd09-469f-b195-13aa26705f4e.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/2a57785f-a81a-48fc-8c09-03133f40d539.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/26b3979a-1f03-4571-a9c4-551033038a77.avif"
     ],
     "collection": "rigs",
     "available": true,
     "tags": [
       "wholesale"
     ],
-    "imageCount": 1,
+    "imageCount": 7,
     "sku": "TZ-XZ-014",
     "wcId": 49863,
     "productType": "variable",
@@ -301,7 +1595,10 @@
         "spec": "6pcs-2#",
         "price": 1.99,
         "available": true,
-        "wcId": 48558,
+        "wcId": 49877,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-XZ-014.png"
+        ],
         "wcAttributes": [
           {
             "attribute": "Specification",
@@ -314,7 +1611,10 @@
         "spec": "6pcs-4#",
         "price": 1.99,
         "available": true,
-        "wcId": 48559,
+        "wcId": 49878,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-XZ-014.png"
+        ],
         "wcAttributes": [
           {
             "attribute": "Specification",
@@ -327,7 +1627,10 @@
         "spec": "6pcs-6#",
         "price": 1.99,
         "available": true,
-        "wcId": 48560,
+        "wcId": 49879,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-XZ-014.png"
+        ],
         "wcAttributes": [
           {
             "attribute": "Specification",
@@ -340,7 +1643,10 @@
         "spec": "6pcs-8#",
         "price": 1.99,
         "available": true,
-        "wcId": 48561,
+        "wcId": 49880,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-XZ-014.png"
+        ],
         "wcAttributes": [
           {
             "attribute": "Specification",
@@ -356,31 +1662,52 @@
   },
   {
     "handle": "tz-xz-004",
-    "title": "Carp Rig - Orange Board Hair Rig 8pcs",
-    "titleEn": "Carp Rig - Orange Board Hair Rig 8pcs",
-    "titleZh": "橙板钩子�?8根装",
-    "titleJa": "カープリ�?- Orange Board Hair Rig 8pcs",
-    "titleCn": "橙板钩子�?8根装",
-    "price": 1.99,
+    "title": "Carp Hair Rig – Orange Board Ready Tied Hook Rig 8pcs Set for Carp Fishing",
+    "titleEn": "Carp Hair Rig – Orange Board Ready Tied Hook Rig 8pcs Set for Carp Fishing",
+    "titleZh": "橙板钩子线 8根装",
+    "titleJa": "カープリグ - Orange Board Hair Rig 8pcs",
+    "titleCn": "橙板钩子线 8根装",
+    "price": 0.01,
     "images": [
-      "https://carp-ybb.com/wp-content/uploads/2026/06/TZ-ZJ-021.jpeg"
+      "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-XZ-004.jpeg",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/93b497c0-b5c2-494e-b72a-b6be507da89b.png.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/5dec1f02-1442-4580-acc5-0e21b4f3d3d8.avif"
     ],
     "collection": "rigs",
     "available": true,
     "tags": [
       "wholesale"
     ],
-    "imageCount": 1,
+    "imageCount": 3,
     "sku": "TZ-XZ-004",
     "wcId": 49805,
     "productType": "variable",
     "variants": [
       {
+        "sku": "TZ-XZ-004-8pcs-8#",
+        "spec": "8pcs-8#",
+        "price": 0.01,
+        "available": true,
+        "wcId": 49826,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-XZ-004.jpeg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Specification",
+            "value": "8pcs-8#"
+          }
+        ]
+      },
+      {
         "sku": "TZ-XZ-004-8pcs-2#",
         "spec": "8pcs-2#",
         "price": 1.99,
         "available": true,
-        "wcId": 48512,
+        "wcId": 49823,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-XZ-004.jpeg"
+        ],
         "wcAttributes": [
           {
             "attribute": "Specification",
@@ -393,7 +1720,10 @@
         "spec": "8pcs-4#",
         "price": 1.99,
         "available": true,
-        "wcId": 48513,
+        "wcId": 49824,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-XZ-004.jpeg"
+        ],
         "wcAttributes": [
           {
             "attribute": "Specification",
@@ -406,30 +1736,1097 @@
         "spec": "8pcs-6#",
         "price": 1.99,
         "available": true,
-        "wcId": 48514,
+        "wcId": 49825,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-XZ-004.jpeg"
+        ],
         "wcAttributes": [
           {
             "attribute": "Specification",
             "value": "8pcs-6#"
           }
         ]
-      },
+      }
+    ],
+    "defaultVariantSku": "TZ-XZ-004-8pcs-8#",
+    "permalink": "https://carp-ybb.com/products/carp-rig-orange-board-hair-rig-8pcs/",
+    "reviewCount": 0,
+    "averageRating": 0
+  },
+  {
+    "handle": "tz-el-074",
+    "title": "Pang San Xian Bait Cage",
+    "titleEn": "Pang San Xian Bait Cage",
+    "titleZh": "Pang San Xian Bait Cage",
+    "titleJa": "Pang San Xian Bait Cage",
+    "titleCn": "Pang San Xian Bait Cage",
+    "price": 0.99,
+    "images": [
+      "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-EL-074-1-2.png",
+      "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-EL-074-2-2.png",
+      "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-EL-074-3-2.png",
+      "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-EL-074-4-2.png",
+      "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-EL-074-5-2.png",
+      "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-EL-074-6-2.png"
+    ],
+    "collection": "bait-cages",
+    "available": true,
+    "tags": [
+      "wholesale"
+    ],
+    "imageCount": 6,
+    "sku": "TZ-EL-074",
+    "wcId": 49672,
+    "productType": "variable",
+    "variants": [
       {
-        "sku": "TZ-XZ-004-8pcs-8#",
-        "spec": "8pcs-8#",
-        "price": 1.99,
+        "sku": "TZ-EL-074-25g",
+        "spec": "25g",
+        "price": 0.99,
         "available": true,
-        "wcId": 48515,
+        "wcId": 49687,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-EL-074-1-2.png"
+        ],
         "wcAttributes": [
           {
-            "attribute": "Specification",
-            "value": "8pcs-8#"
+            "attribute": "Weight",
+            "value": "25g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-EL-074-30g",
+        "spec": "30g",
+        "price": 1.19,
+        "available": true,
+        "wcId": 49688,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-EL-074-1-2.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "30g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-EL-074-35g",
+        "spec": "35g",
+        "price": 1.29,
+        "available": true,
+        "wcId": 49689,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-EL-074-1-2.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "35g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-EL-074-40g",
+        "spec": "40g",
+        "price": 1.39,
+        "available": true,
+        "wcId": 49690,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-EL-074-1-2.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "40g"
           }
         ]
       }
     ],
-    "defaultVariantSku": "TZ-XZ-004-8pcs-2#",
-    "permalink": "https://carp-ybb.com/products/carp-rig-orange-board-hair-rig-8pcs/",
+    "defaultVariantSku": "TZ-EL-074-25g",
+    "permalink": "https://carp-ybb.com/products/carp-method-feeder/",
+    "reviewCount": 0,
+    "averageRating": 0
+  },
+  {
+    "handle": "tz-qz-017",
+    "title": "Carp Fishing Leaf Lead Sinker with Swivel | Streamlined Distance Casting Weight",
+    "titleEn": "Carp Fishing Leaf Lead Sinker with Swivel | Streamlined Distance Casting Weight",
+    "titleZh": "Carp Fishing Leaf Lead Sinker with Swivel | Streamlined Distance Casting Weight",
+    "titleJa": "Carp Fishing Leaf Lead Sinker with Swivel | Streamlined Distance Casting Weight",
+    "titleCn": "Carp Fishing Leaf Lead Sinker with Swivel | Streamlined Distance Casting Weight",
+    "price": 0.49,
+    "images": [
+      "https://carp-ybb.com/wp-content/uploads/2026/06/主图-2.png",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/1e5a922d-98ca-4b15-83f6-eb3ccf52347d.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/4c1a7656-d7e3-4ebf-a727-3601fefb96ef.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/1213e646-bdd3-4c7d-be63-b772bc842df3.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/06311c4c-e494-40a2-a50b-be1afc1fbd04.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/c1c64db6-a4f2-44cd-af90-e19d7d60b042.avif"
+    ],
+    "collection": "sinkers",
+    "available": true,
+    "tags": [
+      "wholesale"
+    ],
+    "imageCount": 6,
+    "sku": "TZ-QZ-017",
+    "wcId": 49175,
+    "productType": "variable",
+    "variants": [
+      {
+        "sku": "TZ-QZ-017-42g",
+        "spec": "42g",
+        "price": 0.49,
+        "available": true,
+        "wcId": 49193,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/主图-2.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "42g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-017-57g",
+        "spec": "57g",
+        "price": 0.59,
+        "available": true,
+        "wcId": 49194,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/主图-2.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "57g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-017-71g",
+        "spec": "71g",
+        "price": 0.69,
+        "available": true,
+        "wcId": 49195,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/主图-2.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "71g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-017-85g",
+        "spec": "85g",
+        "price": 0.79,
+        "available": true,
+        "wcId": 49196,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/主图-2.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "85g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-017-99g",
+        "spec": "99g",
+        "price": 0.89,
+        "available": true,
+        "wcId": 49197,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/主图-2.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "99g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-017-113g",
+        "spec": "113g",
+        "price": 0.99,
+        "available": true,
+        "wcId": 49198,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/主图-2.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "113g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-017-128g",
+        "spec": "128g",
+        "price": 1.09,
+        "available": true,
+        "wcId": 49199,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/主图-2.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "128g"
+          }
+        ]
+      }
+    ],
+    "defaultVariantSku": "TZ-QZ-017-42g",
+    "permalink": "https://carp-ybb.com/products/carp-lead-llz/",
+    "reviewCount": 0,
+    "averageRating": 0
+  },
+  {
+    "handle": "tz-qz-013",
+    "title": "Square Flat Carp Fishing Lead Sinker Inline Swivel Lead Weight",
+    "titleEn": "Square Flat Carp Fishing Lead Sinker Inline Swivel Lead Weight",
+    "titleZh": "Square Flat Carp Fishing Lead Sinker Inline Swivel Lead Weight",
+    "titleJa": "Square Flat Carp Fishing Lead Sinker Inline Swivel Lead Weight",
+    "titleCn": "Square Flat Carp Fishing Lead Sinker Inline Swivel Lead Weight",
+    "price": 0.49,
+    "images": [
+      "https://carp-ybb.com/wp-content/uploads/2026/06/新建项目.png",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/7a8f0498-1770-442b-afc2-55fcfb013f43.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/c0977033-ac3e-491f-850e-a37d5ead456d.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/e3199c74-04d9-4ed7-8576-f202c402d7dc.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/cde53065820f94b7a5dc7a5f5ca39af6.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/ac042102-9ac4-4f98-abcf-ad97901c5975.avif"
+    ],
+    "collection": "sinkers",
+    "available": true,
+    "tags": [
+      "wholesale"
+    ],
+    "imageCount": 6,
+    "sku": "TZ-QZ-013",
+    "wcId": 49146,
+    "productType": "variable",
+    "variants": [
+      {
+        "sku": "TZ-QZ-013-56g",
+        "spec": "56g",
+        "price": 0.49,
+        "available": true,
+        "wcId": 49169,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/新建项目.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "56g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-013-71g",
+        "spec": "71g",
+        "price": 0.59,
+        "available": true,
+        "wcId": 49170,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/新建项目.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "71g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-013-85g",
+        "spec": "85g",
+        "price": 0.69,
+        "available": true,
+        "wcId": 49171,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/新建项目.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "85g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-013-99g",
+        "spec": "99g",
+        "price": 0.79,
+        "available": true,
+        "wcId": 49177,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/新建项目.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "99g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-013-113g",
+        "spec": "113g",
+        "price": 0.89,
+        "available": true,
+        "wcId": 49178,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/新建项目.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "113g"
+          }
+        ]
+      }
+    ],
+    "defaultVariantSku": "TZ-QZ-013-56g",
+    "permalink": "https://carp-ybb.com/products/carp-lead-swivel-square-lead/",
+    "reviewCount": 0,
+    "averageRating": 0
+  },
+  {
+    "handle": "tz-qz-011",
+    "title": "Winged Distance Carp Lead with Swivel | Long Cast Fishing Sinker",
+    "titleEn": "Winged Distance Carp Lead with Swivel | Long Cast Fishing Sinker",
+    "titleZh": "Winged Distance Carp Lead with Swivel | Long Cast Fishing Sinker",
+    "titleJa": "Winged Distance Carp Lead with Swivel | Long Cast Fishing Sinker",
+    "titleCn": "Winged Distance Carp Lead with Swivel | Long Cast Fishing Sinker",
+    "price": 0.49,
+    "images": [
+      "https://carp-ybb.com/wp-content/uploads/2026/06/image.png",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/856c115f-8cd7-4e4d-96ec-53ccf237bb69.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/57d86b6d-d1be-429f-9719-c852ab1285f4.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/e94c9dd7-d679-4794-b6fb-ef14c2528eb2.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/138f2778-a4de-4023-a4da-b284fbb6a4cf.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/298123dd-be87-4328-aa21-7c7d9674441e.avif"
+    ],
+    "collection": "sinkers",
+    "available": true,
+    "tags": [
+      "wholesale"
+    ],
+    "imageCount": 6,
+    "sku": "TZ-QZ-011",
+    "wcId": 49144,
+    "productType": "variable",
+    "variants": [
+      {
+        "sku": "TZ-QZ-011-56g",
+        "spec": "56g",
+        "price": 0.49,
+        "available": true,
+        "wcId": 49159,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/image.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "56g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-011-71g",
+        "spec": "71g",
+        "price": 0.59,
+        "available": true,
+        "wcId": 49160,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/image.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "71g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-011-85g",
+        "spec": "85g",
+        "price": 0.69,
+        "available": true,
+        "wcId": 49161,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/image.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "85g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-011-99g",
+        "spec": "99g",
+        "price": 0.79,
+        "available": true,
+        "wcId": 49162,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/image.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "99g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-011-113g",
+        "spec": "113g",
+        "price": 0.89,
+        "available": true,
+        "wcId": 49163,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/image.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "113g"
+          }
+        ]
+      }
+    ],
+    "defaultVariantSku": "TZ-QZ-011-56g",
+    "permalink": "https://carp-ybb.com/products/carp-lead-submarine-lead/",
+    "reviewCount": 0,
+    "averageRating": 0
+  },
+  {
+    "handle": "tz-qz-010",
+    "title": "Egg Carp Lead with Swivel | Inline Style Distance Fishing Sinker",
+    "titleEn": "Egg Carp Lead with Swivel | Inline Style Distance Fishing Sinker",
+    "titleZh": "Egg Carp Lead with Swivel | Inline Style Distance Fishing Sinker",
+    "titleJa": "Egg Carp Lead with Swivel | Inline Style Distance Fishing Sinker",
+    "titleCn": "Egg Carp Lead with Swivel | Inline Style Distance Fishing Sinker",
+    "price": 0.49,
+    "images": [
+      "https://carp-ybb.com/wp-content/uploads/2026/06/主图-1.png",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/5c2fc21e-6398-425f-be75-c7e23c50705b.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/831f474b-97e3-481a-be3f-a97aeaab9999.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/989d7d20cbc4e2f3f1c037d348348ee2_1777001073737.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/df3503ad-9df8-4bec-ba4d-dfb9b67e4c64.avif"
+    ],
+    "collection": "sinkers",
+    "available": true,
+    "tags": [
+      "wholesale"
+    ],
+    "imageCount": 5,
+    "sku": "TZ-QZ-010",
+    "wcId": 49143,
+    "productType": "variable",
+    "variants": [
+      {
+        "sku": "TZ-QZ-010-56g",
+        "spec": "56g",
+        "price": 0.49,
+        "available": true,
+        "wcId": 49154,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/主图-1.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "56g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-010-71g",
+        "spec": "71g",
+        "price": 0.59,
+        "available": true,
+        "wcId": 49155,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/主图-1.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "71g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-010-85g",
+        "spec": "85g",
+        "price": 0.69,
+        "available": true,
+        "wcId": 49156,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/主图-1.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "85g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-010-99g",
+        "spec": "99g",
+        "price": 0.79,
+        "available": true,
+        "wcId": 49157,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/主图-1.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "99g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-010-113g",
+        "spec": "113g",
+        "price": 0.89,
+        "available": true,
+        "wcId": 49158,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/主图-1.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "113g"
+          }
+        ]
+      }
+    ],
+    "defaultVariantSku": "TZ-QZ-010-56g",
+    "permalink": "https://carp-ybb.com/products/carp-lead-swivel-egg-lead/",
+    "reviewCount": 0,
+    "averageRating": 0
+  },
+  {
+    "handle": "tz-qz-006",
+    "title": "Distance Casting Tear Drop Carp Fishing Lead Weight Swivel Sinker",
+    "titleEn": "Distance Casting Tear Drop Carp Fishing Lead Weight Swivel Sinker",
+    "titleZh": "Distance Casting Tear Drop Carp Fishing Lead Weight Swivel Sinker",
+    "titleJa": "Distance Casting Tear Drop Carp Fishing Lead Weight Swivel Sinker",
+    "titleCn": "Distance Casting Tear Drop Carp Fishing Lead Weight Swivel Sinker",
+    "price": 0.49,
+    "images": [
+      "https://carp-ybb.com/wp-content/uploads/2026/06/新建项目-3.png",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/736e43df-754e-42da-9fa2-e6b0aa69fd2a.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/7b72cd4b-dd36-4ba0-bb98-97cae02ae930.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/aa3f50f2-4559-4d69-86b6-ad4a639b9909.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/bb2c48dd-250e-42ef-9fbe-d5e46dc2faae.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/18ed6108-abd0-4584-b6e4-f31a29fdbd19.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/06/0c3861c8-3f06-4009-8605-c62238c5042d.avif"
+    ],
+    "collection": "sinkers",
+    "available": true,
+    "tags": [
+      "wholesale"
+    ],
+    "imageCount": 7,
+    "sku": "TZ-QZ-006",
+    "wcId": 49112,
+    "productType": "variable",
+    "variants": [
+      {
+        "sku": "TZ-QZ-006-40g",
+        "spec": "40g",
+        "price": 0.49,
+        "available": true,
+        "wcId": 49119,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/新建项目-3.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "40g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-006-50g",
+        "spec": "50g",
+        "price": 0.59,
+        "available": true,
+        "wcId": 49120,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/新建项目-3.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "50g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-006-60g",
+        "spec": "60g",
+        "price": 0.69,
+        "available": true,
+        "wcId": 49121,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/新建项目-3.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "60g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-006-70g",
+        "spec": "70g",
+        "price": 0.79,
+        "available": true,
+        "wcId": 49122,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/新建项目-3.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "70g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-006-80g",
+        "spec": "80g",
+        "price": 0.89,
+        "available": true,
+        "wcId": 49123,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/新建项目-3.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "80g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-006-90g",
+        "spec": "90g",
+        "price": 0.99,
+        "available": true,
+        "wcId": 49124,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/新建项目-3.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "90g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-006-100g",
+        "spec": "100g",
+        "price": 1.09,
+        "available": true,
+        "wcId": 49125,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/新建项目-3.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "100g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-006-110g",
+        "spec": "110g",
+        "price": 1.19,
+        "available": true,
+        "wcId": 49126,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/新建项目-3.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "110g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-006-120g",
+        "spec": "120g",
+        "price": 1.29,
+        "available": true,
+        "wcId": 49127,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/06/新建项目-3.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "120g"
+          }
+        ]
+      }
+    ],
+    "defaultVariantSku": "TZ-QZ-006-40g",
+    "permalink": "https://carp-ybb.com/products/carp-lead-pear-shape-lead/",
+    "reviewCount": 0,
+    "averageRating": 0
+  },
+  {
+    "handle": "tz-qz-003",
+    "title": "Flat Pear Carp Fishing Lead Weight with High Visibility Stripe",
+    "titleEn": "Flat Pear Carp Fishing Lead Weight with High Visibility Stripe",
+    "titleZh": "高可视防滚平底鲤鱼钓铅坠（荧光压水款）",
+    "titleJa": "蛍光ライン付き フラットペア型 カープフィッシングシンカー",
+    "titleCn": "高可视防滚平底鲤鱼钓铅坠（荧光压水款）",
+    "price": 0.49,
+    "images": [
+      "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZ-003-1.png"
+    ],
+    "collection": "sinkers",
+    "available": true,
+    "tags": [
+      "wholesale"
+    ],
+    "imageCount": 1,
+    "sku": "TZ-QZ-003",
+    "wcId": 49084,
+    "productType": "variable",
+    "variants": [
+      {
+        "sku": "TZ-QZ-003-15g",
+        "spec": "15g",
+        "price": 0.49,
+        "available": true,
+        "wcId": 49099,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZ-003-1.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "15g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-003-30g",
+        "spec": "30g",
+        "price": 0.59,
+        "available": true,
+        "wcId": 49100,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZ-003-1.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "30g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-003-40g",
+        "spec": "40g",
+        "price": 0.69,
+        "available": true,
+        "wcId": 49101,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZ-003-1.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "40g"
+          }
+        ]
+      }
+    ],
+    "defaultVariantSku": "TZ-QZ-003-15g",
+    "permalink": "https://carp-ybb.com/products/tz-qz-003/",
+    "reviewCount": 0,
+    "averageRating": 0
+  },
+  {
+    "handle": "tz-qz-005",
+    "title": "Distance Pear Carp Fishing Lead Weight Long Cast Swivel Sinker",
+    "titleEn": "Distance Pear Carp Fishing Lead Weight Long Cast Swivel Sinker",
+    "titleZh": "远投梨形鲤鱼钓铅坠 长投型转环铅坠",
+    "titleJa": "ロングキャスト ペア型 カープフィッシングシンカー",
+    "titleCn": "远投梨形鲤鱼钓铅坠 长投型转环铅坠",
+    "price": 0.49,
+    "images": [
+      "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZ-005-1.png"
+    ],
+    "collection": "sinkers",
+    "available": true,
+    "tags": [
+      "wholesale"
+    ],
+    "imageCount": 1,
+    "sku": "TZ-QZ-005",
+    "wcId": 49086,
+    "productType": "variable",
+    "variants": [
+      {
+        "sku": "TZ-QZ-005-57g",
+        "spec": "57g",
+        "price": 0.49,
+        "available": true,
+        "wcId": 49109,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZ-005-1.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "57g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-005-71g",
+        "spec": "71g",
+        "price": 0.59,
+        "available": true,
+        "wcId": 49110,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZ-005-1.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "71g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-005-85g",
+        "spec": "85g",
+        "price": 0.69,
+        "available": true,
+        "wcId": 49111,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZ-005-1.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "85g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-005-99g",
+        "spec": "99g",
+        "price": 0.79,
+        "available": true,
+        "wcId": 49115,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZ-005-1.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "99g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-005-113g",
+        "spec": "113g",
+        "price": 0.89,
+        "available": true,
+        "wcId": 49116,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZ-005-1.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "113g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-005-128g",
+        "spec": "128g",
+        "price": 0.99,
+        "available": true,
+        "wcId": 49117,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZ-005-1.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "128g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-005-142g",
+        "spec": "142g",
+        "price": 1.09,
+        "available": true,
+        "wcId": 49118,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-QZ-005-1.png"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "142g"
+          }
+        ]
+      }
+    ],
+    "defaultVariantSku": "TZ-QZ-005-57g",
+    "permalink": "https://carp-ybb.com/products/tz-qz-005/",
+    "reviewCount": 0,
+    "averageRating": 0
+  },
+  {
+    "handle": "tz-qz-002",
+    "title": "Carp Fishing Insert Tube | Durable Rig Component for Carp Lead Setup & Tackle Assembly",
+    "titleEn": "Carp Fishing Insert Tube | Durable Rig Component for Carp Lead Setup & Tackle Assembly",
+    "titleZh": "Inline Carp Fishing Weights for Carp Rig System",
+    "titleJa": "Inline Carp Fishing Weights for Carp Rig System",
+    "titleCn": "Inline Carp Fishing Weights for Carp Rig System",
+    "price": 0.49,
+    "images": [
+      "https://carp-ybb.com/wp-content/uploads/2026/07/9d81375b-809d-4461-a5c6-0b013e82ba69.jpg",
+      "https://carp-ybb.com/wp-content/uploads/2026/07/311213d9-199f-4436-bf6c-eb7bdd42367e.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/07/6624d9a7-8923-48f7-96fd-b641eb1dcf0a.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/07/5ee467e5-d3bc-4f4e-8a92-d2c2a7611580.avif",
+      "https://carp-ybb.com/wp-content/uploads/2026/07/4eb160c3-a9b4-473b-a346-662ad50fb540.avif"
+    ],
+    "collection": "sinkers",
+    "available": true,
+    "tags": [
+      "wholesale"
+    ],
+    "imageCount": 5,
+    "sku": "TZ-QZ-002",
+    "wcId": 49083,
+    "productType": "variable",
+    "variants": [
+      {
+        "sku": "TZ-QZ-002-56g",
+        "spec": "56g",
+        "price": 0.49,
+        "available": true,
+        "wcId": 49094,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/9d81375b-809d-4461-a5c6-0b013e82ba69.jpg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "56g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-002-71g",
+        "spec": "71g",
+        "price": 0.59,
+        "available": true,
+        "wcId": 49095,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/9d81375b-809d-4461-a5c6-0b013e82ba69.jpg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "71g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-002-85g",
+        "spec": "85g",
+        "price": 0.69,
+        "available": true,
+        "wcId": 49096,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/9d81375b-809d-4461-a5c6-0b013e82ba69.jpg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "85g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-002-99g",
+        "spec": "99g",
+        "price": 0.79,
+        "available": true,
+        "wcId": 49097,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/9d81375b-809d-4461-a5c6-0b013e82ba69.jpg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "99g"
+          }
+        ]
+      },
+      {
+        "sku": "TZ-QZ-002-113g",
+        "spec": "113g",
+        "price": 0.89,
+        "available": true,
+        "wcId": 49098,
+        "images": [
+          "https://carp-ybb.com/wp-content/uploads/2026/07/9d81375b-809d-4461-a5c6-0b013e82ba69.jpg"
+        ],
+        "wcAttributes": [
+          {
+            "attribute": "Weight",
+            "value": "113g"
+          }
+        ]
+      }
+    ],
+    "defaultVariantSku": "TZ-QZ-002-56g",
+    "permalink": "https://carp-ybb.com/products/carp-lead-fish-pattern-insert-tube/",
     "reviewCount": 0,
     "averageRating": 0
   }

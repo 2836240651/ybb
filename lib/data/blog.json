@@ -4,16 +4,30 @@
   "description": "Production updates, product launches, and wholesale tips from YBB Tackle.",
   "articles": [
     {
+      "handle": "workshop-to-tackle-shop-wholesale-supply-line",
+      "title": "From Workshop Floor to Tackle Shop Shelf: How YBB Builds a Faster Wholesale Supply Line",
+      "excerpt": "A behind-the-scenes story of how YBB connects Taizhou factory production, packaging decisions, and reorder support for wholesale tackle buyers.",
+      "publishedAt": "2026-07-07",
+      "image": "https://carp-ybb.com/wp-content/uploads/2026/07/TZ-EL-074-3-1.png",
+      "author": "YBB Editorial Team",
+      "content": [
+        "A buyer does not only need a sharp hook or a clean feeder mould. They need a supply line that turns samples, packaging, carton labels, and repeat orders into something predictable enough for a retail season.",
+        "That is why YBB built its independent site around factory-direct communication. The catalog gives overseas tackle shops and distributors a place to browse categories, compare new arrivals, and send RFQs without waiting for a long chain of middlemen to translate every detail.",
+        "The work still begins on the workshop floor in Taizhou: checking the weight of a feeder, matching a hook pattern to a buyer sample, confirming blister card artwork, and preparing cartons that a warehouse team can receive without guessing what is inside.",
+        "For wholesale buyers, speed is not only about shipping faster. It is about fewer unclear emails, fewer missing SKU notes, and a reorder path that stays consistent when a good product starts moving on the shelf."
+      ]
+    },
+    {
       "handle": "2026-catalog-launch",
       "title": "2026 Wholesale Catalog Now Available",
-      "excerpt": "Over 200 new SKUs across terminal tackle and bait care â€?request your B2B catalog today.",
+      "excerpt": "Over 200 new SKUs across terminal tackle and bait care ?request your B2B catalog today.",
       "publishedAt": "2026-01-10",
       "image": "/products/stand-wrench/master.webp",
       "author": "YBB Sales Team",
       "content": [
         "We are pleased to release the 2026 YBB Tackle wholesale catalog, featuring expanded ready-rig lines, method feeders, and tackle storage solutions.",
         "Wholesale buyers can request the full PDF with tiered pricing by submitting an RFQ through our contact page. New-arrival tags in the online catalog mirror the print edition.",
-        "Mixed-carton programs remain available â€?consolidate multiple categories in one factory-direct shipment."
+        "Mixed-carton programs remain available ?consolidate multiple categories in one factory-direct shipment."
       ]
     },
     {
@@ -25,27 +39,27 @@
       "author": "YBB Product Team",
       "content": [
         "Private-label success starts with packaging that meets retail standards in your target market. YBB Tackle offers template dielines for EU and UK hang-card formats.",
-        "Lead times for custom packaging typically add 10â€?5 days to standard production. We recommend approving artwork at least 30 days before your target ship date.",
+        "Lead times for custom packaging typically add 10?5 days to standard production. We recommend approving artwork at least 30 days before your target ship date.",
         "Contact our OEM desk for packaging samples and MOQ breakdowns by material type."
       ]
     },
     {
       "handle": "method-feeder-trends",
       "title": "Method Feeder Trends for European Markets",
-      "excerpt": "How carp anglers are driving demand for inline and cage feeder variants â€?and what wholesalers should stock.",
+      "excerpt": "How carp anglers are driving demand for inline and cage feeder variants ?and what wholesalers should stock.",
       "publishedAt": "2025-10-05",
       "image": "/products/braided-line-bait-cage-rig-balance/master.webp",
       "author": "YBB R&D",
       "content": [
         "Inline method feeders continue to dominate UK and continental European assortments. YBB's 2026 line includes glow-accent tooling kits and quick-release cage systems.",
-        "Distributors report strongest sell-through on mixed feeder bundles â€?we offer pre-packed wholesale sets with unified barcoding.",
+        "Distributors report strongest sell-through on mixed feeder bundles ?we offer pre-packed wholesale sets with unified barcoding.",
         "Browse our Method Feeders collection or request a category-focused quote."
       ]
     },
     {
       "handle": "quality-audit-checklist",
       "title": "Pre-Shipment Quality: Our Audit Checklist",
-      "excerpt": "What happens between final assembly and the export carton â€?transparency for B2B partners.",
+      "excerpt": "What happens between final assembly and the export carton ?transparency for B2B partners.",
       "publishedAt": "2025-08-18",
       "image": "/products/aligner/master.webp",
       "author": "YBB QC Department",
@@ -64,7 +78,7 @@
       "author": "YBB Logistics",
       "content": [
         "Rather than ordering category-by-category from multiple suppliers, YBB buyers pick across 10,000+ SKUs and ship in one consolidated program.",
-        "Our warehouse team pre-sorts by buyer SKU list, applies unified carton labels, and prepares export documentation â€?cutting middleman cost and lead time.",
+        "Our warehouse team pre-sorts by buyer SKU list, applies unified carton labels, and prepares export documentation ?cutting middleman cost and lead time.",
         "Speak with sales about minimum mixed-carton volumes for your region."
       ]
     },
@@ -84,12 +98,12 @@
     {
       "handle": "feeder-rig-bundles",
       "title": "Bundling Method Feeders for Distributor Margins",
-      "excerpt": "Pre-packed feeder assortments that move faster on tackle shop pegs â€?a wholesale playbook.",
+      "excerpt": "Pre-packed feeder assortments that move faster on tackle shop pegs ?a wholesale playbook.",
       "publishedAt": "2025-04-08",
       "image": "/products/b135-bait-cage-feeder/master.webp",
       "author": "YBB Sales Team",
       "content": [
-        "Mixed feeder bundles â€?inline cages, elasticated stems, and tooling kits â€?consistently outperform single-SKU reorders in UK field tests.",
+        "Mixed feeder bundles ?inline cages, elasticated stems, and tooling kits ?consistently outperform single-SKU reorders in UK field tests.",
         "YBB offers barcode-ready bundle SKUs with unified outer cartons for streamlined distributor receiving.",
         "Browse our Method Feeders collection or ask sales for a category starter pack."
       ]
@@ -97,13 +111,13 @@
     {
       "handle": "lead-times-explained",
       "title": "Production Lead Times: What Buyers Should Expect",
-      "excerpt": "From PO confirmation to export carton â€?realistic timelines for repeat and first-time wholesale orders.",
+      "excerpt": "From PO confirmation to export carton ?realistic timelines for repeat and first-time wholesale orders.",
       "publishedAt": "2025-03-15",
       "image": "/products/bait-cage-feeder/master.webp",
       "author": "YBB Operations",
       "content": [
-        "Standard in-stock SKUs typically ship within 7â€?4 days after PO confirmation. Custom packaging adds 10â€?5 production days.",
-        "Peak season (Q1 catalog launches) may extend lead times â€?we recommend forecasting 60 days ahead for container programs.",
+        "Standard in-stock SKUs typically ship within 7?4 days after PO confirmation. Custom packaging adds 10?5 production days.",
+        "Peak season (Q1 catalog launches) may extend lead times ?we recommend forecasting 60 days ahead for container programs.",
         "Contact sales for a slot confirmation on your target ship window."
       ]
     },

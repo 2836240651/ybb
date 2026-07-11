@@ -37,7 +37,7 @@ function ybb_pr_render_import_admin_page(): void
         if ($step === 'preview' && !empty($_FILES['import_file']['name'])) {
             $parsed = ybb_pr_import_parse_uploaded_file($_FILES['import_file']);
             if ($parsed['errors'] !== []) {
-                $message = implode('�?, $parsed['errors']);
+                $message = implode('； ', $parsed['errors']);
                 $message_type = 'error';
             } elseif ($parsed['rows'] === []) {
                 $message = '文件中没有可导入的数据行';
@@ -56,7 +56,7 @@ function ybb_pr_render_import_admin_page(): void
         } elseif ($step === 'import') {
             $stored = get_transient(ybb_pr_import_transient_key(get_current_user_id()));
             if (!is_array($stored) || empty($stored['rows'])) {
-                $message = '预览已过期，请重新上传文�?;
+                $message = '预览已过期，请重新上传文件';
                 $message_type = 'error';
             } else {
                 @set_time_limit(120);
@@ -69,7 +69,7 @@ function ybb_pr_render_import_admin_page(): void
                         'action' => 'import',
                         'status' => $batch['fail'] > 0 ? 'warning' : 'success',
                         'summary' => sprintf(
-                            '评价导入：成�?%d，警�?%d，跳�?%d，失�?%d',
+                            '评价导入：成功 %d，警告 %d，跳过 %d，失败 %d',
                             $batch['ok'],
                             $batch['warn'],
                             $batch['skip'],
@@ -86,7 +86,7 @@ function ybb_pr_render_import_admin_page(): void
                 }
 
                 $message = sprintf(
-                    '导入完成：成�?%d，带警告 %d，跳�?%d，失�?%d',
+                    '导入完成：成功 %d，带警告 %d，跳过 %d，失败 %d',
                     $batch['ok'],
                     $batch['warn'],
                     $batch['skip'],
@@ -99,7 +99,7 @@ function ybb_pr_render_import_admin_page(): void
     } elseif (!empty($_GET['cancel_preview'])) {
         check_admin_referer('ybb_pr_cancel_preview');
         delete_transient(ybb_pr_import_transient_key(get_current_user_id()));
-        $message = '已取消预�?;
+        $message = '已取消预览';
         $message_type = 'info';
     } else {
         $stored = get_transient(ybb_pr_import_transient_key(get_current_user_id()));
@@ -155,7 +155,7 @@ function ybb_pr_render_import_admin_page(): void
                 <form method="post" style="margin-top:12px;display:inline-block;">
                     <?php wp_nonce_field('ybb_pr_import'); ?>
                     <input type="hidden" name="ybb_pr_step" value="import" />
-                    <?php submit_button('确认导入 ' . $importable . ' �?, 'primary', 'submit', false); ?>
+                    <?php submit_button('确认导入 ' . $importable . ' 条', 'primary', 'submit', false); ?>
                 </form>
             <?php endif; ?>
             <form method="get" style="margin-top:12px;display:inline-block;margin-left:8px;">
@@ -198,19 +198,27 @@ function ybb_pr_import_render_preview_table(array $preview): void
         <?php foreach ($results as $item) :
             $status = (string) ($item['row_status'] ?? '');
             $row = $item['row'] ?? [];
-            $bg = match ($status) {
-                'error' => '#fde8e8',
-                'skip' => '#f3f4f6',
-                'warn' => '#fcf9e8',
-                default => '#f0fdf4',
-            };
+            switch ($status) {
+                case 'error':
+                    $bg = '#fde8e8';
+                    break;
+                case 'skip':
+                    $bg = '#f3f4f6';
+                    break;
+                case 'warn':
+                    $bg = '#fcf9e8';
+                    break;
+                default:
+                    $bg = '#f0fdf4';
+                    break;
+            }
             $product = $item['product'] ?? null;
             $img_lines = [];
             foreach ($item['image_probes'] ?? [] as $n => $probe) {
                 if (!is_array($probe) || ($probe['status'] ?? '') === 'empty') {
                     continue;
                 }
-                $img_lines[] = '�? . $n . ': ' . ($probe['message'] ?? '');
+                $img_lines[] = '图 ' . $n . ': ' . ($probe['message'] ?? '');
             }
             if (!empty($item['images_failed'])) {
                 foreach ($item['images_failed'] as $fail) {
@@ -233,7 +241,7 @@ function ybb_pr_import_render_preview_table(array $preview): void
                 <td><?php echo esc_html((string) ($row['rating'] ?? '')); ?></td>
                 <td><?php echo esc_html(mb_substr((string) ($row['content'] ?? ''), 0, 80)); ?>�?/td>
                 <td><small><?php echo esc_html(implode("\n", $img_lines)); ?></small></td>
-                <td><small><?php echo esc_html(implode('�?, $notes)); ?></small></td>
+                <td><small><?php echo esc_html(implode('； ', $notes)); ?></small></td>
             </tr>
         <?php endforeach; ?>
         </tbody>

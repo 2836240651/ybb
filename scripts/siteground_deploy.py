@@ -248,7 +248,8 @@ def fetch_remote_build_id() -> str | None:
         if bid:
             return bid
 
-    print("[deploy-siteground] buildId check blocked by captcha �?trying browser...")
+    # Use ASCII-only log to avoid Windows console encoding issues (GBK).
+    print("[deploy-siteground] buildId check blocked by captcha; trying browser...")
     from playwright.sync_api import sync_playwright
 
     with sync_playwright() as p:
@@ -283,7 +284,7 @@ def upload_deploy_artifacts(
             raise RuntimeError("SiteGround File Manager upload failed")
         return
 
-    print("[deploy-siteground] FTPS upload (zip + php helpers �?not full static tree)")
+    print("[deploy-siteground] FTPS upload (zip + php helpers, not full static tree)")
     upload_files_ftps([(p, p.name) for p in files])
 
 

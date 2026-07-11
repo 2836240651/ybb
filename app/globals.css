@@ -617,7 +617,7 @@
 .product-card__media,
 .recently-viewed-card__media,
 .mega-menu-product-card__media {
-  background-color: transparent;
+  background-color: rgb(255 255 255 / 0.94);
   box-shadow: none;
 }
 

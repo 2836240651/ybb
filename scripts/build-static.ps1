@@ -1,7 +1,8 @@
 param(
   [string]$SiteUrl = "https://carp-ybb.com",
   [switch]$SkipSync,
-  [switch]$SkipDeploy
+  [switch]$SkipDeploy,
+  [switch]$SkipDeployMachineSync
 )
 
 $ErrorActionPreference = "Stop"
@@ -55,6 +56,13 @@ for ($attempt = 1; $attempt -le $maxAttempts; $attempt++) {
 Write-Host "[build-static] OK: out/ and $archive"
 
 if (-not $SkipDeploy) {
+  if (-not $SkipDeployMachineSync) {
+    Write-Host "[build-static] sync-to-deploy-machine (required before SiteGround)..."
+    py -u scripts/sync-to-deploy-machine.py
+    if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+  } else {
+    Write-Host "[build-static] WARN: SkipDeployMachineSync — deploy machine may be stale"
+  }
   Write-Host "[build-static] deploy-siteground-browser..."
   powershell -ExecutionPolicy Bypass -File scripts/deploy-siteground-browser.ps1 -SkipBuild
   if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }

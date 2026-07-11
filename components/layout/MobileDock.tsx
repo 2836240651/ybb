@@ -27,16 +27,16 @@ export function MobileDock() {
     () => [
       {
         labelKey: "dock.home",
-        icon: "�?,
+        icon: "🏠",
         action: "link",
         href: "/",
         match: (path) => path === "/",
       },
-      { labelKey: "dock.menu", icon: "�?, action: "menu" },
-      { labelKey: "dock.search", icon: "�?, action: "search" },
+      { labelKey: "dock.menu", icon: "☰", action: "menu" },
+      { labelKey: "dock.search", icon: "🔍", action: "search" },
       {
         labelKey: "dock.shop",
-        icon: "�?,
+        icon: "🛍️",
         action: "link",
         href: "/collections/new-arrivals",
         match: (path) => path.startsWith("/collections"),
@@ -44,7 +44,7 @@ export function MobileDock() {
       { labelKey: "dock.cart", icon: "🛒", action: "cart" },
       {
         labelKey: "dock.account",
-        icon: "�?,
+        icon: "👤",
         action: "link",
         href: "/my-account",
         match: (path) => path.startsWith("/my-account"),
@@ -125,3 +125,5 @@ export function MobileDock() {
     </nav>
   );
 }
+
+

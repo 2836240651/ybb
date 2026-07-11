@@ -27,10 +27,15 @@ FILES = [
     "ybb-contact-inquiry.php",
     "ybb-quorlyx-embed.php",
     "ybb-product-reviews.php",
+    "ybb-locale.php",
+    "ybb-fix-airwallex-redirect.php",
+    "ybb-fix-wc-account.php",
 ]
 
 DIRS = [
     "ybb-product-reviews",
+    "ybb-my-account",
+    "ybb-flat-checkout",
 ]
 
 
@@ -52,7 +57,7 @@ def _iter_dir_files(local_dir: Path) -> list[tuple[Path, str]]:
         if not path.is_file():
             continue
         rel = path.relative_to(MU_DIR).as_posix()
-        out.append((path, rel))
+        out.append((path, f"wp-content/mu-plugins/{rel}"))
     return out
 
 

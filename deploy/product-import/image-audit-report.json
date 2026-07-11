@@ -1,19 +1,1218 @@
 {
-  "generatedAt": "2026-06-25T08:22:38.889Z",
+  "generatedAt": "2026-07-06T03:47:17.327Z",
   "site": "https://carp-ybb.com",
   "totals": {
     "csvRows": 133,
-    "productsJson": 515,
-    "wpProducts": 0,
+    "productsJson": 5,
+    "wpProducts": 5,
     "missingLocal": 0,
-    "missingExport": 0,
-    "missingWpBinding": 0
+    "missingExport": 133,
+    "missingWpBinding": 133
   },
   "wpBindingCheck": {
-    "skipped": true,
-    "reason": "store API unavailable: https://carp-ybb.com/wp-json/wc/store/v1/products?per_page=100&page=1"
+    "skipped": false,
+    "reason": null
   },
   "missingLocal": [],
-  "missingExport": [],
-  "missingWpBinding": []
+  "missingExport": [
+    {
+      "handle": "stand-wrench",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\stand-wrench\\master.webp"
+    },
+    {
+      "handle": "rod-rack-wall-mount",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\rod-rack-wall-mount\\master.webp"
+    },
+    {
+      "handle": "braided-line-bait-cage-rig-balance",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\braided-line-bait-cage-rig-balance\\master.webp"
+    },
+    {
+      "handle": "stripped-line-bait-cage-rig-sliding",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\stripped-line-bait-cage-rig-sliding\\master.webp"
+    },
+    {
+      "handle": "aligner-stripped-line-bloodworm-inline-groundbait-block-large",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\aligner-stripped-line-bloodworm-inline-groundbait-block-large\\master.webp"
+    },
+    {
+      "handle": "stripped-line-bait-cage-balance",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\stripped-line-bait-cage-balance\\master.webp"
+    },
+    {
+      "handle": "hooklink-set-orange",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\hooklink-set-orange\\master.webp"
+    },
+    {
+      "handle": "hooklength-box-orange",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\hooklength-box-orange\\master.webp"
+    },
+    {
+      "handle": "hooklength-box-orange-short",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\hooklength-box-orange-short\\master.webp"
+    },
+    {
+      "handle": "baiting-tool-kit-silicone",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\baiting-tool-kit-silicone\\master.webp"
+    },
+    {
+      "handle": "baiting-tool-kit-standard",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\baiting-tool-kit-standard\\master.webp"
+    },
+    {
+      "handle": "baiting-tool-kit-glow",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\baiting-tool-kit-glow\\master.webp"
+    },
+    {
+      "handle": "baiting-needle",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\baiting-needle\\master.webp"
+    },
+    {
+      "handle": "pe-line-carp-hook-rig-kit-screw-large",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\pe-line-carp-hook-rig-kit-screw-large\\master.webp"
+    },
+    {
+      "handle": "coated-line-carp-hook-screw-green-large",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\coated-line-carp-hook-screw-green-large\\master.webp"
+    },
+    {
+      "handle": "f-turtle-feeder-large-long",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\f-turtle-feeder-large-long\\master.webp"
+    },
+    {
+      "handle": "leadcore-snap-swivel",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\leadcore-snap-swivel\\master.webp"
+    },
+    {
+      "handle": "aligner",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\aligner\\master.webp"
+    },
+    {
+      "handle": "spinner-blade-soft-bait-set",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\spinner-blade-soft-bait-set\\master.webp"
+    },
+    {
+      "handle": "leadcore-screw-slider",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\leadcore-screw-slider\\master.webp"
+    },
+    {
+      "handle": "three-way-swivel-carp-hook-anti-tangle-boom-hair-rig-tube-rig-kit-copper-line",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\three-way-swivel-carp-hook-anti-tangle-boom-hair-rig-tube-rig-kit-copper-line\\master.webp"
+    },
+    {
+      "handle": "three-way-swivel-kit-box",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\three-way-swivel-kit-box\\master.webp"
+    },
+    {
+      "handle": "three-way-knot-carp-hook-rig-kit",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\three-way-knot-carp-hook-rig-kit\\master.webp"
+    },
+    {
+      "handle": "rig-catfish-float-fish-scale",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\rig-catfish-float-fish-scale\\master.webp"
+    },
+    {
+      "handle": "rig-catfish-single-hook",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\rig-catfish-single-hook\\master.webp"
+    },
+    {
+      "handle": "hooklink-anti-tangle-sleeve",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\hooklink-anti-tangle-sleeve\\master.webp"
+    },
+    {
+      "handle": "hooklink-anti-tangle-sleeve-set",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\hooklink-anti-tangle-sleeve-set\\master.webp"
+    },
+    {
+      "handle": "stand-bankstick",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\stand-bankstick\\master.webp"
+    },
+    {
+      "handle": "float-electronic",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\float-electronic\\master.webp"
+    },
+    {
+      "handle": "bait-cage-spring-short",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\bait-cage-spring-short\\master.webp"
+    },
+    {
+      "handle": "bait-cage-rig-balance",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\bait-cage-rig-balance\\master.webp"
+    },
+    {
+      "handle": "extension-tube-bait-cage",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\extension-tube-bait-cage\\master.webp"
+    },
+    {
+      "handle": "rig-reverse-bottom",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\rig-reverse-bottom\\master.webp"
+    },
+    {
+      "handle": "rig-ronnie-bloodworm-accessories-simulated",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\rig-ronnie-bloodworm-accessories-simulated\\master.webp"
+    },
+    {
+      "handle": "bloodworm-accessories-simulated",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\bloodworm-accessories-simulated\\master.webp"
+    },
+    {
+      "handle": "accessories-simulated-shrimp",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\accessories-simulated-shrimp\\master.webp"
+    },
+    {
+      "handle": "bait-cage-feeder",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\bait-cage-feeder\\master.webp"
+    },
+    {
+      "handle": "bait-cage-feeder-2",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\bait-cage-feeder-2\\master.webp"
+    },
+    {
+      "handle": "bait-cage-feeder-3",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\bait-cage-feeder-3\\master.webp"
+    },
+    {
+      "handle": "bait-cage-rig-feeder",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\bait-cage-rig-feeder\\master.webp"
+    },
+    {
+      "handle": "b135-bait-cage-feeder",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\b135-bait-cage-feeder\\master.webp"
+    },
+    {
+      "handle": "bait-cage-feeder-balance",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\bait-cage-feeder-balance\\master.webp"
+    },
+    {
+      "handle": "rig-float",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\rig-float\\master.webp"
+    },
+    {
+      "handle": "float-stop-bead",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\float-stop-bead\\master.webp"
+    },
+    {
+      "handle": "hooklink-set",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\hooklink-set\\master.webp"
+    },
+    {
+      "handle": "sea-urchin-hook",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\sea-urchin-hook\\master.webp"
+    },
+    {
+      "handle": "rig-sea-fishing-wire",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\rig-sea-fishing-wire\\master.webp"
+    },
+    {
+      "handle": "rig-sea-fishing",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\rig-sea-fishing\\master.webp"
+    },
+    {
+      "handle": "kit-box-accessories-black",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\kit-box-accessories-black\\master.webp"
+    },
+    {
+      "handle": "braided-line-ronnie-bloodworm-curve-tube-short",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\braided-line-ronnie-bloodworm-curve-tube-short\\master.webp"
+    },
+    {
+      "handle": "stripped-line-ronnie-bloodworm-black-bean-curve-tube-short",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\stripped-line-ronnie-bloodworm-black-bean-curve-tube-short\\master.webp"
+    },
+    {
+      "handle": "aligner-stripped-line-bloodworm-shot-small",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\aligner-stripped-line-bloodworm-shot-small\\master.webp"
+    },
+    {
+      "handle": "stripped-line-bloodworm-curve-tube-long",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\stripped-line-bloodworm-curve-tube-long\\master.webp"
+    },
+    {
+      "handle": "d-ring-carp-hook-bloodworm-curve-tube-long",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\d-ring-carp-hook-bloodworm-curve-tube-long\\master.webp"
+    },
+    {
+      "handle": "float-red",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\float-red\\master.webp"
+    },
+    {
+      "handle": "aligner-braided-line-snap-swivel-rig-red",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\aligner-braided-line-snap-swivel-rig-red\\master.webp"
+    },
+    {
+      "handle": "aligner-braided-line-rig-screw-transparent-red",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\aligner-braided-line-rig-screw-transparent-red\\master.webp"
+    },
+    {
+      "handle": "aligner-snap-swivel-rig-fluorocarbon-red",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\aligner-snap-swivel-rig-fluorocarbon-red\\master.webp"
+    },
+    {
+      "handle": "aligner-stripped-line-snap-swivel-rig-red-small",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\aligner-stripped-line-snap-swivel-rig-red-small\\master.webp"
+    },
+    {
+      "handle": "aligner-stripped-line-rig-screw-red-small",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\aligner-stripped-line-rig-screw-red-small\\master.webp"
+    },
+    {
+      "handle": "aligner-stripped-line-rig-screw-transparent-red-small",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\aligner-stripped-line-rig-screw-transparent-red-small\\master.webp"
+    },
+    {
+      "handle": "aligner-stripped-line-rig-straight-point-red-small",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\aligner-stripped-line-rig-straight-point-red-small\\master.webp"
+    },
+    {
+      "handle": "aligner-rig-fluorocarbon-screw-red-small",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\aligner-rig-fluorocarbon-screw-red-small\\master.webp"
+    },
+    {
+      "handle": "aligner-rig-fluorocarbon-screw-transparent-red-small",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\aligner-rig-fluorocarbon-screw-transparent-red-small\\master.webp"
+    },
+    {
+      "handle": "aligner-rig-fluorocarbon-straight-point-red-small",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\aligner-rig-fluorocarbon-straight-point-red-small\\master.webp"
+    },
+    {
+      "handle": "braided-line-rig-straight-point-curve-tube-red-small",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\braided-line-rig-straight-point-curve-tube-red-small\\master.webp"
+    },
+    {
+      "handle": "treble-hook-gape-guard",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\treble-hook-gape-guard\\master.webp"
+    },
+    {
+      "handle": "rig-kit-sliding",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\rig-kit-sliding\\master.webp"
+    },
+    {
+      "handle": "live-bait",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\live-bait\\master.webp"
+    },
+    {
+      "handle": "hooklink-rubber-ring",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\hooklink-rubber-ring\\master.webp"
+    },
+    {
+      "handle": "hooklink-rubber-ring-set",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\hooklink-rubber-ring-set\\master.webp"
+    },
+    {
+      "handle": "salted-herring-hook",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\salted-herring-hook\\master.webp"
+    },
+    {
+      "handle": "sea-fishing-lure-artificial-bait",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\sea-fishing-lure-artificial-bait\\master.webp"
+    },
+    {
+      "handle": "aligner-hooklink-green-board",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\aligner-hooklink-green-board\\master.webp"
+    },
+    {
+      "handle": "rig-kit-green-board",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\rig-kit-green-board\\master.webp"
+    },
+    {
+      "handle": "bait-cage-boat-shape",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\bait-cage-boat-shape\\master.webp"
+    },
+    {
+      "handle": "hooklength-box-green",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\hooklength-box-green\\master.webp"
+    },
+    {
+      "handle": "hooklength-box-green-short",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\hooklength-box-green-short\\master.webp"
+    },
+    {
+      "handle": "screw-slider",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\screw-slider\\master.webp"
+    },
+    {
+      "handle": "kit-box-screw-slider",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\kit-box-screw-slider\\master.webp"
+    },
+    {
+      "handle": "swivel-spiral",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\swivel-spiral\\master.webp"
+    },
+    {
+      "handle": "hooklink-twist-set-straight-point",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\hooklink-twist-set-straight-point\\master.webp"
+    },
+    {
+      "handle": "nylon-line-bait-cage-rig-sliding",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\nylon-line-bait-cage-rig-sliding\\master.webp"
+    },
+    {
+      "handle": "rig-catfish",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\rig-catfish\\master.webp"
+    },
+    {
+      "handle": "rig-catfish-artificial-bait",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\rig-catfish-artificial-bait\\master.webp"
+    },
+    {
+      "handle": "leadcore-snap-swivel-2",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\leadcore-snap-swivel-2\\master.webp"
+    },
+    {
+      "handle": "qc-leadcore",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\qc-leadcore\\master.webp"
+    },
+    {
+      "handle": "leadcore-rig-putty-lead",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\leadcore-rig-putty-lead\\master.webp"
+    },
+    {
+      "handle": "leadcore-lead-weight-rig",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\leadcore-lead-weight-rig\\master.webp"
+    },
+    {
+      "handle": "leadcore-set",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\leadcore-set\\master.webp"
+    },
+    {
+      "handle": "leadcore-three-way-knot-rig-integrated",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\leadcore-three-way-knot-rig-integrated\\master.webp"
+    },
+    {
+      "handle": "leadcore-helicopter-rig-rig",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\leadcore-helicopter-rig-rig\\master.webp"
+    },
+    {
+      "handle": "hooklink-rig-chod",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\hooklink-rig-chod\\master.webp"
+    },
+    {
+      "handle": "treble-hook-rig-catfish-float",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\treble-hook-rig-catfish-float\\master.webp"
+    },
+    {
+      "handle": "bait-band-fish-body-connector",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\bait-band-fish-body-connector\\master.webp"
+    },
+    {
+      "handle": "rig-catfish-double-hook-rattle-bead",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\rig-catfish-double-hook-rattle-bead\\master.webp"
+    },
+    {
+      "handle": "rig-catfish-double-hook-rattle-bead-2",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\rig-catfish-double-hook-rattle-bead-2\\master.webp"
+    },
+    {
+      "handle": "treble-hook-rig-catfish-float-double",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\treble-hook-rig-catfish-float-double\\master.webp"
+    },
+    {
+      "handle": "rig-catfish-double-hook-rattle-bead-double",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\rig-catfish-double-hook-rattle-bead-double\\master.webp"
+    },
+    {
+      "handle": "hooklength-box-double",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\hooklength-box-double\\master.webp"
+    },
+    {
+      "handle": "ronnie-compression-sleeve-rig-kit-bait-syringe-screw",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\ronnie-compression-sleeve-rig-kit-bait-syringe-screw\\master.webp"
+    },
+    {
+      "handle": "stripped-line-rig-bloodworm-bait-syringe-short-tube",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\stripped-line-rig-bloodworm-bait-syringe-short-tube\\master.webp"
+    },
+    {
+      "handle": "connector-fluorocarbon",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\connector-fluorocarbon\\master.webp"
+    },
+    {
+      "handle": "bait-cage-balance",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\bait-cage-balance\\master.webp"
+    },
+    {
+      "handle": "hair-rig-tube-kit-box",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\hair-rig-tube-kit-box\\master.webp"
+    },
+    {
+      "handle": "bait-cage-turtle-feeder",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\bait-cage-turtle-feeder\\master.webp"
+    },
+    {
+      "handle": "ronnie-black-bean",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\ronnie-black-bean\\master.webp"
+    },
+    {
+      "handle": "rig-braided-hooklink-green-board",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\rig-braided-hooklink-green-board\\master.webp"
+    },
+    {
+      "handle": "rig-ronnie-whirlpool",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\rig-ronnie-whirlpool\\master.webp"
+    },
+    {
+      "handle": "water-weight",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\water-weight\\master.webp"
+    },
+    {
+      "handle": "shot",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\shot\\master.webp"
+    },
+    {
+      "handle": "three-way-swivel-braided-line-ronnie-rig-kit-integrated",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\three-way-swivel-braided-line-ronnie-rig-kit-integrated\\master.webp"
+    },
+    {
+      "handle": "three-way-swivel-kit-box-integrated",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\three-way-swivel-kit-box-integrated\\master.webp"
+    },
+    {
+      "handle": "tiger-nut",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\tiger-nut\\master.webp"
+    },
+    {
+      "handle": "lead-weight-fish-scale-insert-tube",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\lead-weight-fish-scale-insert-tube\\master.webp"
+    },
+    {
+      "handle": "lead-weight-swivel-fish-scale",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\lead-weight-swivel-fish-scale\\master.webp"
+    },
+    {
+      "handle": "tackle-bag",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\tackle-bag\\master.webp"
+    },
+    {
+      "handle": "tackle-bag-2",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\tackle-bag-2\\master.webp"
+    },
+    {
+      "handle": "tackle-bag-3",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\tackle-bag-3\\master.webp"
+    },
+    {
+      "handle": "bait-cage-spring-long-tube",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\bait-cage-spring-long-tube\\master.webp"
+    },
+    {
+      "handle": "helicopter-rig-ronnie-compression-sleeve",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\helicopter-rig-ronnie-compression-sleeve\\master.webp"
+    },
+    {
+      "handle": "helicopter-rig-kit-box",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\helicopter-rig-kit-box\\master.webp"
+    },
+    {
+      "handle": "hooklink-straight-point",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\hooklink-straight-point\\master.webp"
+    },
+    {
+      "handle": "hooklink-set-straight-point",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\hooklink-set-straight-point\\master.webp"
+    },
+    {
+      "handle": "braided-line-rig-bloodworm-copper-line-inline-curve-tube-long",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\braided-line-rig-bloodworm-copper-line-inline-curve-tube-long\\master.webp"
+    },
+    {
+      "handle": "lead-weight-swivel-egg",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\lead-weight-swivel-egg\\master.webp"
+    },
+    {
+      "handle": "submarine-lead-lead-weight-swivel",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\submarine-lead-lead-weight-swivel\\master.webp"
+    },
+    {
+      "handle": "lead-weight-swivel-square",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\lead-weight-swivel-square\\master.webp"
+    },
+    {
+      "handle": "a1144f",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\a1144f\\master.webp"
+    },
+    {
+      "handle": "b1073-bait-cage",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\b1073-bait-cage\\master.webp"
+    },
+    {
+      "handle": "combi-rig",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\combi-rig\\master.webp"
+    },
+    {
+      "handle": "j105-bait-stand",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\j105-bait-stand\\master.webp"
+    },
+    {
+      "handle": "neo-nylon-line",
+      "expectedPath": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\public\\products\\neo-nylon-line\\master.webp"
+    }
+  ],
+  "missingWpBinding": [
+    {
+      "handle": "stand-wrench",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "rod-rack-wall-mount",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "braided-line-bait-cage-rig-balance",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "stripped-line-bait-cage-rig-sliding",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "aligner-stripped-line-bloodworm-inline-groundbait-block-large",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "stripped-line-bait-cage-balance",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "hooklink-set-orange",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "hooklength-box-orange",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "hooklength-box-orange-short",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "baiting-tool-kit-silicone",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "baiting-tool-kit-standard",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "baiting-tool-kit-glow",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "baiting-needle",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "pe-line-carp-hook-rig-kit-screw-large",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "coated-line-carp-hook-screw-green-large",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "f-turtle-feeder-large-long",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "leadcore-snap-swivel",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "aligner",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "spinner-blade-soft-bait-set",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "leadcore-screw-slider",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "three-way-swivel-carp-hook-anti-tangle-boom-hair-rig-tube-rig-kit-copper-line",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "three-way-swivel-kit-box",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "three-way-knot-carp-hook-rig-kit",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "rig-catfish-float-fish-scale",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "rig-catfish-single-hook",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "hooklink-anti-tangle-sleeve",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "hooklink-anti-tangle-sleeve-set",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "stand-bankstick",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "float-electronic",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "bait-cage-spring-short",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "bait-cage-rig-balance",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "extension-tube-bait-cage",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "rig-reverse-bottom",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "rig-ronnie-bloodworm-accessories-simulated",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "bloodworm-accessories-simulated",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "accessories-simulated-shrimp",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "bait-cage-feeder",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "bait-cage-feeder-2",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "bait-cage-feeder-3",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "bait-cage-rig-feeder",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "b135-bait-cage-feeder",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "bait-cage-feeder-balance",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "rig-float",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "float-stop-bead",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "hooklink-set",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "sea-urchin-hook",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "rig-sea-fishing-wire",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "rig-sea-fishing",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "kit-box-accessories-black",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "braided-line-ronnie-bloodworm-curve-tube-short",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "stripped-line-ronnie-bloodworm-black-bean-curve-tube-short",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "aligner-stripped-line-bloodworm-shot-small",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "stripped-line-bloodworm-curve-tube-long",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "d-ring-carp-hook-bloodworm-curve-tube-long",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "float-red",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "aligner-braided-line-snap-swivel-rig-red",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "aligner-braided-line-rig-screw-transparent-red",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "aligner-snap-swivel-rig-fluorocarbon-red",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "aligner-stripped-line-snap-swivel-rig-red-small",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "aligner-stripped-line-rig-screw-red-small",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "aligner-stripped-line-rig-screw-transparent-red-small",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "aligner-stripped-line-rig-straight-point-red-small",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "aligner-rig-fluorocarbon-screw-red-small",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "aligner-rig-fluorocarbon-screw-transparent-red-small",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "aligner-rig-fluorocarbon-straight-point-red-small",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "braided-line-rig-straight-point-curve-tube-red-small",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "treble-hook-gape-guard",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "rig-kit-sliding",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "live-bait",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "hooklink-rubber-ring",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "hooklink-rubber-ring-set",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "salted-herring-hook",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "sea-fishing-lure-artificial-bait",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "aligner-hooklink-green-board",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "rig-kit-green-board",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "bait-cage-boat-shape",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "hooklength-box-green",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "hooklength-box-green-short",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "screw-slider",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "kit-box-screw-slider",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "swivel-spiral",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "hooklink-twist-set-straight-point",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "nylon-line-bait-cage-rig-sliding",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "rig-catfish",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "rig-catfish-artificial-bait",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "leadcore-snap-swivel-2",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "qc-leadcore",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "leadcore-rig-putty-lead",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "leadcore-lead-weight-rig",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "leadcore-set",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "leadcore-three-way-knot-rig-integrated",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "leadcore-helicopter-rig-rig",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "hooklink-rig-chod",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "treble-hook-rig-catfish-float",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "bait-band-fish-body-connector",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "rig-catfish-double-hook-rattle-bead",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "rig-catfish-double-hook-rattle-bead-2",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "treble-hook-rig-catfish-float-double",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "rig-catfish-double-hook-rattle-bead-double",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "hooklength-box-double",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "ronnie-compression-sleeve-rig-kit-bait-syringe-screw",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "stripped-line-rig-bloodworm-bait-syringe-short-tube",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "connector-fluorocarbon",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "bait-cage-balance",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "hair-rig-tube-kit-box",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "bait-cage-turtle-feeder",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "ronnie-black-bean",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "rig-braided-hooklink-green-board",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "rig-ronnie-whirlpool",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "water-weight",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "shot",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "three-way-swivel-braided-line-ronnie-rig-kit-integrated",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "three-way-swivel-kit-box-integrated",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "tiger-nut",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "lead-weight-fish-scale-insert-tube",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "lead-weight-swivel-fish-scale",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "tackle-bag",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "tackle-bag-2",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "tackle-bag-3",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "bait-cage-spring-long-tube",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "helicopter-rig-ronnie-compression-sleeve",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "helicopter-rig-kit-box",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "hooklink-straight-point",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "hooklink-set-straight-point",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "braided-line-rig-bloodworm-copper-line-inline-curve-tube-long",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "lead-weight-swivel-egg",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "submarine-lead-lead-weight-swivel",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "lead-weight-swivel-square",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "a1144f",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "b1073-bait-cage",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "combi-rig",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "j105-bait-stand",
+      "sku": null,
+      "wcId": null
+    },
+    {
+      "handle": "neo-nylon-line",
+      "sku": null,
+      "wcId": null
+    }
+  ]
 }

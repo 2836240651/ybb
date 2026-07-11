@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import type {
   BlogArticleApi,
@@ -14,21 +13,60 @@ type ArticleBody = Pick<
   "title" | "content" | "contentBlocks"
 >;
 
+const PROSE_WIDTH = "mx-auto w-full max-w-[680px]";
+const WIDE_WIDTH = "mx-auto w-full max-w-5xl";
+
 function enabledBlocks(
   blocks: BlogContentBlock[] | undefined
 ): BlogContentBlock[] {
-  return (blocks ?? []).filter((block) => block.enabled !== false);
+  return (blocks ?? [])
+    .filter((block) => block.enabled !== false)
+    .sort((a, b) => (a.sortOrder ?? 0) - (b.sortOrder ?? 0));
 }
 
 function blockImageSrc(src?: string): string {
   return blogArticleImageSrc({ imageUrl: src ?? "" });
 }
 
+function splitParagraphText(text: string): string[] {
+  return text
+    .split(/\n\s*\n/)
+    .map((part) => part.trim())
+    .filter(Boolean);
+}
+
+function paragraphKey(text: string, index: number): string {
+  return `${index}-${text.slice(0, 32)}`;
+}
+
+function ParagraphGroup({ text }: { text: string }) {
+  const parts = splitParagraphText(text);
+  if (!parts.length) return null;
+
+  return (
+    <div className={cn(PROSE_WIDTH, "space-y-4")}>
+      {parts.map((part, index) => (
+        <p
+          key={paragraphKey(part, index)}
+          className="text-[17px] leading-[1.75] text-foreground/80"
+        >
+          {part}
+        </p>
+      ))}
+    </div>
+  );
+}
+
 function legacyParagraphs(article: ArticleBody) {
   return (
-    <div className="mx-auto max-w-prose space-y-5 text-foreground/75 leading-relaxed">
-      {article.content.map((para) => (
-        <p key={para.slice(0, 48)}>{para}</p>
+    <div className={cn(PROSE_WIDTH, "space-y-4")}>
+      {article.content.map((para, index) => (
+        <p
+          key={paragraphKey(para, index)}
+          className="text-[17px] leading-[1.75] text-foreground/80"
+        >
+          {para}
+        </p>
       ))}
     </div>
   );
@@ -37,29 +75,40 @@ function legacyParagraphs(article: ArticleBody) {
 function renderBlock(block: BlogContentBlock, articleTitle: string) {
   switch (block.type) {
     case "paragraph":
-      return (
-        <p className="mx-auto max-w-prose text-foreground/75 leading-relaxed">
-          {block.text}
-        </p>
-      );
+      return <ParagraphGroup text={block.text} />;
     case "heading":
       return block.level === "h3" ? (
-        <h3 className="mx-auto max-w-prose pt-4 text-2xl font-bold leading-tight">
+        <h3
+          className={cn(
+            PROSE_WIDTH,
+            "text-xl md:text-2xl font-bold leading-tight tracking-tight text-foreground"
+          )}
+        >
           {block.text}
         </h3>
       ) : (
-        <h2 className="mx-auto max-w-prose pt-6 text-3xl font-bold leading-tight">
+        <h2
+          className={cn(
+            PROSE_WIDTH,
+            "text-2xl md:text-3xl font-bold leading-tight tracking-tight text-foreground"
+          )}
+        >
           {block.text}
         </h2>
       );
     case "quote":
       return (
-        <figure className="mx-auto max-w-3xl border-l-2 border-foreground bg-white/70 px-6 py-5">
-          <blockquote className="text-2xl font-semibold leading-snug text-foreground">
+        <figure
+          className={cn(
+            PROSE_WIDTH,
+            "rounded-card border border-border bg-neutral-50/80 px-6 py-5 md:px-8 md:py-6"
+          )}
+        >
+          <blockquote className="text-lg md:text-xl font-medium leading-relaxed text-foreground">
             {block.text}
           </blockquote>
           {block.caption ? (
-            <figcaption className="mt-3 text-sm text-foreground/50">
+            <figcaption className="mt-3 text-sm text-foreground/55">
               {block.caption}
             </figcaption>
           ) : null}
@@ -71,21 +120,20 @@ function renderBlock(block: BlogContentBlock, articleTitle: string) {
       return (
         <figure
           className={cn(
-            "mx-auto",
-            block.width === "prose" ? "max-w-prose" : "max-w-5xl"
+            block.width === "prose" ? PROSE_WIDTH : WIDE_WIDTH
           )}
         >
           <div className="relative aspect-[16/9] overflow-hidden rounded-card bg-neutral-100">
-            <Image
+            <img
               src={src}
               alt={block.alt || articleTitle}
-              fill
-              sizes="(max-width: 1024px) 100vw, 1024px"
-              className="object-cover"
+              className="h-full w-full object-cover"
+              loading="lazy"
+              decoding="async"
             />
           </div>
           {block.caption ? (
-            <figcaption className="mt-2 text-sm text-foreground/50">
+            <figcaption className="mt-3 text-sm text-foreground/55">
               {block.caption}
             </figcaption>
           ) : null}
@@ -95,7 +143,12 @@ function renderBlock(block: BlogContentBlock, articleTitle: string) {
     case "mediaText": {
       const src = blockImageSrc(block.imageUrl);
       return (
-        <section className="mx-auto grid max-w-5xl gap-6 py-4 md:grid-cols-2 md:items-center">
+        <section
+          className={cn(
+            WIDE_WIDTH,
+            "grid gap-8 rounded-card border border-border bg-white p-5 md:grid-cols-2 md:items-center md:gap-10 md:p-8"
+          )}
+        >
           {src ? (
             <div
               className={cn(
@@ -103,30 +156,32 @@ function renderBlock(block: BlogContentBlock, articleTitle: string) {
                 block.imageSide === "right" ? "md:order-2" : ""
               )}
             >
-              <Image
+              <img
                 src={src}
                 alt={block.alt || block.title || articleTitle}
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover"
+                className="h-full w-full object-cover"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           ) : null}
-          <div className="space-y-3">
+          <div className="space-y-3 md:py-2">
             {block.eyebrow ? (
-              <p className="text-xs font-semibold uppercase text-foreground/50">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-foreground/50">
                 {block.eyebrow}
               </p>
             ) : null}
             {block.title ? (
-              <h2 className="text-2xl font-bold leading-tight">
+              <h2 className="text-xl md:text-2xl font-bold leading-tight tracking-tight">
                 {block.title}
               </h2>
             ) : null}
             {block.text ? (
-              <p className="text-foreground/70 leading-relaxed">
-                {block.text}
-              </p>
+              <div className="space-y-3 text-[15px] leading-relaxed text-foreground/80">
+                {splitParagraphText(block.text).map((part, index) => (
+                  <p key={paragraphKey(part, index)}>{part}</p>
+                ))}
+              </div>
             ) : null}
           </div>
         </section>
@@ -134,14 +189,27 @@ function renderBlock(block: BlogContentBlock, articleTitle: string) {
     }
     case "checklist":
       return (
-        <section className="mx-auto max-w-3xl rounded-card border border-border bg-white p-6">
+        <section
+          className={cn(
+            PROSE_WIDTH,
+            "rounded-card border border-border bg-white p-6 md:p-7"
+          )}
+        >
           {block.title ? (
-            <h2 className="mb-4 text-xl font-bold">{block.title}</h2>
+            <h2 className="mb-4 text-xl font-bold tracking-tight">
+              {block.title}
+            </h2>
           ) : null}
-          <ul className="space-y-3 text-sm text-foreground/75">
+          <ul className="space-y-3">
             {(block.items ?? []).map((item) => (
-              <li key={item} className="flex gap-3">
-                <span aria-hidden="true">-</span>
+              <li
+                key={item}
+                className="flex gap-3 text-[15px] leading-relaxed text-foreground/80"
+              >
+                <span
+                  aria-hidden="true"
+                  className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground"
+                />
                 <span>{item}</span>
               </li>
             ))}
@@ -150,17 +218,26 @@ function renderBlock(block: BlogContentBlock, articleTitle: string) {
       );
     case "cta":
       return (
-        <section className="mx-auto max-w-4xl rounded-card bg-foreground p-6 text-background md:p-8">
+        <section
+          className={cn(
+            WIDE_WIDTH,
+            "rounded-card bg-foreground px-6 py-7 text-background md:px-8 md:py-9"
+          )}
+        >
           {block.title ? (
-            <h2 className="text-2xl font-bold">{block.title}</h2>
+            <h2 className="text-2xl font-bold tracking-tight">{block.title}</h2>
           ) : null}
           {block.text ? (
-            <p className="mt-3 max-w-2xl text-background/75">{block.text}</p>
+            <div className="mt-3 max-w-2xl space-y-3 text-base leading-relaxed text-background/80">
+              {splitParagraphText(block.text).map((part, index) => (
+                <p key={paragraphKey(part, index)}>{part}</p>
+              ))}
+            </div>
           ) : null}
           {block.href && block.buttonLabel ? (
             <Link
               href={block.href}
-              className="mt-5 inline-flex rounded-full bg-background px-5 py-2 text-sm font-semibold text-foreground"
+              className="mt-6 inline-flex rounded-full bg-background px-5 py-2.5 text-sm font-semibold text-foreground transition-opacity hover:opacity-90"
             >
               {block.buttonLabel}
             </Link>
@@ -177,10 +254,23 @@ export function BlogContentBlocks({ article }: { article: ArticleBody }) {
   }
 
   return (
-    <div className="space-y-8">
+    <div className="blog-article-body space-y-8 md:space-y-10">
       {blocks.map((block) => (
         <div key={block.id}>{renderBlock(block, article.title)}</div>
       ))}
     </div>
   );
+}
+
+export function articleHeroDuplicatesFirstMediaBlock(
+  article: Pick<BlogArticleApi, "imageUrl" | "contentBlocks">
+): boolean {
+  const hero = blogArticleImageSrc(article);
+  if (!hero) return false;
+
+  const first = enabledBlocks(article.contentBlocks)[0];
+  if (!first || first.type !== "mediaText") return false;
+
+  const blockImage = blockImageSrc(first.imageUrl);
+  return Boolean(blockImage && blockImage === hero);
 }

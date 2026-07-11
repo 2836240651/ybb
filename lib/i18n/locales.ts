@@ -13,13 +13,15 @@ export const localeHtmlLang: Record<Locale, string> = {
 };
 
 export const localeLabels: Record<Locale, string> = {
-  zh: "简体中�?,
+  zh: "简体中文",
   en: "English",
-  ja: "日本�?,
+  ja: "日本語",
 };
 
 export const localeShortLabels: Record<Locale, string> = {
   zh: "中文",
   en: "English",
-  ja: "日本�?,
+  ja: "日本語",
 };
+
+

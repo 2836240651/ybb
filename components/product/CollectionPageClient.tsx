@@ -6,7 +6,7 @@ import {
   filterAndSortProducts,
   countActiveFilters,
 } from "@/lib/collection-filters";
-import { useVisibleCatalogProducts } from "@/hooks/useVisibleCatalogProducts";
+import { useEnrichedProducts } from "@/hooks/useEnrichedProducts";
 import { CollectionPageHeader } from "./CollectionPageHeader";
 import { CollectionToolbar } from "./CollectionToolbar";
 import { FilterDrawer } from "./FilterDrawer";
@@ -30,19 +30,23 @@ function CollectionCatalog({
     () => filterAndSortProducts(products, filters),
     [products, filters]
   );
-  const catalogProducts = useVisibleCatalogProducts(filteredProducts);
+  const { products: catalogProducts, ready: overridesReady } =
+    useEnrichedProducts(filteredProducts);
   const filtersActive = countActiveFilters(filters) > 0;
+  const visibleCount = overridesReady
+    ? catalogProducts.length
+    : filteredProducts.length;
 
   return (
     <div className="page-container py-8 md:py-10 lg:py-16 pt-4 md:pt-6">
       <CollectionPageHeader
         collection={collection}
-        productCount={catalogProducts.length}
+        productCount={visibleCount}
       />
 
       {(catalogProducts.length > 0 || filtersActive) && (
         <>
-          <CollectionToolbar productCount={catalogProducts.length} />
+          <CollectionToolbar productCount={visibleCount} />
           <FilterDrawer />
         </>
       )}

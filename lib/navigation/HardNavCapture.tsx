@@ -16,7 +16,7 @@ function isEmptyCollectionPage(): boolean {
   }
   const body = document.body?.innerText ?? "";
   return (
-    body.includes("该类目暂无商�?) ||
+    body.includes("该类目暂无商品") ||
     body.includes("No products in this category yet.") ||
     body.includes("このカテゴリには商品がありません")
   );
@@ -62,3 +62,5 @@ export function HardNavCapture() {
 
   return null;
 }
+
+

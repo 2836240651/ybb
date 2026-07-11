@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { formatPrice, products } from "@/lib/data/products";
+import { PLACEHOLDER_PRODUCT_IMAGE } from "@/lib/data/asset-paths";
 import { useI18n, useProductTitle } from "@/lib/i18n/I18nProvider";
 import { useUI } from "@/lib/store/ui";
 import type { Product } from "@/lib/types/product";
@@ -87,17 +88,18 @@ function SearchResultItem({
   onSelect: () => void;
 }) {
   const title = useProductTitle(product);
+  const imageSrc = product.images?.[0] || PLACEHOLDER_PRODUCT_IMAGE;
 
   return (
     <li>
       <Link
-        href={`/products/${product.handle}`}
+        href={`/products/${product.handle}.html`}
         onClick={onSelect}
         className="flex gap-4 rounded-card border border-border p-3 hover:bg-neutral-50 transition-colors"
       >
         <div className="relative h-16 w-14 shrink-0 overflow-hidden rounded bg-neutral-100">
           <Image
-            src={product.images[0]}
+            src={imageSrc}
             alt={title}
             fill
             sizes="56px"
@@ -204,7 +206,8 @@ export function SearchDrawer() {
               className="rounded-full p-2 interaction-icon-hover transition-colors shrink-0"
               aria-label={t("search.close")}
             >
-              �?            </button>
+            {"\u00D7"}
+          </button>
           </div>
         </header>
 

@@ -2,7 +2,7 @@
 /**
  * Plugin Name: YBB Headless Exemptions
  * Description: Allow Woo checkout/cart/account through Headless Mode redirects (carp-ybb.com).
- * Version: 1.0.1
+ * Version: 1.0.2
  */
 
 if (!defined('ABSPATH')) {
@@ -14,7 +14,7 @@ add_filter(
     static function ($will_redirect, $new_url) {
         $uri = $_SERVER['REQUEST_URI'] ?? '';
 
-        if (preg_match('#^/(checkout|cart|my-account|my-account-2|airwallex-checkout|wc-api)(/|$)#i', $uri)) {
+        if (preg_match('#^/(checkout|cart|my-account|my-account-2|airwallex-checkout|wc-api|wp-admin|wp-login\\.php)(/|$)#i', $uri)) {
             return false;
         }
 

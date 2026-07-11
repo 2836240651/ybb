@@ -165,13 +165,13 @@ add_action('rest_api_init', function () {
             ]);
             if ($label === '' && $step !== '') {
                 $stepLabels = [
-                    'sync' => '正在�?WooCommerce 同步产品数据�?,
-                    'build' => '正在构建静态站�?,
-                    'audit' => '正在审计部署包�?,
-                    'upload' => '正在上传静态文件�?,
-                    'browser' => '等待浏览器解压上传（若遇 Captcha 需人工）�?,
+                    'sync' => '正在从 WooCommerce 同步产品数据…',
+                    'build' => '正在构建静态站…',
+                    'audit' => '正在审计部署包…',
+                    'upload' => '正在上传静态文件…',
+                    'browser' => '等待浏览器解压上传（若遇 Captcha 需人工）…',
                 ];
-                $label = $stepLabels[$step] ?? ('部署步骤�? . $step);
+                $label = $stepLabels[$step] ?? ('部署步骤：' . $step);
             }
             if ($label !== '' && function_exists('ybb_sm_audit_log_deploy_event')) {
                 ybb_sm_audit_log_deploy_event('deploy_step', 'running', $label, ['step' => $step]);
@@ -251,7 +251,7 @@ add_action('rest_api_init', function () {
                 if ($state === 'success') {
                     $summary = $buildId !== ''
                         ? '站点已更新，buildId ' . $buildId
-                        : '站点部署已完�?;
+                        : '站点部署已完成';
                     ybb_sm_audit_log_deploy_event(
                         'deploy_success',
                         'success',
@@ -264,7 +264,7 @@ add_action('rest_api_init', function () {
                     ybb_sm_audit_log_deploy_event(
                         'deploy_failed',
                         'failed',
-                        '部署失败�? . $friendly,
+                        '部署失败：' . $friendly,
                         [],
                         $error
                     );

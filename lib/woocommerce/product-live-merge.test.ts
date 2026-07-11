@@ -51,3 +51,28 @@ test("applyLiveSummaryToProduct updates list price", () => {
   });
   assert.equal(merged.price, 2.49);
 });
+
+test("applyLiveSummaryToProduct keeps static image when catalog already has one", () => {
+  const merged = applyLiveSummaryToProduct(base, {
+    wcId: 50886,
+    price: 2.49,
+    available: true,
+    image: "https://carp-ybb.com/wp-content/uploads/2026/07/new-hook.png",
+  });
+  assert.deepEqual(merged.images, ["/x.jpg"]);
+});
+
+test("applyLiveSummaryToProduct adopts Woo featured image when static missing", () => {
+  const merged = applyLiveSummaryToProduct(
+    { ...base, images: [] },
+    {
+      wcId: 50886,
+      price: 2.49,
+      available: true,
+      image: "https://carp-ybb.com/wp-content/uploads/2026/07/new-hook.png",
+    }
+  );
+  assert.deepEqual(merged.images, [
+    "https://carp-ybb.com/wp-content/uploads/2026/07/new-hook.png",
+  ]);
+});

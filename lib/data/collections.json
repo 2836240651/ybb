@@ -3,9 +3,38 @@
     "handle": "all",
     "title": "Products",
     "titleCn": "全部产品",
-    "description": "Full YBB Tackle wholesale catalog �?all factory SKUs.",
-    "productCount": 0,
-    "productHandles": []
+    "description": "Full YBB Tackle wholesale catalog — all factory SKUs.",
+    "productCount": 28,
+    "productHandles": [
+      "tz-zbsb-006",
+      "tz-zbsb-005",
+      "tz-zbsb-004",
+      "tz-zbsb-003",
+      "tz-zbsb-002",
+      "tz-zbsb-001",
+      "tz-zj-003",
+      "tz-zj-002",
+      "tz-hk-001",
+      "tz-eldz-013",
+      "tz-eldz-002",
+      "tz-eldz-001",
+      "tz-qzdz-006",
+      "tz-qzdz-004",
+      "tz-qzdz-003",
+      "tz-qzdz-002",
+      "tz-qzdz-001",
+      "tz-xz-014",
+      "tz-xz-004",
+      "tz-el-074",
+      "tz-qz-017",
+      "tz-qz-013",
+      "tz-qz-011",
+      "tz-qz-010",
+      "tz-qz-006",
+      "tz-qz-003",
+      "tz-qz-005",
+      "tz-qz-002"
+    ]
   },
   {
     "handle": "new-arrivals",
@@ -42,7 +71,7 @@
   {
     "handle": "hooklinks",
     "title": "Hooklinks",
-    "titleCn": "钩子�?/ 子线",
+    "titleCn": "钩子线 / 子线",
     "description": "Hooklink systems and hooklength sets.",
     "productCount": 0,
     "productHandles": []
@@ -66,7 +95,7 @@
   {
     "handle": "leadcore",
     "title": "Leadcore Systems",
-    "titleCn": "铅芯线系�?,
+    "titleCn": "铅芯线系统",
     "description": "Leadcore rigs, sliders and weight components.",
     "productCount": 0,
     "productHandles": []
@@ -92,8 +121,13 @@
     "title": "Bait Cages",
     "titleCn": "饵笼",
     "description": "Bait cages, feeders and cage rig systems.",
-    "productCount": 0,
-    "productHandles": []
+    "productCount": 4,
+    "productHandles": [
+      "tz-eldz-013",
+      "tz-eldz-002",
+      "tz-eldz-001",
+      "tz-el-074"
+    ]
   },
   {
     "handle": "tackle-storage",
@@ -106,7 +140,7 @@
   {
     "handle": "hooklength-boxes",
     "title": "Hooklength Boxes",
-    "titleCn": "子线�?,
+    "titleCn": "子线盒",
     "description": "Hooklength storage boxes in multiple sizes.",
     "productCount": 0,
     "productHandles": []
@@ -114,7 +148,7 @@
   {
     "handle": "tackle-bags",
     "title": "Tackle Bags",
-    "titleCn": "渔具�?,
+    "titleCn": "渔具包",
     "description": "Factory-direct tackle bags for retail and wholesale.",
     "productCount": 0,
     "productHandles": []
@@ -122,7 +156,7 @@
   {
     "handle": "sea-fishing",
     "title": "Sea & Predator",
-    "titleCn": "海钓与掠�?,
+    "titleCn": "海钓与掠食",
     "description": "Sea fishing rigs, lures and traces.",
     "productCount": 0,
     "productHandles": []
@@ -138,7 +172,7 @@
   {
     "handle": "wire-traces",
     "title": "Wire Traces",
-    "titleCn": "钢丝前导�?,
+    "titleCn": "钢丝前导线",
     "description": "Wire traces for sea and predator fishing.",
     "productCount": 0,
     "productHandles": []
@@ -147,7 +181,7 @@
     "handle": "2026-new-products",
     "title": "2026 New Products",
     "titleCn": "2026新品",
-    "description": "2026 Taizhou euro-carp catalog new releases �?52 product types.",
+    "description": "2026 Taizhou euro-carp catalog new releases — 52 product types.",
     "productCount": 0,
     "productHandles": []
   },
@@ -156,8 +190,22 @@
     "title": "Sinkers",
     "titleCn": "铅坠",
     "description": "Factory lead sinkers and weights for euro-carp fishing.",
-    "productCount": 0,
-    "productHandles": []
+    "productCount": 13,
+    "productHandles": [
+      "tz-qzdz-006",
+      "tz-qzdz-004",
+      "tz-qzdz-003",
+      "tz-qzdz-002",
+      "tz-qzdz-001",
+      "tz-qz-017",
+      "tz-qz-013",
+      "tz-qz-011",
+      "tz-qz-010",
+      "tz-qz-006",
+      "tz-qz-003",
+      "tz-qz-005",
+      "tz-qz-002"
+    ]
   },
   {
     "handle": "rigs",
@@ -175,17 +223,25 @@
     "title": "Sinker Rigs",
     "titleCn": "铅坠钓组",
     "description": "Lead-weight rig assemblies for carp fishing.",
-    "productCount": 0,
-    "productHandles": []
+    "productCount": 5,
+    "productHandles": [
+      "tz-qzdz-006",
+      "tz-qzdz-004",
+      "tz-qzdz-003",
+      "tz-qzdz-002",
+      "tz-qzdz-001"
+    ]
   },
   {
     "handle": "bait-cage-rigs",
     "title": "Bait Cage Rigs",
     "titleCn": "饵笼钓组",
     "description": "Bait cage feeder rig systems.",
-    "productCount": 1,
+    "productCount": 3,
     "productHandles": [
-      "tz-eldz-013"
+      "tz-eldz-013",
+      "tz-eldz-002",
+      "tz-eldz-001"
     ]
   },
   {
@@ -201,7 +257,7 @@
   {
     "handle": "euro-carp-kits",
     "title": "Euro Carp Kits",
-    "titleCn": "套盒-欧鲤�?,
+    "titleCn": "套盒-欧鲤钓",
     "description": "Euro carp fishing kit sets and combo packs.",
     "productCount": 0,
     "productHandles": []
@@ -211,14 +267,23 @@
     "title": "Other",
     "titleCn": "其他",
     "description": "Metal accessories, plastic accessories, rod pods, and peripheral equipment.",
-    "productCount": 0,
-    "productHandles": []
+    "productCount": 8,
+    "productHandles": [
+      "tz-zbsb-006",
+      "tz-zbsb-005",
+      "tz-zbsb-004",
+      "tz-zbsb-003",
+      "tz-zbsb-002",
+      "tz-zbsb-001",
+      "tz-zj-003",
+      "tz-zj-002"
+    ]
   },
   {
     "handle": "accessories-metal",
     "title": "Metal Accessories",
     "titleCn": "配件-金属",
-    "description": "Metal terminal tackle accessories �?37 product types.",
+    "description": "Metal terminal tackle accessories — 37 product types.",
     "productCount": 0,
     "productHandles": []
   },
@@ -226,7 +291,7 @@
     "handle": "accessories-plastic",
     "title": "Plastic Accessories",
     "titleCn": "配件-塑料",
-    "description": "Plastic terminal tackle accessories �?60 product types.",
+    "description": "Plastic terminal tackle accessories — 60 product types.",
     "productCount": 0,
     "productHandles": []
   },
@@ -234,9 +299,10 @@
     "handle": "rod-pod-accessories",
     "title": "Rod Pods & Stands",
     "titleCn": "支架",
-    "description": "Rod pod heads, banksticks, and stand hardware �?30 product types.",
-    "productCount": 1,
+    "description": "Rod pod heads, banksticks, and stand hardware — 30 product types.",
+    "productCount": 2,
     "productHandles": [
+      "tz-zj-003",
       "tz-zj-002"
     ]
   },
@@ -244,8 +310,15 @@
     "handle": "peripheral-equipment",
     "title": "Peripheral Equipment",
     "titleCn": "周边设备",
-    "description": "Hooklength boxes, tool combos, and peripheral gear �?42 product types.",
-    "productCount": 0,
-    "productHandles": []
+    "description": "Hooklength boxes, tool combos, and peripheral gear — 42 product types.",
+    "productCount": 6,
+    "productHandles": [
+      "tz-zbsb-006",
+      "tz-zbsb-005",
+      "tz-zbsb-004",
+      "tz-zbsb-003",
+      "tz-zbsb-002",
+      "tz-zbsb-001"
+    ]
   }
 ]

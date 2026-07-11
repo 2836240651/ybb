@@ -36,10 +36,10 @@ function ybb_sm_deploy_queue(string $trigger = 'manual'): void
             ybb_sm_audit_log_deploy_event(
                 'deploy_merge',
                 'info',
-                '已合并到进行中的部署任务�? . ybb_sm_audit_trigger_label($trigger) . '�?,
+                '已合并到进行中的部署任务：' . ybb_sm_audit_trigger_label($trigger) . '】',
                 ['trigger' => $trigger],
-                '防抖窗口内多次触发仅执行一次部署�?,
-                '�?' . max(1, (int) ceil(($pendingUntil - $now) / 60)) . ' 分钟�?Runner 开�?
+                '防抖窗口内多次触发仅执行一次部署。',
+                '约 ' . max(1, (int) ceil(($pendingUntil - $now) / 60)) . ' 分钟后 Runner 开始'
             );
         }
 
@@ -58,7 +58,7 @@ function ybb_sm_deploy_queue(string $trigger = 'manual'): void
         ybb_sm_audit_log_deploy_event(
             'deploy_queue',
             'running',
-            '已加入部署队列（' . ybb_sm_audit_trigger_label($trigger) . '），�?' . $mins . ' 分钟后执�?,
+            '已加入部署队列（' . ybb_sm_audit_trigger_label($trigger) . '），约 ' . $mins . ' 分钟后执行',
             ['trigger' => $trigger],
             '',
             '可在「部署状态」查看进度；完成后刷新产品页'
@@ -109,7 +109,7 @@ function ybb_sm_deploy_claim(): bool
         ybb_sm_audit_log_deploy_event(
             'deploy_start',
             'running',
-            '正在同步产品并重建静态站�?,
+            '正在同步产品并重建静态站…',
             ['trigger' => $trigger],
             'Runner 已认领任务：' . ybb_sm_audit_trigger_label($trigger)
         );

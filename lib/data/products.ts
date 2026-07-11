@@ -1,6 +1,7 @@
 import productsData from "./products.json";
 import collectionsData from "./collections.json";
 import hotProductsData from "./hot-products.json";
+import navigationData from "./navigation.json";
 import { OTHER_CHILD_HANDLES } from "./catalog";
 import type { Collection, Product, ProductVariant } from "@/lib/types/product";
 
@@ -17,6 +18,63 @@ export function getCollectionByHandle(
   return collections.find((c) => c.handle === handle);
 }
 
+type NavMegaChild = { href?: string };
+type NavMegaMenu = { children?: NavMegaChild[] };
+type NavItem = { href?: string; megaMenu?: NavMegaMenu };
+type NavigationJson = { primaryNav?: NavItem[] };
+
+function parseCollectionHandleFromHref(href: string): string | null {
+  const match = href.match(/^\/collections\/([^/?#]+)/);
+  return match?.[1] ?? null;
+}
+
+function collectionHandlesFromNavMegaMenu(parentHandle: string): string[] {
+  const targetHref = `/collections/${parentHandle}`;
+  const navItems = (navigationData as unknown as NavigationJson)?.primaryNav;
+  if (!Array.isArray(navItems)) return [];
+  const parent = navItems.find((item) => item?.href === targetHref);
+  const children = parent?.megaMenu?.children;
+  if (!Array.isArray(children)) return [];
+
+  const handles: string[] = [];
+  for (const child of children) {
+    const href = typeof child?.href === "string" ? child.href : "";
+    const childHandle = parseCollectionHandleFromHref(href);
+    if (childHandle) handles.push(childHandle);
+  }
+  return handles;
+}
+
+/** Parent nav entries with mega-menu children aggregate all child collection SKUs. */
+function buildNavCollectionRollups(): Record<string, readonly string[]> {
+  const navItems = (navigationData as unknown as NavigationJson)?.primaryNav;
+  if (!Array.isArray(navItems)) return {};
+
+  const rollups: Record<string, string[]> = {};
+  for (const item of navItems) {
+    const href = typeof item?.href === "string" ? item.href : "";
+    const parentHandle = parseCollectionHandleFromHref(href);
+    if (!parentHandle || !item?.megaMenu?.children?.length) continue;
+
+    const childHandles = collectionHandlesFromNavMegaMenu(parentHandle);
+    if (!childHandles.length) continue;
+
+    rollups[parentHandle] = Array.from(
+      new Set<string>([parentHandle, ...childHandles])
+    );
+  }
+  return rollups;
+}
+
+const NAV_COLLECTION_ROLLUPS = buildNavCollectionRollups();
+
+function getCollectionRollupHandles(handle: string): string[] {
+  const fromNav = NAV_COLLECTION_ROLLUPS[handle] ?? collectionHandlesFromNavMegaMenu(handle);
+  const merged = new Set<string>([handle, ...fromNav]);
+  merged.delete("all");
+  return Array.from(merged);
+}
+
 export function getProductsByCollection(handle: string): Product[] {
   if (handle === "all") {
     return products;
@@ -28,6 +86,11 @@ export function getProductsByCollection(handle: string): Product[] {
     return products.filter((p) =>
       (OTHER_CHILD_HANDLES as readonly string[]).includes(p.collection)
     );
+  }
+  const rollup = getCollectionRollupHandles(handle);
+  if (rollup.length > 1) {
+    const allowed = new Set(rollup);
+    return products.filter((p) => allowed.has(p.collection));
   }
   return products.filter((p) => p.collection === handle);
 }

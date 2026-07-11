@@ -10,7 +10,7 @@ if (!defined('ABSPATH')) {
 }
 
 /** Auto-approve product reviews so they appear on the static site immediately. */
-function ybb_product_reviews_auto_approve(int|string $approved, array $commentdata): int|string
+function ybb_product_reviews_auto_approve($approved, array $commentdata)
 {
     $post_id = (int) ($commentdata['comment_post_ID'] ?? 0);
     if ($post_id <= 0 || get_post_type($post_id) !== 'product') {
@@ -125,7 +125,7 @@ function ybb_product_reviews_get_comment_images(int $comment_id): array
     return $images;
 }
 
-function ybb_product_reviews_validate_image_file(array $file): true|WP_Error
+function ybb_product_reviews_validate_image_file(array $file)
 {
     if (($file['error'] ?? UPLOAD_ERR_NO_FILE) !== UPLOAD_ERR_OK) {
         return new WP_Error('upload_error', 'Image upload failed.');
@@ -152,7 +152,7 @@ function ybb_product_reviews_validate_image_file(array $file): true|WP_Error
     return true;
 }
 
-function ybb_product_reviews_upload_image_file(array $file, int $product_id, string $comment_status): int|WP_Error
+function ybb_product_reviews_upload_image_file(array $file, int $product_id, string $comment_status)
 {
     $valid = ybb_product_reviews_validate_image_file($file);
     if (is_wp_error($valid)) {
@@ -188,7 +188,7 @@ function ybb_product_reviews_upload_image_file(array $file, int $product_id, str
     return (int) $attachment_id;
 }
 
-function ybb_product_reviews_save_comment_images(int $comment_id, int|string $comment_approved): void
+function ybb_product_reviews_save_comment_images(int $comment_id, $comment_approved): void
 {
     $comment = get_comment($comment_id);
     if (!$comment || $comment->comment_type !== 'review') {
@@ -282,7 +282,7 @@ function ybb_product_reviews_delete_comment_images(int $comment_id): void
 }
 add_action('delete_comment', 'ybb_product_reviews_delete_comment_images', 10);
 
-function ybb_product_reviews_get_payload(int $product_id, ?int $limit = null): array|WP_Error
+function ybb_product_reviews_get_payload(int $product_id, ?int $limit = null)
 {
     if (!function_exists('wc_get_product')) {
         return new WP_Error('woocommerce_missing', 'WooCommerce is not active.', ['status' => 503]);
@@ -332,7 +332,7 @@ function ybb_product_reviews_get_payload(int $product_id, ?int $limit = null): a
     return $payload;
 }
 
-function ybb_product_reviews_rest_handler(WP_REST_Request $request): array|WP_Error
+function ybb_product_reviews_rest_handler(WP_REST_Request $request)
 {
     $product_id = (int) $request['product_id'];
     if ($product_id <= 0) {
@@ -351,7 +351,7 @@ function ybb_product_reviews_rest_handler(WP_REST_Request $request): array|WP_Er
 function ybb_product_reviews_rest_nocache_headers($response, WP_REST_Server $server, WP_REST_Request $request): WP_REST_Response
 {
     $route = $request->get_route();
-    if (!str_starts_with($route, '/ybb/v1/product-reviews/') || str_contains($route, 'embed')) {
+    if (substr($route, 0, 23) !== '/ybb/v1/product-reviews/' || strpos($route, 'embed') !== false) {
         return $response;
     }
 
@@ -455,7 +455,7 @@ function ybb_product_reviews_serve_embed_page(): void
 }
 add_action('template_redirect', 'ybb_product_reviews_serve_embed_page', 0);
 
-function ybb_product_reviews_render_embed_html(int $product_id): string|WP_Error
+function ybb_product_reviews_render_embed_html(int $product_id)
 {
     if (!function_exists('wc_get_product')) {
         return new WP_Error('woocommerce_missing', 'WooCommerce is not active.', ['status' => 503]);
@@ -1047,7 +1047,7 @@ function ybb_product_reviews_render_embed_html(int $product_id): string|WP_Error
     return $html;
 }
 
-function ybb_product_reviews_embed_rest_handler(WP_REST_Request $request): WP_REST_Response|WP_Error
+function ybb_product_reviews_embed_rest_handler(WP_REST_Request $request)
 {
     $product_id = (int) $request['product_id'];
     if ($product_id <= 0) {
@@ -1067,7 +1067,7 @@ function ybb_product_reviews_embed_rest_handler(WP_REST_Request $request): WP_RE
 
 function ybb_product_reviews_embed_response_headers($response, WP_REST_Server $server, WP_REST_Request $request): WP_REST_Response
 {
-    if (str_starts_with($request->get_route(), '/ybb/v1/product-reviews-embed/')) {
+    if (substr($request->get_route(), 0, 29) === '/ybb/v1/product-reviews-embed/') {
         $response->header('Content-Type', 'text/html; charset=UTF-8');
     }
     return $response;
@@ -1076,7 +1076,7 @@ add_filter('rest_post_dispatch', 'ybb_product_reviews_embed_response_headers', 2
 
 function ybb_product_reviews_serve_embed_html(bool $served, $result, WP_REST_Request $request, WP_REST_Server $server): bool
 {
-    if ($served || !str_starts_with($request->get_route(), '/ybb/v1/product-reviews-embed/')) {
+    if ($served || substr($request->get_route(), 0, 29) !== '/ybb/v1/product-reviews-embed/') {
         return $served;
     }
 

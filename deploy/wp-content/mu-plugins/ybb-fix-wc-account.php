@@ -32,7 +32,7 @@ add_filter('woocommerce_get_endpoint_url', static function (
     string $value,
     string $permalink
 ): string {
-    if (str_contains($url, '/my-account-2')) {
+    if (strpos($url, '/my-account-2') !== false) {
         $url = str_replace('/my-account-2', '/my-account', $url);
     }
 

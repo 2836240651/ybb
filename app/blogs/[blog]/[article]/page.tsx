@@ -7,6 +7,14 @@ import { breadcrumbJsonLd } from "@/lib/seo";
 
 type Props = { params: Promise<{ blog: string; article: string }> };
 
+function titleFromHandle(handle: string): string {
+  return handle
+    .split("-")
+    .filter(Boolean)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(" ");
+}
+
 export function generateStaticParams() {
   return blog.articles.map((a) => ({
     blog: blog.handle,
@@ -19,8 +27,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const article = getBlogArticle(blogHandle, articleHandle);
   if (!article) return { title: "Article" };
   return {
-    title: article.title,
-    description: article.excerpt,
+    title: titleFromHandle(articleHandle),
+    description: "YBB news and insights.",
   };
 }
 
@@ -33,29 +41,29 @@ export default async function BlogArticlePage({ params }: Props) {
     { name: "Home", path: "/" },
     { name: blog.title, path: `/blogs/${blog.handle}` },
     {
-      name: article.title,
+      name: titleFromHandle(articleHandle),
       path: `/blogs/${blogHandle}/${articleHandle}`,
     },
   ]);
 
-  const articleJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: article.title,
-    datePublished: article.publishedAt,
-    author: { "@type": "Person", name: article.author },
+  const minimalArticleFallback = {
+    handle: article.handle,
+    title: article.title,
+    excerpt: article.excerpt,
+    publishedAt: article.publishedAt,
     image: article.image,
-    description: article.excerpt,
+    author: article.author,
+    content: article.content,
   };
 
   return (
     <>
-      <JsonLd data={[breadcrumbs, articleJsonLd]} />
+      <JsonLd data={breadcrumbs} />
       <BlogArticleView
         blogHandle={blogHandle}
         articleHandle={articleHandle}
         fallbackBlog={blog}
-        fallbackArticle={article}
+        fallbackArticle={minimalArticleFallback}
       />
     </>
   );

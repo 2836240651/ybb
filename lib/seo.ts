@@ -43,7 +43,7 @@ export function organizationJsonLd() {
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "sales",
-      email: "carpybb@gmail.com",
+      email: "ybb.sales@yoto.work",
       availableLanguage: ["English", "Chinese"],
     },
   };
@@ -67,7 +67,7 @@ export function productJsonLd(product: Product) {
       availability: product.available
         ? "https://schema.org/InStock"
         : "https://schema.org/OutOfStock",
-      url: absoluteUrl(`/products/${product.handle}`),
+      url: absoluteUrl(`/products/${product.handle}.html`),
     },
   };
 }

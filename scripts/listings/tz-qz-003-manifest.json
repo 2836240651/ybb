@@ -1,0 +1,52 @@
+{
+  "format": "wc-v2-existing-update",
+  "source": "agent-json TZ-QZ-003 flat pear carp lead",
+  "sheets": [
+    {
+      "name": "商品主表",
+      "products": [
+        {
+          "skuBase": "TZ-QZ-003",
+          "handle": "tz-qz-003",
+          "title": "Flat Pear Carp Fishing Lead Weight with High Visibility Stripe",
+          "nameEn": "Flat Pear Carp Fishing Lead Weight with High Visibility Stripe",
+          "titleZh": "高可视防滚平底鲤鱼钓铅坠（荧光压水款）",
+          "nameZh": "高可视防滚平底鲤鱼钓铅坠（荧光压水款）",
+          "titleJa": "蛍光ライン付き フラットペア型 カープフィッシングシンカー",
+          "nameJa": "蛍光ライン付き フラットペア型 カープフィッシングシンカー",
+          "shortDescription": "Flat pear lead weight with high-visibility stripe for stable presentation, accurate casting and reliable carp fishing performance. OEM & wholesale available.",
+          "description": "The Flat Pear Carp Fishing Lead Weight with High Visibility Stripe is engineered for modern carp anglers who require stability, precision and dependable rig presentation. The flat-bottom profile helps reduce rolling on uneven lake beds, while the bright side stripe improves visibility when handling rigs.\n\nManufactured from premium lead with a durable camouflage coating, this sinker blends naturally into the lake bottom while maintaining long-term durability. It is compatible with most inline and swivel carp rig systems, making it suitable for a wide range of fishing situations.\n\nAvailable in multiple weight options, it offers excellent casting distance and secure bottom contact for lakes, rivers and commercial fisheries. Ideal for tackle brands, wholesalers and OEM fishing equipment suppliers.",
+          "descriptionHtml": "<p>The Flat Pear Carp Fishing Lead Weight with High Visibility Stripe is engineered for modern carp anglers who require stability, precision and dependable rig presentation. The flat-bottom profile helps reduce rolling on uneven lake beds, while the bright side stripe improves visibility when handling rigs.</p><p>Manufactured from premium lead with a durable camouflage coating, this sinker blends naturally into the lake bottom while maintaining long-term durability. It is compatible with most inline and swivel carp rig systems, making it suitable for a wide range of fishing situations.</p><p>Available in multiple weight options, it offers excellent casting distance and secure bottom contact for lakes, rivers and commercial fisheries. Ideal for tackle brands, wholesalers and OEM fishing equipment suppliers.</p><p>Key Features<br>• Flat pear design for improved bottom stability<br>• High visibility fluorescent side stripe<br>• Durable camouflage coating<br>• Smooth casting performance<br>• Compatible with most carp rigs<br>• Suitable for lakes, rivers and commercial fisheries<br>• OEM &amp; ODM customization available<br>• Wholesale supply supported</p><p>Conclusion<br>Designed for anglers who demand accuracy and stability, this flat pear lead weight delivers dependable performance across a variety of carp fishing conditions.</p>",
+          "descriptionZh": "高可视防滚平底鲤鱼钓铅坠专为现代鲤鱼钓打造，采用平底重心设计，可有效减少水底滚动，提高钓组稳定性。两侧荧光高可视条不仅提升产品辨识度，也方便快速识别装备。\n\n铅坠表面采用迷彩防护涂层处理，能够更自然地融入水底环境，同时具备良好的耐磨性能。兼容主流转环、快速换铅及各类鲤鱼钓组系统。\n\n提供多种重量规格，适用于湖泊、水库、河流及商业钓场，可满足不同抛投距离及底质需求，是品牌商、批发商及OEM客户的理想选择。",
+          "descriptionZhHtml": "<p>高可视防滚平底鲤鱼钓铅坠专为现代鲤鱼钓打造，采用平底重心设计，可有效减少水底滚动，提高钓组稳定性。两侧荧光高可视条不仅提升产品辨识度，也方便快速识别装备。</p><p>铅坠表面采用迷彩防护涂层处理，能够更自然地融入水底环境，同时具备良好的耐磨性能。兼容主流转环、快速换铅及各类鲤鱼钓组系统。</p><p>提供多种重量规格，适用于湖泊、水库、河流及商业钓场，可满足不同抛投距离及底质需求，是品牌商、批发商及OEM客户的理想选择。</p><p>产品特点<br>• 平底防滚设计<br>• 荧光高可视侧条<br>• 迷彩耐磨涂层<br>• 抛投稳定精准<br>• 兼容多种鲤鱼钓组<br>• 多规格可选<br>• 支持OEM/ODM定制<br>• 全球批发供应</p><p>总结<br>兼具稳定性、辨识度与远投性能，是欧洲鲤鱼钓广泛使用的高性能铅坠之一。</p>",
+          "descriptionJa": "蛍光ライン付きフラットペア型シンカーは、安定した着底性能と優れたキャスト性能を実現するカープフィッシング用シンカーです。\n\nフラット形状により水底で転がりにくく、迷彩コーティングが自然なプレゼンテーションを可能にします。多くのカープリグに対応し、湖・河川・管理釣り場で幅広く使用できます。",
+          "descriptionJaHtml": "<p>蛍光ライン付きフラットペア型シンカーは、安定した着底性能と優れたキャスト性能を実現するカープフィッシング用シンカーです。</p><p>フラット形状により水底で転がりにくく、迷彩コーティングが自然なプレゼンテーションを可能にします。多くのカープリグに対応し、湖・河川・管理釣り場で幅広く使用できます。</p><p>特徴<br>• フラットペアデザイン<br>• 蛍光ハイビジビリティライン<br>• カモフラージュコーティング<br>• 高精度キャスト<br>• 各種カープリグ対応<br>• 複数重量展開<br>• OEM・ODM対応<br>• 卸売対応</p><p>まとめ<br>高い安定性と視認性を兼ね備えた、カープフィッシング向け高品質シンカーです。</p>",
+          "sloganEn": "Flat pear lead weight with high-visibility stripe for stable presentation, accurate casting and reliable carp fishing performance. OEM & wholesale available.",
+          "sloganZh": "平底防滚设计，荧光高可视侧条，抛投精准，适用于鲤鱼钓，支持OEM、ODM及批发。",
+          "sloganJa": "フラット形状と蛍光ラインを採用し、安定したキャスト性能を実現。OEM・卸売対応。",
+          "hideSlogan": false,
+          "frontHidden": false,
+          "galleryEnabled": true,
+          "galleryOverrideEnabled": false,
+          "hideDescription": false,
+          "hideAdditionalInfo": false,
+          "category": "Sinkers",
+          "categoryMain": "Sinkers",
+          "published": true,
+          "attributeName": "Weight",
+          "variants": [
+            { "sku": "TZ-QZ-003-15g", "parentSku": "TZ-QZ-003", "option": "15g", "price": "0.49" },
+            { "sku": "TZ-QZ-003-30g", "parentSku": "TZ-QZ-003", "option": "30g", "price": "0.59" },
+            { "sku": "TZ-QZ-003-40g", "parentSku": "TZ-QZ-003", "option": "40g", "price": "0.69" }
+          ],
+          "imageUrls": [
+            "https://cdn.shopify.com/s/files/1/0941/8542/3134/files/TZ-QZ-003.png"
+          ],
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0941/8542/3134/files/TZ-QZ-003.png",
+          "sheet": "铅坠",
+          "source": "agent-json TZ-QZ-003"
+        }
+      ]
+    }
+  ]
+}

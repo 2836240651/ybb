@@ -80,7 +80,7 @@ export function WriteReviewModal({
             className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full interaction-icon-hover"
             aria-label={t("common.close")}
           >
-            <span aria-hidden>�?/span>
+            <span aria-hidden>{"×"}</span>
           </button>
         </header>
         <div className="min-h-0 flex-1 overflow-x-hidden overflow-y-auto bg-neutral-50">
@@ -95,3 +95,5 @@ export function WriteReviewModal({
     </div>
   );
 }
+
+

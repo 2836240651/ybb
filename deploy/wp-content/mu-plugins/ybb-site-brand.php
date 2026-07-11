@@ -17,7 +17,7 @@ function ybb_site_brand_defaults(): array
         'name' => 'YBB',
         'tagline' => [
             'en' => 'Trusted Tackle Partner',
-            'zh' => '值得信赖的渔具合作伙�?,
+            'zh' => '值得信赖的渔具合作伙伴',
             'ja' => '信頼できるタックルパートナー',
         ],
         'logoAlt' => 'YBB',

@@ -26,7 +26,7 @@ export type MegaMenuChild = {
 export type MegaMenuConfig = {
   children: MegaMenuChild[];
   shopAll: { label: string; labels?: TriLabels; href: string };
-  /** OEM pages share one overview �?no collection sidebar / product grid */
+  /** OEM pages share one overview — no collection sidebar / product grid */
   /** OEM / category link lists; wholesale = full catalog grid */
   variant?: "default" | "oem" | "category" | "wholesale";
 };
@@ -57,6 +57,9 @@ type MegaMenuPanelProps = {
 const CROSSFADE_MS = 300;
 const CONTENT_ENTER_DELAY_MS = 180;
 const SIDEBAR_CROSSFADE_MS = 200;
+/** ASCII-safe nav glyphs (avoid UTF-8 corruption in static export chunks). */
+const MENU_CHEVRON = "\u25BE";
+const MENU_ARROW = "\u2192";
 
 function collectionHandleFromHref(href: string): string | null {
   const match = href.match(/^\/collections\/([^/]+)/);
@@ -107,7 +110,7 @@ function MegaMenuProductCard({
 
   return (
     <HardNavLink
-      href={`/products/${product.handle}`}
+      href={`/products/${product.handle}.html`}
       className="mega-menu-product-card group flex flex-col"
       style={{ "--mega-stagger-index": index } as React.CSSProperties}
       onClick={onClose}
@@ -154,8 +157,7 @@ export function NavMegaMenuTrigger({
     <li className="relative" onMouseEnter={onOpen}>
       <NavPillLink href={item.href} active={isActive} aria-expanded={isActive} aria-haspopup="true">
         {resolveNavLabel(item, locale, tl)}
-        <span className="text-[10px] opacity-50" aria-hidden>
-          �?        </span>
+        <span className="text-[10px] opacity-50" aria-hidden>{MENU_CHEVRON}</span>
       </NavPillLink>
     </li>
   );
@@ -376,7 +378,7 @@ export function MegaMenuPanel({
                   className="mega-menu-shop-all interaction-link-fill inline-flex items-center gap-1 text-sm font-bold border-t border-border pt-6 w-full justify-center"
                   onClick={onClose}
                 >
-                  {labelFor(megaMenu.shopAll)} �?                </HardNavLink>
+                  {labelFor(megaMenu.shopAll)} {MENU_ARROW}</HardNavLink>
               </div>
             ) : (
             <div className="mega-menu-oem mx-auto max-w-3xl text-center py-4">
@@ -405,7 +407,7 @@ export function MegaMenuPanel({
                       className="mega-menu-oem-link interaction-link-fill text-base font-bold"
                       onClick={onClose}
                     >
-                      {labelFor(child)} �?                    </HardNavLink>
+                      {labelFor(child)} {MENU_ARROW}</HardNavLink>
                   </li>
                 ))}
               </ul>
@@ -414,7 +416,7 @@ export function MegaMenuPanel({
                 className="mega-menu-shop-all interaction-link-fill inline-flex items-center gap-1 text-sm font-bold border-t border-border pt-6 w-full justify-center"
                 onClick={onClose}
               >
-                {labelFor(megaMenu.shopAll)} �?              </HardNavLink>
+                {labelFor(megaMenu.shopAll)} {MENU_ARROW}</HardNavLink>
             </div>
             )
           ) : (
@@ -458,7 +460,7 @@ export function MegaMenuPanel({
                   className="mega-menu-shop-all interaction-link-fill inline-flex items-center gap-1 text-sm font-bold"
                   onClick={onClose}
                 >
-                  {labelFor(megaMenu.shopAll)} �?                </HardNavLink>
+                  {labelFor(megaMenu.shopAll)} {MENU_ARROW}</HardNavLink>
               </div>
             </div>
 
@@ -482,7 +484,8 @@ export function MegaMenuPanel({
                         onClick={onClose}
                       >
                         All {viewAllLabel}
-                        {productCount > 0 ? ` (${productCount})` : ""} �?                      </HardNavLink>
+                        {productCount > 0 ? ` (${productCount})` : ""} {MENU_ARROW}
+                      </HardNavLink>
                     )}
                   </div>
                   <div

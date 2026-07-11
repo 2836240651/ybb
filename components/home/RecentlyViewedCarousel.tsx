@@ -54,7 +54,7 @@ function RecentlyViewedCard({
     [product]
   );
 
-  const productHref = `/products/${product.handle}`;
+  const productHref = `/products/${product.handle}.html`;
 
   return (
     <article className="recently-viewed-card group relative flex flex-col">

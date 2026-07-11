@@ -68,7 +68,7 @@ export function resolveProductGallery(
       ? defaultIndexRaw
       : 0;
 
-  const enabled = liveGallery?.enabled !== false && images.length > 1;
+  const enabled = liveGallery?.enabled !== false;
 
   return {
     images,

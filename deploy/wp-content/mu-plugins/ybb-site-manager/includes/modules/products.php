@@ -93,6 +93,11 @@ function ybb_sm_product_override_defaults(): array
         'galleryDefaultIndex' => 0,
         'galleryImages' => [],
         'galleryHideIndexes' => [],
+        'sloganEn' => '',
+        'sloganZh' => '',
+        'sloganJa' => '',
+        'hideSlogan' => false,
+        'hideShopPayInstallments' => false,
     ];
 }
 
@@ -138,6 +143,11 @@ function ybb_sm_product_override_normalize(array $row): array
         'galleryDefaultIndex' => max(0, (int) ($row['galleryDefaultIndex'] ?? 0)),
         'galleryImages' => $galleryImages,
         'galleryHideIndexes' => $galleryHideIndexes,
+        'sloganEn' => (string) ($row['sloganEn'] ?? ''),
+        'sloganZh' => (string) ($row['sloganZh'] ?? ''),
+        'sloganJa' => (string) ($row['sloganJa'] ?? ''),
+        'hideSlogan' => !empty($row['hideSlogan']),
+        'hideShopPayInstallments' => !empty($row['hideShopPayInstallments']),
     ];
 }
 
@@ -262,8 +272,8 @@ function ybb_sm_match_description_heading(string $line): ?string
         '总结' => '总结',
         '结论' => '结论',
         '主な特徴' => '主な特徴',
-        '主要な特�? => '主要な特�?,
-        'まと�? => 'まと�?,
+        '主要な特徴' => '主要な特徴',
+        'まとめ' => 'まとめ',
         '結論' => '結論',
         '総括' => '総括',
     ];
@@ -297,7 +307,7 @@ function ybb_sm_description_html_to_lines(string $html): array
     $text = preg_replace('/<\/p>\s*<p[^>]*>/i', "\n", $text);
     $text = preg_replace('/<h[1-6][^>]*>(.*?)<\/h[1-6]>/is', "\n$1\n", $text);
     $text = preg_replace('/<hr\s*\/?>/i', "\n", $text);
-    $text = preg_replace('/<li[^>]*>(.*?)<\/li>/is', "�?$1\n", $text);
+    $text = preg_replace('/<li[^>]*>(.*?)<\/li>/is', "• $1\n", $text);
     $text = wp_strip_all_tags((string) $text);
     $text = html_entity_decode($text, ENT_QUOTES | ENT_HTML5, 'UTF-8');
     $text = str_replace(["\r\n", "\r"], "\n", $text);
@@ -706,6 +716,11 @@ function ybb_sm_product_live_payload(string $handle, ?WC_Product $product = null
             'additionalInfo' => ybb_sm_product_additional_info_payload($product, $override),
         ],
         'purchaseSlogan' => ybb_sm_product_purchase_slogan_payload($override),
+        'shopPayInstallments' => ybb_sm_product_shop_pay_installments_payload(
+            $override,
+            (float) $prices['price']
+        ),
+        'pdpTabLabels' => ybb_sm_pdp_tab_labels_payload(),
         'gallery' => ybb_sm_product_gallery_payload($product, $override),
         'images' => ybb_sm_product_images_from_wc($product),
         'pdpUrl' => home_url('/products/' . $handle),
@@ -749,6 +764,7 @@ function ybb_sm_product_overrides_public(): array
         $sloganZh = trim((string) ($row['sloganZh'] ?? ''));
         $sloganJa = trim((string) ($row['sloganJa'] ?? ''));
         $hideSlogan = !empty($row['hideSlogan']);
+        $hideShopPayInstallments = !empty($row['hideShopPayInstallments']);
         if (
             $titleZh === '' && $titleJa === '' && !$frontHidden
             && $descriptionZh === '' && $descriptionJa === ''
@@ -757,7 +773,7 @@ function ybb_sm_product_overrides_public(): array
             && (is_array($galleryImages) ? $galleryImages === [] : $galleryImages === '')
             && (is_array($galleryHideIndexes) ? $galleryHideIndexes === [] : $galleryHideIndexes === '')
             && $sloganEn === '' && $sloganZh === '' && $sloganJa === ''
-            && !$hideSlogan
+            && !$hideSlogan && !$hideShopPayInstallments
         ) {
             continue;
         }
@@ -778,6 +794,7 @@ function ybb_sm_product_overrides_public(): array
             'sloganZh' => $sloganZh,
             'sloganJa' => $sloganJa,
             'hideSlogan' => $hideSlogan,
+            'hideShopPayInstallments' => $hideShopPayInstallments,
         ];
     }
 
@@ -788,7 +805,7 @@ function ybb_sm_product_overrides_public(): array
     ];
 }
 
-function ybb_sm_product_save_override(string $handle, array $input): array|WP_Error
+function ybb_sm_product_save_override(string $handle, array $input)
 {
     if (!current_user_can('manage_options')) {
         return new WP_Error('forbidden', 'Forbidden', ['status' => 403]);
@@ -848,6 +865,7 @@ function ybb_sm_product_save_override(string $handle, array $input): array|WP_Er
     $sloganZh = ybb_sm_sanitize_slogan_text((string) ($input['sloganZh'] ?? ''));
     $sloganJa = ybb_sm_sanitize_slogan_text((string) ($input['sloganJa'] ?? ''));
     $hideSlogan = !empty($input['hideSlogan']);
+    $hideShopPayInstallments = !empty($input['hideShopPayInstallments']);
 
     $before = ybb_sm_products_module();
     $overrides = ybb_sm_product_overrides_all();
@@ -859,7 +877,7 @@ function ybb_sm_product_save_override(string $handle, array $input): array|WP_Er
         && $galleryEnabled && !$galleryOverrideEnabled && $galleryDefaultIndex === 0
         && $galleryImages === [] && $galleryHideIndexes === []
         && $sloganEn === '' && $sloganZh === '' && $sloganJa === ''
-        && !$hideSlogan
+        && !$hideSlogan && !$hideShopPayInstallments
     ) {
         unset($overrides[$handle]);
     } else {
@@ -880,6 +898,7 @@ function ybb_sm_product_save_override(string $handle, array $input): array|WP_Er
             'sloganZh' => $sloganZh,
             'sloganJa' => $sloganJa,
             'hideSlogan' => $hideSlogan,
+            'hideShopPayInstallments' => $hideShopPayInstallments,
             'updatedAt' => gmdate('c'),
         ];
     }

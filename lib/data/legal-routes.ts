@@ -1,4 +1,4 @@
-/** WP page slug (URL) â†?local JSON source for legal / info pages. */
+/** WP page slug (URL) ?local JSON source for legal / info pages. */
 
 export type LegalRouteMeta =
   | { kind: "policy"; handle: string }

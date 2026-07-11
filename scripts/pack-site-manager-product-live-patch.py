@@ -32,6 +32,18 @@ PATCH_FILES: list[tuple[Path, str]] = [
         "ybb-site-manager/includes/modules/products.php",
     ),
     (
+        MU / "ybb-site-manager" / "includes" / "modules" / "pdp.php",
+        "ybb-site-manager/includes/modules/pdp.php",
+    ),
+    (
+        MU / "ybb-site-manager" / "includes" / "modules" / "deploy-queue.php",
+        "ybb-site-manager/includes/modules/deploy-queue.php",
+    ),
+    (
+        MU / "ybb-site-manager" / "includes" / "modules" / "navigation.php",
+        "ybb-site-manager/includes/modules/navigation.php",
+    ),
+    (
         MU / "ybb-site-manager" / "includes" / "modules" / "product-description-editor.php",
         "ybb-site-manager/includes/modules/product-description-editor.php",
     ),

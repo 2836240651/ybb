@@ -5,6 +5,7 @@ import type { Product } from "@/lib/types/product";
 import { useCart } from "@/lib/store/cart";
 import { cn } from "@/lib/utils";
 import { formatPrice } from "@/lib/data/products";
+import { useI18n } from "@/lib/i18n/I18nProvider";
 
 type AddToCartButtonProps = {
   product: Product;
@@ -29,6 +30,7 @@ export function AddToCartButton({
   size,
   fullWidth,
 }: AddToCartButtonProps) {
+  const { t } = useI18n();
   const addItem = useCart((s) => s.addItem);
   const [added, setAdded] = useState(false);
 
@@ -45,7 +47,7 @@ export function AddToCartButton({
 
   const cartLabel =
     showPriceInLabel && product.available
-      ? `${label} �?${formatPrice(product.price)}`
+      ? `${label}${" \u2014 "}${formatPrice(product.price)}`
       : label;
 
   return (
@@ -67,7 +69,11 @@ export function AddToCartButton({
         className
       )}
     >
-      {!product.available ? "Out of stock" : added ? "Added" : cartLabel}
+      {!product.available
+        ? t("product.outOfStock")
+        : added
+          ? t("product.added")
+          : cartLabel}
     </button>
   );
 }

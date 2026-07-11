@@ -3,6 +3,10 @@
 运营在 **任意电脑** 的 WP 后台改产品图 → 只入队。  
 **本 Ubuntu 服务器** 常驻 Runner，自动 sync → build → FTPS 上传。
 
+**生产静态站唯一写入者：** 后台 Sync 只使用本机 `/opt/ybb-site` 的代码。开发电脑本地的前端代码、样式、构建逻辑变更，必须先同步到本机，再由本机 runner/build 执行部署。禁止本地手动部署 SiteGround 与本机 runner 并行写 `public_html`；如需紧急本地手动部署，先确认队列非 pending 或临时停止 `ybb-deploy-runner`，部署验收后再恢复。
+
+**完整源码同步硬规则：** `/opt/ybb-site` 不可被当作可靠 git 工作树。开发电脑推代码到本机时，必须按完整源码清单同步，禁止只推 `git diff --name-only` 或少量改动文件。同步包应包含构建所需源码、`hooks/`、脚本、配置、docs、deploy helper；必须排除并在远端 `rsync --delete` 时 preserve `.git/`、`.venv/`、`.next/`、`out/`、`node_modules/`、`secrets.local.json`、`__pycache__/`、`*.pyc`、临时 zip/bak、远端备份与 staging 目录。同步后先在本机跑 `cd /opt/ybb-site && npm run build`，build 通过后再允许 runner/Sync 部署。
+
 > 你提供的机器：`170.106.110.63`（Ubuntu / 硅谷）。  
 > **不要** 在聊天里粘贴私钥；用 Lighthouse 控制台下载的 `.pem` 登录。
 

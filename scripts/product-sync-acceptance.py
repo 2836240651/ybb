@@ -188,7 +188,7 @@ def main() -> int:
     def record(name: str, ok: bool, detail: str = "") -> None:
         results.append({"name": name, "ok": ok, "detail": detail})
         status = "PASS" if ok else "FAIL"
-        log(f"[{status}] {name}" + (f" �?{detail}" if detail else ""))
+        log(f"[{status}] {name}" + (f" — {detail}" if detail else ""))
 
     with sync_playwright() as p:
         page = p.chromium.launch(headless=True).new_page()

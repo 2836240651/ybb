@@ -13,7 +13,7 @@ export type SiteBrandData = {
 
 const FALLBACK_TAGLINE: Record<Locale, string> = {
   en: "Trusted Tackle Partner",
-  zh: "值得信赖的渔具合作伙�?,
+  zh: "值得信赖的渔具合作伙伴",
   ja: "信頼できるタックルパートナー",
 };
 

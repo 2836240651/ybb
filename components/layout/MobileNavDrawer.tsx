@@ -80,7 +80,8 @@ export function MobileNavDrawer() {
             className="touch-target inline-flex items-center justify-center rounded-full interaction-icon-hover transition-colors"
             aria-label={t("common.closeMenu")}
           >
-            �?          </button>
+            {"\u00D7"}
+          </button>
         </header>
 
         <nav className="flex-1 overflow-y-auto px-5 py-4" aria-label="Mobile">
@@ -107,7 +108,7 @@ export function MobileNavDrawer() {
                       >
                         {navLabel(item)}
                         <span className="text-lg leading-none opacity-50" aria-hidden>
-                          {isOpen ? "�? : "+"}
+                          {isOpen ? "−" : "+"}
                         </span>
                       </button>
                         <div
@@ -175,3 +176,5 @@ export function MobileNavDrawer() {
     </>
   );
 }
+
+

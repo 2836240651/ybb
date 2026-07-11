@@ -227,6 +227,16 @@ function ybb_home_settings_sanitize($input): array
     ];
 }
 
+/** Site Manager home module overrides legacy option when present. */
+function ybb_home_resolved_settings(): array
+{
+    if (function_exists('ybb_sm_home_get_settings')) {
+        return ybb_sm_home_get_settings();
+    }
+
+    return ybb_home_settings_get();
+}
+
 function ybb_home_settings_get(): array
 {
     $stored = get_option(YBB_HOME_OPTION, []);
@@ -264,7 +274,7 @@ function ybb_home_settings_get(): array
 
 function ybb_home_latest_stories_public(): array
 {
-    $settings = ybb_home_settings_get();
+    $settings = ybb_home_resolved_settings();
     if (empty($settings['latestStoriesEnabled'])) {
         return [];
     }
@@ -281,7 +291,7 @@ function ybb_home_latest_stories_public(): array
         if ($image !== '' && !preg_match('#^https?://#i', $image)) {
             $image = home_url($image);
         }
-        if ($image !== '' && str_starts_with($image, 'http://')) {
+        if ($image !== '' && substr($image, 0, 7) === 'http://') {
             $image = 'https://' . substr($image, 7);
         }
 
@@ -369,7 +379,7 @@ function ybb_home_product_image_url(string $handle, ?WC_Product $product = null,
 
 function ybb_home_hot_products_public(): array
 {
-    $settings = ybb_home_settings_get();
+    $settings = ybb_home_resolved_settings();
     if (empty($settings['hotProductsEnabled'])) {
         return [];
     }
@@ -412,7 +422,7 @@ function ybb_home_hot_products_public(): array
             $wcProduct,
             (string) ($row['imageUrl'] ?? '')
         );
-        if ($image !== '' && str_starts_with($image, 'http://')) {
+        if ($image !== '' && substr($image, 0, 7) === 'http://') {
             $image = 'https://' . substr($image, 7);
         }
 
@@ -457,7 +467,7 @@ jQuery(function ($) {
       const $input = $(this).closest('td').find('.ybb-image-url');
       const frame = wp.media({
         title: '选择 Latest Stories 配图',
-        button: { text: '使用此图�? },
+        button: { text: '使用此图片' },
         multiple: false
       });
       frame.on('select', function () {
@@ -778,6 +788,10 @@ add_action('rest_api_init', function () {
         'methods' => 'GET',
         'permission_callback' => '__return_true',
         'callback' => function () {
+            if (function_exists('ybb_sm_latest_stories_public')) {
+                return rest_ensure_response(ybb_sm_latest_stories_public());
+            }
+
             return rest_ensure_response([
                 'enabled' => !empty(ybb_home_settings_get()['latestStoriesEnabled']),
                 'articles' => ybb_home_latest_stories_public(),
@@ -790,7 +804,11 @@ add_action('rest_api_init', function () {
         'methods' => 'GET',
         'permission_callback' => '__return_true',
         'callback' => function () {
-            $settings = ybb_home_settings_get();
+            if (function_exists('ybb_sm_hot_products_public')) {
+                return rest_ensure_response(ybb_sm_hot_products_public());
+            }
+
+            $settings = ybb_home_resolved_settings();
 
             return rest_ensure_response([
                 'enabled' => !empty($settings['hotProductsEnabled']),

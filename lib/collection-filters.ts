@@ -10,8 +10,8 @@ export type CollectionFilterParams = {
 export const SORT_OPTIONS = [
   { value: "featured", label: "Featured" },
   { value: "best-selling", label: "Best selling" },
-  { value: "title-asc", label: "Alphabetically, A–Z" },
-  { value: "title-desc", label: "Alphabetically, Z–A" },
+  { value: "title-asc", label: "Alphabetically, A-Z" },
+  { value: "title-desc", label: "Alphabetically, Z-A" },
   { value: "price-asc", label: "Price, low to high" },
   { value: "price-desc", label: "Price, high to low" },
   { value: "date-desc", label: "Date, new to old" },
@@ -20,7 +20,7 @@ export const SORT_OPTIONS = [
 export const PRICE_RANGES = [
   { value: "", label: "All prices" },
   { value: "0-25", label: "Under £25" },
-  { value: "25-50", label: "£25 �?£50" },
+  { value: "25-50", label: "£25 - £50" },
   { value: "50+", label: "Over £50" },
 ] as const;
 
@@ -87,8 +87,9 @@ export function filterAndSortProducts(
 
 export function countActiveFilters(params: CollectionFilterParams): number {
   let n = 0;
-  if (params.availability && params.availability !== "all") n++;
+  if (params.availability) n++;
   if (params.price) n++;
   if (params.tag) n++;
+  if (params.sort && params.sort !== "featured") n++;
   return n;
 }

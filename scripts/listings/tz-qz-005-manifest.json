@@ -1,0 +1,56 @@
+{
+  "format": "wc-v2-existing-update",
+  "source": "agent-json TZ-QZ-005 distance pear carp lead",
+  "sheets": [
+    {
+      "name": "商品主表",
+      "products": [
+        {
+          "skuBase": "TZ-QZ-005",
+          "handle": "tz-qz-005",
+          "title": "Distance Pear Carp Fishing Lead Weight Long Cast Swivel Sinker",
+          "nameEn": "Distance Pear Carp Fishing Lead Weight Long Cast Swivel Sinker",
+          "titleZh": "远投梨形鲤鱼钓铅坠 长投型转环铅坠",
+          "nameZh": "远投梨形鲤鱼钓铅坠 长投型转环铅坠",
+          "titleJa": "ロングキャスト ペア型 カープフィッシングシンカー",
+          "nameJa": "ロングキャスト ペア型 カープフィッシングシンカー",
+          "shortDescription": "Aerodynamic distance pear lead designed for maximum casting range, fast sink rate and stable carp rig presentation. OEM & wholesale available.",
+          "description": "The Distance Pear Carp Fishing Lead Weight is specifically designed for anglers who demand maximum casting distance and precise rig presentation. Its streamlined pear-shaped profile minimizes air resistance, allowing longer and more accurate casts while maintaining excellent stability underwater.\n\nManufactured from premium lead with a durable camouflage coating, this sinker blends naturally with lake and river bottoms while offering excellent wear resistance. The integrated swivel connection reduces line twist and provides smooth compatibility with lead clip, helicopter and inline carp rig systems.\n\nAvailable in multiple weight options from 57g to 142g, making it suitable for long-distance carp fishing in lakes, reservoirs, rivers and commercial fisheries. Ideal for tackle brands, wholesalers and OEM fishing equipment suppliers.\n\nKey Features\n• Aerodynamic distance pear design\n• Long casting performance\n• Fast sinking and stable presentation\n• Durable camouflage coating\n• Integrated swivel connection\n• Compatible with most carp rigs\n• OEM & ODM customization available\n• Wholesale supply supported\n\nConclusion\nA premium long-distance carp lead engineered for anglers seeking superior casting accuracy, dependable rig stability and professional carp fishing performance.",
+          "descriptionHtml": "<p>The Distance Pear Carp Fishing Lead Weight is specifically designed for anglers who demand maximum casting distance and precise rig presentation. Its streamlined pear-shaped profile minimizes air resistance, allowing longer and more accurate casts while maintaining excellent stability underwater.</p><p>Manufactured from premium lead with a durable camouflage coating, this sinker blends naturally with lake and river bottoms while offering excellent wear resistance. The integrated swivel connection reduces line twist and provides smooth compatibility with lead clip, helicopter and inline carp rig systems.</p><p>Available in multiple weight options from 57g to 142g, making it suitable for long-distance carp fishing in lakes, reservoirs, rivers and commercial fisheries. Ideal for tackle brands, wholesalers and OEM fishing equipment suppliers.</p><p>Key Features<br>• Aerodynamic distance pear design<br>• Long casting performance<br>• Fast sinking and stable presentation<br>• Durable camouflage coating<br>• Integrated swivel connection<br>• Compatible with most carp rigs<br>• OEM &amp; ODM customization available<br>• Wholesale supply supported</p><p>Conclusion<br>A premium long-distance carp lead engineered for anglers seeking superior casting accuracy, dependable rig stability and professional carp fishing performance.</p>",
+          "descriptionZh": "远投梨形鲤鱼钓铅坠采用空气动力学梨形外观设计，能够有效降低飞行阻力，实现更远、更精准的抛投，同时保持优秀的水底稳定性，非常适合现代鲤鱼钓远投需求。\n\n产品采用高品质铅材制造，外层配备耐磨迷彩涂层，可自然融入水底环境，提高隐蔽性并延长使用寿命。内置高强度转环，可有效减少主线缠绕，兼容Lead Clip、Helicopter Rig及多种鲤鱼钓组系统。\n\n提供57g至142g多种重量规格，可满足湖泊、水库、河流及商业钓场等不同远投场景，是品牌商、经销商及OEM客户的优质选择。\n\n产品特点\n• 空气动力学远投梨形设计\n• 超远距离精准抛投\n• 快速下沉，稳定贴底\n• 高强度迷彩耐磨涂层\n• 高品质转环连接\n• 兼容主流鲤鱼钓组\n• 支持OEM/ODM定制\n• 全球批发供应\n\n总结\n兼顾远投性能、稳定性与耐用性的专业鲤鱼钓铅坠，是欧洲鲤鱼钓市场广受欢迎的经典远投配重。",
+          "descriptionZhHtml": "<p>远投梨形鲤鱼钓铅坠采用空气动力学梨形外观设计，能够有效降低飞行阻力，实现更远、更精准的抛投，同时保持优秀的水底稳定性，非常适合现代鲤鱼钓远投需求。</p><p>产品采用高品质铅材制造，外层配备耐磨迷彩涂层，可自然融入水底环境，提高隐蔽性并延长使用寿命。内置高强度转环，可有效减少主线缠绕，兼容Lead Clip、Helicopter Rig及多种鲤鱼钓组系统。</p><p>提供57g至142g多种重量规格，可满足湖泊、水库、河流及商业钓场等不同远投场景，是品牌商、经销商及OEM客户的优质选择。</p><p>产品特点<br>• 空气动力学远投梨形设计<br>• 超远距离精准抛投<br>• 快速下沉，稳定贴底<br>• 高强度迷彩耐磨涂层<br>• 高品质转环连接<br>• 兼容主流鲤鱼钓组<br>• 支持OEM/ODM定制<br>• 全球批发供应</p><p>总结<br>兼顾远投性能、稳定性与耐用性的专业鲤鱼钓铅坠，是欧洲鲤鱼钓市场广受欢迎的经典远投配重。</p>",
+          "descriptionJa": "ロングキャスト ペア型シンカーは、優れた飛距離と安定した着底性能を実現するカープフィッシング専用シンカーです。\n\n空気抵抗を抑える流線型デザインと耐久性の高いカモフラージュコーティングを採用し、湖や河川で自然なプレゼンテーションを実現します。\n\n57g〜142gまでの重量展開で、リードクリップやヘリコプターリグなど様々なカープリグに対応します。\n\n特徴\n• ロングキャスト設計\n• ペア型エアロダイナミック形状\n• 高速沈下\n• カモフラージュコーティング\n• 高品質スイベル搭載\n• 各種カープリグ対応\n• OEM・ODM対応\n• 卸売対応\n\nまとめ\n飛距離・安定性・耐久性を兼ね備えたプロ仕様のカープフィッシングシンカーです。",
+          "descriptionJaHtml": "<p>ロングキャスト ペア型シンカーは、優れた飛距離と安定した着底性能を実現するカープフィッシング専用シンカーです。</p><p>空気抵抗を抑える流線型デザインと耐久性の高いカモフラージュコーティングを採用し、湖や河川で自然なプレゼンテーションを実現します。</p><p>57g〜142gまでの重量展開で、リードクリップやヘリコプターリグなど様々なカープリグに対応します。</p><p>特徴<br>• ロングキャスト設計<br>• ペア型エアロダイナミック形状<br>• 高速沈下<br>• カモフラージュコーティング<br>• 高品質スイベル搭載<br>• 各種カープリグ対応<br>• OEM・ODM対応<br>• 卸売対応</p><p>まとめ<br>飛距離・安定性・耐久性を兼ね備えたプロ仕様のカープフィッシングシンカーです。</p>",
+          "sloganEn": "Aerodynamic distance pear lead designed for maximum casting range, fast sink rate and stable carp rig presentation. OEM & wholesale available.",
+          "sloganZh": "空气动力学远投梨形设计，抛投更远、下沉更快、稳定性更强，适用于鲤鱼钓，支持OEM、ODM及批发。",
+          "sloganJa": "ロングキャスト設計で飛距離・沈下性能に優れたカープフィッシング用シンカー。OEM・卸売対応。",
+          "hideSlogan": false,
+          "frontHidden": false,
+          "galleryEnabled": true,
+          "galleryOverrideEnabled": false,
+          "hideDescription": false,
+          "hideAdditionalInfo": false,
+          "category": "Sinkers",
+          "categoryMain": "Sinkers",
+          "published": true,
+          "attributeName": "Weight",
+          "variants": [
+            { "sku": "TZ-QZ-005-57g", "parentSku": "TZ-QZ-005", "option": "57g", "price": "0.49" },
+            { "sku": "TZ-QZ-005-71g", "parentSku": "TZ-QZ-005", "option": "71g", "price": "0.59" },
+            { "sku": "TZ-QZ-005-85g", "parentSku": "TZ-QZ-005", "option": "85g", "price": "0.69" },
+            { "sku": "TZ-QZ-005-99g", "parentSku": "TZ-QZ-005", "option": "99g", "price": "0.79" },
+            { "sku": "TZ-QZ-005-113g", "parentSku": "TZ-QZ-005", "option": "113g", "price": "0.89" },
+            { "sku": "TZ-QZ-005-128g", "parentSku": "TZ-QZ-005", "option": "128g", "price": "0.99" },
+            { "sku": "TZ-QZ-005-142g", "parentSku": "TZ-QZ-005", "option": "142g", "price": "1.09" }
+          ],
+          "imageUrls": [
+            "https://cdn.shopify.com/s/files/1/0941/8542/3134/files/TZ-QZ-005.png"
+          ],
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0941/8542/3134/files/TZ-QZ-005.png",
+          "sheet": "铅坠",
+          "source": "agent-json TZ-QZ-005"
+        }
+      ]
+    }
+  ]
+}

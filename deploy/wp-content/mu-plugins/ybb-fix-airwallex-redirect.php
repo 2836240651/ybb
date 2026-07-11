@@ -47,7 +47,7 @@ function ybb_airwallex_fix_payment_result(array $result, int $order_id): array
     }
 
     $redirect = $result['redirect'];
-    $broken = str_contains($redirect, '/airwallex-checkout')
+    $broken = strpos($redirect, '/airwallex-checkout') !== false
         || rtrim($redirect, '/') === rtrim(home_url(), '/');
 
     if (!$broken) {

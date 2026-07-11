@@ -243,7 +243,7 @@ def main() -> int:
     if HTACCESS.is_file():
         info["htaccess_restore_kb"] = round(HTACCESS.stat().st_size / 1024, 1)
         ht = HTACCESS.read_text(encoding="utf-8", errors="ignore")
-        for needle in ("RewriteEngine On", "wp-json", "products/reviews"):
+        for needle in ("RewriteEngine On", "wp-json", "products/reviews", "text/x-component"):
             if needle not in ht:
                 warnings.append(f"htaccess.restore missing: {needle!r}")
     else:

@@ -30,7 +30,7 @@ export function ProductReviewsSummary({
         </p>
         <div className="flex flex-wrap items-end gap-2 sm:gap-3">
           <p className="text-4xl font-bold leading-none tracking-tight sm:text-5xl">
-            {reviewCount > 0 ? averageRating.toFixed(1) : "�?}
+            {reviewCount > 0 ? averageRating.toFixed(1) : "—"}
           </p>
           <div className="space-y-1 pb-1">
             <ProductStarRating
@@ -52,7 +52,7 @@ export function ProductReviewsSummary({
           const width = reviewCount > 0 ? `${Math.round((count / maxBarCount) * 100)}%` : "0%";
           return (
             <div key={stars} className="grid grid-cols-[2.25rem_1fr_1.75rem] items-center gap-1.5 text-xs sm:grid-cols-[3rem_1fr_2rem] sm:gap-2">
-              <span className="text-foreground/60">{stars} �?/span>
+              <span className="text-foreground/60">{stars} ★</span>
               <div className="h-2 overflow-hidden rounded-pill bg-neutral-100">
                 <div
                   className="h-full rounded-pill bg-[rgb(var(--color-success-text))] transition-all duration-500"
@@ -75,3 +75,5 @@ export function ProductReviewsSummary({
     </aside>
   );
 }
+
+

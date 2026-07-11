@@ -50,7 +50,10 @@ rest_get() {
 rest_post() {
   local route="$1"
   local key="$2"
-  local body="${3:-{}}"
+  local body="${3:-}"
+  if [[ -z "$body" ]]; then
+    body="{}"
+  fi
   curl -fsS -X POST -H "X-YBB-Deploy-Key: $key" -H "Content-Type: application/json" \
     -d "$body" "${SITE}/index.php?rest_route=${route}"
 }
@@ -162,7 +165,7 @@ check_and_run() {
   local key
   key="$(load_key)"
   status="$(rest_get "/ybb/v1/deploy/status" "$key")"
-  ready="$(echo "$status" | python3 -c "import sys,json; d=json.load(sys.stdin); print('yes' if d.get('readyToRun') or d.get('pending') else 'no')")"
+  ready="$(echo "$status" | python3 -c "import sys,json; d=json.load(sys.stdin); print('yes' if d.get('readyToRun') else 'no')")"
   if [[ "$ready" == "yes" ]]; then
     run_claim_pipeline "$key"
   else

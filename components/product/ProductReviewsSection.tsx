@@ -108,7 +108,7 @@ export function ProductReviewsSection({
             </li>
             <li aria-hidden>/</li>
             <li>
-              <Link href={`/products/${product.handle}`} className="hover:opacity-70">
+              <Link href={`/products/${product.handle}.html`} className="hover:opacity-70">
                 {productTitle}
               </Link>
             </li>
@@ -151,7 +151,7 @@ export function ProductReviewsSection({
                 </div>
               </div>
               <Link
-                href={`/products/${product.handle}`}
+                href={`/products/${product.handle}.html`}
                 className="inline-flex text-sm font-medium underline-offset-4 hover:underline"
               >
                 {t("product.backToProduct")}

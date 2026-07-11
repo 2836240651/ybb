@@ -28,7 +28,7 @@ function ybb_locale_short_labels(): array
     return array(
         'en' => 'EN',
         'zh' => '中文',
-        'ja' => '日本�?,
+        'ja' => '日本語',
     );
 }
 
@@ -52,10 +52,10 @@ function ybb_locale_to_wp(string $code): string
 
 function ybb_wp_to_locale(string $wp_locale): string
 {
-    if (str_starts_with($wp_locale, 'zh')) {
+    if (substr($wp_locale, 0, 2) === 'zh') {
         return 'zh';
     }
-    if (str_starts_with($wp_locale, 'ja')) {
+    if (substr($wp_locale, 0, 2) === 'ja') {
         return 'ja';
     }
 
@@ -221,7 +221,7 @@ JS;
 }
 
 /**
- * Render EN / 中文 / 日本�?switcher links.
+ * Render EN / 中文 / 日本語 switcher links.
  */
 function ybb_render_locale_switcher(string $class = 'ybb-lang'): void
 {

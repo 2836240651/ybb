@@ -20,7 +20,7 @@ function ybb_sm_audit_module_labels(): array
         'video' => '宣传视频',
         'featured' => 'Featured 主推',
         'brand' => '品牌',
-        'contact' => '联系�?,
+        'contact' => '联系',
         'deploy' => '站点部署',
         'reviews_import' => '评价导入',
         'system' => '系统',
@@ -34,7 +34,7 @@ function ybb_sm_audit_action_labels(): array
         'reset' => '恢复默认',
         'deploy_queue' => '加入部署队列',
         'deploy_merge' => '合并部署任务',
-        'deploy_start' => '开始部�?,
+        'deploy_start' => '开始部署',
         'deploy_step' => '部署进度',
         'deploy_success' => '部署成功',
         'deploy_failed' => '部署失败',
@@ -127,7 +127,7 @@ function ybb_sm_audit_append(array $entry): string
     ];
 
     if ($row['summary'] === '') {
-        $row['summary'] = $row['actionLabel'] . ' �?' . $row['moduleLabel'];
+        $row['summary'] = $row['actionLabel'] . ' · ' . $row['moduleLabel'];
     }
 
     $entries = ybb_sm_audit_get_entries();
@@ -226,13 +226,13 @@ function ybb_sm_audit_truncate(string $text, int $max = 56): string
 {
     $text = preg_replace('/\s+/u', ' ', trim($text));
     if ($text === '') {
-        return '（空�?;
+        return '（空）';
     }
     if (mb_strlen($text) <= $max) {
         return $text;
     }
 
-    return mb_substr($text, 0, $max) . '�?;
+    return mb_substr($text, 0, $max) . '…';
 }
 
 /** 缩进�?= 具体条目变更（非汇总行�?*/
@@ -248,14 +248,14 @@ function ybb_sm_audit_build_summary(string $module, array $lines, string $verify
     $headlines = array_values(array_filter($lines, static function ($line) {
         return !preg_match('/^  /u', (string) $line);
     }));
-    $headline = $headlines[0] ?? '配置已保�?;
+    $headline = $headlines[0] ?? '配置已保存';
     if (count($headlines) > 1) {
-        $headline .= '�? . implode('�?, array_slice($headlines, 1));
-    } elseif ($module === 'brand' && strpos($headline, '无字段改�?) !== false) {
+        $headline .= '；' . implode('；', array_slice($headlines, 1));
+    } elseif ($module === 'brand' && strpos($headline, '无字段改动') !== false) {
         // keep as-is
     }
 
-    return implode('�?, array_filter([$headline, $verifyMessage]));
+    return implode('；', array_filter([$headline, $verifyMessage]));
 }
 
 function ybb_sm_audit_index_by_id(array $rows, string $idKey = 'id'): array
@@ -282,7 +282,7 @@ function ybb_sm_audit_diff_label_locales(array $before, array $after, string $pr
         $oz = trim((string) ($before[$loc] ?? ''));
         $nz = trim((string) ($after[$loc] ?? ''));
         if ($oz !== $nz) {
-            $lines[] = '  · ' . $prefix . $locLabel . '�? . ybb_sm_audit_truncate($oz) . ' �?' . ybb_sm_audit_truncate($nz);
+            $lines[] = '  · ' . $prefix . $locLabel . '】' . ybb_sm_audit_truncate($oz) . ' → ' . ybb_sm_audit_truncate($nz);
         }
     }
 
@@ -311,7 +311,7 @@ function ybb_sm_audit_diff_module(string $module, array $before, array $after): 
             };
             $aVisible = $countVisible($aNav);
             $bVisible = $countVisible($bNav);
-            $lines[] = '顶部导航：显�?' . $aVisible . ' 项（�?' . $bVisible . ' 项）';
+            $lines[] = '顶部导航：显示 ' . $aVisible . ' 项（原 ' . $bVisible . ' 项）';
 
             $bById = ybb_sm_audit_index_by_id($bNav);
             $seen = [];
@@ -325,50 +325,50 @@ function ybb_sm_audit_diff_module(string $module, array $before, array $after): 
                 $name = ybb_sm_audit_item_display_name($item, $id);
 
                 if (!$old) {
-                    $lines[] = '  + 新增导航�? . $name . '�?;
+                    $lines[] = '  + 新增导航项【' . $name . '，';
                     continue;
                 }
 
                 $oldEn = ybb_sm_item_is_enabled($old);
                 $newEn = ybb_sm_item_is_enabled($item);
                 if ($oldEn !== $newEn) {
-                    $lines[] = '  · �? . $name . '�? . ($newEn ? '已显�? : '已隐�?);
+                    $lines[] = '  · 【' . $name . '】' . ($newEn ? '已显示' : '已隐藏');
                 }
                 if (($old['label'] ?? '') !== ($item['label'] ?? '')) {
-                    $lines[] = '  · �? . $name . '】英文标题：' . ybb_sm_audit_truncate((string) ($old['label'] ?? '')) . ' �?' . ybb_sm_audit_truncate((string) ($item['label'] ?? ''));
+                    $lines[] = '  · 【' . $name . '】英文标题：' . ybb_sm_audit_truncate((string) ($old['label'] ?? '')) . ' → ' . ybb_sm_audit_truncate((string) ($item['label'] ?? ''));
                 }
                 if (($old['href'] ?? '') !== ($item['href'] ?? '')) {
-                    $lines[] = '  · �? . $name . '】链接：' . ($old['href'] ?? '') . ' �?' . ($item['href'] ?? '');
+                    $lines[] = '  · 【' . $name . '】链接：' . ($old['href'] ?? '') . ' → ' . ($item['href'] ?? '');
                 }
                 foreach (['zh' => '中文', 'ja' => '日文'] as $loc => $locLabel) {
                     $oz = ybb_sm_audit_pick_label($old['labels'] ?? [], $loc);
                     $nz = ybb_sm_audit_pick_label($item['labels'] ?? [], $loc);
                     if ($oz !== $nz) {
-                        $lines[] = '  · �? . $name . '�? . $locLabel . '�? . ybb_sm_audit_truncate($oz) . ' �?' . ybb_sm_audit_truncate($nz);
+                        $lines[] = '  · 【' . $name . '】' . $locLabel . '】' . ybb_sm_audit_truncate($oz) . ' → ' . ybb_sm_audit_truncate($nz);
                     }
                 }
             }
             foreach ($bById as $id => $old) {
                 if (!in_array($id, $seen, true)) {
-                    $lines[] = '  - 已移除导航�? . ybb_sm_audit_item_display_name($old, $id) . '�?;
+                    $lines[] = '  - 已移除导航项【' . ybb_sm_audit_item_display_name($old, $id) . '，';
                 }
             }
             if (function_exists('ybb_sm_navigation_empty_collection_warnings')) {
                 $emptyNav = ybb_sm_navigation_empty_collection_warnings($a);
                 foreach ($emptyNav as $warning) {
-                    $lines[] = '  �?空类目�? . ($warning['label'] ?? $warning['handle']) . '�?
-                        . '�? . ($warning['handle'] ?? '') . '，Woo publish 0�?;
+                    $lines[] = '  ⚠ 空类目：' . ($warning['label'] ?? $warning['handle']) . '【'
+                        . '】' . ($warning['handle'] ?? '') . '，Woo publish 0';
                 }
             }
             break;
 
         case 'announcements':
             if (!empty($b['enabled']) !== !empty($a['enabled'])) {
-                $lines[] = '公告栏：' . (!empty($a['enabled']) ? '已开�? : '已关�?);
+                $lines[] = '公告栏：' . (!empty($a['enabled']) ? '已开启' : '已关闭');
             }
             $bi = $b['items'] ?? [];
             $ai = $a['items'] ?? [];
-            $lines[] = '公告条数�? . count($ai) . '（原 ' . count($bi) . '�?;
+            $lines[] = '公告条数：' . count($ai) . '（原 ' . count($bi) . '）';
 
             $bById = ybb_sm_audit_index_by_id($bi);
             $seen = [];
@@ -380,42 +380,42 @@ function ybb_sm_audit_diff_module(string $module, array $before, array $after): 
                 $seen[] = $id;
                 $old = $bById[$id] ?? null;
                 if (!$old) {
-                    $lines[] = '  + 新增公告�? . $id . '�?;
+                    $lines[] = '  + 新增公告：' . $id;
                     continue;
                 }
                 $oldEn = ybb_sm_item_is_enabled($old);
                 $newEn = ybb_sm_item_is_enabled($item);
                 if ($oldEn !== $newEn) {
-                    $lines[] = '  · �? . $id . '�? . ($newEn ? '已显�? : '已隐�?);
+                    $lines[] = '  · 【' . $id . '】' . ($newEn ? '已显示' : '已隐藏');
                 }
                 foreach (['zh' => '中文', 'en' => '英文', 'ja' => '日文'] as $loc => $locLabel) {
                     $oz = ybb_sm_audit_pick_label($old['labels'] ?? [], $loc);
                     $nz = ybb_sm_audit_pick_label($item['labels'] ?? [], $loc);
                     if ($oz !== $nz) {
-                        $lines[] = '  · �? . $id . '�? . $locLabel . '�? . ybb_sm_audit_truncate($oz) . ' �?' . ybb_sm_audit_truncate($nz);
+                        $lines[] = '  · 【' . $id . '】' . $locLabel . '】' . ybb_sm_audit_truncate($oz) . ' → ' . ybb_sm_audit_truncate($nz);
                     }
                 }
                 if (($old['href'] ?? '') !== ($item['href'] ?? '')) {
-                    $lines[] = '  · �? . $id . '】链接已修改';
+                    $lines[] = '  · 【' . $id . '】链接已修改';
                 }
             }
             foreach ($bById as $id => $old) {
                 if (!in_array($id, $seen, true)) {
-                    $lines[] = '  - 已移除公告�? . $id . '�?;
+                    $lines[] = '  - 已移除公告：' . $id;
                 }
             }
             break;
 
         case 'hero':
             if (!empty($b['enabled']) !== !empty($a['enabled'])) {
-                $lines[] = 'Hero�? . (!empty($a['enabled']) ? '已开�? : '已关�?);
+                $lines[] = 'Hero：' . (!empty($a['enabled']) ? '已开启' : '已关闭');
             }
             if ((int) ($b['autoplayMs'] ?? 0) !== (int) ($a['autoplayMs'] ?? 0)) {
-                $lines[] = '自动播放间隔�? . (int) ($b['autoplayMs'] ?? 0) . 'ms �?' . (int) ($a['autoplayMs'] ?? 0) . 'ms';
+                $lines[] = '自动播放间隔：' . (int) ($b['autoplayMs'] ?? 0) . 'ms → ' . (int) ($a['autoplayMs'] ?? 0) . 'ms';
             }
             $as = $a['slides'] ?? [];
             $bs = $b['slides'] ?? [];
-            $lines[] = '轮播图：' . count($as) . ' 张（�?' . count($bs) . ' 张）';
+            $lines[] = '轮播图：' . count($as) . ' 张（原 ' . count($bs) . ' 张）';
 
             $bById = ybb_sm_audit_index_by_id($bs);
             $seen = [];
@@ -426,34 +426,34 @@ function ybb_sm_audit_diff_module(string $module, array $before, array $after): 
                 }
                 $seen[] = $id;
                 $old = $bById[$id] ?? null;
-                $name = ybb_sm_audit_item_display_name($slide, '�?' . ($i + 1) . ' �?);
+                $name = ybb_sm_audit_item_display_name($slide, '第' . ($i + 1) . '张');
 
                 if (!$old) {
-                    $lines[] = '  + 新增轮播�? . $name . '�?;
+                    $lines[] = '  + 新增轮播：' . $name;
                     continue;
                 }
                 $oldEn = ybb_sm_item_is_enabled($old);
                 $newEn = ybb_sm_item_is_enabled($slide);
                 if ($oldEn !== $newEn) {
-                    $lines[] = '  · �? . $name . '�? . ($newEn ? '已显�? : '已隐�?);
+                    $lines[] = '  · 【' . $name . '】' . ($newEn ? '已显示' : '已隐藏');
                 }
                 if (($old['imageUrl'] ?? '') !== ($slide['imageUrl'] ?? '')) {
-                    $lines[] = '  · �? . $name . '】图片已更换';
+                    $lines[] = '  · 【' . $name . '】图片已更换';
                 }
                 if (($old['href'] ?? '') !== ($slide['href'] ?? '')) {
-                    $lines[] = '  · �? . $name . '】链接已修改';
+                    $lines[] = '  · 【' . $name . '】链接已修改';
                 }
                 foreach (['en' => '英文', 'zh' => '中文', 'ja' => '日文'] as $loc => $locLabel) {
                     $oz = ybb_sm_audit_pick_label($old['labels'] ?? [], $loc);
                     $nz = ybb_sm_audit_pick_label($slide['labels'] ?? [], $loc);
                     if ($oz !== $nz) {
-                        $lines[] = '  · �? . $name . '�? . $locLabel . '标题�? . ybb_sm_audit_truncate($oz) . ' �?' . ybb_sm_audit_truncate($nz);
+                        $lines[] = '  · 【' . $name . '】' . $locLabel . '标题：' . ybb_sm_audit_truncate($oz) . ' → ' . ybb_sm_audit_truncate($nz);
                     }
                 }
             }
             foreach ($bById as $id => $old) {
                 if (!in_array($id, $seen, true)) {
-                    $lines[] = '  - 已移除轮播�? . ybb_sm_audit_item_display_name($old, $id) . '�?;
+                    $lines[] = '  - 已移除轮播项【' . ybb_sm_audit_item_display_name($old, $id) . '，';
                 }
             }
             break;
@@ -467,11 +467,11 @@ function ybb_sm_audit_diff_module(string $module, array $before, array $after): 
                 ] as $key => $label
             ) {
                 if (!empty($b[$key]) !== !empty($a[$key])) {
-                    $lines[] = $label . '�? . (!empty($a[$key]) ? '已开�? : '已关�?);
+                    $lines[] = $label . '】' . (!empty($a[$key]) ? '已开启' : '已关闭');
                 }
             }
             if ((int) ($b['hotProductsAutoplayMs'] ?? 0) !== (int) ($a['hotProductsAutoplayMs'] ?? 0)) {
-                $lines[] = 'Hot Products 间隔�? . (int) ($b['hotProductsAutoplayMs'] ?? 0) . 'ms �?' . (int) ($a['hotProductsAutoplayMs'] ?? 0) . 'ms';
+                $lines[] = 'Hot Products 间隔：' . (int) ($b['hotProductsAutoplayMs'] ?? 0) . 'ms → ' . (int) ($a['hotProductsAutoplayMs'] ?? 0) . 'ms';
             }
 
             $bHot = ybb_sm_audit_index_by_id($b['hotProducts'] ?? []);
@@ -485,19 +485,19 @@ function ybb_sm_audit_diff_module(string $module, array $before, array $after): 
                 $old = $bHot[$id] ?? null;
                 $handle = (string) ($row['handle'] ?? $id);
                 if (!$old) {
-                    $lines[] = '  + Hot Products 新增�? . $handle . '�?;
+                    $lines[] = '  + Hot Products 新增：' . $handle . '，';
                     continue;
                 }
                 if (!empty($old['enabled']) !== !empty($row['enabled'])) {
-                    $lines[] = '  · Hot�? . $handle . '�? . (!empty($row['enabled']) ? '已显�? : '已隐�?);
+                    $lines[] = '  · Hot【' . $handle . '】' . (!empty($row['enabled']) ? '已显示' : '已隐藏');
                 }
                 if (($old['handle'] ?? '') !== ($row['handle'] ?? '')) {
-                    $lines[] = '  · Hot 第项 slug�? . ($old['handle'] ?? '') . ' �?' . ($row['handle'] ?? '');
+                    $lines[] = '  · Hot 第项 slug：' . ($old['handle'] ?? '') . ' → ' . ($row['handle'] ?? '');
                 }
             }
             foreach ($bHot as $id => $old) {
                 if (!in_array($id, $seenHot, true)) {
-                    $lines[] = '  - Hot 已移除�? . ($old['handle'] ?? $id) . '�?;
+                    $lines[] = '  - Hot 已移除【' . ($old['handle'] ?? $id) . '，';
                 }
             }
 
@@ -512,29 +512,29 @@ function ybb_sm_audit_diff_module(string $module, array $before, array $after): 
                 $old = $bStories[$id] ?? null;
                 $title = (string) ($row['title'] ?? $id);
                 if (!$old) {
-                    $lines[] = '  + Latest Stories 新增�? . ybb_sm_audit_truncate($title, 40) . '�?;
+                    $lines[] = '  + Latest Stories 新增：' . ybb_sm_audit_truncate($title, 40) . '，';
                     continue;
                 }
                 if (!empty($old['enabled']) !== !empty($row['enabled'])) {
-                    $lines[] = '  · Story�? . ybb_sm_audit_truncate($title, 36) . '�? . (!empty($row['enabled']) ? '已显�? : '已隐�?);
+                    $lines[] = '  · Story【' . ybb_sm_audit_truncate($title, 36) . '】' . (!empty($row['enabled']) ? '已显示' : '已隐藏');
                 }
                 if (($old['title'] ?? '') !== ($row['title'] ?? '')) {
-                    $lines[] = '  · Story�? . $id . '】标题：' . ybb_sm_audit_truncate((string) ($old['title'] ?? '')) . ' �?' . ybb_sm_audit_truncate($title);
+                    $lines[] = '  · Story【' . $id . '】标题：' . ybb_sm_audit_truncate((string) ($old['title'] ?? '')) . ' → ' . ybb_sm_audit_truncate($title);
                 }
             }
             foreach ($bStories as $id => $old) {
                 if (!in_array($id, $seenStories, true)) {
-                    $lines[] = '  - Story 已移除�? . ybb_sm_audit_truncate((string) ($old['title'] ?? $id), 40) . '�?;
+                    $lines[] = '  - Story 已移除【' . ybb_sm_audit_truncate((string) ($old['title'] ?? $id), 40) . '，';
                 }
             }
             break;
 
         case 'video':
             if (!empty($b['enabled']) !== !empty($a['enabled'])) {
-                $lines[] = '视频模块�? . (!empty($a['enabled']) ? '已开�? : '已关�?);
+                $lines[] = '视频模块：' . (!empty($a['enabled']) ? '已开启' : '已关闭');
             }
             if (($b['videoUrl'] ?? '') !== ($a['videoUrl'] ?? '')) {
-                $lines[] = '  · 视频地址已更�?;
+                $lines[] = '  · 视频地址已更新';
             }
             if (($b['posterUrl'] ?? '') !== ($a['posterUrl'] ?? '')) {
                 $lines[] = '  · 封面图已更新';
@@ -556,19 +556,16 @@ function ybb_sm_audit_diff_module(string $module, array $before, array $after): 
 
         case 'blog':
             if (!empty($b['enabled']) !== !empty($a['enabled'])) {
-                $lines[] = '博客�? . (!empty($a['enabled']) ? '已开�? : '已关�?);
-            }
-            if (!empty($b['latestStoriesEnabled']) !== !empty($a['latestStoriesEnabled'])) {
-                $lines[] = 'Latest Stories 轮播�? . (!empty($a['latestStoriesEnabled']) ? '已开�? : '已关�?);
+                $lines[] = '博客：' . (!empty($a['enabled']) ? '已开启' : '已关闭');
             }
             if (($b['handle'] ?? '') !== ($a['handle'] ?? '')) {
-                $lines[] = '  · 博客 handle�? . ($b['handle'] ?? '') . ' �?' . ($a['handle'] ?? '');
+                $lines[] = '  · 博客 handle：' . ($b['handle'] ?? '') . ' → ' . ($a['handle'] ?? '');
             }
             if (($b['title'] ?? '') !== ($a['title'] ?? '')) {
-                $lines[] = '  · 列表标题已修�?;
+                $lines[] = '  · 列表标题已修改';
             }
             if (($b['description'] ?? '') !== ($a['description'] ?? '')) {
-                $lines[] = '  · 列表描述已修�?;
+                $lines[] = '  · 列表描述已修改';
             }
 
             $bArticles = ybb_sm_audit_index_by_id($b['articles'] ?? []);
@@ -583,46 +580,49 @@ function ybb_sm_audit_diff_module(string $module, array $before, array $after): 
                 $name = ybb_sm_audit_item_display_name($row, (string) ($row['handle'] ?? $id));
 
                 if (!$old) {
-                    $lines[] = '  + 新增文章�? . $name . '�?;
+                    $lines[] = '  + 新增文章：' . $name;
                     continue;
                 }
                 if (!empty($old['enabled']) !== !empty($row['enabled'])) {
-                    $lines[] = '  · �? . $name . '�? . (!empty($row['enabled']) ? '已显�? : '已隐�?);
+                    $lines[] = '  · 【' . $name . '】' . (!empty($row['enabled']) ? '已显示' : '已隐藏');
                 }
                 if (!empty($old['featuredOnHome']) !== !empty($row['featuredOnHome'])) {
-                    $lines[] = '  · �? . $name . '】首页展示：' . (!empty($row['featuredOnHome']) ? '�? : '�?);
+                    $lines[] = '  · 【' . $name . '】首页展示：' . (!empty($row['featuredOnHome']) ? '是' : '否');
                 }
                 if (($old['title'] ?? '') !== ($row['title'] ?? '')) {
-                    $lines[] = '  · �? . $name . '】标题已修改';
+                    $lines[] = '  · 【' . $name . '】标题已修改';
                 }
                 if (($old['imageUrl'] ?? '') !== ($row['imageUrl'] ?? '')) {
-                    $lines[] = '  · �? . $name . '】头图已更换';
+                    $lines[] = '  · 【' . $name . '】头图已更换';
                 }
                 if (($old['excerpt'] ?? '') !== ($row['excerpt'] ?? '')) {
-                    $lines[] = '  · �? . $name . '】摘要已修改';
+                    $lines[] = '  · 【' . $name . '】摘要已修改';
                 }
                 if (json_encode($old['content'] ?? []) !== json_encode($row['content'] ?? [])) {
-                    $lines[] = '  · �? . $name . '】正文已修改';
+                    $lines[] = '  · 【' . $name . '】正文已修改';
+                }
+                if (json_encode($old['contentBlocks'] ?? []) !== json_encode($row['contentBlocks'] ?? [])) {
+                    $lines[] = '  · 【' . $name . '】内容块已修改';
                 }
             }
             foreach ($bArticles as $id => $old) {
                 if (!in_array($id, $seen, true)) {
-                    $lines[] = '  - 已移除文章�? . ybb_sm_audit_item_display_name($old, $id) . '�?;
+                    $lines[] = '  - 已移除文章【' . ybb_sm_audit_item_display_name($old, $id) . '】';
                 }
             }
             if (count($lines) === 0) {
-                $lines[] = '博客：已保存（无字段改动�?;
+                $lines[] = '博客：已保存（无字段改动）';
             }
             break;
 
         case 'products':
             if (!empty($b['enabled']) !== !empty($a['enabled'])) {
-                $lines[] = '产品覆盖�? . (!empty($a['enabled']) ? '已开�? : '已关�?);
+                $lines[] = '产品覆盖：' . (!empty($a['enabled']) ? '已开启' : '已关闭');
             }
             $bPdp = is_array($b['pdp'] ?? null) ? $b['pdp'] : [];
             $aPdp = is_array($a['pdp'] ?? null) ? $a['pdp'] : [];
             if ($bPdp !== $aPdp) {
-                $lines[] = '  · 全站购买�?slogan 默认已更�?;
+                $lines[] = '  · 全站购买区 slogan 默认已更新';
             }
             $bOverrides = is_array($b['overrides'] ?? null) ? $b['overrides'] : [];
             $aOverrides = is_array($a['overrides'] ?? null) ? $a['overrides'] : [];
@@ -636,36 +636,36 @@ function ybb_sm_audit_diff_module(string $module, array $before, array $after): 
                 }
                 $changed++;
                 if (!$old && $new) {
-                    $lines[] = '  + 覆盖�? . $handle . '�?;
+                    $lines[] = '  + 覆盖：' . $handle;
                 } elseif ($old && !$new) {
-                    $lines[] = '  - 移除覆盖�? . $handle . '�?;
+                    $lines[] = '  - 移除覆盖：' . $handle;
                 } else {
-                    $lines[] = '  · 更新覆盖�? . $handle . '�?;
+                    $lines[] = '  · 更新覆盖：' . $handle;
                     if (($old['galleryEnabled'] ?? true) !== ($new['galleryEnabled'] ?? true)) {
-                        $lines[] = '    - 图库启用�? . (!empty($old['galleryEnabled']) ? '�? : '�?) . ' �?' . (!empty($new['galleryEnabled']) ? '�? : '�?);
+                        $lines[] = '    - 图库启用：' . (!empty($old['galleryEnabled']) ? '是' : '否') . ' → ' . (!empty($new['galleryEnabled']) ? '是' : '否');
                     }
                     if ((int) ($old['galleryDefaultIndex'] ?? 0) !== (int) ($new['galleryDefaultIndex'] ?? 0)) {
-                        $lines[] = '    - 默认图序号：' . (int) ($old['galleryDefaultIndex'] ?? 0) . ' �?' . (int) ($new['galleryDefaultIndex'] ?? 0);
+                        $lines[] = '    - 默认图序号：' . (int) ($old['galleryDefaultIndex'] ?? 0) . ' → ' . (int) ($new['galleryDefaultIndex'] ?? 0);
                     }
                     if (json_encode($old['galleryImages'] ?? []) !== json_encode($new['galleryImages'] ?? [])) {
-                        $lines[] = '    - 覆盖图库 URL 已修�?;
+                        $lines[] = '    - 覆盖图库 URL 已修改';
                     }
                     if (json_encode($old['galleryHideIndexes'] ?? []) !== json_encode($new['galleryHideIndexes'] ?? [])) {
-                        $lines[] = '    - 隐藏序号已修�?;
+                        $lines[] = '    - 隐藏序号已修改';
                     }
                 }
             }
             if ($changed === 0 && count($lines) === 0) {
-                $lines[] = '产品覆盖：已保存（无字段改动�?;
+                $lines[] = '产品覆盖：已保存（无字段改动';
             }
             break;
 
         case 'featured':
             if (!empty($b['enabled']) !== !empty($a['enabled'])) {
-                $lines[] = 'Featured�? . (!empty($a['enabled']) ? '已开�? : '已关�?);
+                $lines[] = 'Featured：' . (!empty($a['enabled']) ? '已开启' : '已关闭');
             }
             if (($b['handle'] ?? '') !== ($a['handle'] ?? '')) {
-                $lines[] = '  · 主推产品�? . ($b['handle'] ?? '（空�?) . ' �?' . ($a['handle'] ?? '（空�?);
+                $lines[] = '  · 主推产品：' . ($b['handle'] ?? '（空）') . ' → ' . ($a['handle'] ?? '（空）');
             } elseif (count($lines) === 0) {
                 $lines[] = 'Featured 主推：已保存（slug 无改动）';
             }
@@ -673,26 +673,26 @@ function ybb_sm_audit_diff_module(string $module, array $before, array $after): 
 
         case 'brand':
             if (($b['name'] ?? '') !== ($a['name'] ?? '')) {
-                $lines[] = '  · 品牌名：' . ybb_sm_audit_truncate((string) ($b['name'] ?? '')) . ' �?' . ybb_sm_audit_truncate((string) ($a['name'] ?? ''));
+                $lines[] = '  · 品牌名：' . ybb_sm_audit_truncate((string) ($b['name'] ?? '')) . ' → ' . ybb_sm_audit_truncate((string) ($a['name'] ?? ''));
             }
             if (($b['logoPath'] ?? '') !== ($a['logoPath'] ?? '')) {
-                $lines[] = '  · Logo 路径已修�?;
+                $lines[] = '  · Logo 路径已修改';
             }
             $lines = array_merge(
                 $lines,
-                ybb_sm_audit_diff_label_locales($b['tagline'] ?? [], $a['tagline'] ?? [], '副标�?)
+                ybb_sm_audit_diff_label_locales($b['tagline'] ?? [], $a['tagline'] ?? [], '副标题')
             );
             if (count($lines) === 0) {
-                $lines[] = '品牌：已保存（无字段改动�?;
+                $lines[] = '品牌：已保存（无字段改动';
             }
             break;
 
         case 'contact':
             if (($b['salesEmail'] ?? '') !== ($a['salesEmail'] ?? '')) {
-                $lines[] = '  · 销售邮箱：' . ybb_sm_audit_truncate((string) ($b['salesEmail'] ?? '')) . ' �?' . ybb_sm_audit_truncate((string) ($a['salesEmail'] ?? ''));
+                $lines[] = '  · 销售邮箱：' . ybb_sm_audit_truncate((string) ($b['salesEmail'] ?? '')) . ' → ' . ybb_sm_audit_truncate((string) ($a['salesEmail'] ?? ''));
             }
             if (($b['phoneNumber'] ?? '') !== ($a['phoneNumber'] ?? '')) {
-                $lines[] = '  · 电话已修�?;
+                $lines[] = '  · 电话已修改';
             }
             if (($b['companyLegalName'] ?? '') !== ($a['companyLegalName'] ?? '')) {
                 $lines[] = '  · 公司名（英文）已修改';
@@ -711,15 +711,15 @@ function ybb_sm_audit_diff_module(string $module, array $before, array $after): 
             break;
 
         default:
-            $lines[] = '配置已更�?;
+            $lines[] = '配置已更新';
     }
 
-    if (ybb_sm_audit_change_lines($lines) === [] && count($lines) === 1 && strpos($lines[0], '已保�?) === false) {
+    if (ybb_sm_audit_change_lines($lines) === [] && count($lines) === 1 && strpos($lines[0], '已保存') === false) {
         $lines[] = '  · 本次保存未检测到条目级差异（可能与上次相同）';
     }
 
     return [
-        'summary' => $lines[0] ?? '配置已保�?,
+        'summary' => $lines[0] ?? '配置已保存',
         'detail' => implode("\n", $lines),
         'lines' => $lines,
     ];
@@ -742,13 +742,13 @@ function ybb_sm_audit_verify_rest(string $module): array
         return [
             'http' => 0,
             'status' => 'warning',
-            'message' => '接口检测失败，配置已保存；请刷新前台验�?,
+            'message' => '接口检测失败，配置已保存；请刷新前台验证',
         ];
     }
 
     $code = (int) wp_remote_retrieve_response_code($response);
     if ($code === 200) {
-        return ['http' => $code, 'status' => 'ok', 'message' => '接口正常，刷新前台即可（无需部署�?];
+        return ['http' => $code, 'status' => 'ok', 'message' => '接口正常，刷新前台即可（无需部署）'];
     }
 
     return [
@@ -783,8 +783,8 @@ function ybb_sm_audit_log_config_save(string $module, array $before, array $afte
         'summary' => $summary,
         'detail' => $diff['detail'],
         'nextStep' => $verify['status'] === 'ok'
-            ? '浏览器打开首页�?Ctrl+Shift+R 硬刷�?
-            : '若未生效：SiteGround �?Purge Cache 后硬刷新',
+            ? '浏览器打开首页，Ctrl+Shift+R 硬刷新'
+            : '若未生效：SiteGround → Purge Cache 后硬刷新',
         'meta' => ['deployRequired' => false, 'verifyHttp' => $verify['http']],
     ]);
 }
@@ -798,8 +798,8 @@ function ybb_sm_audit_log_reset(string $module): void
         'moduleLabel' => $labels[$module] ?? $module,
         'action' => 'reset',
         'status' => 'success',
-        'summary' => '已将�? . ($labels[$module] ?? $module) . '】恢复为默认',
-        'detail' => '仅该模块恢复默认，其他模块未改动�?,
+        'summary' => '已将【' . ($labels[$module] ?? $module) . '】恢复为默认',
+        'detail' => '仅该模块恢复默认，其他模块未改动。',
         'nextStep' => '刷新 https://carp-ybb.com',
         'meta' => ['deployRequired' => false],
     ]);
@@ -832,7 +832,7 @@ function ybb_sm_audit_log_deploy_event(string $action, string $status, string $s
 function ybb_sm_audit_trigger_label(string $trigger): string
 {
     $map = [
-        'manual' => '管理员手�?,
+        'manual' => '管理员手动',
         'product_publish' => '产品首次发布',
         'product_update' => '产品更新',
     ];
@@ -844,7 +844,7 @@ function ybb_sm_audit_friendly_error(string $error): string
 {
     $error = trim($error);
     if (stripos($error, 'audit') !== false || stripos($error, 'BLOCKED') !== false) {
-        return '部署包审计未通过，线上未被覆�?;
+        return '部署包审计未通过，线上未被覆盖';
     }
     if (stripos($error, 'sync') !== false) {
         return '同步 Woo 产品失败';
@@ -853,7 +853,7 @@ function ybb_sm_audit_friendly_error(string $error): string
         return '静态站构建失败';
     }
     if (stripos($error, 'upload') !== false || stripos($error, 'FTPS') !== false) {
-        return '上传静态文件失�?;
+        return '上传静态文件失败';
     }
 
     return $error !== '' ? mb_substr($error, 0, 200) : '未知错误';
@@ -872,7 +872,7 @@ add_action('update_option_' . YBB_SM_OPTION, function ($old, $new) {
     $before = is_array($pending['before'] ?? null) ? $pending['before'] : (is_array($old) ? $old : []);
     $after = is_array($new) ? $new : [];
     if ($module === 'deploy') {
-        ybb_sm_audit_log_deploy_event('save', 'info', 'Deploy Secret 已更�?, [], '密钥不明文记录�?);
+        ybb_sm_audit_log_deploy_event('save', 'info', 'Deploy Secret 已更新', [], '密钥不明文记录。');
         return;
     }
     ybb_sm_audit_log_config_save($module, $before, $after);
@@ -894,7 +894,7 @@ add_action('admin_post_ybb_sm_export_audit', function () {
     header('Content-Disposition: attachment; filename=ybb-audit-' . gmdate('Ymd-His') . '.csv');
     echo "\xEF\xBB\xBF";
     $out = fopen('php://output', 'w');
-    fputcsv($out, ['时间', '操作�?, '类别', '模块', '动作', '状�?, '摘要', '详情', '下一�?]);
+    fputcsv($out, ['时间', '操作人', '类别', '模块', '动作', '状态', '摘要', '详情', '下一步']);
     foreach ($result['items'] as $row) {
         fputcsv($out, [
             $row['at'] ?? '',

@@ -2,7 +2,7 @@ type IconEyeProps = {
   className?: string;
 };
 
-/** OMC `icon-eye` â€?viewBox 0 0 16 16, stroke 1 */
+/** OMC icon-eye viewBox 0 0 16 16 */
 export function IconEye({ className }: IconEyeProps) {
   return (
     <svg

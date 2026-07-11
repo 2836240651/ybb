@@ -17,6 +17,11 @@ export function ybbRestUrl(route: string): string {
   return `${base}/wp-json${normalized}`;
 }
 
+function withCacheBust(url: string, stamp: string): string {
+  const separator = url.includes("?") ? "&" : "?";
+  return `${url}${separator}_=${encodeURIComponent(stamp)}`;
+}
+
 export function ybbLegacyRestUrl(route: string): string {
   const normalized = route.startsWith("/") ? route : `/${route}`;
   const base = `${restBase()}/index.php`;
@@ -40,7 +45,8 @@ async function parseYbbJson<T>(res: Response): Promise<T | null> {
 }
 
 export async function fetchYbbJson<T>(route: string): Promise<T | null> {
-  const urls = [ybbRestUrl(route), ybbLegacyRestUrl(route)];
+  const stamp = String(Date.now());
+  const urls = [withCacheBust(ybbRestUrl(route), stamp), ybbLegacyRestUrl(route)];
   const init: RequestInit = {
     credentials: "same-origin",
     cache: "no-store",

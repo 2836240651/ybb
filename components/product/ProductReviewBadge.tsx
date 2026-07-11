@@ -8,17 +8,24 @@ import {
   getProductReviewsHref,
 } from "@/lib/product-reviews";
 import { useI18n } from "@/lib/i18n/I18nProvider";
+import type { PdpTabLabelsPayload } from "@/lib/site-manager/product-overrides-api";
+import { pickPdpTabLabel } from "@/lib/site-manager/pdp-tab-labels";
 import type { Product } from "@/lib/types/product";
 import { fetchLiveReviewCount } from "@/lib/woocommerce/product-reviews-api";
 import { cn } from "@/lib/utils";
 
 type ProductReviewBadgeProps = {
   product: Product;
+  pdpTabLabels?: PdpTabLabelsPayload | null;
   className?: string;
 };
 
-export function ProductReviewBadge({ product, className }: ProductReviewBadgeProps) {
-  const { t } = useI18n();
+export function ProductReviewBadge({
+  product,
+  pdpTabLabels,
+  className,
+}: ProductReviewBadgeProps) {
+  const { locale } = useI18n();
   const [count, setCount] = useState(product.reviewCount ?? 0);
   const average = product.averageRating ?? 0;
 
@@ -40,14 +47,14 @@ export function ProductReviewBadge({ product, className }: ProductReviewBadgePro
   const label =
     count > 0
       ? average > 0
-        ? t("product.reviewsBadgeCount", {
+        ? pickPdpTabLabel(pdpTabLabels, "reviewsBadge", locale, {
             rating: average.toFixed(1),
             count: formatReviewCountDisplay(count),
           })
-        : t("product.positiveReviews", {
+        : pickPdpTabLabel(pdpTabLabels, "reviewsBadgeNoRating", locale, {
             count: formatReviewCountDisplay(count),
           })
-      : t("product.writeFirstReview");
+      : pickPdpTabLabel(pdpTabLabels, "writeFirstReview", locale);
 
   return (
     <Link

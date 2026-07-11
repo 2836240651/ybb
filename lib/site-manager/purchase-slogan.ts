@@ -4,8 +4,13 @@ import type { PurchaseSloganPayload } from "@/lib/site-manager/product-overrides
 export function resolvePurchaseSlogan(
   payload: PurchaseSloganPayload | undefined,
   locale: Locale,
-  i18nFallback: string
+  i18nFallback: string,
+  liveReady = true
 ): { visible: boolean; text: string } {
+  if (!liveReady) {
+    return { visible: false, text: "" };
+  }
+
   if (payload?.visible === false) {
     return { visible: false, text: "" };
   }

@@ -9,6 +9,8 @@ export type LiveProductSummary = {
   price: number;
   compareAtPrice?: number;
   available: boolean;
+  /** Woo Featured Image — same source as PDP main image */
+  image?: string;
 };
 
 type CacheEntry = {
@@ -83,6 +85,7 @@ type StoreProductRow = {
   prices?: unknown;
   is_in_stock?: boolean;
   is_purchasable?: boolean;
+  images?: Array<{ src?: string }>;
 };
 
 const STORE_BATCH_SIZE = 24;
@@ -94,6 +97,8 @@ function summaryFromStoreRow(
 ): LiveProductSummary {
   const price = priceFromStorePrices(data.prices);
   const compareAtPrice = compareAtFromStorePrices(data.prices, price);
+  const image = data.images?.find((row) => row?.src)?.src;
+
   return {
     wcId,
     price,
@@ -101,6 +106,7 @@ function summaryFromStoreRow(
     available:
       Boolean(data.is_in_stock ?? true) &&
       Boolean(data.is_purchasable ?? true),
+    ...(image ? { image } : {}),
   };
 }
 

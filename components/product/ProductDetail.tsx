@@ -19,6 +19,7 @@ import { useProductLive } from "@/hooks/useProductLive";
 import { useI18n, useProductTitle } from "@/lib/i18n/I18nProvider";
 import { getDisplaySku, getLocalizedVariantSpec } from "@/lib/i18n/variant-spec";
 import { resolvePurchaseSlogan } from "@/lib/site-manager/purchase-slogan";
+import { resolveShopPayInstallmentText } from "@/lib/site-manager/shop-pay-installments";
 import type { Product } from "@/lib/types/product";
 
 type ProductDetailProps = {
@@ -86,9 +87,21 @@ export function ProductDetail({ product: staticProduct, collectionTitle }: Produ
       resolvePurchaseSlogan(
         live?.purchaseSlogan,
         locale,
-        t("product.defaultDescription")
+        t("product.defaultDescription"),
+        ready
       ),
-    [live?.purchaseSlogan, locale, t]
+    [live?.purchaseSlogan, locale, t, ready]
+  );
+
+  const shopPayInstallmentText = useMemo(
+    () =>
+      resolveShopPayInstallmentText(
+        live?.shopPayInstallments,
+        locale,
+        displayProduct.price,
+        t("product.shopPayInstallmentTemplate")
+      )?.text ?? null,
+    [live?.shopPayInstallments, locale, displayProduct.price, t]
   );
 
   return (
@@ -149,11 +162,18 @@ export function ProductDetail({ product: staticProduct, collectionTitle }: Produ
               onQuantityChange={setQuantity}
               headingLevel="h1"
               purchaseSlogan={purchaseSlogan}
+              shopPayInstallmentText={shopPayInstallmentText}
+              pdpTabLabels={live?.pdpTabLabels}
             />
           </ScrollReveal>
         </div>
 
-        <ProductContentTabs content={live?.content} ready={ready} product={product} />
+        <ProductContentTabs
+          content={live?.content}
+          pdpTabLabels={live?.pdpTabLabels}
+          ready={ready}
+          product={product}
+        />
 
         <PairsWellWith product={product} />
 

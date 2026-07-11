@@ -24,6 +24,15 @@ $keepHandles = [
     'tz-xz-014',
     'tz-eldz-013',
     'tz-zj-002',
+    'tz-qz-002',
+    // 2026-07 batch publish
+    'tz-eldz-001',
+    'tz-eldz-002',
+    'tz-qzdz-001',
+    'tz-qzdz-002',
+    'tz-qzdz-003',
+    'tz-qz-010',
+    'tz-qz-011',
 ];
 $keepSet = array_fill_keys($keepHandles, true);
 

@@ -63,8 +63,8 @@ function ybb_pr_import_probe_image_url(string $url): array
         return [
             'status' => 'ok_local',
             'message' => $attachment_id > 0
-                ? '站内媒体�?URL（已匹配附件 #' . $attachment_id . '�?
-                : '站内 URL，导入时�?sideload',
+                ? '站内媒体库 URL（已匹配附件 #' . $attachment_id . '）'
+                : '站内 URL，导入时将 sideload',
             'attachment_id' => $attachment_id,
         ];
     }
@@ -84,8 +84,8 @@ function ybb_pr_import_probe_image_url(string $url): array
         return [
             'status' => $is_amazon ? 'warn_amazon_blocked' : 'warn_unreachable',
             'message' => $is_amazon
-                ? 'Amazon 外链可能被服务器 IP 拒绝�? . $err . '）；请上传到媒体库后改用站内 URL 重导'
-                : '图片 URL 无法访问�? . $err . '�?,
+                ? 'Amazon 外链可能被服务器 IP 拒绝（' . $err . '）；请上传到媒体库后改用站内 URL 重导'
+                : '图片 URL 无法访问（' . $err . '）',
             'http_code' => $code,
         ];
     }
@@ -93,14 +93,14 @@ function ybb_pr_import_probe_image_url(string $url): array
     if ($is_amazon) {
         return [
             'status' => 'warn_amazon',
-            'message' => 'Amazon 外链：HEAD 可达�?sideload 仍可能失败；建议改为站内媒体�?URL',
+            'message' => 'Amazon 外链：HEAD 可达，sideload 仍可能失败；建议改为站内媒体库 URL',
             'http_code' => $code,
         ];
     }
 
     return [
         'status' => 'ok',
-        'message' => '远程 URL 可访�?,
+        'message' => '远程 URL 可访问',
         'http_code' => $code,
     ];
 }
@@ -144,7 +144,7 @@ function ybb_pr_import_parse_csv(string $path): array
     if (!is_array($header_row)) {
         fclose($handle);
 
-        return ['rows' => [], 'errors' => ['CSV 缺少表头�?]];
+        return ['rows' => [], 'errors' => ['CSV 缺少表头']];
     }
 
     $headers = array_map('ybb_pr_import_normalize_header', $header_row);
@@ -162,7 +162,7 @@ function ybb_pr_import_parse_csv(string $path): array
     fclose($handle);
 
     if (count($rows) > YBB_PR_IMPORT_MAX_ROWS) {
-        $errors[] = '超过单次上限 ' . YBB_PR_IMPORT_MAX_ROWS . ' �?;
+        $errors[] = '超过单次上限 ' . YBB_PR_IMPORT_MAX_ROWS . ' 行';
 
         return ['rows' => [], 'errors' => $errors];
     }
@@ -177,7 +177,7 @@ function ybb_pr_import_parse_xlsx(string $path): array
 {
     $lib = dirname(__DIR__) . '/lib/SimpleXLSX.php';
     if (!is_readable($lib)) {
-        return ['rows' => [], 'errors' => ['缺少 SimpleXLSX 库，请改�?CSV 或重新上传插件目�?]];
+        return ['rows' => [], 'errors' => ['缺少 SimpleXLSX 库，请改用 CSV 或重新上传插件目录']];
     }
     require_once $lib;
 
@@ -215,7 +215,7 @@ function ybb_pr_import_parse_xlsx(string $path): array
     }
 
     if (count($rows) > YBB_PR_IMPORT_MAX_ROWS) {
-        return ['rows' => [], 'errors' => ['超过单次上限 ' . YBB_PR_IMPORT_MAX_ROWS . ' �?]];
+        return ['rows' => [], 'errors' => ['超过单次上限 ' . YBB_PR_IMPORT_MAX_ROWS . ' 行']];
     }
 
     return ['rows' => $rows, 'errors' => []];
@@ -239,7 +239,7 @@ function ybb_pr_import_row_is_blank(array $row): bool
  * @param array<string, string> $row
  * @return array{product_id: int, title: string, note?: string}|WP_Error
  */
-function ybb_pr_import_resolve_product(array $row): array|WP_Error
+function ybb_pr_import_resolve_product(array $row)
 {
     $wc_id = (int) ($row['wc_product_id'] ?? 0);
     if ($wc_id > 0) {
@@ -256,7 +256,7 @@ function ybb_pr_import_resolve_product(array $row): array|WP_Error
                 return [
                     'product_id' => $parent_id,
                     'title' => $parent ? $parent->get_name() : get_the_title($parent_id),
-                    'note' => '变体 ID 已映射到父商�?#' . $parent_id,
+                    'note' => '变体 ID 已映射到父商品 #' . $parent_id,
                 ];
             }
         }
@@ -276,7 +276,7 @@ function ybb_pr_import_resolve_product(array $row): array|WP_Error
                     return [
                         'product_id' => $parent_id,
                         'title' => get_the_title($parent_id),
-                        'note' => '变体 SKU 已映射到父商�?,
+                        'note' => '变体 SKU 已映射到父商品',
                     ];
                 }
             }
@@ -284,7 +284,7 @@ function ybb_pr_import_resolve_product(array $row): array|WP_Error
             return ['product_id' => $found, 'title' => get_the_title($found)];
         }
 
-        return new WP_Error('sku_not_found', '未找�?SKU�? . $sku);
+        return new WP_Error('sku_not_found', '未找到 SKU：' . $sku);
     }
 
     $handle = sanitize_title((string) ($row['product_handle'] ?? ''));
@@ -306,10 +306,10 @@ function ybb_pr_import_resolve_product(array $row): array|WP_Error
             return ['product_id' => (int) $posts[0]->ID, 'title' => $posts[0]->post_title];
         }
 
-        return new WP_Error('handle_not_found', '未找�?handle�? . $handle);
+        return new WP_Error('handle_not_found', '未找到 handle：' . $handle);
     }
 
-    return new WP_Error('missing_product', '请填�?wc_product_id、product_sku �?product_handle 之一');
+    return new WP_Error('missing_product', '请填写 wc_product_id、product_sku 或 product_handle 之一');
 }
 
 function ybb_pr_import_content_fingerprint(string $content): string
@@ -380,7 +380,7 @@ function ybb_pr_import_validate_row(array $row, int $line): array
         $errors[] = '缺少 content';
     }
     if ($rating < 1 || $rating > 5) {
-        $errors[] = 'rating 须为 1�?';
+        $errors[] = 'rating 须为 1–5';
     }
 
     if ($errors === [] && ybb_pr_import_row_exists($resolved['product_id'], $author, $content)) {
@@ -402,7 +402,7 @@ function ybb_pr_import_validate_row(array $row, int $line): array
         $probe = ybb_pr_import_probe_image_url($url);
         $image_probes[$n] = $probe;
         if (in_array($probe['status'], ['warn_amazon', 'warn_amazon_blocked', 'warn_unreachable'], true)) {
-            $warnings[] = '�? . $n . '�? . $probe['message'];
+            $warnings[] = '图 ' . $n . '：' . $probe['message'];
         }
     }
 
@@ -427,7 +427,7 @@ function ybb_pr_import_validate_row(array $row, int $line): array
     ];
 }
 
-function ybb_pr_import_sideload_image_url(string $url, int $product_id, string $comment_status): int|WP_Error
+function ybb_pr_import_sideload_image_url(string $url, int $product_id, string $comment_status)
 {
     $url = trim($url);
     if ($url === '') {
@@ -451,7 +451,7 @@ function ybb_pr_import_sideload_image_url(string $url, int $product_id, string $
     if (is_wp_error($tmp)) {
         return new WP_Error(
             'download_failed',
-            '下载图片失败�? . $tmp->get_error_message()
+            '下载图片失败：' . $tmp->get_error_message()
         );
     }
 
@@ -499,7 +499,7 @@ function ybb_pr_import_sideload_image_url(string $url, int $product_id, string $
  * @param array<string, string> $row
  * @return array{comment_id?: int, images_ok: int, images_failed: string[], dry_run?: bool}|WP_Error
  */
-function ybb_pr_import_insert_row(array $row, int $product_id, bool $dry_run = false): array|WP_Error
+function ybb_pr_import_insert_row(array $row, int $product_id, bool $dry_run = false)
 {
     $validation = ybb_pr_import_validate_row($row, 0);
     if ($validation['row_status'] === 'error') {
@@ -555,7 +555,7 @@ function ybb_pr_import_insert_row(array $row, int $product_id, bool $dry_run = f
         }
         $uploaded = ybb_pr_import_sideload_image_url($url, $product_id, $comment_status);
         if (is_wp_error($uploaded)) {
-            $images_failed[] = '�? . $n . '�? . $uploaded->get_error_message();
+            $images_failed[] = '图 ' . $n . '：' . $uploaded->get_error_message();
             continue;
         }
         $attachment_ids[] = $uploaded;
@@ -664,7 +664,7 @@ function ybb_pr_import_parse_uploaded_file(array $file): array
     $name = (string) ($file['name'] ?? '');
     $ext = strtolower(pathinfo($name, PATHINFO_EXTENSION));
     if (!in_array($ext, ['csv', 'xlsx'], true)) {
-        return ['rows' => [], 'errors' => ['仅支�?.csv �?.xlsx'], 'file_hash' => ''];
+        return ['rows' => [], 'errors' => ['仅支持 .csv 或 .xlsx'], 'file_hash' => ''];
     }
 
     $tmp = (string) ($file['tmp_name'] ?? '');

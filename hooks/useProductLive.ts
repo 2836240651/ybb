@@ -44,7 +44,21 @@ function isLiveCacheStale(
   }
   const cachedHtml = cached.content?.description?.html?.en ?? "";
   const remoteHtml = remote.content?.description?.html?.en ?? "";
-  return cachedHtml !== remoteHtml;
+  if (cachedHtml !== remoteHtml) return true;
+  const cachedSpi = cached.shopPayInstallments?.template?.en ?? "";
+  const remoteSpi = remote.shopPayInstallments?.template?.en ?? "";
+  if (cachedSpi !== remoteSpi) return true;
+
+  const cachedSlogan = cached.purchaseSlogan;
+  const remoteSlogan = remote.purchaseSlogan;
+  if (!!cachedSlogan?.visible !== !!remoteSlogan?.visible) return true;
+  for (const lang of ["en", "zh", "ja"] as const) {
+    if ((cachedSlogan?.text?.[lang] ?? "") !== (remoteSlogan?.text?.[lang] ?? "")) {
+      return true;
+    }
+  }
+
+  return false;
 }
 
 function writeLiveCache(handle: string, payload: ProductLiveResponse): void {

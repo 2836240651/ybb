@@ -3,58 +3,48 @@
 import { useEffect, useState } from "react";
 import { fetchYbbJson } from "@/lib/ybb-rest";
 
+export type BlogContentBlockBase = { id: string; enabled?: boolean; sortOrder?: number };
+
 export type BlogContentBlock =
-  | { id: string; type: "paragraph"; enabled?: boolean; text: string }
-  | {
-      id: string;
+  | (BlogContentBlockBase & { type: "paragraph"; text: string })
+  | (BlogContentBlockBase & {
       type: "heading";
-      enabled?: boolean;
       text: string;
       level?: "h2" | "h3";
-    }
-  | {
-      id: string;
+    })
+  | (BlogContentBlockBase & {
       type: "quote";
-      enabled?: boolean;
       text: string;
       caption?: string;
-    }
-  | {
-      id: string;
+    })
+  | (BlogContentBlockBase & {
       type: "image";
-      enabled?: boolean;
       imageUrl: string;
       alt?: string;
       caption?: string;
       width?: "prose" | "wide";
-    }
-  | {
-      id: string;
+    })
+  | (BlogContentBlockBase & {
       type: "mediaText";
-      enabled?: boolean;
       imageUrl?: string;
       alt?: string;
       eyebrow?: string;
       title?: string;
       text?: string;
       imageSide?: "left" | "right";
-    }
-  | {
-      id: string;
+    })
+  | (BlogContentBlockBase & {
       type: "checklist";
-      enabled?: boolean;
       title?: string;
       items?: string[];
-    }
-  | {
-      id: string;
+    })
+  | (BlogContentBlockBase & {
       type: "cta";
-      enabled?: boolean;
       title?: string;
       text?: string;
       buttonLabel?: string;
       href?: string;
-    };
+    });
 
 export type BlogArticleApi = {
   id: string;
@@ -110,6 +100,7 @@ export function useYbbBlog(fallback: BlogResponse | null) {
 export function blogArticleImageSrc(article: { imageUrl?: string; image?: string }): string {
   const raw = article.imageUrl || article.image || "";
   if (!raw) return "";
+  if (raw.startsWith("https://")) return raw;
   if (raw.startsWith("http://")) return `https://${raw.slice(7)}`;
   return raw.startsWith("/") ? raw : `/${raw}`;
 }

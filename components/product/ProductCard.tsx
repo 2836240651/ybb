@@ -8,6 +8,7 @@ import { formatPrice, formatProductListPrice, getSavePercent } from "@/lib/data/
 import { useI18n, useProductTitle } from "@/lib/i18n/I18nProvider";
 import { useUI } from "@/lib/store/ui";
 import type { Product } from "@/lib/types/product";
+import { PLACEHOLDER_PRODUCT_IMAGE, resolveProductImage } from "@/lib/data/asset-paths";
 import { cn } from "@/lib/utils";
 
 type ProductCardProps = {
@@ -41,14 +42,11 @@ export function ProductCard({
     ? getSavePercent(product.price, product.compareAtPrice!)
     : 0;
   const soldOut = !product.available;
+  const imageSrc = resolveProductImage(product.images, product.handle);
 
   return (
     <article className={cn("product-card group relative flex flex-col", className)}>
-      <ScrollReveal
-        animate="zoom-out"
-        staggerIndex={revealIndex}
-        className="product-card__media-shell rounded-card"
-      >
+      <div className="product-card__media-shell rounded-card">
       <div
         className={cn(
           "product-card__media relative rounded-card",
@@ -56,13 +54,13 @@ export function ProductCard({
         )}
       >
         <Link
-          href={`/products/${product.handle}`}
+          href={`/products/${product.handle}.html`}
           prefetch={false}
           className="absolute inset-0 z-0 block overflow-hidden rounded-card"
           aria-label={title}
         >
           <Image
-            src={product.images[0]}
+            src={imageSrc}
             alt={title}
             fill
             sizes="(max-width: 768px) 45vw, (max-width: 1280px) 25vw, 16vw"
@@ -71,6 +69,25 @@ export function ProductCard({
               imageFit === "cover" ? "object-cover" : "object-contain"
             )}
             priority={priority}
+            onError={(e) => {
+              const img = e.currentTarget;
+              const src = img.currentSrc || img.src;
+              const master = `/products/${product.handle}/master.webp`;
+              const woo = product.images?.find(
+                (url) => url && url !== PLACEHOLDER_PRODUCT_IMAGE
+              );
+              if (woo && !src.includes(encodeURI(woo)) && !src.endsWith(woo)) {
+                img.src = woo;
+                return;
+              }
+              if (!src.endsWith(master)) {
+                img.src = master;
+                return;
+              }
+              if (!src.endsWith(PLACEHOLDER_PRODUCT_IMAGE)) {
+                img.src = PLACEHOLDER_PRODUCT_IMAGE;
+              }
+            }}
           />
         </Link>
 
@@ -101,11 +118,11 @@ export function ProductCard({
           </button>
         )}
       </div>
-      </ScrollReveal>
+      </div>
 
       <ScrollReveal animate="fade-up" staggerIndex={revealIndex} delay={60}>
       <Link
-        href={`/products/${product.handle}`}
+        href={`/products/${product.handle}.html`}
         prefetch={false}
         className="flex items-start justify-between gap-3 py-3 sm:py-4"
       >

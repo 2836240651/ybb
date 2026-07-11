@@ -21,7 +21,7 @@ function ybb_sm_admin_tab_products_search_bar(): void
         价格 / 库存 / SKU �?<strong>WooCommerce</strong> 为准；此处配置前台展示覆盖（标题、描�?Tab�?strong>购买�?slogan</strong>）�?        英文长描述请�?Woo 产品编辑 �?Description 填写；保存后 REST 即时生效，无需重新部署静态包�?    </p>
     <p>
         上次静态同步：
-        <code><?php echo esc_html((string) ($indexMeta['lastBuiltAt'] ?? '�?)); ?></code>
+        <code><?php echo esc_html((string) ($indexMeta['lastBuiltAt'] ?? '—')); ?></code>
         <?php if (!empty($indexMeta['lastBuildId'])) : ?>
             · buildId <code><?php echo esc_html((string) $indexMeta['lastBuildId']); ?></code>
         <?php endif; ?>
@@ -88,6 +88,78 @@ function ybb_sm_admin_tab_products(string $opt, array $data): void
         </p>
     </fieldset>
 
+    <?php
+    $spi = is_array($pdp['shopPayInstallments'] ?? null)
+        ? array_replace(ybb_sm_shop_pay_installments_defaults(), $pdp['shopPayInstallments'])
+        : ybb_sm_shop_pay_installments_defaults();
+    $spiTemplate = is_array($spi['template'] ?? null) ? $spi['template'] : [];
+    ?>
+    <fieldset style="margin:16px 0;padding:12px 16px;border:1px solid #c3c4c7;border-radius:4px;max-width:960px;">
+        <legend><strong>分期提示条（Shop Pay Installments）</strong></legend>
+        <p class="description">PDP 价格下方的紫色分期条。支持占位符 <code>{amount}</code>、<code>{count}</code>、<code>{total}</code>。请确保文案与实际 checkout 支付能力一致。</p>
+        <p>
+            <input type="hidden" name="<?php echo esc_attr($opt); ?>[products][pdp][shopPayInstallments][enabled]" value="0" />
+            <label>
+                <input type="checkbox" name="<?php echo esc_attr($opt); ?>[products][pdp][shopPayInstallments][enabled]" value="1" <?php checked(!empty($spi['enabled'])); ?> />
+                启用全站分期提示条
+            </label>
+        </p>
+        <p>
+            <label>分期期数（2–12）</label><br />
+            <input type="number" min="2" max="12" step="1" style="width:88px;" name="<?php echo esc_attr($opt); ?>[products][pdp][shopPayInstallments][installmentCount]" value="<?php echo esc_attr((string) ((int) ($spi['installmentCount'] ?? 3))); ?>" />
+        </p>
+        <p>
+            <label>最低展示价（USD，0=不限）</label><br />
+            <input type="number" min="0" step="0.01" style="width:120px;" name="<?php echo esc_attr($opt); ?>[products][pdp][shopPayInstallments][minPriceUsd]" value="<?php echo esc_attr(number_format((float) ($spi['minPriceUsd'] ?? 0), 2, '.', '')); ?>" />
+        </p>
+        <p>
+            <label>英文模板</label><br />
+            <textarea rows="2" class="large-text" name="<?php echo esc_attr($opt); ?>[products][pdp][shopPayInstallments][template][en]" placeholder="<?php echo esc_attr(ybb_sm_shop_pay_installments_defaults()['template']['en']); ?>"><?php echo esc_textarea((string) ($spiTemplate['en'] ?? '')); ?></textarea>
+        </p>
+        <p>
+            <label>中文模板</label><br />
+            <textarea rows="2" class="large-text" name="<?php echo esc_attr($opt); ?>[products][pdp][shopPayInstallments][template][zh]" placeholder="留空则用代码字典兜底"><?php echo esc_textarea((string) ($spiTemplate['zh'] ?? '')); ?></textarea>
+        </p>
+        <p>
+            <label>日文模板</label><br />
+            <textarea rows="2" class="large-text" name="<?php echo esc_attr($opt); ?>[products][pdp][shopPayInstallments][template][ja]" placeholder="留空则用代码字典兜底"><?php echo esc_textarea((string) ($spiTemplate['ja'] ?? '')); ?></textarea>
+        </p>
+    </fieldset>
+
+    <?php
+    $storedTabLabels = is_array($pdp['tabLabels'] ?? null) ? $pdp['tabLabels'] : [];
+    $tabLabelFields = [
+        'description' => 'Description Tab',
+        'additionalInfo' => 'Additional information Tab',
+        'reviews' => 'Reviews Tab（支持 {count}）',
+        'contentTabsLabel' => 'Tab 区域 aria-label',
+        'reviewsBadge' => '购买区评价摘要（{rating} · {count}）',
+        'reviewsBadgeNoRating' => '购买区评价摘要（仅 {count}）',
+        'writeFirstReview' => '无评价时文案',
+    ];
+    ?>
+    <fieldset style="margin:16px 0;padding:12px 16px;border:1px solid #c3c4c7;border-radius:4px;max-width:960px;">
+        <legend><strong>PDP 内容 Tab 标题（全站）</strong></legend>
+        <p class="description">前台通过 REST 实时读取；留空则使用内置默认（Description / 商品描述 等）。Woo 产品 Description 正文仍在 Woo 产品编辑填写。</p>
+        <?php foreach ($tabLabelFields as $fieldKey => $fieldTitle) : ?>
+            <details style="margin:12px 0;">
+                <summary><strong><?php echo esc_html($fieldTitle); ?></strong></summary>
+                <?php foreach (['en' => '英文', 'zh' => '中文', 'ja' => '日文'] as $lang => $langLabel) : ?>
+                    <p style="margin:8px 0 0;">
+                        <label><?php echo esc_html($langLabel); ?></label><br />
+                        <input
+                            type="text"
+                            class="large-text"
+                            name="<?php echo esc_attr($opt); ?>[products][pdp][tabLabels][<?php echo esc_attr($fieldKey); ?>][<?php echo esc_attr($lang); ?>]"
+                            value="<?php echo esc_attr((string) (($storedTabLabels[$fieldKey][$lang] ?? ''))); ?>"
+                            placeholder="<?php echo esc_attr((string) (ybb_sm_pdp_tab_labels_builtin()[$fieldKey][$lang] ?? '')); ?>"
+                        />
+                    </p>
+                <?php endforeach; ?>
+            </details>
+        <?php endforeach; ?>
+    </fieldset>
+
     <style>
         .ybb-products-table-wrap { overflow-x: auto; border: 1px solid #dcdcde; border-radius: 6px; background: #fff; }
         .ybb-products-table { min-width: 2450px; table-layout: fixed; font-size: 12px; }
@@ -142,13 +214,14 @@ function ybb_sm_admin_tab_products(string $opt, array $data): void
             <th class="col-textarea">slogan 中文</th>
             <th class="col-textarea">slogan 日文</th>
             <th class="col-flag">隐藏 slogan</th>
+            <th class="col-flag">隐藏分期条</th>
             <th class="col-flag">前台隐藏</th>
             <th class="col-actions">操作</th>
         </tr>
         </thead>
         <tbody>
         <?php if (empty($catalog['items'])) : ?>
-            <tr><td colspan="26">
+            <tr><td colspan="27">
                 未找到产品。请检�?Woo 是否已上架或调整搜索词�?                <?php if (!empty($catalog['debug'])) : ?>
                     <br /><span class="description">调试�?                        source=<?php echo esc_html((string) ($catalog['debug']['source'] ?? '')); ?>,
                         deploy=<?php echo esc_html((string) ($catalog['debug']['deployState'] ?? '')); ?>,
@@ -190,10 +263,10 @@ function ybb_sm_admin_tab_products(string $opt, array $data): void
                         <input type="text" class="regular-text" name="<?php echo esc_attr($opt); ?>[products][overrides][<?php echo esc_attr($handle); ?>][titleJa]" value="<?php echo esc_attr((string) ($row['titleJa'] ?? '')); ?>" />
                     </td>
                     <td>
-                        <textarea rows="2" class="large-text code" name="<?php echo esc_attr($opt); ?>[products][overrides][<?php echo esc_attr($handle); ?>][descriptionZh]" placeholder="支持 HTML；纯文本将自动分段。留空则�?Woo 英文描述�?><?php echo esc_textarea((string) ($row['descriptionZh'] ?? '')); ?></textarea>
+                        <textarea rows="2" class="large-text code" name="<?php echo esc_attr($opt); ?>[products][overrides][<?php echo esc_attr($handle); ?>][descriptionZh]" placeholder="Supports HTML; plain text is auto-paragraphed. Leave blank to use Woo English description."><?php echo esc_textarea((string) ($row['descriptionZh'] ?? '')); ?></textarea>
                     </td>
                     <td>
-                        <textarea rows="2" class="large-text code" name="<?php echo esc_attr($opt); ?>[products][overrides][<?php echo esc_attr($handle); ?>][descriptionJa]" placeholder="支持 HTML；纯文本将自动分段。留空则�?Woo 英文描述�?><?php echo esc_textarea((string) ($row['descriptionJa'] ?? '')); ?></textarea>
+                        <textarea rows="2" class="large-text code" name="<?php echo esc_attr($opt); ?>[products][overrides][<?php echo esc_attr($handle); ?>][descriptionJa]" placeholder="Supports HTML; plain text is auto-paragraphed. Leave blank to use Woo English description."><?php echo esc_textarea((string) ($row['descriptionJa'] ?? '')); ?></textarea>
                     </td>
                     <td>
                         <input type="hidden" name="<?php echo esc_attr($opt); ?>[products][overrides][<?php echo esc_attr($handle); ?>][hideDescription]" value="0" />
@@ -257,6 +330,10 @@ function ybb_sm_admin_tab_products(string $opt, array $data): void
                     <td>
                         <input type="hidden" name="<?php echo esc_attr($opt); ?>[products][overrides][<?php echo esc_attr($handle); ?>][hideSlogan]" value="0" />
                         <input type="checkbox" name="<?php echo esc_attr($opt); ?>[products][overrides][<?php echo esc_attr($handle); ?>][hideSlogan]" value="1" <?php checked(!empty($row['hideSlogan'])); ?> />
+                    </td>
+                    <td>
+                        <input type="hidden" name="<?php echo esc_attr($opt); ?>[products][overrides][<?php echo esc_attr($handle); ?>][hideShopPayInstallments]" value="0" />
+                        <input type="checkbox" name="<?php echo esc_attr($opt); ?>[products][overrides][<?php echo esc_attr($handle); ?>][hideShopPayInstallments]" value="1" <?php checked(!empty($row['hideShopPayInstallments'])); ?> />
                     </td>
                     <td>
                         <input type="hidden" name="<?php echo esc_attr($opt); ?>[products][overrides][<?php echo esc_attr($handle); ?>][frontHidden]" value="0" />

@@ -34,7 +34,8 @@ function FilterSection({
       <summary className="flex cursor-pointer list-none items-center justify-between text-sm font-medium [&::-webkit-details-marker]:hidden">
         {title}
         <span className="text-foreground/40 transition-transform group-open:rotate-180">
-          �?        </span>
+          {"\u25BE"}
+        </span>
       </summary>
       <div className="mt-3 space-y-2">{children}</div>
     </details>
@@ -131,7 +132,8 @@ export function FilterDrawer() {
             className="rounded-full p-2 interaction-icon-hover transition-colors"
             aria-label={t("collection.closeFilters")}
           >
-            �?          </button>
+            {"\u00D7"}
+          </button>
         </header>
 
         <div className="flex-1 overflow-y-auto px-6">

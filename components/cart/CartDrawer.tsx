@@ -59,7 +59,7 @@ export function CartDrawer() {
             className="rounded-full p-2 interaction-icon-hover transition-colors"
             aria-label={t("cart.closeCart")}
           >
-            �?
+            {"\u00D7"}
           </button>
         </header>
 
@@ -117,7 +117,7 @@ export function CartDrawer() {
                             )
                           }
                         >
-                          �?
+                          {"\u2212"}
                         </button>
                         <span className="min-w-[2rem] text-center text-sm">
                           {line.quantity}

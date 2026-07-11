@@ -19,6 +19,15 @@ export type ProductOverrideRow = {
   sloganZh?: string;
   sloganJa?: string;
   hideSlogan?: boolean;
+  hideShopPayInstallments?: boolean;
+};
+
+export type ShopPayInstallmentsPayload = {
+  visible: boolean;
+  installmentCount: number;
+  minPriceUsd?: number;
+  template: { en: string; zh: string; ja: string };
+  resolved?: { en: string; zh: string; ja: string };
 };
 
 export type PurchaseSloganPayload = {
@@ -44,6 +53,18 @@ export type ProductContentPayload = {
     visible: boolean;
     rows: ProductAdditionalRow[];
   };
+};
+
+export type TriLabelRow = { en: string; zh: string; ja: string };
+
+export type PdpTabLabelsPayload = {
+  description: TriLabelRow;
+  additionalInfo: TriLabelRow;
+  reviews: TriLabelRow;
+  reviewsBadge: TriLabelRow;
+  reviewsBadgeNoRating: TriLabelRow;
+  writeFirstReview: TriLabelRow;
+  contentTabsLabel: TriLabelRow;
 };
 
 export type ProductGalleryPayload = {
@@ -91,8 +112,10 @@ export type ProductLiveResponse = {
   variants: LiveProductVariantApi[];
   frontHidden?: boolean;
   content?: ProductContentPayload;
+  pdpTabLabels?: PdpTabLabelsPayload;
   gallery?: ProductGalleryPayload;
   purchaseSlogan?: PurchaseSloganPayload;
+  shopPayInstallments?: ShopPayInstallmentsPayload;
   images?: string[];
   syncedAt?: string;
 };

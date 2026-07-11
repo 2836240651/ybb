@@ -193,7 +193,8 @@ export function ProductMediaGallery({
   const [activeIndex, setActiveIndex] = useState(clampedDefault);
   const imagesKeyRef = useRef(imagesKey);
 
-  const hasMultiple = enabled && safeImages.length > 1;
+  const showThumbnails = enabled && safeImages.length >= 1;
+  const hasMultiple = safeImages.length > 1;
 
   useEffect(() => {
     if (imagesKeyRef.current !== imagesKey) {
@@ -238,7 +239,7 @@ export function ProductMediaGallery({
           />
         </div>
 
-        {hasMultiple && (
+        {showThumbnails && (
           <ThumbnailStrip
             images={safeImages}
             activeIndex={activeIndex}

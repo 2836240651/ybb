@@ -2,34 +2,39 @@
 /**
  * Plugin Name: YBB Site Manager
  * Description: Unified site configuration �?navigation, announcements, hero, home modules, deploy queue.
- * Version: 1.8.8
+ * Version: 1.10.0
  */
 
 if (!defined('ABSPATH')) {
     exit;
 }
 
-define('YBB_SM_VERSION', '1.8.8');
+define('YBB_SM_VERSION', '1.10.0');
 define('YBB_SM_DIR', __DIR__);
 define('YBB_SM_OPTION', 'ybb_site_manager_settings');
 
 /** Bust opcode cache after mu-plugin deploy (SiteGround keeps stale PHP otherwise). */
 $__ybb_sm_code_ver = (string) get_option('ybb_sm_code_version', '');
 if ($__ybb_sm_code_ver !== YBB_SM_VERSION && function_exists('opcache_invalidate')) {
-    $__ybb_sm_globs = [
-        YBB_SM_DIR . '/includes/*.php',
-        YBB_SM_DIR . '/includes/modules/*.php',
-        YBB_SM_DIR . '/includes/admin/*.php',
-    ];
-    foreach ($__ybb_sm_globs as $__ybb_sm_pattern) {
-        foreach (glob($__ybb_sm_pattern) ?: [] as $__ybb_sm_php) {
-            opcache_invalidate($__ybb_sm_php, true);
-        }
+    foreach (glob(YBB_SM_DIR . '/*.php') ?: [] as $__ybb_sm_php) {
+        opcache_invalidate($__ybb_sm_php, true);
+    }
+    foreach (glob(YBB_SM_DIR . '/includes/*.php') ?: [] as $__ybb_sm_php) {
+        opcache_invalidate($__ybb_sm_php, true);
+    }
+    foreach (glob(YBB_SM_DIR . '/includes/modules/*.php') ?: [] as $__ybb_sm_php) {
+        opcache_invalidate($__ybb_sm_php, true);
+    }
+    foreach (glob(YBB_SM_DIR . '/includes/admin/*.php') ?: [] as $__ybb_sm_php) {
+        opcache_invalidate($__ybb_sm_php, true);
     }
     opcache_invalidate(__FILE__, true);
+    if (function_exists('opcache_reset')) {
+        @opcache_reset();
+    }
     update_option('ybb_sm_code_version', YBB_SM_VERSION, false);
 }
-unset($__ybb_sm_code_ver, $__ybb_sm_globs, $__ybb_sm_pattern, $__ybb_sm_php);
+unset($__ybb_sm_code_ver);
 
 require_once YBB_SM_DIR . '/includes/defaults.php';
 require_once YBB_SM_DIR . '/includes/class-settings.php';
@@ -40,6 +45,11 @@ require_once YBB_SM_DIR . '/includes/modules/hero.php';
 require_once YBB_SM_DIR . '/includes/modules/blog.php';
 require_once YBB_SM_DIR . '/includes/modules/pdp.php';
 require_once YBB_SM_DIR . '/includes/modules/products.php';
+// Optional module: only include if file exists (prevents fatal during staged mu-plugin uploads).
+$__ybb_sm_product_gallery_save = YBB_SM_DIR . '/includes/modules/product-gallery-save.php';
+if (is_string($__ybb_sm_product_gallery_save) && file_exists($__ybb_sm_product_gallery_save)) {
+    require_once $__ybb_sm_product_gallery_save;
+}
 require_once YBB_SM_DIR . '/includes/modules/product-description-editor.php';
 require_once YBB_SM_DIR . '/includes/modules/product-index.php';
 require_once YBB_SM_DIR . '/includes/modules/home.php';
@@ -51,12 +61,25 @@ require_once YBB_SM_DIR . '/includes/modules/deploy-queue.php';
 require_once YBB_SM_DIR . '/includes/modules/audit-log.php';
 require_once YBB_SM_DIR . '/includes/class-rest.php';
 require_once YBB_SM_DIR . '/includes/migrate.php';
-require_once YBB_SM_DIR . '/includes/admin/tab-products.php';
-require_once YBB_SM_DIR . '/includes/admin/page.php';
+
+function ybb_sm_load_admin_includes(): void
+{
+    static $loaded = false;
+    if ($loaded) {
+        return;
+    }
+    $loaded = true;
+    require_once YBB_SM_DIR . '/includes/admin/tab-products.php';
+    require_once YBB_SM_DIR . '/includes/admin/tab-blog.php';
+    require_once YBB_SM_DIR . '/includes/admin/page.php';
+}
+
+add_action('admin_init', 'ybb_sm_load_admin_includes', 0);
 
 add_action('plugins_loaded', 'ybb_sm_maybe_migrate', 5);
 
 add_action('admin_menu', function () {
+    ybb_sm_load_admin_includes();
     add_menu_page(
         'YBB 站点管理',
         'YBB 站点管理',
@@ -101,11 +124,38 @@ add_action('admin_notices', function () {
     echo '</ul><p>访客点击后将看到空列表页。请隐藏对应导航项，或上架商品后重建静态站�?/p></div>';
 });
 
+add_action('admin_init', function () {
+    add_filter('wp_redirect', static function ($location) {
+        if (!is_admin() || empty($_POST['ybb_sm_module']) || sanitize_key((string) $_POST['ybb_sm_module']) !== 'blog') {
+            return $location;
+        }
+        $editHandle = sanitize_title((string) ($_POST['ybb_sm_blog_edit_handle'] ?? ''));
+        if ($editHandle === '' || strpos($location, 'settings-updated') === false) {
+            return $location;
+        }
+
+        return add_query_arg(
+            [
+                'page' => 'ybb-site-manager',
+                'tab' => 'blog',
+                'article' => $editHandle,
+                'settings-updated' => 'true',
+            ],
+            admin_url('admin.php')
+        );
+    }, 10, 1);
+});
+
 add_action('admin_enqueue_scripts', function ($hook) {
     if ($hook !== 'toplevel_page_ybb-site-manager') {
         return;
     }
     wp_enqueue_media();
+    $assetBase = content_url('mu-plugins/ybb-site-manager/assets');
+    wp_register_style('ybb-sm-admin-blog', $assetBase . '/admin-blog.css', [], YBB_SM_VERSION);
+    wp_enqueue_style('ybb-sm-admin-blog');
+    wp_register_script('ybb-sm-admin-blog', $assetBase . '/admin-blog.js', ['jquery'], YBB_SM_VERSION, true);
+    wp_enqueue_script('ybb-sm-admin-blog');
     wp_register_script('ybb-sm-admin', false, ['jquery'], YBB_SM_VERSION, true);
     wp_enqueue_script('ybb-sm-admin');
     wp_add_inline_script('ybb-sm-admin', 'window.ybbSmOptionName = ' . wp_json_encode(YBB_SM_OPTION) . ';');
@@ -118,7 +168,7 @@ jQuery(function ($) {
     var frame = wp.media({ title: 'Select image', multiple: false, library: { type: 'image' } });
     frame.on('select', function () {
       var att = frame.state().get('selection').first().toJSON();
-      $input.val(att.url || '');
+      $input.val(att.url || '').trigger('change');
     });
     frame.open();
   });

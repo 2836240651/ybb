@@ -12,6 +12,7 @@ WordPress 后台 → **YBB 站点管理**（左侧菜单）
 | 公告 | 顶部滚动公告文案（中/英/日）、链接 |
 | Hero | 轮播图、链接、标题三语 |
 | 首页模块 | Hot Products、Latest Stories 开关与列表 |
+| 博客 | 文章列表、单篇编辑、内容块、首页轮播勾选 |
 | 视频 | 工厂宣传视频 URL、标题文案 |
 | 品牌 | 站点名称、副标题三语 |
 
@@ -73,6 +74,10 @@ WordPress 后台 → **YBB 站点管理**（左侧菜单）
 ### 部署流水线（runner）
 
 **推荐：一台固定 Ubuntu 部署机常驻轮询**（运营电脑无需装脚本）。详见 `docs/ybb-site-manager/DEPLOY-MACHINE-ubuntu.md`。
+
+**硬性边界：**「部署状态 / 立即同步」只触发 Ubuntu 部署机从 Woo/WP 拉数据、构建并部署静态站；它不读取开发电脑上的本地代码。若开发本地改了前端代码、样式或构建逻辑，必须先把代码同步到 Ubuntu 部署机 `/opt/ybb-site`，再由部署机部署。不要一边本地手动上传 SiteGround，一边让后台 Sync/runner 并行跑，否则后完成的一方会覆盖前一方。
+
+**开发同步硬规则：** 开发把本地代码推到 Ubuntu 部署机时，必须走完整源码同步清单，不能只推本次 diff。部署机目录可能缺少本地已有但未改动的源码文件；diff-only 会导致 build 缺模块。同步后必须先由开发在部署机执行 `npm run build` 验证通过，再让「立即同步」或 runner 上线。
 
 本地或计划任务执行：
 
@@ -182,7 +187,16 @@ A: 多为站点管理里存了纯文本。mu-plugin ≥1.8.4 会自动 `wpautop`
 A: 强制刷新；若仍旧内容，请开发 Purge SiteGround 缓存。
 
 **Q: Hot Products 填了 slug 不显示？**  
-A: 确认 Woo 已发布该产品，且 slug 与 `/products/{slug}` 一致。
+A: 先确认 **首页模块 → Hot Products「显示」** 已勾选；再确认 Woo 已发布且 slug 与 `/products/{slug}` 一致。
+
+**Q: 最近更新 / Latest Stories 后台关了仍显示？**  
+A: 2026-07 起总开关仅在 **首页模块 → Latest Stories「显示」**；博客 Tab 只管理文章与「首页轮播」勾选。保存首页模块后 REST `/ybb/v1/latest-stories` 应返回 `enabled:false`。
+
+**Q: 博客改完前台没变？**  
+A: 在 **博客 → 编辑** 保存后，对文章页 **硬刷新**（Ctrl+F5）。已有 handle **无需 redeploy**。用编辑页「预览前台」链接验收。
+
+**Q: 新博客文章 URL 404？**  
+A: 新 handle 需技术执行 `build-static.ps1` 部署后才有静态 HTML 路由；改已有文章内容不需要。
 
 **Q: 新产品 404？**  
 A: 等「部署状态」显示 success，或联系开发检查 deploy runner。

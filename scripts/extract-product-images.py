@@ -19,7 +19,7 @@ from openpyxl import load_workbook
 from form_parser import allocate_mapped_skus, build_mapping_key, clean_text, load_sku_mapping
 
 DEFAULT_XLSX = Path(r"C:\Users\Administrator\Pictures\excel表单图\产品表单.xlsx")
-DEFAULT_OUTPUT = Path(r"C:\Users\Administrator\Pictures\excel表单�?)
+DEFAULT_OUTPUT = Path(r"D:\dev\独立站上架\output\wp\images")
 _FALLBACK_SCHEMA = Path(
     r"d:\开发\fishAgent\总包\skill\reverse-skill\omc-replica\ybb-site\scripts\form-schema.json"
 )
@@ -434,7 +434,7 @@ def main() -> int:
             if path.is_file() and path.suffix.lower() in {".png", ".jpg", ".jpeg", ".webp", ".gif"}:
                 path.unlink()
                 removed += 1
-        print(f"已清空旧图片: {removed} �?)
+        print(f"已清空旧图片: {removed} 张")
 
     stats = extract_all_product_images(
         args.xlsx,

@@ -49,6 +49,9 @@ function ybb_sm_sanitize_settings($input): array
     if ($module === 'home' || isset($input['home'])) {
         $out['home'] = ybb_sm_sanitize_home($input['home'] ?? null, $existing['home']);
         ybb_sm_home_sync_legacy_option($out['home']);
+        if (function_exists('ybb_sm_home_sync_blog_latest_stories_flag')) {
+            ybb_sm_home_sync_blog_latest_stories_flag(!empty($out['home']['latestStoriesEnabled']));
+        }
     }
     if ($module === 'video' || isset($input['video'])) {
         $out['video'] = ybb_sm_sanitize_video($input['video'] ?? null, $existing['video']);
@@ -57,7 +60,17 @@ function ybb_sm_sanitize_settings($input): array
         $out['featured'] = ybb_sm_sanitize_featured($input['featured'] ?? null, $existing['featured']);
     }
     if ($module === 'blog' || isset($input['blog'])) {
-        $out['blog'] = ybb_sm_sanitize_blog($input['blog'] ?? null, $existing['blog'] ?? ybb_sm_blog_defaults());
+        $blogExisting = $existing['blog'] ?? ybb_sm_blog_defaults();
+        $blogInput = $input['blog'] ?? null;
+        $blogMode = sanitize_key((string) ($_POST['ybb_sm_blog_save_mode'] ?? 'full'));
+        if ($module === 'blog' && $blogMode === 'list') {
+            $out['blog'] = ybb_sm_sanitize_blog_list_partial($blogInput, $blogExisting);
+        } elseif ($module === 'blog' && $blogMode === 'article') {
+            $editHandle = sanitize_title((string) ($_POST['ybb_sm_blog_edit_handle'] ?? ''));
+            $out['blog'] = ybb_sm_sanitize_blog_merge_article($blogInput, $blogExisting, $editHandle);
+        } else {
+            $out['blog'] = ybb_sm_sanitize_blog($blogInput, $blogExisting);
+        }
     }
     if ($module === 'products' || isset($input['products'])) {
         $out['products'] = ybb_sm_sanitize_products($input['products'] ?? null, $existing['products'] ?? ybb_sm_products_defaults());
@@ -88,6 +101,9 @@ function ybb_sm_sanitize_settings($input): array
                 if ($key === 'home') {
                     $out[$key] = ybb_sm_sanitize_home($input[$key], $existing[$key]);
                     ybb_sm_home_sync_legacy_option($out[$key]);
+                    if (function_exists('ybb_sm_home_sync_blog_latest_stories_flag')) {
+                        ybb_sm_home_sync_blog_latest_stories_flag(!empty($out[$key]['latestStoriesEnabled']));
+                    }
                 } elseif ($key === 'brand') {
                     $out[$key] = ybb_sm_sanitize_brand($input[$key], $existing[$key]);
                     ybb_sm_brand_sync_legacy_option($out[$key]);
@@ -430,6 +446,186 @@ function ybb_sm_sanitize_blog_content_blocks($input): array
     return $blocks;
 }
 
+function ybb_sm_sanitize_blog_article_content(array $row, ?array $existingRow = null): array
+{
+    $content = [];
+    if (isset($row['content']) && is_array($row['content'])) {
+        foreach ($row['content'] as $para) {
+            $para = trim(sanitize_textarea_field((string) $para));
+            if ($para !== '') {
+                $content[] = $para;
+            }
+        }
+    } elseif (isset($row['contentText'])) {
+        $raw = sanitize_textarea_field((string) $row['contentText']);
+        foreach (preg_split("/\r\n\r\n|\n\n/", $raw) as $para) {
+            $para = trim($para);
+            if ($para !== '') {
+                $content[] = $para;
+            }
+        }
+    } elseif (is_array($existingRow) && !empty($existingRow['content'])) {
+        $content = $existingRow['content'];
+    }
+
+    return $content;
+}
+
+/** @return array<string, mixed>|null */
+function ybb_sm_sanitize_blog_article_row(array $row, ?array $existingRow = null): ?array
+{
+    $handle = sanitize_title((string) ($row['handle'] ?? ''));
+    $title = sanitize_text_field((string) ($row['title'] ?? ''));
+    if ($handle === '' && $title === '') {
+        return null;
+    }
+    if ($handle === '') {
+        $handle = sanitize_title($title);
+    }
+
+    $existingRow = is_array($existingRow) ? $existingRow : [];
+    $content = ybb_sm_sanitize_blog_article_content($row, $existingRow);
+    if (array_key_exists('contentBlocks', $row)) {
+        $contentBlocks = ybb_sm_sanitize_blog_content_blocks($row['contentBlocks'] ?? []);
+    } elseif (!empty($existingRow['contentBlocks'])) {
+        $contentBlocks = $existingRow['contentBlocks'];
+    } else {
+        $contentBlocks = [];
+    }
+
+    return [
+        'id' => sanitize_key($row['id'] ?? ($existingRow['id'] ?? ('article-' . $handle))),
+        'enabled' => ybb_sm_parse_checkbox_enabled(
+            $row,
+            'enabled',
+            !isset($existingRow['enabled']) || !empty($existingRow['enabled'])
+        ),
+        'featuredOnHome' => ybb_sm_parse_checkbox_enabled(
+            $row,
+            'featuredOnHome',
+            !empty($existingRow['featuredOnHome'])
+        ),
+        'handle' => $handle,
+        'title' => $title,
+        'excerpt' => sanitize_textarea_field((string) ($row['excerpt'] ?? ($existingRow['excerpt'] ?? ''))),
+        'publishedAt' => sanitize_text_field((string) ($row['publishedAt'] ?? ($existingRow['publishedAt'] ?? ''))),
+        'imageUrl' => ybb_sm_sanitize_image_url((string) ($row['imageUrl'] ?? ($existingRow['imageUrl'] ?? ''))),
+        'author' => sanitize_text_field((string) ($row['author'] ?? ($existingRow['author'] ?? ''))),
+        'content' => $content,
+        'contentBlocks' => $contentBlocks,
+    ];
+}
+
+function ybb_sm_sanitize_blog_top_level($input, array $existing): array
+{
+    if (!is_array($input)) {
+        $input = [];
+    }
+
+    $defaults = ybb_sm_blog_defaults();
+
+    return [
+        'enabled' => ybb_sm_parse_checkbox_enabled($input, 'enabled', !empty($existing['enabled'])),
+        'handle' => sanitize_title($input['handle'] ?? ($existing['handle'] ?? $defaults['handle'])),
+        'title' => sanitize_text_field($input['title'] ?? ($existing['title'] ?? $defaults['title'])),
+        'description' => sanitize_textarea_field($input['description'] ?? ($existing['description'] ?? $defaults['description'])),
+        'latestStoriesEnabled' => function_exists('ybb_sm_home_get_settings')
+            ? !empty(ybb_sm_home_get_settings()['latestStoriesEnabled'])
+            : ybb_sm_parse_checkbox_enabled(
+                $input,
+                'latestStoriesEnabled',
+                !empty($existing['latestStoriesEnabled'])
+            ),
+    ];
+}
+
+function ybb_sm_sanitize_blog_list_partial($input, array $existing): array
+{
+    if (!is_array($input)) {
+        return $existing ?: ybb_sm_blog_defaults();
+    }
+
+    $out = ybb_sm_sanitize_blog_top_level($input, $existing);
+    $articles = array_values($existing['articles'] ?? []);
+
+    if (isset($input['articles']) && is_array($input['articles'])) {
+        foreach (array_values($input['articles']) as $i => $row) {
+            if (!is_array($row) || !isset($articles[$i])) {
+                continue;
+            }
+            if (array_key_exists('enabled', $row)) {
+                $articles[$i]['enabled'] = ybb_sm_parse_checkbox_enabled(
+                    $row,
+                    'enabled',
+                    !empty($articles[$i]['enabled'])
+                );
+            }
+            if (array_key_exists('featuredOnHome', $row)) {
+                $articles[$i]['featuredOnHome'] = ybb_sm_parse_checkbox_enabled(
+                    $row,
+                    'featuredOnHome',
+                    !empty($articles[$i]['featuredOnHome'])
+                );
+            }
+        }
+    }
+
+    $out['articles'] = $articles;
+
+    return $out;
+}
+
+function ybb_sm_sanitize_blog_merge_article($input, array $existing, string $editHandle): array
+{
+    if (!is_array($input)) {
+        return $existing ?: ybb_sm_blog_defaults();
+    }
+
+    $out = ybb_sm_sanitize_blog_top_level($input, $existing);
+    $articles = array_values($existing['articles'] ?? []);
+    $incoming = $input['article'] ?? null;
+
+    if (!is_array($incoming)) {
+        $out['articles'] = $articles;
+
+        return array_merge($existing, $out);
+    }
+
+    $existingRow = null;
+    foreach ($articles as $article) {
+        if (sanitize_title((string) ($article['handle'] ?? '')) === $editHandle) {
+            $existingRow = $article;
+            break;
+        }
+    }
+
+    $sanitized = ybb_sm_sanitize_blog_article_row($incoming, $existingRow);
+    if ($sanitized === null) {
+        $out['articles'] = $articles;
+
+        return array_merge($existing, $out);
+    }
+
+    $found = false;
+    foreach ($articles as $i => $article) {
+        $articleHandle = sanitize_title((string) ($article['handle'] ?? ''));
+        $articleId = (string) ($article['id'] ?? '');
+        $matchId = (string) ($existingRow['id'] ?? '');
+        if ($articleHandle === $editHandle || ($matchId !== '' && $articleId === $matchId)) {
+            $articles[$i] = $sanitized;
+            $found = true;
+            break;
+        }
+    }
+    if (!$found) {
+        $articles[] = $sanitized;
+    }
+
+    $out['articles'] = array_values($articles);
+
+    return array_merge($existing, $out);
+}
+
 function ybb_sm_sanitize_blog($input, array $existing): array
 {
     if (!is_array($input)) {
@@ -443,63 +639,20 @@ function ybb_sm_sanitize_blog($input, array $existing): array
             if (!is_array($row)) {
                 continue;
             }
-            $handle = sanitize_title((string) ($row['handle'] ?? ''));
-            $title = sanitize_text_field((string) ($row['title'] ?? ''));
-            if ($handle === '' && $title === '') {
-                continue;
+            $existingRow = $existing['articles'][$i] ?? null;
+            $sanitized = ybb_sm_sanitize_blog_article_row($row, is_array($existingRow) ? $existingRow : null);
+            if ($sanitized !== null) {
+                $articles[] = $sanitized;
             }
-            if ($handle === '') {
-                $handle = sanitize_title($title);
-            }
-
-            $content = [];
-            if (isset($row['content']) && is_array($row['content'])) {
-                foreach ($row['content'] as $para) {
-                    $para = trim(sanitize_textarea_field((string) $para));
-                    if ($para !== '') {
-                        $content[] = $para;
-                    }
-                }
-            } elseif (isset($row['contentText'])) {
-                $raw = sanitize_textarea_field((string) $row['contentText']);
-                foreach (preg_split("/\r\n\r\n|\n\n/", $raw) as $para) {
-                    $para = trim($para);
-                    if ($para !== '') {
-                        $content[] = $para;
-                    }
-                }
-            }
-
-            $articles[] = [
-                'id' => sanitize_key($row['id'] ?? ('article-' . $handle)),
-                'enabled' => ybb_sm_parse_checkbox_enabled($row, 'enabled', true),
-                'featuredOnHome' => ybb_sm_parse_checkbox_enabled($row, 'featuredOnHome', false),
-                'handle' => $handle,
-                'title' => $title,
-                'excerpt' => sanitize_textarea_field((string) ($row['excerpt'] ?? '')),
-                'publishedAt' => sanitize_text_field((string) ($row['publishedAt'] ?? '')),
-                'imageUrl' => ybb_sm_sanitize_image_url((string) ($row['imageUrl'] ?? '')),
-                'author' => sanitize_text_field((string) ($row['author'] ?? '')),
-                'content' => $content,
-                'contentBlocks' => ybb_sm_sanitize_blog_content_blocks($row['contentBlocks'] ?? []),
-            ];
         }
     } else {
         $articles = $existing['articles'] ?? $defaults['articles'];
     }
 
-    return [
-        'enabled' => ybb_sm_parse_checkbox_enabled($input, 'enabled', !empty($existing['enabled'])),
-        'handle' => sanitize_title($input['handle'] ?? ($existing['handle'] ?? $defaults['handle'])),
-        'title' => sanitize_text_field($input['title'] ?? ($existing['title'] ?? $defaults['title'])),
-        'description' => sanitize_textarea_field($input['description'] ?? ($existing['description'] ?? $defaults['description'])),
-        'latestStoriesEnabled' => ybb_sm_parse_checkbox_enabled(
-            $input,
-            'latestStoriesEnabled',
-            !empty($existing['latestStoriesEnabled'])
-        ),
-        'articles' => $articles ?: ($existing['articles'] ?? []),
-    ];
+    $out = ybb_sm_sanitize_blog_top_level($input, $existing);
+    $out['articles'] = $articles ?: ($existing['articles'] ?? []);
+
+    return $out;
 }
 
 function ybb_sm_sanitize_video($input, array $existing): array
@@ -561,7 +714,7 @@ function ybb_sm_sanitize_contact($input, array $existing): array
     $defaults = ybb_sm_default_module('contact');
     $salesEmail = sanitize_email((string) ($input['salesEmail'] ?? ($existing['salesEmail'] ?? $defaults['salesEmail'] ?? '')));
     if ($salesEmail === '') {
-        $salesEmail = sanitize_email((string) ($defaults['salesEmail'] ?? 'carpybb@gmail.com'));
+        $salesEmail = sanitize_email((string) ($defaults['salesEmail'] ?? 'ybb.sales@yoto.work'));
     }
 
     return [
@@ -631,6 +784,7 @@ function ybb_sm_sanitize_products($input, array $existing): array
             $sloganZh = ybb_sm_sanitize_slogan_text((string) ($row['sloganZh'] ?? ''));
             $sloganJa = ybb_sm_sanitize_slogan_text((string) ($row['sloganJa'] ?? ''));
             $hideSlogan = ybb_sm_parse_checkbox_enabled($row, 'hideSlogan', false);
+            $hideShopPayInstallments = ybb_sm_parse_checkbox_enabled($row, 'hideShopPayInstallments', false);
 
             if (
                 $titleZh === '' && $titleJa === '' && !$frontHidden
@@ -639,7 +793,7 @@ function ybb_sm_sanitize_products($input, array $existing): array
                 && $galleryEnabled && !$galleryOverrideEnabled && $galleryDefaultIndex === 0
                 && $galleryImages === [] && $galleryHideIndexes === []
                 && $sloganEn === '' && $sloganZh === '' && $sloganJa === ''
-                && !$hideSlogan
+                && !$hideSlogan && !$hideShopPayInstallments
             ) {
                 unset($overrides[$handle]);
             } else {
@@ -660,6 +814,7 @@ function ybb_sm_sanitize_products($input, array $existing): array
                     'sloganZh' => $sloganZh,
                     'sloganJa' => $sloganJa,
                     'hideSlogan' => $hideSlogan,
+                    'hideShopPayInstallments' => $hideShopPayInstallments,
                     'updatedAt' => gmdate('c'),
                 ];
             }

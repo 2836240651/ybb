@@ -13,6 +13,7 @@ import { useProductLive } from "@/hooks/useProductLive";
 import { useI18n } from "@/lib/i18n/I18nProvider";
 import { getDisplaySku, getLocalizedVariantSpec } from "@/lib/i18n/variant-spec";
 import { resolvePurchaseSlogan } from "@/lib/site-manager/purchase-slogan";
+import { resolveShopPayInstallmentText } from "@/lib/site-manager/shop-pay-installments";
 import { useUI } from "@/lib/store/ui";
 import { cn } from "@/lib/utils";
 
@@ -20,7 +21,7 @@ function QuickViewBody({ handle }: { handle: string }) {
   const { locale, t } = useI18n();
   const { closeQuickView } = useUI();
   const staticProduct = getProductByHandle(handle);
-  const { product, live } = useProductLive(staticProduct!);
+  const { product, live, ready } = useProductLive(staticProduct!);
   const defaultVariant = getVariant(product);
   const variantChoices = getProductVariants(product).map((v) => ({
     value: v.spec,
@@ -54,9 +55,21 @@ function QuickViewBody({ handle }: { handle: string }) {
       resolvePurchaseSlogan(
         live?.purchaseSlogan,
         locale,
-        t("product.defaultDescription")
+        t("product.defaultDescription"),
+        ready
       ),
-    [live?.purchaseSlogan, locale, t]
+    [live?.purchaseSlogan, locale, t, ready]
+  );
+
+  const shopPayInstallmentText = useMemo(
+    () =>
+      resolveShopPayInstallmentText(
+        live?.shopPayInstallments,
+        locale,
+        displayProduct.price,
+        t("product.shopPayInstallmentTemplate")
+      )?.text ?? null,
+    [live?.shopPayInstallments, locale, displayProduct.price, t]
   );
 
   const images = getProductGalleryImages(product, selectedVariant);
@@ -71,7 +84,7 @@ function QuickViewBody({ handle }: { handle: string }) {
           className="flex h-10 w-10 items-center justify-center rounded-full interaction-icon-hover"
           aria-label="Close quick view"
         >
-          <span aria-hidden>�?/span>
+          <span aria-hidden>{"×"}</span>
         </button>
       </header>
       <div className="grid min-h-0 flex-1 gap-6 overflow-y-auto p-4 md:grid-cols-2 md:gap-8 md:p-6">
@@ -88,9 +101,10 @@ function QuickViewBody({ handle }: { handle: string }) {
           variantLabel="Pack"
           showQuantity={false}
           headingLevel="h2"
-          detailsHref={`/products/${product.handle}`}
+          detailsHref={`/products/${product.handle}.html`}
           wholesaleLink={false}
           purchaseSlogan={purchaseSlogan}
+          shopPayInstallmentText={shopPayInstallmentText}
         />
       </div>
     </>
@@ -141,3 +155,5 @@ export function ProductQuickViewModal() {
     </div>
   );
 }
+
+

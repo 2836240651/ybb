@@ -146,7 +146,7 @@ function ybb_sm_navigation_empty_collection_warnings(array $nav): array
         $rows = [
             [
                 'href' => (string) ($item['href'] ?? ''),
-                'label' => trim((string) ($item['labels']['zh'] ?? $item['label'] ?? $item['id'] ?? '导航�?)),
+                'label' => trim((string) ($item['labels']['zh'] ?? $item['label'] ?? $item['id'] ?? '导航项')),
             ],
         ];
 
@@ -156,7 +156,7 @@ function ybb_sm_navigation_empty_collection_warnings(array $nav): array
             }
             $rows[] = [
                 'href' => (string) ($child['href'] ?? ''),
-                'label' => trim((string) ($child['labels']['zh'] ?? $child['label'] ?? '子类�?)),
+                'label' => trim((string) ($child['labels']['zh'] ?? $child['label'] ?? '子类目')),
             ];
         }
 

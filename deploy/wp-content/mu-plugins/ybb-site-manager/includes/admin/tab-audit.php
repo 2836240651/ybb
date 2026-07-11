@@ -31,9 +31,9 @@ function ybb_sm_admin_tab_audit(): void
     );
 
     $statusIcons = [
-        'success' => '�?,
-        'failed' => '�?,
-        'running' => '�?,
+        'success' => '✅',
+        'failed' => '❌',
+        'running' => '🔄',
         'warning' => '⚠️',
         'info' => 'ℹ️',
     ];
@@ -50,33 +50,34 @@ function ybb_sm_admin_tab_audit(): void
                     <option value="system" <?php selected($category, 'system'); ?>>系统</option>
                 </select>
             </label>
-            <label>状�?                <select name="audit_status">
+            <label>状态
+                                <select name="audit_status">
                     <option value="all" <?php selected($status, 'all'); ?>>全部</option>
                     <option value="success" <?php selected($status, 'success'); ?>>成功</option>
                     <option value="failed" <?php selected($status, 'failed'); ?>>失败</option>
-                    <option value="running" <?php selected($status, 'running'); ?>>进行�?/option>
+                    <option value="running" <?php selected($status, 'running'); ?>>进行中</option>
                     <option value="warning" <?php selected($status, 'warning'); ?>>警告</option>
                 </select>
             </label>
             <label>时间
                 <select name="audit_days">
-                    <option value="7" <?php selected($days, 7); ?>>�?7 �?/option>
-                    <option value="30" <?php selected($days, 30); ?>>�?30 �?/option>
-                    <option value="90" <?php selected($days, 90); ?>>�?90 �?/option>
+                    <option value="7" <?php selected($days, 7); ?>>近 7 天</option>
+                    <option value="30" <?php selected($days, 30); ?>>近 30 天</option>
+                    <option value="90" <?php selected($days, 90); ?>>近 90 天</option>
                     <option value="0" <?php selected($days, 0); ?>>全部</option>
                 </select>
             </label>
-            <?php submit_button('筛�?, 'secondary', 'submit', false); ?>
+            <?php submit_button('筛选', 'secondary', 'submit', false); ?>
             <a class="button" href="<?php echo esc_url($exportUrl); ?>">导出 CSV</a>
         </form>
 
-        <p class="description">�?<?php echo (int) $result['total']; ?> 条记录（保留最�?<?php echo (int) YBB_SM_AUDIT_MAX_ENTRIES; ?> �?/ <?php echo (int) YBB_SM_AUDIT_RETENTION_DAYS; ?> 天）。配置类保存后无需部署即可生效；部署类需等待 Runner 完成�?/p>
+        <p class="description">共 <?php echo (int) $result['total']; ?> 条记录（保留最近 <?php echo (int) YBB_SM_AUDIT_MAX_ENTRIES; ?> 条 / <?php echo (int) YBB_SM_AUDIT_RETENTION_DAYS; ?> 天）。配置类保存后无需部署即可生效；部署类需等待 Runner 完成。</p>
 
         <table class="widefat striped">
             <thead>
                 <tr>
                     <th style="width:150px;">时间</th>
-                    <th style="width:90px;">操作�?/th>
+                    <th style="width:90px;">操作人</th>
                     <th style="width:80px;">模块</th>
                     <th style="width:50px;">状�?/th>
                     <th>摘要</th>
@@ -91,7 +92,7 @@ function ybb_sm_admin_tab_audit(): void
                     $st = $row['status'] ?? 'info';
                     $icon = $statusIcons[$st] ?? '·';
                     $at = $row['at'] ?? '';
-                    $atLocal = $at !== '' ? wp_date('Y-m-d H:i', strtotime($at)) : '�?;
+                    $atLocal = $at !== '' ? wp_date('Y-m-d H:i', strtotime($at)) : '-';
                     $detailId = 'ybb-audit-detail-' . esc_attr($row['id'] ?? uniqid());
                     $detailLines = !empty($row['detail']) ? explode("\n", (string) $row['detail']) : [];
                     $changeLines = array_values(array_filter($detailLines, static function ($line) {
@@ -100,7 +101,7 @@ function ybb_sm_admin_tab_audit(): void
                     ?>
                     <tr>
                         <td><?php echo esc_html($atLocal); ?></td>
-                        <td><?php echo esc_html($row['actor'] ?? '�?); ?></td>
+                        <td><?php echo esc_html($row['actor'] ?? '-'); ?></td>
                         <td><?php echo esc_html($row['moduleLabel'] ?? ''); ?></td>
                         <td title="<?php echo esc_attr($st); ?>"><?php echo esc_html($icon); ?></td>
                         <td>

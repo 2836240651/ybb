@@ -1,6 +1,6 @@
 import { chatConfig } from "@/lib/chat-config";
 
-const DEFAULT_SALES_EMAIL = "carpybb@gmail.com";
+const DEFAULT_SALES_EMAIL = "ybb.sales@yoto.work";
 
 /** Social profile URLs (same as footer / contact page). */
 export const SOCIAL_PROFILE_URLS = {

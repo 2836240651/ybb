@@ -10,7 +10,7 @@ from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
 SECRETS = json.loads((ROOT / "secrets.local.json").read_text(encoding="utf-8"))
-SALES_EMAIL = SECRETS.get("gmail", {}).get("email", "carpybb@gmail.com")
+SALES_EMAIL = "ybb.sales@yoto.work"
 
 
 def pass_sgcaptcha(page, site_url: str) -> None:

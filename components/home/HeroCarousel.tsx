@@ -313,7 +313,7 @@ export function HeroCarousel() {
       className="relative w-full slideshow overflow-x-clip"
       aria-roledescription="carousel"
     >
-      <h1 className="sr-only">YBB Tackle �?Wholesale Terminal Tackle Factory</h1>
+      <h1 className="sr-only">YBB Tackle{"\u2014"}Wholesale Terminal Tackle Factory</h1>
 
       <div ref={emblaRef} className="hero-slideshow-viewport overflow-hidden">
         <div className="flex touch-pan-y pl-[var(--gap-padding)]">

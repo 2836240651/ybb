@@ -1,23 +1,38 @@
 import collectionsData from "@/lib/data/collections.json";
+import { catalogMainCategories, catalogOther } from "@/lib/data/catalog";
+import { getCollectionProductCount } from "@/lib/data/catalog-live";
 import type { YbbNavItem } from "@/lib/site-manager/navigation-api";
 
 const WHOLESALE_ID = "wholesale";
 
-/** Collection handles excluded from the wholesale mega menu grid. */
-const EXCLUDED_HANDLES = new Set(["all"]);
+/** Preferred wholesale mega menu order: 8 main tabs + Other rollup. */
+const WHOLESALE_HANDLE_ORDER = [
+  ...catalogMainCategories.map((category) => category.handle),
+  catalogOther.handle,
+];
 
 export function buildWholesaleNavItem(): YbbNavItem {
-  const children = collectionsData
-    .filter((collection) => !EXCLUDED_HANDLES.has(collection.handle))
-    .map((collection) => ({
-      label: collection.title,
-      labels: {
-        en: collection.title,
-        zh: collection.titleCn,
-        ja: collection.title,
-      },
-      href: `/collections/${collection.handle}`,
-    }));
+  const collectionByHandle = new Map(
+    collectionsData.map((collection) => [collection.handle, collection])
+  );
+
+  const children = WHOLESALE_HANDLE_ORDER.filter(
+    (handle) => getCollectionProductCount(handle) > 0
+  )
+    .map((handle) => {
+      const collection = collectionByHandle.get(handle);
+      if (!collection) return null;
+      return {
+        label: collection.title,
+        labels: {
+          en: collection.title,
+          zh: collection.titleCn,
+          ja: collection.title,
+        },
+        href: `/collections/${collection.handle}`,
+      };
+    })
+    .filter((entry): entry is NonNullable<typeof entry> => Boolean(entry));
 
   return {
     id: WHOLESALE_ID,
@@ -36,7 +51,7 @@ export function buildWholesaleNavItem(): YbbNavItem {
         labels: {
           en: "Shop All Products",
           zh: "查看全部产品",
-          ja: "すべての商品を見�?,
+          ja: "すべての商品を見る",
         },
         href: "/collections/all",
       },

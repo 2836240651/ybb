@@ -170,7 +170,7 @@ add_filter('rest_authentication_errors', function ($result) {
     }
 
     $uri = isset($_SERVER['REQUEST_URI']) ? (string) $_SERVER['REQUEST_URI'] : '';
-    if (str_contains($uri, '/ybb/v1/quorlyx/') && !str_contains($uri, 'quorlyx-bootstrap')) {
+    if (strpos($uri, '/ybb/v1/quorlyx/') !== false && strpos($uri, 'quorlyx-bootstrap') === false) {
         return null;
     }
 

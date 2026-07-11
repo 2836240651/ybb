@@ -237,7 +237,8 @@ function ybb_sm_product_catalog_list(int $page = 1, int $perPage = 20, string $s
                 || !empty($override['galleryOverrideEnabled'])
                 || (int) ($override['galleryDefaultIndex'] ?? 0) > 0
                 || ($override['galleryImages'] ?? []) !== []
-                || ($override['galleryHideIndexes'] ?? []) !== [],
+                || ($override['galleryHideIndexes'] ?? []) !== []
+                || $override['hideShopPayInstallments'],
             'frontHidden' => $override['frontHidden'],
             'titleZh' => $override['titleZh'],
             'titleJa' => $override['titleJa'],
@@ -258,6 +259,7 @@ function ybb_sm_product_catalog_list(int $page = 1, int $perPage = 20, string $s
             'sloganZh' => $override['sloganZh'],
             'sloganJa' => $override['sloganJa'],
             'hideSlogan' => $override['hideSlogan'],
+            'hideShopPayInstallments' => $override['hideShopPayInstallments'],
             'editUrl' => admin_url('post.php?post=' . $product->get_id() . '&action=edit'),
             'pdpUrl' => home_url('/products/' . $handle . '.html'),
         ];

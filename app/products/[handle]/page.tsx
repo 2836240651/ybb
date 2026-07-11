@@ -47,7 +47,7 @@ export default async function ProductPage({ params }: Props) {
           },
         ]
       : []),
-    { name: product.title, path: `/products/${handle}` },
+    { name: product.title, path: `/products/${handle}.html` },
   ]);
 
   return (

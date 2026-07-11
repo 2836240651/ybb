@@ -4,10 +4,15 @@ import { useEffect, useMemo, useState } from "react";
 import { ProductReviewsTabPanel } from "@/components/product/ProductReviewsTabPanel";
 import { formatReviewCountDisplay } from "@/lib/product-reviews";
 import { useI18n } from "@/lib/i18n/I18nProvider";
-import type { ProductContentPayload } from "@/lib/site-manager/product-overrides-api";
+import type {
+  PdpTabLabelsPayload,
+  ProductContentPayload,
+} from "@/lib/site-manager/product-overrides-api";
 import type { ResolvedProductContent } from "@/lib/site-manager/product-content";
 import { pickProductContentForLocale } from "@/lib/site-manager/product-content";
+import { pickPdpTabLabel } from "@/lib/site-manager/pdp-tab-labels";
 import { fetchLiveReviewCount } from "@/lib/woocommerce/product-reviews-api";
+import { localizeAdditionalInfoRow } from "@/lib/site-manager/additional-info-i18n.mjs";
 import type { Product } from "@/lib/types/product";
 import { cn } from "@/lib/utils";
 
@@ -15,6 +20,7 @@ type TabId = "description" | "additional" | "reviews";
 
 type ProductContentTabsProps = {
   content?: ProductContentPayload | null;
+  pdpTabLabels?: PdpTabLabelsPayload | null;
   ready: boolean;
   product: Product;
 };
@@ -50,8 +56,13 @@ function renderTabPanel(
   return <ProductReviewsTabPanel product={product} />;
 }
 
-export function ProductContentTabs({ content, ready, product }: ProductContentTabsProps) {
-  const { t, locale } = useI18n();
+export function ProductContentTabs({
+  content,
+  pdpTabLabels,
+  ready,
+  product,
+}: ProductContentTabsProps) {
+  const { locale } = useI18n();
   const resolved = useMemo(
     () => (content ? pickProductContentForLocale(content, locale) : null),
     [content, locale]
@@ -77,24 +88,27 @@ export function ProductContentTabs({ content, ready, product }: ProductContentTa
   const tabs = useMemo(() => {
     const items: Array<{ id: TabId; label: string }> = [];
     if (resolved?.descriptionVisible) {
-      items.push({ id: "description", label: t("product.tabDescription") });
+      items.push({
+        id: "description",
+        label: pickPdpTabLabel(pdpTabLabels, "description", locale),
+      });
     }
     if (resolved?.additionalVisible) {
       items.push({
         id: "additional",
-        label: t("product.tabAdditionalInfo"),
+        label: pickPdpTabLabel(pdpTabLabels, "additionalInfo", locale),
       });
     }
     if (product.wcId) {
       items.push({
         id: "reviews",
-        label: t("product.tabReviews", {
+        label: pickPdpTabLabel(pdpTabLabels, "reviews", locale, {
           count: formatReviewCountDisplay(liveReviewCount),
         }),
       });
     }
     return items;
-  }, [resolved, t, product.wcId, liveReviewCount]);
+  }, [resolved, pdpTabLabels, locale, product.wcId, liveReviewCount]);
 
   const [active, setActive] = useState<TabId>("description");
 
@@ -124,7 +138,7 @@ export function ProductContentTabs({ content, ready, product }: ProductContentTa
     <section
       id="product-reviews-tab"
       className="mt-10 md:mt-12 border-t border-border pt-8"
-      aria-label={t("product.contentTabsLabel")}
+      aria-label={pickPdpTabLabel(pdpTabLabels, "contentTabsLabel", locale)}
     >
       <div className="hidden md:flex gap-8 border-b border-border mb-6">
         {tabs.map((tab) => (
@@ -157,7 +171,7 @@ export function ProductContentTabs({ content, ready, product }: ProductContentTa
               >
                 {tab.label}
                 <span aria-hidden className="text-foreground/50">
-                  {open ? "�? : "+"}
+                  {open ? "−" : "+"}
                 </span>
               </button>
               {open ? (
@@ -191,10 +205,16 @@ function AdditionalInfoTable({
 }: {
   rows: ProductContentPayload["additionalInfo"]["rows"];
 }) {
+  const { locale } = useI18n();
+  const localizedRows = useMemo(
+    () => rows.map((row) => localizeAdditionalInfoRow(row, locale)),
+    [rows, locale]
+  );
+
   return (
     <table className="w-full text-sm border-collapse">
       <tbody>
-        {rows.map((row) => (
+        {localizedRows.map((row) => (
           <tr key={row.key} className="border-b border-border last:border-b-0">
             <th
               scope="row"
@@ -217,3 +237,4 @@ function AdditionalInfoTable({
     </table>
   );
 }
+

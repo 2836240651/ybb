@@ -16,7 +16,7 @@ const YBB_CONTACT_MAIL_LOG_MAX = 30;
 const YBB_CONTACT_INQUIRIES_OPTION = 'ybb_contact_inquiries';
 const YBB_CONTACT_INQUIRIES_MAX = 200;
 /** All contact inquiries deliver to this inbox (company sales). */
-const YBB_CONTACT_RECIPIENT = 'carpybb@gmail.com';
+const YBB_CONTACT_RECIPIENT = 'ybb.sales@yoto.work';
 
 function ybb_contact_defaults(): array
 {
@@ -120,7 +120,7 @@ function ybb_contact_rate_limited(string $ip, int $limit): bool
     return false;
 }
 
-function ybb_contact_sanitize_payload($request): array|WP_Error
+function ybb_contact_sanitize_payload($request)
 {
     $body = $request->get_json_params();
     if (!is_array($body)) {
@@ -298,7 +298,7 @@ function ybb_contact_outbound_from(): string
     }
 
     $woo = sanitize_email((string) get_option('woocommerce_email_from_address', ''));
-    if ($woo !== '' && str_ends_with(strtolower($woo), '@carp-ybb.com')) {
+    if ($woo !== '' && substr(strtolower($woo), -13) === '@carp-ybb.com') {
         return $woo;
     }
     return 'noreply@carp-ybb.com';
@@ -406,7 +406,7 @@ function ybb_contact_send_mail(array $data, ?string $inquiryId = null): bool
     return $sent;
 }
 
-function ybb_contact_handle_submit(WP_REST_Request $request): WP_REST_Response|WP_Error
+function ybb_contact_handle_submit(WP_REST_Request $request)
 {
     $settings = ybb_contact_get_settings();
     $ip = ybb_contact_client_ip();

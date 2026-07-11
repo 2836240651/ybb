@@ -12,10 +12,11 @@ DirectoryIndex index.html index.php
 # Upload to public_html/.htaccess AFTER backing up the current file.
 #
 # Priority:
-# 1. WordPress admin, API, uploads, WooCommerce checkout paths
-# 2. Next.js static assets (_next, images, products, etc.)
-# 3. Existing files
-# 4. Next.js HTML fallback for client routes
+# 1. Static clean URLs → .html (before legacy export directories short-circuit rewrites)
+# 2. WordPress admin, API, uploads, WooCommerce checkout paths
+# 3. Next.js static assets (_next, images, products, etc.)
+# 4. Existing files
+# 5. Next.js HTML fallback for client routes
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
@@ -23,6 +24,16 @@ RewriteBase /
 
 # Nested products/{handle}/ dirs (legacy reviews export) must not trigger DirectorySlash 301 loops.
 DirectorySlash Off
+
+# --- Static clean URLs → .html (must run before directory pass-through) ---
+# Legacy Next export may leave collections/{handle}/, products/{handle}/, blogs/news/{slug}/ dirs on disk.
+# If those match RewriteCond -d first, WordPress catches the request and redirect_canonical loops.
+RewriteRule ^blogs/([^/.]+)/([^/.]+)/?$ /blogs/$1/$2.html [R=301,L]
+RewriteRule ^blogs/([^/.]+)/?$ /blogs/$1.html [R=301,L]
+RewriteRule ^pages/([^/.]+)/?$ /pages/$1.html [R=301,L]
+RewriteRule ^collections/([^/.]+)/?$ /collections/$1.html [R=301,L]
+RewriteRule ^products/reviews/([^/.]+)/?$ /products/reviews/$1.html [R=301,L]
+RewriteRule ^products/([^/.]+)/?$ /products/$1.html [R=301,L]
 
 # --- Cache safety: prevent homepage split-cache variants ---
 # Some cache layers treat `/?x=y` differently than `/` and can serve mismatched HTML/CSS bundles.
@@ -34,9 +45,23 @@ DirectorySlash Off
   Header set Pragma "no-cache" env=YBB_NO_CACHE
 </IfModule>
 
+# Pass through existing files only (legacy export directories must not short-circuit clean URLs).
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
 # --- WordPress + WooCommerce (keep backend alive) ---
-RewriteRule ^wp-admin(/.*)?$ - [L]
+# SiteGround may block bare /wp-admin/ (403 / SG-Captcha blank page). Canonicalize to index.php.
+RewriteRule ^wp-admin/?$ /wp-admin/index.php [R=302,L]
+RewriteRule ^wp-admin/index\.phpload-styles\.php$ /wp-admin/load-styles.php [QSA,L]
+RewriteRule ^wp-admin/index\.phpload-scripts\.php$ /wp-admin/load-scripts.php [QSA,L]
+RewriteRule ^wp-admin/load-styles\.php$ - [L]
+RewriteRule ^wp-admin/load-scripts\.php$ - [L]
+RewriteRule ^wp-admin/admin-ajax\.php$ - [L]
+RewriteRule ^wp-admin/async-upload\.php$ - [L]
+RewriteRule ^wp-admin/.*\.php$ - [L]
+RewriteRule ^wp-admin/.+ - [L]
 RewriteRule ^wp-login\.php$ - [L]
+RewriteRule ^wp-cron\.php$ - [L]
 RewriteRule ^wp-json(/.*)?$ /index.php [QSA,L]
 RewriteRule ^embed/product-reviews/([0-9]+)/?$ /index.php?ybb_product_reviews_embed=$1 [L,QSA]
 RewriteRule ^wp-content(/.*)?$ - [L]
@@ -1821,7 +1846,7 @@ RewriteRule ^products/carp-bankstick-l-type-bankstick-head/?$ /products/tz-zj-00
 RewriteRule ^products/carp-bankstick-small-bankstick-head/?$ /products/tz-zj-005 [R=301,L]
 RewriteRule ^products/carp-bankstick-large-bankstick-head/?$ /products/tz-zj-004 [R=301,L]
 RewriteRule ^products/carp-bankstick-rounded-bankstick-head/?$ /products/tz-zj-003 [R=301,L]
-RewriteRule ^products/carp-bankstick-color-bankstick-head-cover/?$ /products/tz-zj-002 [R=301,L]
+RewriteRule ^products/carp-bankstick-color-bankstick-head-cover/?$ /products/tz-zj-002.html [R=301,L]
 RewriteRule ^products/carp-bankstick-black-coated-bankstick-head/?$ /products/tz-zj-001 [R=301,L]
 RewriteRule ^products/carp-tackle-hook-extractor/?$ /products/tz-pjsl-072 [R=301,L]
 RewriteRule ^products/carp-tackle-accordion-baiting-tool/?$ /products/tz-pjsl-071 [R=301,L]
@@ -1979,7 +2004,7 @@ RewriteRule ^products/carp-hook-8245-hook/?$ /products/tz-hk-005 [R=301,L]
 RewriteRule ^products/carp-hook/?$ /products/tz-hk-004 [R=301,L]
 RewriteRule ^products/carp-hook-8340-hook/?$ /products/tz-hk-003 [R=301,L]
 RewriteRule ^products/carp-hook-curved-hook/?$ /products/tz-hk-002 [R=301,L]
-RewriteRule ^products/carp-hook-triangle-carp-hook/?$ /products/tz-hk-001 [R=301,L]
+RewriteRule ^products/carp-hook-triangle-carp-hook/?$ /products/tz-hk-001.html [R=301,L]
 RewriteRule ^products/carp-feeder-rig-lead-stainless-steel-method-feeder-blowback-single-hook/?$ /products/tz-eldz-048 [R=301,L]
 RewriteRule ^products/carp-feeder-rig-lead-long-straight-needle-single-hook/?$ /products/tz-eldz-047 [R=301,L]
 RewriteRule ^products/carp-feeder-rig-new-type-long-method-feeder-tube-blowback-single-hook/?$ /products/tz-eldz-046 [R=301,L]
@@ -2015,7 +2040,7 @@ RewriteRule ^products/carp-feeder-rig-long-triple-hook/?$ /products/tz-eldz-017 
 RewriteRule ^products/carp-feeder-rig-zinc-alloy-double-hook/?$ /products/tz-eldz-016 [R=301,L]
 RewriteRule ^products/carp-feeder-rig-round-double-hook/?$ /products/tz-eldz-015 [R=301,L]
 RewriteRule ^products/carp-feeder-rig-round-single-hook/?$ /products/tz-eldz-014 [R=301,L]
-RewriteRule ^products/carp-feeder-rig-square-double-hook/?$ /products/tz-eldz-013 [R=301,L]
+RewriteRule ^products/carp-feeder-rig-square-double-hook/?$ /products/tz-eldz-013.html [R=301,L]
 RewriteRule ^products/carp-feeder-rig-square-single-hook/?$ /products/tz-eldz-012 [R=301,L]
 RewriteRule ^products/carp-feeder-rig-long-square-single-hook/?$ /products/tz-eldz-011 [R=301,L]
 RewriteRule ^products/carp-feeder-rig-short-single-hook/?$ /products/tz-eldz-010 [R=301,L]
@@ -2136,7 +2161,7 @@ RewriteRule ^products/carp-rig-small-board-hook/?$ /products/tz-xz-008 [R=301,L]
 RewriteRule ^products/carp-rig-board-barbless/?$ /products/tz-xz-007 [R=301,L]
 RewriteRule ^products/carp-rig-board-barbed/?$ /products/tz-xz-006 [R=301,L]
 RewriteRule ^products/carp-rig-white-board-barbed/?$ /products/tz-xz-005 [R=301,L]
-RewriteRule ^products/carp-rig-orange-board-hair-rig-8pcs/?$ /products/tz-xz-004 [R=301,L]
+RewriteRule ^products/carp-rig-orange-board-hair-rig-8pcs/?$ /products/tz-xz-004.html [R=301,L]
 RewriteRule ^products/carp-rig-orange-board-barbless-6pcs/?$ /products/tz-xz-003 [R=301,L]
 RewriteRule ^products/carp-rig-orange-board-barbed-6pcs/?$ /products/tz-xz-002 [R=301,L]
 RewriteRule ^products/carp-rig-8340-hair-rig/?$ /products/tz-xz-001 [R=301,L]
@@ -2247,10 +2272,13 @@ RewriteRule ^product/(.*)$ /products/$1 [R=301,L]
 # Deprecated nested reviews path → flat reviews route (avoids products/{handle}/ directory vs .html conflict)
 RewriteRule ^products/([^/.]+)/reviews/?$ /products/reviews/$1 [R=301,L]
 
-# Force clean catalog URLs to static export HTML before WP catches them.
-RewriteRule ^collections/([^/.]+)/?$ /collections/$1.html [L]
-RewriteRule ^products/([^/.]+)/?$ /products/$1.html [L]
-RewriteRule ^products/reviews/([^/.]+)/?$ /products/reviews/$1.html [L]
+# Next.js RSC payloads (*.txt): only for client router (Accept: text/x-component).
+# Redirect accidental browser navigation to the HTML page (prevents /collections/all.txt in URL bar).
+RewriteCond %{REQUEST_URI} \.txt$
+RewriteCond %{REQUEST_URI} !^/robots\.txt$
+RewriteCond %{HTTP_ACCEPT} !text/x-component
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^(.+)\.txt$ /$1.html [R=302,L]
 
 # --- Next.js static assets ---
 RewriteRule ^_next/ - [L]
@@ -2262,14 +2290,13 @@ RewriteRule ^sitemap\.xml$ - [L]
 # Force homepage to static export index to avoid root/index split cache variants.
 RewriteRule ^$ /index.html [L]
 
-# Real files and directories
-RewriteCond %{REQUEST_FILENAME} -f [OR]
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^ - [L]
-
-# Next.js App Router static export: serve matching .html if present
+# Prefer flat .html over legacy export directories (collections/, blogs/news/, etc.)
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.+?)/?$ $1.html [L]
+
+# Real files (directories intentionally excluded at top — see clean URL rules)
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
 
 # Fallback to homepage for unknown routes (optional; comment out if you prefer 404.html)
 RewriteRule ^ index.html [L]

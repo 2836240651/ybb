@@ -14,7 +14,7 @@ type ContactFormProps = {
   salesEmail?: string;
 };
 
-export function ContactForm({ salesEmail = "carpybb@gmail.com" }: ContactFormProps) {
+export function ContactForm({ salesEmail = "ybb.sales@yoto.work" }: ContactFormProps) {
   const { t, locale } = useI18n();
   const [state, setState] = useState<FormState>("idle");
   const [toast, setToast] = useState(false);

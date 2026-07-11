@@ -14,6 +14,11 @@ import { existsSync, readFileSync, writeFileSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 import { canonicalVariantSku } from "../lib/sku-normalize.mjs";
+import {
+  collectionFromSkuPrefix,
+  loadNavCollectionRollups,
+  productHandlesForCollection,
+} from "./lib/catalog-rollup.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const site = process.argv.includes("--site")
@@ -204,7 +209,19 @@ async function fetchAllStoreProducts() {
 function priceFromWc(prices) {
   if (!prices?.price) return 0;
   const minor = Number(prices.price);
-  return Math.round((minor / 100) * 100) / 100;
+  const minorUnit = Number(prices.currency_minor_unit ?? 2);
+  const divisor = 10 ** minorUnit;
+  return Math.round((minor / divisor) * 100) / 100;
+}
+
+/** Catalog/manifest rows may store Woo minor units (49) or dollars (0.49). */
+function priceFromCatalogRaw(raw, minorUnit = 2) {
+  const str = String(raw ?? "").trim();
+  const n = Number.parseFloat(str) || 0;
+  if (!n) return 0;
+  if (str.includes(".")) return n;
+  const divisor = 10 ** minorUnit;
+  return Math.round((n / divisor) * 100) / 100;
 }
 
 
@@ -301,6 +318,12 @@ export function selectFrontendCollection(candidateSlugs = []) {
 }
 
 function collectionForParentSku(parentSku, categorySlugs, wcParent) {
+  const prefixCollection = collectionFromSkuPrefix(
+    parentSku,
+    frontendCollectionHandles
+  );
+  if (prefixCollection) return prefixCollection;
+
   const manifestSlugs = skuToCategorySlugs[parentSku];
   const manifestCollection = selectFrontendCollection(
     Array.isArray(manifestSlugs) ? manifestSlugs : []
@@ -317,7 +340,10 @@ function collectionForParentSku(parentSku, categorySlugs, wcParent) {
   );
   if (wcCollection) return wcCollection;
 
-  return "terminal-tackle";
+  const prefixFallback = collectionFromSkuPrefix(parentSku);
+  if (prefixFallback) return prefixFallback;
+
+  return null;
 }
 
 function skuHandle(sku) {
@@ -459,7 +485,10 @@ function buildVariantFromCatalog(variation, wcVariation, idMapEntry, wcParent) {
     wcVariation?.prices?.price != null || wcVariation?.prices?.regular_price != null;
   const price = hasWcPrice
     ? priceFromWc(wcVariation.prices)
-    : Number.parseFloat(variation.price || "0") || 0;
+    : priceFromCatalogRaw(
+        variation.price || variation.regularPrice || "0",
+        wcParent?.prices?.currency_minor_unit ?? 2
+      );
   const compareAtPrice =
     wcVariation?.on_sale && wcVariation.prices?.regular_price
       ? priceFromWc({ price: wcVariation.prices.regular_price })
@@ -505,7 +534,10 @@ function buildVariantsFromWooDetails(entry, wcParent, wcVariationsBySku) {
       wcVariation?.prices?.price != null || wcVariation?.prices?.regular_price != null;
     const price = hasWcPrice
       ? priceFromWc(wcVariation.prices)
-      : Number.parseFloat(fallbackVariation.price || entry.regularPrice || "0") || 0;
+      : priceFromCatalogRaw(
+          fallbackVariation.price || entry.regularPrice || "0",
+          wcParent?.prices?.currency_minor_unit ?? 2
+        );
     const images = variantImages(sku, wcVariation);
     const variant = {
       sku,
@@ -535,7 +567,9 @@ function mapCatalogEntry(entry, wcParent, wcVariationsBySku, collectionOverride)
     parentI18n
   );
   const collection =
-    collectionOverride || collectionForParentSku(parentSku, entry.categorySlugs, wcParent);
+    collectionOverride ||
+    collectionForParentSku(parentSku, entry.categorySlugs, wcParent) ||
+    "sinkers";
   const parentIdMap = idMap.parents?.[parentSku];
 
   const isWooVariable = wcParent?.type === "variable";
@@ -631,6 +665,24 @@ async function fetchStoreProductDetail(id) {
   return fetchJson(wpRestUrl(`/wc/store/v1/products/${id}`));
 }
 
+async function fetchStoreVariations(parentId) {
+  return fetchJson(
+    wpRestUrl("/wc/store/v1/products", {
+      type: "variation",
+      parent: String(parentId),
+      per_page: "100",
+    })
+  );
+}
+
+function variationsHavePrices(variations) {
+  return (
+    Array.isArray(variations) &&
+    variations.length > 0 &&
+    variations.some((v) => v?.prices?.price != null || v?.prices?.regular_price != null)
+  );
+}
+
 const categorySlugCache = new Map();
 
 async function resolveWcCollectionSlug(wcParent) {
@@ -662,22 +714,20 @@ function buildCatalogStubFromWoo(wcParent) {
         .replace(`${parentSku}-`, "")
         .trim() ||
       `Option ${index + 1}`;
+    const prices = variation.prices || wcParent.prices;
     return {
       sku: variation.sku || `${parentSku}-${spec.replace(/\s+/g, "")}`,
       spec,
-      price:
-        variation.prices?.price ||
-        variation.prices?.regular_price ||
-        wcParent.prices?.price ||
-        "0",
+      price: prices ? priceFromWc(prices) : 0,
     };
   });
 
   if (!variations.length) {
+    const prices = wcParent.prices;
     variations.push({
       sku: parentSku,
       spec: "Default",
-      price: wcParent.prices?.price || wcParent.prices?.regular_price || "0",
+      price: prices ? priceFromWc(prices) : 0,
     });
   }
 
@@ -691,7 +741,7 @@ function buildCatalogStubFromWoo(wcParent) {
     type: isVariable ? "variable" : "simple",
     categorySlugs,
     variations,
-    regularPrice: wcParent.prices?.price || wcParent.prices?.regular_price || "0",
+    regularPrice: wcParent.prices ? priceFromWc(wcParent.prices) : 0,
     variationSku: variations[0]?.sku,
     spec: variations[0]?.spec,
   };
@@ -722,12 +772,21 @@ async function enrichFromWoo(parents, catalogData) {
     if (fetchVariations && p.type === "variable" && p.id) {
       try {
         const cachedVars = Array.isArray(p.variations) ? p.variations : [];
-        const hasCachedVariations =
-          cachedVars.length > 0 && cachedVars.every((v) => v && v.id);
-        const detail = hasCachedVariations
-          ? p
-          : await fetchStoreProductDetail(p.id);
-        const wcVariationsBySku = indexWcVariations(detail.variations);
+        let wcVariationRows = variationsHavePrices(cachedVars)
+          ? cachedVars
+          : null;
+        if (!wcVariationRows) {
+          const listed = await fetchStoreVariations(p.id);
+          if (variationsHavePrices(listed)) {
+            wcVariationRows = listed;
+          }
+        }
+        if (!wcVariationRows) {
+          const detail = await fetchStoreProductDetail(p.id);
+          wcVariationRows = detail.variations || [];
+        }
+        const wcVariationsBySku = indexWcVariations(wcVariationRows);
+        const detail = { ...p, variations: wcVariationRows };
         const detailCollection =
           selectFrontendCollection([await resolveWcCollectionSlug(detail)]) ||
           collectionOverride;
@@ -768,15 +827,18 @@ function copyVariantRedirects(productHandles) {
   }
 }
 
-function updateCollections(products, collectionsPath) {
+function updateCollections(products, collectionsPath, navigationPath) {
   const collections = JSON.parse(readFileSync(collectionsPath, "utf8"));
-  const byCol = new Map();
-  for (const p of products) {
-    if (!byCol.has(p.collection)) byCol.set(p.collection, []);
-    byCol.get(p.collection).push(p.handle);
+  let navRollups = {};
+  try {
+    const nav = JSON.parse(readFileSync(navigationPath, "utf8"));
+    navRollups = loadNavCollectionRollups(nav);
+  } catch {
+    navRollups = {};
   }
+
   for (const col of collections) {
-    const handles = byCol.get(col.handle) || [];
+    const handles = productHandlesForCollection(col.handle, products, navRollups);
     col.productCount = handles.length;
     col.productHandles = handles;
   }
@@ -931,7 +993,11 @@ async function main() {
     console.warn(`[sync-from-wp] translation fallback warnings: ${translationWarnings.length} (see deploy/product-import/translation-warnings.json)`);
   }
 
-  const colCount = updateCollections(products, join(root, "lib/data/collections.json"));
+  const colCount = updateCollections(
+    products,
+    join(root, "lib/data/collections.json"),
+    join(root, "lib/data/navigation.json")
+  );
   console.log(`[sync-from-wp] updated ${colCount} collections`);
 
   const redirectCount = copyVariantRedirects(products.map((p) => p.handle));

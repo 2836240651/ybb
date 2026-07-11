@@ -1,0 +1,54 @@
+{
+  "format": "wc-v2-existing-update",
+  "source": "agent-json TZ-ZJ-003 rod rest head",
+  "sheets": [
+    {
+      "name": "商品主表",
+      "products": [
+        {
+          "skuBase": "TZ-ZJ-003",
+          "handle": "tz-zj-003",
+          "title": "Colorful Carp Rod Rest Head Soft Rubber Bankstick Rod Support",
+          "nameEn": "Colorful Carp Rod Rest Head Soft Rubber Bankstick Rod Support",
+          "titleZh": "彩色防滑橡胶鲤鱼竿架头 支架头",
+          "nameZh": "彩色防滑橡胶鲤鱼竿架头 支架头",
+          "titleJa": "カラフル ラバー ロッドレストヘッド カープロッドサポート",
+          "nameJa": "カラフル ラバー ロッドレストヘッド カープロッドサポート",
+          "shortDescription": "Soft rubber rod rest head designed to securely hold carp rods while protecting blanks from scratches. Available in four bright colors. OEM, wholesale and retail supported.",
+          "description": "The Colorful Carp Rod Rest Head is designed for carp anglers seeking reliable rod support and maximum blank protection. Manufactured from durable soft rubber, it securely holds the fishing rod while preventing scratches and unwanted movement during fishing sessions.\n\nIts universal threaded base fits most banksticks, buzz bars and rod pods used throughout the European carp fishing market. The bright color options not only enhance equipment appearance but also make rod setups easier to identify.\n\nIdeal for carp fishing, coarse fishing and specimen angling, this rod rest is suitable for both individual anglers and fishing tackle brands looking for OEM and wholesale solutions.",
+          "descriptionHtml": "<p>The Colorful Carp Rod Rest Head is designed for carp anglers seeking reliable rod support and maximum blank protection. Manufactured from durable soft rubber, it securely holds the fishing rod while preventing scratches and unwanted movement during fishing sessions.</p><p>Its universal threaded base fits most banksticks, buzz bars and rod pods used throughout the European carp fishing market. The bright color options not only enhance equipment appearance but also make rod setups easier to identify.</p><p>Ideal for carp fishing, coarse fishing and specimen angling, this rod rest is suitable for both individual anglers and fishing tackle brands looking for OEM and wholesale solutions.</p><p>Key Features<br>• Soft anti-slip rubber construction<br>• Protects fishing rod blanks<br>• Universal bankstick thread<br>• Stable rod support<br>• Lightweight and durable<br>• Available in Blue, Red, Green and Orange<br>• OEM &amp; ODM customization available<br>• Wholesale supply supported</p><p>Conclusion<br>A practical and durable rod rest head that combines reliable rod protection with colorful styling, making it an excellent accessory for modern carp fishing equipment.</p>",
+          "descriptionZh": "彩色防滑橡胶鲤鱼竿架头专为鲤鱼钓及竞技钓设计，采用高弹性软橡胶制造，可牢固支撑鱼竿，同时有效避免竿身划伤和滑动。\n\n标准螺纹接口兼容市面大多数Bankstick、Buzz Bar及Rod Pod支架系统，安装方便，适用于欧洲主流鲤鱼钓装备。\n\n提供蓝、红、绿、橙四种颜色选择，不仅提升装备辨识度，也方便不同钓组快速区分。适用于品牌商、经销商、批发商及OEM定制采购。",
+          "descriptionZhHtml": "<p>彩色防滑橡胶鲤鱼竿架头专为鲤鱼钓及竞技钓设计，采用高弹性软橡胶制造，可牢固支撑鱼竿，同时有效避免竿身划伤和滑动。</p><p>标准螺纹接口兼容市面大多数Bankstick、Buzz Bar及Rod Pod支架系统，安装方便，适用于欧洲主流鲤鱼钓装备。</p><p>提供蓝、红、绿、橙四种颜色选择，不仅提升装备辨识度，也方便不同钓组快速区分。适用于品牌商、经销商、批发商及OEM定制采购。</p><p>产品特点<br>• 高弹软橡胶材质<br>• 防滑保护鱼竿<br>• 通用英制螺纹接口<br>• 支撑稳定<br>• 轻量耐用<br>• 四种颜色可选<br>• 支持OEM/ODM定制<br>• 全球批发供应</p><p>总结<br>兼具保护性、耐用性与美观性的彩色竿架头，是现代鲤鱼钓支架系统不可或缺的重要配件。</p>",
+          "descriptionJa": "カラフルラバーロッドレストヘッドは、カープフィッシング用に設計されたロッドサポートアクセサリーです。柔らかい高品質ラバー素材を採用し、ロッドをしっかり固定しながら傷や滑りを防ぎます。\n\n標準ネジを採用しており、多くのバンクスティック、ロッドポッド、バズバーに対応します。\n\nブルー・レッド・グリーン・オレンジの4色展開で、機能性とデザイン性を兼ね備えています。",
+          "descriptionJaHtml": "<p>カラフルラバーロッドレストヘッドは、カープフィッシング用に設計されたロッドサポートアクセサリーです。柔らかい高品質ラバー素材を採用し、ロッドをしっかり固定しながら傷や滑りを防ぎます。</p><p>標準ネジを採用しており、多くのバンクスティック、ロッドポッド、バズバーに対応します。</p><p>ブルー・レッド・グリーン・オレンジの4色展開で、機能性とデザイン性を兼ね備えています。</p><p>特徴<br>• ソフトラバー素材<br>• ロッド保護設計<br>• 汎用ネジ対応<br>• 安定した保持力<br>• 軽量・耐久性<br>• 4色展開<br>• OEM・ODM対応<br>• 卸売対応</p><p>まとめ<br>ロッドを安全に保持し、美しいカラーリングを備えた高品質ロッドレストです。</p>",
+          "sloganEn": "Soft rubber rod rest head designed to securely hold carp rods while protecting blanks from scratches. Available in four bright colors. OEM, wholesale and retail supported.",
+          "sloganZh": "柔软橡胶材质，有效保护鱼竿不被磨损，防滑稳固，四色可选，支持OEM、批发及零售。",
+          "sloganJa": "柔らかいラバー素材でロッドをしっかり固定し傷を防止。4色展開、OEM・卸売対応。",
+          "hideSlogan": false,
+          "frontHidden": false,
+          "galleryEnabled": true,
+          "galleryOverrideEnabled": false,
+          "hideDescription": false,
+          "hideAdditionalInfo": false,
+          "category": "Other > Peripheral Equipment",
+          "categoryMain": "Other",
+          "categorySub": "Peripheral Equipment",
+          "published": true,
+          "attributeName": "Size",
+          "variants": [
+            { "sku": "TZ-ZJ-003-blue", "parentSku": "TZ-ZJ-003", "option": "blue", "price": "1.99" },
+            { "sku": "TZ-ZJ-003-red", "parentSku": "TZ-ZJ-003", "option": "red", "price": "1.99" },
+            { "sku": "TZ-ZJ-003-green", "parentSku": "TZ-ZJ-003", "option": "green", "price": "1.99" },
+            { "sku": "TZ-ZJ-003-orange", "parentSku": "TZ-ZJ-003", "option": "orange", "price": "1.99" }
+          ],
+          "imageUrls": [
+            "https://cdn.shopify.com/s/files/1/0941/8542/3134/files/TZ-ZJ-003.jpg"
+          ],
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0941/8542/3134/files/TZ-ZJ-003.jpg",
+          "sheet": "商品主表",
+          "source": "agent-json TZ-ZJ-003"
+        }
+      ]
+    }
+  ]
+}

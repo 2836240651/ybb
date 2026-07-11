@@ -42,7 +42,7 @@ function ybb_sm_blog_resolve_image_url(string $url): string
     if (!preg_match('#^https?://#i', $url)) {
         $url = home_url($url);
     }
-    if (str_starts_with($url, 'http://')) {
+    if (substr($url, 0, 7) === 'http://') {
         $url = 'https://' . substr($url, 7);
     }
 
@@ -131,12 +131,14 @@ function ybb_sm_blog_public(): array
         $data = ybb_sm_blog_defaults();
     }
 
+    $homeSettings = function_exists('ybb_sm_home_get_settings') ? ybb_sm_home_get_settings() : [];
+
     return [
         'enabled' => !empty($data['enabled']),
         'handle' => (string) ($data['handle'] ?? 'news'),
         'title' => (string) ($data['title'] ?? ''),
         'description' => (string) ($data['description'] ?? ''),
-        'latestStoriesEnabled' => !empty($data['latestStoriesEnabled']),
+        'latestStoriesEnabled' => !empty($homeSettings['latestStoriesEnabled']),
         'articles' => ybb_sm_blog_enabled_articles($data),
         'syncedAt' => ybb_sm_synced_at(),
     ];
@@ -146,7 +148,7 @@ function ybb_sm_blog_public(): array
 function ybb_sm_blog_home_cards(): array
 {
     $data = ybb_sm_get_module('blog');
-    if (empty($data['enabled']) || empty($data['latestStoriesEnabled'])) {
+    if (empty($data['enabled'])) {
         return [];
     }
 

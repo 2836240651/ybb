@@ -11,6 +11,7 @@ import { formatPrice, getSavePercent } from "@/lib/data/products";
 import { useI18n, useProductTitle } from "@/lib/i18n/I18nProvider";
 import { SITE_URL } from "@/lib/seo";
 import type { Product } from "@/lib/types/product";
+import type { PdpTabLabelsPayload } from "@/lib/site-manager/product-overrides-api";
 import { cn } from "@/lib/utils";
 
 type ProductPurchasePanelProps = {
@@ -24,6 +25,9 @@ type ProductPurchasePanelProps = {
   brandLabel?: string;
   /** Resolved purchase-area slogan (visible + text). */
   purchaseSlogan?: { visible: boolean; text: string };
+  /** Resolved Shop Pay installment banner text (omit to hide). */
+  shopPayInstallmentText?: string | null;
+  pdpTabLabels?: PdpTabLabelsPayload | null;
   /** @deprecated use purchaseSlogan */
   description?: string;
   showQuantity?: boolean;
@@ -43,6 +47,8 @@ export function ProductPurchasePanel({
   onQuantityChange,
   brandLabel = "YBB Tackle",
   purchaseSlogan,
+  shopPayInstallmentText,
+  pdpTabLabels,
   description,
   showQuantity = true,
   headingLevel = "h1",
@@ -52,7 +58,7 @@ export function ProductPurchasePanel({
 }: ProductPurchasePanelProps) {
   const { t } = useI18n();
   const localizedTitle = useProductTitle(product);
-  const productShareUrl = `${SITE_URL.replace(/\/$/, "")}/products/${product.handle}`;
+  const productShareUrl = `${SITE_URL.replace(/\/$/, "")}/products/${product.handle}.html`;
   const Heading = headingLevel;
   const onSale =
     product.compareAtPrice != null &&
@@ -110,7 +116,9 @@ export function ProductPurchasePanel({
           )}
         </div>
 
-        <ShopPayInstallment price={product.price} />
+        {shopPayInstallmentText ? (
+          <ShopPayInstallment text={shopPayInstallmentText} />
+        ) : null}
       </div>
 
       <VariantOptionGrid
@@ -130,7 +138,8 @@ export function ProductPurchasePanel({
               aria-label={t("common.decreaseQuantity")}
               onClick={() => onQuantityChange(Math.max(1, quantity - 1))}
             >
-              �?            </button>
+              {"\u2212"}
+            </button>
             <span className="min-w-[3rem] text-center text-sm">{quantity}</span>
             <button
               type="button"
@@ -157,7 +166,7 @@ export function ProductPurchasePanel({
           fullWidth
         />
 
-        <ProductReviewBadge product={product} />
+        <ProductReviewBadge product={product} pdpTabLabels={pdpTabLabels} />
 
         <p className="flex items-center gap-2 text-sm text-foreground/60">
           <svg

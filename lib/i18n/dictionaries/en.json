@@ -23,7 +23,7 @@
     "announcements": "Announcements",
     "primaryNavigation": "Primary",
     "allRightsReserved": "All rights reserved.",
-    "loadingCatalog": "Loading catalog�?,
+    "loadingCatalog": "Loading catalog…",
     "products": "products",
     "skusMoq": "{count} SKUs · factory MOQ applies",
     "ybbWholesale": "YBB Tackle wholesale",
@@ -40,12 +40,12 @@
     "account": "Account"
   },
   "announcements": {
-    "2026-new": "2026 NEW PRODUCTS �?LEADS, RIGS, BAIT CAGES & TERMINAL TACKLE",
-    "terminal-tackle": "SINKERS · BAIT CAGES · CARP HOOKS · LINE RIGS �?EURO CARP CATALOG",
-    "rig-kits": "SINKER RIGS · BAIT-CAGE RIGS · EURO CARP KITS �?BULK-READY WHOLESALE",
-    "accessories": "ROD PODS · METAL & PLASTIC ACCESSORIES · PERIPHERAL GEAR �?SHOP OTHER",
-    "oem-odm": "OEM / ODM �?PRIVATE-LABEL LEADS, RIGS & FULL CATEGORY CUSTOMIZATION",
-    "b2b-wholesale": "B2B WHOLESALE �?FLEXIBLE MOQ · MIXED-CARTON ORDERS · FREE SAMPLE KITS"
+    "2026-new": "2026 NEW PRODUCTS — LEADS, RIGS, BAIT CAGES & TERMINAL TACKLE",
+    "terminal-tackle": "SINKERS · BAIT CAGES · CARP HOOKS · LINE RIGS — EURO CARP CATALOG",
+    "rig-kits": "SINKER RIGS · BAIT-CAGE RIGS · EURO CARP KITS — BULK-READY WHOLESALE",
+    "accessories": "ROD PODS · METAL & PLASTIC ACCESSORIES · PERIPHERAL GEAR — SHOP OTHER",
+    "oem-odm": "OEM / ODM — PRIVATE-LABEL LEADS, RIGS & FULL CATEGORY CUSTOMIZATION",
+    "b2b-wholesale": "B2B WHOLESALE — FLEXIBLE MOQ · MIXED-CARTON ORDERS · FREE SAMPLE KITS"
   },
   "localeBar": {
     "country": "Global",
@@ -187,7 +187,7 @@
       "heading": "Factory & supply",
       "factory-direct": {
         "title": "Factory Direct",
-        "description": "Source pricing from our 30+ year terminal tackle production base �?no middlemen."
+        "description": "Source pricing from our 30+ year terminal tackle production base — no middlemen."
       },
       "moq-flexible": {
         "title": "MOQ Flexible",
@@ -213,39 +213,64 @@
     "soldOut": "SOLD OUT",
     "savePercent": "Save {percent}%",
     "pack": "Pack",
-    "skuLabel": "SKU:",
     "inStock": "In stock, ready to ship",
     "outOfStock": "Out of stock",
-    "shipsWithin": "Ships within 1�? business days",
-    "positiveReviews": "{count} positive reviews",
-    "reviewsBadgeCount": "{rating} · {count} reviews",
-    "viewReviews": "View reviews",
-    "reviewsPageTitle": "Reviews",
-    "reviewsEyebrow": "Customer reviews",
-    "reviewsSummaryTitle": "Rating summary",
-    "reviewsListTitle": "Customer reviews",
-    "reviewsBasedOn": "Based on {count} reviews",
-    "reviewsNoRatingsYet": "No ratings yet",
-    "reviewsEmptyTitle": "No reviews yet",
-    "writeFirstReview": "Write the first review",
-    "reviewsLoading": "Loading reviews�?,
-    "reviewsLoadError": "Could not load reviews. Please refresh.",
-    "reviewsEmpty": "No reviews yet. Be the first to share your experience.",
-    "writeReview": "Write a review",
-    "reviewsManagedByWoo": "Reviews are published immediately after submission.",
-    "backToProduct": "�?Back to product",
-    "defaultDescription": "Precision terminal tackle in retail-ready packaging �?engineered for carp anglers who demand reliable components session after session.",
-    "tabDescription": "Description",
-    "tabAdditionalInfo": "Additional information",
-    "tabReviews": "Reviews ({count})",
-    "viewAllReviews": "View all reviews",
-    "reviewPhotoOpen": "View review photo",
-    "contentTabsLabel": "Product details",
-    "wholesaleOem": "Wholesale & OEM pricing available �?,
+    "shipsWithin": "Ships within 1–2 business days",
+    "defaultDescription": "Precision terminal tackle in retail-ready packaging — engineered for carp anglers who demand reliable components session after session.",
+    "shopPayInstallmentTemplate": "Pay in {count} interest-free instalments of {amount} with Shop Pay",
+    "wholesaleOem": "Wholesale & OEM pricing available —",
     "contactTeam": "contact our team",
     "viewFullDetails": "View full details",
     "moqFromFactory": "MOQ from factory",
-    "viewProducts": "View products �?
+    "viewProducts": "View products →",
+    "tabDescription": "Description",
+    "tabAdditionalInfo": "Additional information",
+    "tabReviews": "Reviews ({count})",
+    "contentTabsLabel": "Product details",
+    "skuLabel": "SKU",
+    "added": "Added",
+    "writeFirstReview": "Write the first review",
+    "writeReview": "Write a review",
+    "reviewsBasedOn": "Based on {count} reviews",
+    "reviewsNoRatingsYet": "No ratings yet",
+    "reviewsSummaryTitle": "Customer reviews",
+    "reviewsManagedByWoo": "Reviews are submitted and moderated through WooCommerce.",
+    "reviewsLoadError": "Could not load reviews. Please try again.",
+    "reviewsEmptyTitle": "No reviews yet",
+    "reviewsEmpty": "Be the first to share your experience with this product.",
+    "viewAllReviews": "View all reviews",
+    "reviewsPageTitle": "Reviews",
+    "reviewsEyebrow": "Customer feedback",
+    "positiveReviews": "{count} reviews",
+    "backToProduct": "Back to product",
+    "reviewsListTitle": "All reviews",
+    "reviewPhotoOpen": "Open review photo",
+    "reviewsBadgeCount": "{rating} · {count} reviews",
+    "unavailable": "This product is temporarily hidden on the storefront.",
+    "tabDescription": "Description",
+    "tabAdditionalInfo": "Additional information",
+    "tabReviews": "Reviews ({count})",
+    "contentTabsLabel": "Product details",
+    "skuLabel": "SKU",
+    "added": "Added",
+    "writeFirstReview": "Write the first review",
+    "writeReview": "Write a review",
+    "reviewsBasedOn": "Based on {count} reviews",
+    "reviewsNoRatingsYet": "No ratings yet",
+    "reviewsSummaryTitle": "Customer reviews",
+    "reviewsManagedByWoo": "Reviews are collected and managed by WooCommerce.",
+    "reviewsLoadError": "Could not load reviews. Please try again.",
+    "reviewsEmptyTitle": "No reviews yet",
+    "reviewsEmpty": "Be the first to share your experience with this product.",
+    "viewAllReviews": "View all reviews",
+    "reviewsPageTitle": "Customer reviews",
+    "reviewsEyebrow": "Reviews",
+    "positiveReviews": "{count} positive reviews",
+    "backToProduct": "Back to product",
+    "reviewsListTitle": "All reviews",
+    "reviewPhotoOpen": "Open review photo",
+    "reviewsBadgeCount": "{rating} · {count} reviews",
+    "unavailable": "This product is temporarily hidden on the storefront."
   },
   "cart": {
     "yourCart": "Your cart",
@@ -257,11 +282,11 @@
     "subtotal": "Subtotal (ex. VAT)",
     "b2bNote": "Checkout uses WooCommerce secure payment. Select variants and pay directly.",
     "requestQuote": "Checkout now",
-    "demoNote": "B2B demo cart �?contact YBB Tackle for factory terms.",
+    "demoNote": "B2B demo cart — contact YBB Tackle for factory terms.",
     "clearCart": "Clear cart",
     "quickViewDrawer": "Quick view drawer",
-    "viewWpCart": "View full cart (WooCommerce)",
-    "checkoutAuthHint": "Sign in or register before checkout."
+    "checkoutAuthHint": "Sign in or register for faster checkout and order history.",
+    "viewWpCart": "View full cart page"
   },
   "search": {
     "title": "Search products",
@@ -293,19 +318,18 @@
     "email": "Email",
     "password": "Password",
     "signIn": "Sign in",
-    "register": "Create account",
-    "redirecting": "Redirecting to your WooCommerce account�?
+    "register": "Register"
   },
   "contact": {
     "title": "Contact",
-    "intro": "We'd love to hear from overseas brands, wholesalers, and tackle retailers. Tell us about your target SKUs, MOQ, and markets �?our factory sales team will respond promptly.",
-    "companyLegalName": "Hangzhou Tuodiao Fishing Tackle Co., Ltd.",
-    "companyLegalNameZh": "杭州拓钓渔具用品",
     "phone": "Phone",
     "phoneNumber": "+86 13052997260",
+    "companyLegalName": "Hangzhou Tuodiao Fishing Tackle Co., Ltd.",
+    "companyLegalNameZh": "杭州拓钓渔具用品",
+    "intro": "We'd love to hear from overseas brands, wholesalers, and tackle retailers. Tell us about your target SKUs, MOQ, and markets — our factory sales team will respond promptly.",
     "sales": "Sales",
     "factoryHours": "Factory hours",
-    "hoursDetail": "Mon–Fri, 9:00�?8:00 (GMT+8)\nResponse within 1�? business days",
+    "hoursDetail": "Mon–Fri, 9:00–18:00 (GMT+8)\nResponse within 1–2 business days",
     "follow": "Follow",
     "yourName": "Your name",
     "workEmail": "Work email",
@@ -317,15 +341,12 @@
     "subjectOther": "Other",
     "messagePlaceholder": "Product interest / MOQ / destination market",
     "hcaptchaTitle": "hCaptcha verification",
-    "hcaptchaNote": "Spam protection via honeypot and rate limit. hCaptcha can be added in a later phase.",
+    "hcaptchaNote": "Production site will load hCaptcha here. This demo skips bot verification.",
     "submitInquiry": "Submit inquiry",
-    "submitting": "Sending�?,
-    "submitError": "Could not send your inquiry. Please try again or email {email} directly.",
-    "submitErrorRateLimit": "Too many submissions from your network. Please wait an hour or email us directly.",
     "inquiryReceived": "Inquiry received",
-    "thankYou": "Thank you for contacting YBB Tackle. Our B2B sales team will respond within 1�? business days.",
+    "thankYou": "Thank you for contacting YBB Tackle. Our B2B sales team will respond within 1–2 business days.",
     "submitAnother": "Submit another inquiry",
-    "toast": "Inquiry submitted �?we'll be in touch soon."
+    "toast": "Inquiry submitted — we'll be in touch soon."
   },
   "collectionsPage": {
     "title": "All collections",
@@ -345,11 +366,6 @@
     "clearAll": "Clear all",
     "applyFilters": "Apply filters",
     "noProductsFound": "No products found.",
-    "emptyCategoryTitle": "No products in this category yet.",
-    "emptyCategoryHint": "This collection is empty after the latest catalog sync. Browse categories that still have live SKUs.",
-    "emptyCategoryHiddenHint": "Products in this category are temporarily hidden from the storefront.",
-    "browseLiveCategories": "Categories with live products",
-    "viewAllProducts": "View all products",
     "clearFilters": "Clear filters",
     "showingRange": "Showing {from}–{to} of {total} SKUs",
     "availability": "Availability",
@@ -369,7 +385,7 @@
     "priceRange": {
       "all": "All prices",
       "under-25": "Under £25",
-      "25-50": "£25 �?£50",
+      "25-50": "£25 – £50",
       "over-50": "Over £50"
     },
     "filterTags": {
@@ -378,7 +394,12 @@
       "wholesale": "Wholesale",
       "factory-direct": "Factory direct",
       "has-video": "Has video"
-    }
+    },
+    "emptyCategoryTitle": "No products in this category yet",
+    "emptyCategoryHint": "We’re adding products to this category. In the meantime, browse other collections below.",
+    "emptyCategoryHiddenHint": "This category is currently hidden or not available. Please browse other collections below.",
+    "browseLiveCategories": "Browse live categories",
+    "viewAllProducts": "View all products"
   },
   "collections": {
     "all": "Products",
@@ -438,23 +459,5 @@
       "item4": "Tiered stable pricing for long-term partners to maximize your profit margin;",
       "item5": "Rich experience cooperating with global tackle brands, familiar with compliance rules of EU, UK and Canada markets."
     }
-  },
-  "oemPrivateLabel": {
-    "title": "Private Label",
-    "p1": "We provide full private label ODM service based on our 10,000+ ready carp fishing tackle molds.",
-    "p2": "No new mold cost required. We can print your exclusive brand logo on our stock sinkers, bait cages, ready rigs and customize product colors & surface finishes.",
-    "p3": "Low MOQ & fast lead time help cross-border sellers and offline fishing stores build their own tackle brands and expand markets in Europe, US and Canada rapidly."
-  },
-  "oemCustomPackaging": {
-    "title": "Custom Packaging",
-    "p1": "One-stop custom packaging solution with FREE graphic design support.",
-    "p2": "Custom color boxes, product labels, poly bags and shipping cartons are available for both private label ODM and custom OEM orders.",
-    "p3": "All package sizes, printing artwork and brand texts can be adjusted to fit your local market, boosting shelf recognition and brand image."
-  },
-  "oemMoqLeadTime": {
-    "title": "MOQ & Lead Time",
-    "item1": "ODM Private Label: Low MOQ for our in-stock items. Minimum 3,000pcs for sinkers/bait cages & 500 sets for fishing rigs. Goods will be delivered within 7�?5 days after logo & packaging confirmation.",
-    "item2": "OEM Custom Mold: MOQ negotiable based on product craft. Total lead time including prototype & new mold development is 30�?0 days. Split shipment is acceptable for bulk orders.",
-    "item3": "Peak Season Support: Our standardized production line guarantees stable daily output, supporting seasonal stock orders for overseas brands with on-time delivery."
   }
 }
