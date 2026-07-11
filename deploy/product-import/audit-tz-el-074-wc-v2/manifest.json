@@ -1,0 +1,111 @@
+{
+  "format": "wc-v2",
+  "source": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\deploy\\product-import\\templates\\TZ-EL-074-listing-form-revised.xlsx",
+  "name": "TZ-EL-074-listing-form-revised",
+  "currency": "USD",
+  "sheets": [
+    {
+      "name": "产品上架",
+      "products": [
+        {
+          "skuBase": "父SKU (parent_sku)",
+          "title": "前台路径slug (handle)",
+          "nameEn": "前台路径slug (handle)",
+          "nameZh": "",
+          "name": "前台路径slug (handle)",
+          "description": "英文标题 (title_en)",
+          "descriptionHtml": "<p>英文标题 (title_en)</p>",
+          "category": "日文标题 (title_ja)",
+          "sheet": "产品上架",
+          "attributeName": "Specification",
+          "published": false,
+          "imageUrl": "变体3 图片URL (variant3_image_url), 变体4 SKU (variant4_sku), 变体4 父SKU (variant4_parent_sku), 变体4 规格值 (variant4_spec_value), 变体4 美元价格 (variant4_price_usd), 变体4 有货0/1 (variant4_in_stock_0_1), 变体4 图片URL (variant4_image_url)",
+          "imageUrls": [
+            "变体3 图片URL (variant3_image_url)",
+            "变体4 SKU (variant4_sku)",
+            "变体4 父SKU (variant4_parent_sku)",
+            "变体4 规格值 (variant4_spec_value)",
+            "变体4 美元价格 (variant4_price_usd)",
+            "变体4 有货0/1 (variant4_in_stock_0_1)",
+            "变体4 图片URL (variant4_image_url)"
+          ],
+          "variants": [
+            {
+              "sku": "中文描述HTML (description_zh_html)",
+              "option": "类目 (category)",
+              "price": ""
+            },
+            {
+              "sku": "上架状态 (status)",
+              "option": "规格属性名 (attribute_name)",
+              "price": "11"
+            },
+            {
+              "sku": "变体1 父SKU (variant1_parent_sku)",
+              "option": "变体1 美元价格 (variant1_price_usd)",
+              "price": "101101"
+            },
+            {
+              "sku": "变体1 图片URL (variant1_image_url)",
+              "option": "变体2 父SKU (variant2_parent_sku)",
+              "price": "22"
+            },
+            {
+              "sku": "变体2 美元价格 (variant2_price_usd)",
+              "option": "变体2 图片URL (variant2_image_url)",
+              "price": "33"
+            },
+            {
+              "sku": "变体3 父SKU (variant3_parent_sku)",
+              "option": "变体3 美元价格 (variant3_price_usd)",
+              "price": "301301"
+            }
+          ]
+        },
+        {
+          "skuBase": "TZ-EL-074",
+          "title": "tz-el-074",
+          "nameEn": "tz-el-074",
+          "nameZh": "",
+          "name": "tz-el-074",
+          "description": "Pang San Xian Bait Cage",
+          "descriptionHtml": "<p>Pang San Xian Bait Cage</p>",
+          "category": "Pang San Xian ベイトケージ",
+          "sheet": "产品上架",
+          "attributeName": "Specification",
+          "published": false,
+          "imageUrl": "TZ-EL-074-40g, TZ-EL-074, 40g, 1.39, 1",
+          "imageUrls": [
+            "TZ-EL-074-40g",
+            "TZ-EL-074",
+            "40g",
+            "1.39",
+            "1"
+          ],
+          "variants": [
+            {
+              "sku": "<p>胖三弦饵笼适用于欧鲤钓和粗钓钓组，中轴结构稳定，可将饵料稳定固定在框架周围。</p><p>细长中杆搭配开放式饵笼外形，入水后呈现自然，适合终端钓具批发和成品钓组搭配。</p>",
+              "option": "饵笼 (Bait Cages)",
+              "price": ""
+            },
+            {
+              "sku": "草稿 (draft)",
+              "option": "重量 (Weight)",
+              "price": "07425"
+            },
+            {
+              "sku": "TZ-EL-074",
+              "option": "0.99",
+              "price": "1"
+            },
+            {
+              "sku": "TZ-EL-074",
+              "option": "1.29",
+              "price": "1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

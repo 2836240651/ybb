@@ -1,0 +1,57 @@
+{
+  "format": "wc-v2",
+  "source": "D:\\开发\\fishAgent\\总包\\skill\\reverse-skill\\omc-replica\\ybb-site\\deploy\\product-import\\templates\\TZ-EL-074-wc-v2-playwright-import.xlsx",
+  "name": "TZ-EL-074-wc-v2-playwright-import",
+  "currency": "USD",
+  "sheets": [
+    {
+      "name": "Import",
+      "products": [
+        {
+          "skuBase": "TZ-EL-074",
+          "title": "Pang San Xian Bait Cage",
+          "nameEn": "Pang San Xian Bait Cage",
+          "nameZh": "",
+          "name": "Pang San Xian Bait Cage",
+          "description": "<p>Designed for carp and coarse fishing rigs, the Pang San Xian bait cage gives a stable, balanced presentation while keeping groundbait neatly held around the frame.</p><p>The slim center stem and open cage profile help the rig sit naturally in the swim, making it suitable for wholesale terminal-tackle assortments and ready-rig setups.</p>",
+          "descriptionHtml": "<p>Designed for carp and coarse fishing rigs, the Pang San Xian bait cage gives a stable, balanced presentation while keeping groundbait neatly held around the frame.</p><p>The slim center stem and open cage profile help the rig sit naturally in the swim, making it suitable for wholesale terminal-tackle assortments and ready-rig setups.</p>",
+          "category": "Bait Cages",
+          "sheet": "Import",
+          "attributeName": "Weight",
+          "published": true,
+          "imageUrl": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\codex-clipboard-48fb6e87-8811-4bc5-88c0-8e853da9aa3c.png, C:\\Users\\Administrator\\.codex\\generated_images\\019f3a85-b5af-7083-a47e-8b64ee5831cf\\ig_00af779a0bc414c5016a4c6d9b2bb48191b0bd5f569e2f6ec6.png, C:\\Users\\Administrator\\.codex\\generated_images\\019f3a85-b5af-7083-a47e-8b64ee5831cf\\ig_00af779a0bc414c5016a4c6dec075881918cc92d1efb7cd416.png, C:\\Users\\Administrator\\.codex\\generated_images\\019f3a85-b5af-7083-a47e-8b64ee5831cf\\ig_00af779a0bc414c5016a4c6e0c1df88191bd851d1a534b44de.png, C:\\Users\\Administrator\\.codex\\generated_images\\019f3a85-b5af-7083-a47e-8b64ee5831cf\\ig_00af779a0bc414c5016a4c6e3cb4f88191b40a3e6d70f4124d.png, C:\\Users\\Administrator\\.codex\\generated_images\\019f3a85-b5af-7083-a47e-8b64ee5831cf\\ig_00af779a0bc414c5016a4c6eae729881919c200c0cea70c59f.png",
+          "imageUrls": [
+            "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\codex-clipboard-48fb6e87-8811-4bc5-88c0-8e853da9aa3c.png",
+            "C:\\Users\\Administrator\\.codex\\generated_images\\019f3a85-b5af-7083-a47e-8b64ee5831cf\\ig_00af779a0bc414c5016a4c6d9b2bb48191b0bd5f569e2f6ec6.png",
+            "C:\\Users\\Administrator\\.codex\\generated_images\\019f3a85-b5af-7083-a47e-8b64ee5831cf\\ig_00af779a0bc414c5016a4c6dec075881918cc92d1efb7cd416.png",
+            "C:\\Users\\Administrator\\.codex\\generated_images\\019f3a85-b5af-7083-a47e-8b64ee5831cf\\ig_00af779a0bc414c5016a4c6e0c1df88191bd851d1a534b44de.png",
+            "C:\\Users\\Administrator\\.codex\\generated_images\\019f3a85-b5af-7083-a47e-8b64ee5831cf\\ig_00af779a0bc414c5016a4c6e3cb4f88191b40a3e6d70f4124d.png",
+            "C:\\Users\\Administrator\\.codex\\generated_images\\019f3a85-b5af-7083-a47e-8b64ee5831cf\\ig_00af779a0bc414c5016a4c6eae729881919c200c0cea70c59f.png"
+          ],
+          "variants": [
+            {
+              "sku": "TZ-EL-074-25g",
+              "option": "25g",
+              "price": "0.99"
+            },
+            {
+              "sku": "TZ-EL-074-30g",
+              "option": "30g",
+              "price": "1.19"
+            },
+            {
+              "sku": "TZ-EL-074-35g",
+              "option": "35g",
+              "price": "1.29"
+            },
+            {
+              "sku": "TZ-EL-074-40g",
+              "option": "40g",
+              "price": "1.39"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "父SKU (parent_sku)": "变体3 图片URL (variant3_image_url)",
+  "父SKU (parent_sku)__gallery": [
+    "变体3 图片URL (variant3_image_url)",
+    "变体4 SKU (variant4_sku)",
+    "变体4 父SKU (variant4_parent_sku)",
+    "变体4 规格值 (variant4_spec_value)",
+    "变体4 美元价格 (variant4_price_usd)",
+    "变体4 有货0/1 (variant4_in_stock_0_1)",
+    "变体4 图片URL (variant4_image_url)"
+  ],
+  "TZ-EL-074": "TZ-EL-074-40g",
+  "TZ-EL-074__gallery": [
+    "TZ-EL-074-40g",
+    "TZ-EL-074",
+    "40g",
+    "1.39",
+    "1"
+  ]
+}
